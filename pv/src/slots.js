@@ -255,7 +255,9 @@ export function drawCard(g, slot, cam, d, cover = 1, o = {}) {
   const iw = img.naturalWidth ?? img.width;
   const ih = img.naturalHeight ?? img.height;
   const s = Math.max(W / iw, H / ih) * cover * (o.zoom ?? 1);
-  const [fx, fy] = o.anchor ? slot.def.focus ?? [0.5, 0.5] : [0.5, 0.5];
+  // real pictures are 3:2: crop more from the bottom than the top so heads
+  // survive the 16:9 frame and the camera moves (slot.cropY overrides)
+  const [fx, fy] = o.anchor ? slot.def.focus ?? [0.5, 0.5] : [0.5, slot.placeholder ? 0.5 : slot.def.cropY ?? 0.4];
   const [ax, ay] = o.anchor ?? [W / 2, H / 2];
   const x = ax - fx * iw * s;
   const y = ay - fy * ih * s;

@@ -77,7 +77,8 @@
       ],
       "heroine": true,
       "cn": "雪后的白色世界里，女主角弯下腰，伸手和两个穿冬衣的小孩说话（一个穿黄色棉服背着书包，一个穿红色棉袄），白色飘带在风中扬起；人物整体位于画面左侧到中部，右侧三分之一留白。",
-      "en": "In a white world after snowfall, the heroine bends down and reaches out to two small children in winter coats (one in a yellow parka with a backpack, one in a red padded jacket), her white ribbons lifting in the wind; the figures sit from the left to the center, with the right third left empty."
+      "en": "In a white world after snowfall, the heroine bends down and reaches out to two small children in winter coats (one in a yellow parka with a backpack, one in a red padded jacket), her white ribbons lifting in the wind; the figures sit from the left to the center, with the right third left empty.",
+      "cropY": 0.5
     },
     {
       "id": "06",
@@ -85,7 +86,7 @@
       "mood": "paper",
       "focus": [
         0.5,
-        0.5
+        0.38
       ],
       "heroine": true,
       "split": true,
@@ -137,7 +138,8 @@
       ],
       "heroine": true,
       "cn": "女主角侧身，抬起红色的手臂指向远处一只越飞越远的小蓝蝶，白色背景；人物在画面左侧，右侧是开阔的留白天空。",
-      "en": "The heroine in side view raises her red arm and points at a tiny blue butterfly flying away into the distance, white background; figure on the left, open empty sky on the right."
+      "en": "The heroine in side view raises her red arm and points at a tiny blue butterfly flying away into the distance, white background; figure on the left, open empty sky on the right.",
+      "cropY": 0.45
     },
     {
       "id": "11",
@@ -159,7 +161,8 @@
         0.45
       ],
       "cn": "深夜下雪的狭长古巷，单点透视延伸向画面右上方的远处，一盏红灯笼挂在墙上，女主角长长的影子投在雪地和墙面上（人物本身不在画面里），冷清孤寂。",
-      "en": "A long, narrow old alley at night in falling snow, one-point perspective receding toward the upper right, a single red lantern on the wall, the heroine's long shadow cast across the snow and the wall (she herself is out of frame), cold and lonely."
+      "en": "A long, narrow old alley at night in falling snow, one-point perspective receding toward the upper right, a single red lantern on the wall, the heroine's long shadow cast across the snow and the wall (she herself is out of frame), cold and lonely.",
+      "cropY": 0.5
     },
     {
       "id": "13",
@@ -183,7 +186,8 @@
       ],
       "heroine": true,
       "cn": "纯黑背景中，一棵由无数白色花朵组成的巨大花树，花心是红色，女主角闭着眼站在花树的中心，像被花朵包裹；对称构图，居中。",
-      "en": "Against pure black, a giant tree made of countless white flowers with red centers; the heroine stands with closed eyes at its heart, wrapped in blossoms; symmetrical, centered."
+      "en": "Against pure black, a giant tree made of countless white flowers with red centers; the heroine stands with closed eyes at its heart, wrapped in blossoms; symmetrical, centered.",
+      "cropY": 0.5
     },
     {
       "id": "15",
@@ -218,7 +222,8 @@
       ],
       "heroine": true,
       "cn": "俯视镜头：女主角躺在一大片开满红花的青绿色草地上，红色花瓣被风吹起，春天，明亮。",
-      "en": "Top-down shot: the heroine lies in a vast green meadow full of red flowers, red petals lifted by the wind, spring, bright."
+      "en": "Top-down shot: the heroine lies in a vast green meadow full of red flowers, red petals lifted by the wind, spring, bright.",
+      "cropY": 0.5
     },
     {
       "id": "18",
@@ -299,7 +304,8 @@
         0.55
       ],
       "cn": "一双红色的手从画面右侧伸入，捧着一朵白花，几片花瓣散落；纯黑背景，柔和的顶光，主体在中部偏右。",
-      "en": "A pair of red hands reaching in from the right, cupping a white flower, a few petals falling; pure black background, soft top light, subject just right of center."
+      "en": "A pair of red hands reaching in from the right, cupping a white flower, a few petals falling; pure black background, soft top light, subject just right of center.",
+      "cropY": 0.5
     },
     {
       "id": "25",
@@ -311,7 +317,8 @@
       ],
       "heroine": true,
       "cn": "纯黑背景前，一排穿着红色刺绣嫁衣的新娘并排站立，她们的头是一朵朵巨大的红花；在她们中间站着小小的、穿白衣的女主角；超现实，对称。",
-      "en": "Against pure black, a row of brides in red embroidered wedding robes stands side by side, their heads replaced by enormous red flowers; among them stands the small heroine in white; surreal, symmetrical."
+      "en": "Against pure black, a row of brides in red embroidered wedding robes stands side by side, their heads replaced by enormous red flowers; among them stands the small heroine in white; surreal, symmetrical.",
+      "cropY": 0.5
     },
     {
       "id": "26",
@@ -334,7 +341,8 @@
       ],
       "heroine": true,
       "cn": "夜晚的暴风雪中，女主角双手抱紧自己，白色飘带被风狂乱地吹起，冷蓝色光线，雪地；人物居中。",
-      "en": "In a blizzard at night, the heroine hugs herself tightly, white ribbons whipped wildly by the wind, cold blue light, snowy ground; figure centered."
+      "en": "In a blizzard at night, the heroine hugs herself tightly, white ribbons whipped wildly by the wind, cold blue light, snowy ground; figure centered.",
+      "cropY": 0.45
     },
     {
       "id": "28",
@@ -342,7 +350,7 @@
       "mood": "snow",
       "focus": [
         0.5,
-        0.5
+        0.4
       ],
       "heroine": true,
       "split": true,
@@ -359,7 +367,8 @@
       ],
       "heroine": true,
       "cn": "雪夜中女主角的背影，仰望夜空，衣服上有红色的痕迹，风吹起发丝和飘带；人物居中略偏下，上方是飘雪的夜空。",
-      "en": "The heroine seen from behind in the snowy night, looking up at the sky, red stains on her dress, wind lifting her hair and ribbons; figure centered and slightly low, snowy night sky above."
+      "en": "The heroine seen from behind in the snowy night, looking up at the sky, red stains on her dress, wind lifting her hair and ribbons; figure centered and slightly low, snowy night sky above.",
+      "cropY": 0.45
     },
     {
       "id": "30",
@@ -382,7 +391,8 @@
         0.35
       ],
       "cn": "金色的朝阳从厚重的云层后迸发，照亮积雪的群山，前景有一棵孤零零的枯树，强烈的丁达尔光束；太阳在画面中上方，下方三分之一较暗。",
-      "en": "A golden sunrise bursts through heavy clouds, lighting snow-covered mountains, a lone bare tree in the foreground, strong god rays; the sun sits in the upper center, the lower third darker."
+      "en": "A golden sunrise bursts through heavy clouds, lighting snow-covered mountains, a lone bare tree in the foreground, strong god rays; the sun sits in the upper center, the lower third darker.",
+      "cropY": 0.5
     },
     {
       "id": "32",
