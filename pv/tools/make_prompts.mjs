@@ -36,8 +36,14 @@ const merge = (list) => {
   return out;
 };
 
-const promptCN = (s) => [s.cn, s.heroine ? heroine.cn : '', style.cn].filter(Boolean).join('\n');
-const promptEN = (s) => [s.en, s.heroine ? heroine.en : '', style.en].filter(Boolean).join('\n');
+// background tone and subject placement the PV's lyrics are designed around
+const BG_CN = { night: '深夜蓝的纯色背景', snow: '中等灰蓝色的纯色背景', paper: '纯白背景', red: '朱红色的纯色背景', dark: '纯黑背景', gold: '暖金色的纯色背景', green: '柔和青绿色的纯色背景' };
+const BG_EN = { night: 'a solid deep night-blue background', snow: 'a solid medium blue-grey background', paper: 'a plain white background', red: 'a solid vermilion red background', dark: 'a plain black background', gold: 'a solid warm gold background', green: 'a solid soft green background' };
+const side = ([fx]) => (fx < 0.42 ? ['左侧', 'left'] : fx > 0.58 ? ['右侧', 'right'] : ['中央', 'center']);
+const fitCN = (s) => (s.reference ? '' : `版面：${BG_CN[s.mood]}；主体放在画面${side(s.focus)[0]}，${side(s.focus)[0] === '中央' ? '四周' : '另一侧'}保持空白，主体不要贴边。`);
+const fitEN = (s) => (s.reference ? '' : `Layout: ${BG_EN[s.mood]}; put the subject in the ${side(s.focus)[1]} of the frame, keep ${side(s.focus)[1] === 'center' ? 'the surroundings' : 'the other side'} empty, nothing touching the edges.`);
+const promptCN = (s) => [s.cn, fitCN(s), s.heroine ? heroine.cn : '', style.cn].filter(Boolean).join('\n');
+const promptEN = (s) => [s.en, fitEN(s), s.heroine ? heroine.en : '', style.en].filter(Boolean).join('\n');
 
 const md = [];
 md.push('# 《花骨朵》PV 画面提示词');

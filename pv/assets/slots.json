@@ -1,7 +1,7 @@
 {
   "style": {
-    "cn": "极简手绘：像随手画的简笔插画，粗细均匀的黑色手绘线条，线条尽量少，只画轮廓；纯色平涂，最多三四种颜色（白、浅灰、黑、朱红，偶尔一点蓝）；背景是一整块纯色（纯白或纯黑），不画环境细节，最多用几笔简单的形状暗示场景；画面里只有一个主要物体，大面积留白。不要阴影、不要渐变、不要质感、不要头发丝和衣褶细节、不要精致插画感。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。",
-    "en": "Ultra-minimal hand-drawn doodle illustration: a few even black hand-drawn lines, outlines only, as few lines as possible; flat fills with at most three or four colors (white, light grey, black, vermilion red, rarely a touch of blue); the background is one solid flat color (plain white or plain black) with no environment detail, at most a few simple shapes to suggest the setting; one main subject and lots of empty space. No shading, no gradients, no texture, no hair strands or cloth folds, nothing polished. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape."
+    "cn": "极简手绘：像随手画的简笔插画，粗细均匀的黑色手绘线条，线条尽量少，只画轮廓；纯色平涂，最多三四种颜色（白、浅灰、黑、朱红，偶尔一点蓝）；背景是一整块纯色（颜色按版面要求），不画环境细节，最多用几笔简单的形状暗示场景；画面里只有一个主要物体，大面积留白。不要阴影、不要渐变、不要质感、不要头发丝和衣褶细节、不要精致插画感。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。",
+    "en": "Ultra-minimal hand-drawn doodle illustration: a few even black hand-drawn lines, outlines only, as few lines as possible; flat fills with at most three or four colors (white, light grey, black, vermilion red, rarely a touch of blue); the background is one solid flat color (the one given in the layout line) with no environment detail, at most a few simple shapes to suggest the setting; one main subject and lots of empty space. No shading, no gradients, no texture, no hair strands or cloth folds, nothing polished. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape."
   },
   "heroine": {
     "cn": "女主角（简笔造型）：短发浅灰色，头顶两个白色大圆球发髻，简单的绿色眼睛和一笔红色眼线，白色无袖短旗袍，双臂是红色的。",
