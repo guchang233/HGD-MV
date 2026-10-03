@@ -723,11 +723,11 @@
       "name": "花苞微距",
       "mood": "paper",
       "focus": [
-        0.55,
+        0.45,
         0.5
       ],
-      "cn": "微距特写：一根细细的枝条上一颗饱满的朱红色花苞，带着一点霜，背景是大片留白；花苞在画面中部偏右。",
-      "en": "Macro close-up: one plump vermilion bud on a thin twig with a little frost, lots of empty background; the bud right of centre."
+      "cn": "微距特写：一根细细的枝条上一颗饱满的朱红色花苞，带着一点霜，背景是大片留白；花苞在画面中部偏左。",
+      "en": "Macro close-up: one plump vermilion bud on a thin twig with a little frost, lots of empty background; the bud left of centre."
     },
     {
       "id": "62",
@@ -877,11 +877,11 @@
       "name": "没寄出的信",
       "mood": "paper",
       "focus": [
-        0.55,
+        0.45,
         0.55
       ],
-      "cn": "木桌上放着一封没有寄出的旧信，信封泛黄，旁边一枝干枯的梅花；主体在画面中部偏右，左侧留空。",
-      "en": "An old unsent letter on a wooden table, the envelope yellowed, a dried plum twig beside it; subject right of centre, the left side empty."
+      "cn": "木桌上放着一封没有寄出的旧信，信封泛黄，旁边一枝干枯的梅花；主体在画面中部偏左，右侧留空。",
+      "en": "An old unsent letter on a wooden table, the envelope yellowed, a dried plum twig beside it; subject left of centre, the right side empty."
     },
     {
       "id": "78",
@@ -914,7 +914,8 @@
         0.6
       ],
       "cn": "一朵红山茶花独自落在空无一人的石阶上，旁边几片花瓣；主体在画面中部偏右下，左上留空。",
-      "en": "A single red camellia lies alone on empty stone steps, a few petals beside it; subject right of centre and low, empty space top left."
+      "en": "A single red camellia lies alone on empty stone steps, a few petals beside it; subject right of centre and low, empty space top left.",
+      "cropY": 0.72
     }
   ]
 }

@@ -45,84 +45,84 @@ Heroine: a girl with short light-grey hair and two big round white buns on top o
 | 编号 | 画面 | 出现时间 | 段落 | 色调 | 女主角 |
 |---|---|---|---|---|---|
 | [S00](#s00) | 角色设定图 | （参考图，不出现在成片里） | — | 宣纸白（高调） | ✓ |
-| [S01](#s01) | 雪夜红梅 | 0:02.1–0:06.1 | 序 | 夜色深蓝 |  |
+| [S01](#s01) | 雪夜红梅 | 0:02.1–0:06.1<br>1:19.3–1:19.6 | 序、春天里 | 夜色深蓝 |  |
 | [S02](#s02) | 捧花的少女 | 0:06.1–0:08.1 | 序 | 宣纸白（高调） | ✓ |
-| [S03](#s03) | 对镜的双生 | 0:08.1–0:10.1<br>1:19.3–1:19.6<br>1:22.3–1:22.4 | 序、春天里、副歌 | 宣纸白（高调） | ✓ |
-| [S04](#s04) | 红线翻花绳 | 0:10.1–0:12.1<br>1:25.3–1:25.4 | 序、副歌 | 宣纸白（高调） |  |
-| [S05](#s05) | 少女与孩子 | 0:15.8–0:18.0<br>1:19.1–1:19.3<br>1:27.8–1:27.9<br>2:10.3–2:10.4 | 主歌 I、春天里、副歌、最终副歌 | 宣纸白（高调） | ✓ |
-| [S06](#s06) | 张开双臂 | 0:19.8–0:22.8<br>1:23.8–1:26.8 | 主歌 I、副歌 | 宣纸白（高调） | ✓ |
-| [S07](#s07) | 雪中岔路 | 0:19.8–0:22.8<br>1:23.8–1:26.8<br>2:11.8–2:14.8 | 主歌 I、副歌、最终副歌 | 雪天灰蓝 |  |
-| [S08](#s08) | 红手蓝蝶 | 0:22.8–0:25.1<br>1:28.8–1:29.3<br>2:17.1–2:18.6 | 主歌 I、副歌、最终副歌 | 宣纸白（高调） |  |
-| [S09](#s09) | 眼眸与蓝蝶 | 0:25.1–0:26.6<br>1:30.4–1:33.1 | 主歌 I、副歌 | 宣纸白（高调） | ✓ |
-| [S10](#s10) | 指向远方 | 0:26.6–0:30.0 | 主歌 I | 宣纸白（高调） | ✓ |
+| [S03](#s03) | 对镜的双生 |  | — | 宣纸白（高调） | ✓ |
+| [S04](#s04) | 红线翻花绳 |  | — | 宣纸白（高调） |  |
+| [S05](#s05) | 少女与孩子 |  | — | 宣纸白（高调） | ✓ |
+| [S06](#s06) | 张开双臂 | 1:21.1–1:22.3 | 副歌 | 宣纸白（高调） | ✓ |
+| [S07](#s07) | 雪中岔路 | 0:19.8–0:22.8<br>2:11.8–2:14.8 | 主歌 I、最终副歌 | 雪天灰蓝 |  |
+| [S08](#s08) | 红手蓝蝶 | 0:22.8–0:25.1<br>1:26.8–1:29.3<br>2:17.1–2:18.6 | 主歌 I、副歌、最终副歌 | 宣纸白（高调） |  |
+| [S09](#s09) | 眼眸与蓝蝶 |  | — | 宣纸白（高调） | ✓ |
+| [S10](#s10) | 指向远方 |  | — | 宣纸白（高调） | ✓ |
 | [S11](#s11) | 冰封古镇 | 0:30.0–0:32.1 | 严冬 | 雪天灰蓝 |  |
 | [S12](#s12) | 空巷红灯 | 0:38.3–0:41.0 | 严冬 | 夜色深蓝 |  |
 | [S13](#s13) | 空椅 | 0:43.0–0:47.0 | 严冬 | 夜色深蓝 |  |
-| [S14](#s14) | 花树里的少女 | 0:51.0–0:53.0<br>1:19.6–1:21.1 | 预副歌、春天里 | 近乎全黑 | ✓ |
+| [S14](#s14) | 花树里的少女 |  | — | 近乎全黑 | ✓ |
 | [S15](#s15) | 云想衣裳 | 0:59.0–1:01.0 | 预副歌 | 宣纸白（高调） |  |
-| [S16](#s16) | 红房少女 | 1:02.9–1:04.4<br>2:13.3–2:13.4 | 春天里、最终副歌 | 朱红 / 胭脂红 | ✓ |
-| [S17](#s17) | 红花绿地 | 1:07.1–1:09.1 | 春天里 | 青绿 |  |
-| [S18](#s18) | 凤冠山茶 | 1:11.1–1:13.3<br>1:31.8–1:31.9 | 春天里、副歌 | 朱红 / 胭脂红 |  |
-| [S19](#s19) | 黑暗中的正脸 | 1:21.1–1:22.3 | 副歌 | 近乎全黑 | ✓ |
-| [S20](#s20) | 梅枝拱门 | 1:35.1–1:37.1<br>2:16.3–2:16.4 | 主歌 II、最终副歌 | 宣纸白（高调） |  |
-| [S21](#s21) | 哭泣的新娘 | 1:39.1–1:41.1<br>2:20.3–2:20.4 | 主歌 II、最终副歌 | 朱红 / 胭脂红 | ✓ |
+| [S16](#s16) | 红房少女 |  | — | 朱红 / 胭脂红 | ✓ |
+| [S17](#s17) | 红花绿地 | 1:07.1–1:09.1<br>1:18.6–1:19.1 | 春天里 | 青绿 |  |
+| [S18](#s18) | 凤冠山茶 |  | — | 朱红 / 胭脂红 |  |
+| [S19](#s19) | 黑暗中的正脸 |  | — | 近乎全黑 | ✓ |
+| [S20](#s20) | 梅枝拱门 | 1:35.1–1:37.1 | 主歌 II | 宣纸白（高调） |  |
+| [S21](#s21) | 哭泣的新娘 |  | — | 朱红 / 胭脂红 | ✓ |
 | [S22](#s22) | 红帐古床 | 1:43.1–1:45.1<br>1:47.1–1:50.9 | 主歌 II | 夜色深蓝 |  |
-| [S23](#s23) | 交叉的红臂 | 1:45.1–1:47.1<br>1:50.9–1:53.1 | 主歌 II、桥段 | 近乎全黑 | ✓ |
-| [S24](#s24) | 红手白花 | 1:58.9–2:01.1 | 桥段 | 近乎全黑 |  |
-| [S25](#s25) | 一排新娘 | 2:03.1–2:05.1 | 桥段 | 近乎全黑 | ✓ |
-| [S26](#s26) | 少年郎 | 2:05.1–2:07.8 | 桥段 | 雪天灰蓝 |  |
-| [S27](#s27) | 风雪中的少女 | 2:07.8–2:09.8 | 最终副歌 | 雪天灰蓝 | ✓ |
-| [S28](#s28) | 逆风 | 2:11.8–2:14.8 | 最终副歌 | 雪天灰蓝 | ✓ |
+| [S23](#s23) | 交叉的红臂 |  | — | 近乎全黑 | ✓ |
+| [S24](#s24) | 红手白花 |  | — | 近乎全黑 |  |
+| [S25](#s25) | 一排新娘 |  | — | 近乎全黑 | ✓ |
+| [S26](#s26) | 少年郎 |  | — | 雪天灰蓝 |  |
+| [S27](#s27) | 风雪中的少女 |  | — | 雪天灰蓝 | ✓ |
+| [S28](#s28) | 逆风 | 2:09.8–2:11.8 | 最终副歌 | 雪天灰蓝 | ✓ |
 | [S29](#s29) | 雪夜背影 | 2:21.1–2:23.9 | 最终副歌 | 雪天灰蓝 | ✓ |
-| [S30](#s30) | 白花遮面 | 2:23.9–2:26.6 | 尾声 | 夜色深蓝 | ✓ |
+| [S30](#s30) | 白花遮面 |  | — | 夜色深蓝 | ✓ |
 | [S31](#s31) | 金色日出 | 2:26.6–2:29.1 | 尾声 | 金色晨光 |  |
 | [S32](#s32) | 梅树中的少女 | 2:31.1–2:34.3 | 尾声 | 宣纸白（高调） | ✓ |
-| [S33](#s33) | 山茶入梦 | 2:34.3–2:37.1 | 尾声 | 宣纸白（高调） | ✓ |
+| [S33](#s33) | 山茶入梦 |  | — | 宣纸白（高调） | ✓ |
 | [S34](#s34) | 水墨梅枝 | 2:37.1–2:41.0 | 尾声 | 宣纸白（高调） |  |
 | [S35](#s35) | 伸手接雪 | 0:18.0–0:19.8 | 主歌 I | 宣纸白（高调） | ✓ |
 | [S36](#s36) | 雪中脚印 | 0:32.1–0:35.0 | 严冬 | 雪天灰蓝 |  |
 | [S37](#s37) | 空巷红灯 | 0:41.0–0:43.0 | 严冬 | 夜色深蓝 |  |
-| [S38](#s38) | 雪夜亮灯的小屋 | 0:49.8–0:51.0 | 预副歌 | 夜色深蓝 |  |
-| [S39](#s39) | 窗里的少女 | 0:53.0–0:55.0 | 预副歌 | 近乎全黑 | ✓ |
+| [S38](#s38) | 雪夜亮灯的小屋 | 0:47.0–0:51.0 | 预副歌 | 夜色深蓝 |  |
+| [S39](#s39) | 窗里的少女 |  | — | 近乎全黑 | ✓ |
 | [S40](#s40) | 云做的裙子 | 1:01.0–1:02.9 | 预副歌 | 宣纸白（高调） |  |
-| [S41](#s41) | 红绸上的花瓣 | 1:04.4–1:07.1 | 春天里 | 朱红 / 胭脂红 |  |
-| [S42](#s42) | 红手与红花 | 1:09.1–1:11.1 | 春天里 | 青绿 |  |
-| [S43](#s43) | 藤蔓缠臂 | 1:13.3–1:15.1 | 春天里 | 朱红 / 胭脂红 |  |
-| [S44](#s44) | 缠指的红线 | 1:17.1–1:17.6 | 春天里 | 朱红 / 胭脂红 |  |
-| [S45](#s45) | 眼眸特写 | 1:17.6–1:18.1 | 春天里 | 朱红 / 胭脂红 | ✓ |
-| [S46](#s46) | 盛开的山茶 | 1:18.1–1:18.6 | 春天里 | 朱红 / 胭脂红 |  |
-| [S47](#s47) | 飞散的花瓣 | 1:18.6–1:19.1 | 春天里 | 朱红 / 胭脂红 |  |
+| [S41](#s41) | 红绸上的花瓣 | 1:02.9–1:07.1 | 春天里 | 朱红 / 胭脂红 |  |
+| [S42](#s42) | 红手与红花 |  | — | 青绿 |  |
+| [S43](#s43) | 藤蔓缠臂 |  | — | 朱红 / 胭脂红 |  |
+| [S44](#s44) | 缠指的红线 |  | — | 朱红 / 胭脂红 |  |
+| [S45](#s45) | 眼眸特写 |  | — | 朱红 / 胭脂红 | ✓ |
+| [S46](#s46) | 盛开的山茶 | 1:15.1–1:17.1 | 春天里 | 朱红 / 胭脂红 |  |
+| [S47](#s47) | 飞散的花瓣 | 1:19.6–1:19.8 | 春天里 | 朱红 / 胭脂红 |  |
 | [S48](#s48) | 飞扬的飘带 | 1:22.3–1:23.8 | 副歌 | 近乎全黑 |  |
-| [S49](#s49) | 掌心的蓝蝶 | 1:26.8–1:28.8 | 副歌 | 宣纸白（高调） | ✓ |
+| [S49](#s49) | 掌心的蓝蝶 |  | — | 宣纸白（高调） | ✓ |
 | [S50](#s50) | 落梅小径 | 1:37.1–1:39.1 | 主歌 II | 宣纸白（高调） |  |
-| [S51](#s51) | 红盖头 | 1:41.1–1:43.1 | 主歌 II | 朱红 / 胭脂红 | ✓ |
-| [S52](#s52) | 捂住耳朵 | 1:53.1–1:55.1 | 桥段 | 近乎全黑 | ✓ |
-| [S53](#s53) | 深夜书桌 | 2:01.1–2:03.1 | 桥段 | 近乎全黑 |  |
-| [S54](#s54) | 风雪中的飘带 | 2:09.8–2:11.8 | 最终副歌 | 雪天灰蓝 |  |
-| [S55](#s55) | 雪里的红花 | 2:14.8–2:17.1 | 最终副歌 | 雪天灰蓝 |  |
+| [S51](#s51) | 红盖头 |  | — | 朱红 / 胭脂红 | ✓ |
+| [S52](#s52) | 捂住耳朵 |  | — | 近乎全黑 | ✓ |
+| [S53](#s53) | 深夜书桌 | 1:58.9–2:01.1 | 桥段 | 近乎全黑 |  |
+| [S54](#s54) | 风雪中的飘带 | 2:07.8–2:09.8 | 最终副歌 | 雪天灰蓝 |  |
+| [S55](#s55) | 雪里的红花 | 1:17.6–1:18.1<br>2:14.8–2:17.1 | 春天里、最终副歌 | 雪天灰蓝 |  |
 | [S56](#s56) | 雪夜脚印 | 2:18.6–2:21.1 | 最终副歌 | 雪天灰蓝 |  |
 | [S57](#s57) | 晨光侧脸 | 2:29.1–2:31.1 | 尾声 | 金色晨光 | ✓ |
-| [S58](#s58) | 窗台瓶梅 |  | — | 宣纸白（高调） |  |
-| [S59](#s59) | 枯枝红线 |  | — | 雪天灰蓝 |  |
-| [S60](#s60) | 雪里的旧照片 |  | — | 雪天灰蓝 |  |
-| [S61](#s61) | 花苞微距 |  | — | 宣纸白（高调） |  |
-| [S62](#s62) | 满枝花骨朵 |  | — | 宣纸白（高调） |  |
-| [S63](#s63) | 屋里的灯和两只杯子 |  | — | 夜色深蓝 |  |
-| [S64](#s64) | 窗纸上的两个影子 |  | — | 夜色深蓝 |  |
-| [S66](#s66) | 草地上的一朵红花 |  | — | 青绿 |  |
-| [S67](#s67) | 春泥里的嫩芽 |  | — | 青绿 |  |
-| [S68](#s68) | 爬满藤花的老墙 |  | — | 青绿 |  |
-| [S70](#s70) | 梅林里的岔路 |  | — | 宣纸白（高调） |  |
-| [S71](#s71) | 空嫁衣 |  | — | 近乎全黑 |  |
-| [S72](#s72) | 桌上的红盖头 |  | — | 朱红 / 胭脂红 |  |
-| [S73](#s73) | 烧短的红烛 |  | — | 夜色深蓝 |  |
-| [S74](#s74) | 冰里的红花 |  | — | 朱红 / 胭脂红 |  |
-| [S75](#s75) | 冰下的花瓣 |  | — | 近乎全黑 |  |
-| [S76](#s76) | 天亮时的书桌 |  | — | 近乎全黑 |  |
-| [S77](#s77) | 没寄出的信 |  | — | 宣纸白（高调） |  |
-| [S78](#s78) | 枯树下的空长椅 |  | — | 雪天灰蓝 |  |
-| [S80](#s80) | 暗处的白花 |  | — | 夜色深蓝 |  |
-| [S81](#s81) | 石阶上的红山茶 |  | — | 宣纸白（高调） |  |
+| [S58](#s58) | 窗台瓶梅 | 0:08.1–0:10.1 | 序 | 宣纸白（高调） |  |
+| [S59](#s59) | 枯枝红线 | 0:10.1–0:12.1 | 序 | 雪天灰蓝 |  |
+| [S60](#s60) | 雪里的旧照片 | 0:15.8–0:18.0<br>1:19.8–1:21.1 | 主歌 I、副歌 | 雪天灰蓝 |  |
+| [S61](#s61) | 花苞微距 | 0:25.1–0:26.6<br>1:18.1–1:18.6 | 主歌 I、春天里 | 宣纸白（高调） |  |
+| [S62](#s62) | 满枝花骨朵 | 0:26.6–0:30.0<br>1:17.1–1:17.6<br>1:30.4–1:33.1 | 主歌 I、春天里、副歌 | 宣纸白（高调） |  |
+| [S63](#s63) | 屋里的灯和两只杯子 | 0:51.0–0:53.0 | 预副歌 | 夜色深蓝 |  |
+| [S64](#s64) | 窗纸上的两个影子 | 0:53.0–0:55.0 | 预副歌 | 夜色深蓝 |  |
+| [S66](#s66) | 草地上的一朵红花 | 1:09.1–1:11.1<br>1:19.1–1:19.3 | 春天里 | 青绿 |  |
+| [S67](#s67) | 春泥里的嫩芽 | 1:11.1–1:13.3 | 春天里 | 青绿 |  |
+| [S68](#s68) | 爬满藤花的老墙 | 1:13.3–1:15.1 | 春天里 | 青绿 |  |
+| [S70](#s70) | 梅林里的岔路 | 1:23.8–1:26.8 | 副歌 | 宣纸白（高调） |  |
+| [S71](#s71) | 空嫁衣 | 1:39.1–1:41.1 | 主歌 II | 近乎全黑 |  |
+| [S72](#s72) | 桌上的红盖头 | 1:41.1–1:43.1 | 主歌 II | 朱红 / 胭脂红 |  |
+| [S73](#s73) | 烧短的红烛 | 1:45.1–1:47.1 | 主歌 II | 夜色深蓝 |  |
+| [S74](#s74) | 冰里的红花 | 1:50.9–1:53.1 | 桥段 | 朱红 / 胭脂红 |  |
+| [S75](#s75) | 冰下的花瓣 | 1:53.1–1:55.1 | 桥段 | 近乎全黑 |  |
+| [S76](#s76) | 天亮时的书桌 | 2:01.1–2:03.1 | 桥段 | 近乎全黑 |  |
+| [S77](#s77) | 没寄出的信 | 2:03.1–2:05.1 | 桥段 | 宣纸白（高调） |  |
+| [S78](#s78) | 枯树下的空长椅 | 2:05.1–2:07.8 | 桥段 | 雪天灰蓝 |  |
+| [S80](#s80) | 暗处的白花 | 2:23.9–2:26.6 | 尾声 | 夜色深蓝 |  |
+| [S81](#s81) | 石阶上的红山茶 | 2:34.3–2:37.1 | 尾声 | 宣纸白（高调） |  |
 
 ## S00
 
@@ -149,6 +149,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 **雪夜红梅**
 
 - 0:02.1–0:06.1（序）
+- 1:19.3–1:19.6（春天里）
 - 色调：夜色深蓝；主体位置：画面右侧（约 66%, 55%）
 
 完整提示词（中文）：
@@ -196,9 +197,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **对镜的双生** · 女主角（附上 S00 参考图）
 
-- 0:08.1–0:10.1（序）
-- 1:19.3–1:19.6（春天里）
-- 1:22.3–1:22.4（副歌）：「这种赶春的人」
 - 色调：宣纸白（高调）；主体位置：画面中央（约 50%, 42%）
 
 完整提示词（中文）：
@@ -223,8 +221,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **红线翻花绳**
 
-- 0:10.1–0:12.1（序）
-- 1:25.3–1:25.4（副歌）：「该向左或向右」
 - 色调：宣纸白（高调）；主体位置：画面中央（约 58%, 50%）
 
 完整提示词（中文）：
@@ -247,10 +243,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **少女与孩子** · 女主角（附上 S00 参考图）
 
-- 0:15.8–0:18.0（主歌 I）：「健忘的症状 / 这种赶春的人」
-- 1:19.1–1:19.3（春天里）：「养万物生我饲衣鱼」
-- 1:27.8–1:27.9（副歌）：「你看我这手里的胭脂虫」
-- 2:10.3–2:10.4（最终副歌）：「这种赶春的人」
 - 色调：宣纸白（高调）；主体位置：画面左侧（约 36%, 60%）
 
 完整提示词（中文）：
@@ -275,8 +267,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **张开双臂** · 女主角（附上 S00 参考图）
 
-- 0:19.8–0:22.8（主歌 I）：「这种赶春的人 / 该向左或向右」
-- 1:23.8–1:26.8（副歌）：「这种赶春的人 / 该向左或向右 / 你看我这手里的胭脂虫」
+- 1:21.1–1:22.3（副歌）：「这种赶春的人」
 - 色调：宣纸白（高调）；主体位置：画面中央（约 50%, 38%）；用于左右分屏，只显示中间一半
 
 完整提示词（中文）：
@@ -302,7 +293,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 **雪中岔路**
 
 - 0:19.8–0:22.8（主歌 I）：「这种赶春的人 / 该向左或向右」
-- 1:23.8–1:26.8（副歌）：「这种赶春的人 / 该向左或向右 / 你看我这手里的胭脂虫」
 - 2:11.8–2:14.8（最终副歌）：「该向左或向右 / 你看我这手里的胭脂虫」
 - 色调：雪天灰蓝；主体位置：画面中央（约 50%, 55%）；用于左右分屏，只显示中间一半
 
@@ -327,7 +317,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 **红手蓝蝶**
 
 - 0:22.8–0:25.1（主歌 I）：「该向左或向右 / 你看我这手里的胭脂虫」
-- 1:28.8–1:29.3（副歌）：「你看我这手里的胭脂虫」
+- 1:26.8–1:29.3（副歌）：「你看我这手里的胭脂虫」
 - 2:17.1–2:18.6（最终副歌）：「你看我这手里的胭脂虫 / 像不像那晚春的花骨朵」
 - 色调：宣纸白（高调）；主体位置：画面左侧（约 35%, 62%）
 
@@ -351,8 +341,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **眼眸与蓝蝶** · 女主角（附上 S00 参考图）
 
-- 0:25.1–0:26.6（主歌 I）：「你看我这手里的胭脂虫」
-- 1:30.4–1:33.1（副歌）：「像不像那晚春的花骨朵」
 - 色调：宣纸白（高调）；主体位置：画面左侧（约 38%, 50%）
 
 完整提示词（中文）：
@@ -377,7 +365,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **指向远方** · 女主角（附上 S00 参考图）
 
-- 0:26.6–0:30.0（主歌 I）：「像不像那晚春的花骨朵」
 - 色调：宣纸白（高调）；主体位置：画面左侧（约 30%, 55%）
 
 完整提示词（中文）：
@@ -471,8 +458,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **花树里的少女** · 女主角（附上 S00 参考图）
 
-- 0:51.0–0:53.0（预副歌）：「把我爱的人往里头装」
-- 1:19.6–1:21.1（春天里）：「健忘的症状 / 这种赶春的人」
 - 色调：近乎全黑；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -520,8 +505,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **红房少女** · 女主角（附上 S00 参考图）
 
-- 1:02.9–1:04.4（春天里）：「花想容貌云想衣裳 / 我想要死在春天里」
-- 2:13.3–2:13.4（最终副歌）：「该向左或向右」
 - 色调：朱红 / 胭脂红；主体位置：画面左侧（约 38%, 45%）
 
 完整提示词（中文）：
@@ -547,6 +530,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 **红花绿地**
 
 - 1:07.1–1:09.1（春天里）：「红花作衣绿地作席」
+- 1:18.6–1:19.1（春天里）：「养万物生我饲衣鱼」
 - 色调：青绿；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -569,8 +553,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **凤冠山茶**
 
-- 1:11.1–1:13.3（春天里）：「野蛮生长在春泥」
-- 1:31.8–1:31.9（副歌）：「像不像那晚春的花骨朵」
 - 色调：朱红 / 胭脂红；主体位置：画面中央（约 50%, 45%）
 
 完整提示词（中文）：
@@ -593,7 +575,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **黑暗中的正脸** · 女主角（附上 S00 参考图）
 
-- 1:21.1–1:22.3（副歌）：「这种赶春的人」
 - 色调：近乎全黑；主体位置：画面中央（约 50%, 45%）
 
 完整提示词（中文）：
@@ -619,7 +600,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 **梅枝拱门**
 
 - 1:35.1–1:37.1（主歌 II）：「我不想被你遗忘」
-- 2:16.3–2:16.4（最终副歌）：「你看我这手里的胭脂虫」
 - 色调：宣纸白（高调）；主体位置：画面中央（约 42%, 55%）
 
 完整提示词（中文）：
@@ -642,8 +622,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **哭泣的新娘** · 女主角（附上 S00 参考图）
 
-- 1:39.1–1:41.1（主歌 II）：「哪怕看清了这副皮囊」
-- 2:20.3–2:20.4（最终副歌）：「像不像那晚春的花骨朵」
 - 色调：朱红 / 胭脂红；主体位置：画面左侧（约 40%, 45%）
 
 完整提示词（中文）：
@@ -692,8 +670,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **交叉的红臂** · 女主角（附上 S00 参考图）
 
-- 1:45.1–1:47.1（主歌 II）：「男女共枕暖一张床 / 同床异梦迷一样」
-- 1:50.9–1:53.1（桥段）：「同床异梦迷一样 / 我不要就这样」
 - 色调：近乎全黑；主体位置：画面中央（约 50%, 45%）
 
 完整提示词（中文）：
@@ -718,7 +694,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **红手白花**
 
-- 1:58.9–2:01.1（桥段）：「盼霜降 / 成了没日没夜的工作狂」
 - 色调：近乎全黑；主体位置：画面中央（约 58%, 55%）
 
 完整提示词（中文）：
@@ -741,7 +716,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **一排新娘** · 女主角（附上 S00 参考图）
 
-- 2:03.1–2:05.1（桥段）：「负了我心里的少年郎」
 - 色调：近乎全黑；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -766,7 +740,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **少年郎**
 
-- 2:05.1–2:07.8（桥段）：「负了我心里的少年郎 / 健忘的症状」
 - 色调：雪天灰蓝；主体位置：画面左侧（约 40%, 60%）
 
 完整提示词（中文）：
@@ -789,7 +762,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **风雪中的少女** · 女主角（附上 S00 参考图）
 
-- 2:07.8–2:09.8（最终副歌）：「健忘的症状 / 这种赶春的人」
 - 色调：雪天灰蓝；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -814,7 +786,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **逆风** · 女主角（附上 S00 参考图）
 
-- 2:11.8–2:14.8（最终副歌）：「该向左或向右 / 你看我这手里的胭脂虫」
+- 2:09.8–2:11.8（最终副歌）：「这种赶春的人 / 该向左或向右」
 - 色调：雪天灰蓝；主体位置：画面中央（约 50%, 40%）；用于左右分屏，只显示中间一半
 
 完整提示词（中文）：
@@ -864,7 +836,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **白花遮面** · 女主角（附上 S00 参考图）
 
-- 2:23.9–2:26.6（尾声）：「像不像那晚春的花骨朵 / 错过的不肯罢休 / 不由衷的痛有谁懂」
 - 色调：夜色深蓝；主体位置：画面左侧（约 40%, 50%）
 
 完整提示词（中文）：
@@ -937,7 +908,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **山茶入梦** · 女主角（附上 S00 参考图）
 
-- 2:34.3–2:37.1（尾声）：「眼看着那缕胭脂红 / 玩笑一般地开在无人问津」
 - 色调：宣纸白（高调）；主体位置：画面中央（约 45%, 42%）
 
 完整提示词（中文）：
@@ -1056,7 +1026,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **雪夜亮灯的小屋**
 
-- 0:49.8–0:51.0（预副歌）：「我想要一座房」
+- 0:47.0–0:51.0（预副歌）：「空巷孤影它伤人情 / 我想要一座房」
 - 色调：夜色深蓝；主体位置：画面中央（约 50%, 40%）
 
 完整提示词（中文）：
@@ -1079,7 +1049,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **窗里的少女** · 女主角（附上 S00 参考图）
 
-- 0:53.0–0:55.0（预副歌）：「把我爱的人往里头装」
 - 色调：近乎全黑；主体位置：画面中央（约 50%, 45%）
 
 完整提示词（中文）：
@@ -1127,7 +1096,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **红绸上的花瓣**
 
-- 1:04.4–1:07.1（春天里）：「我想要死在春天里 / 红花作衣绿地作席」
+- 1:02.9–1:07.1（春天里）：「花想容貌云想衣裳 / 我想要死在春天里 / 红花作衣绿地作席」
 - 色调：朱红 / 胭脂红；主体位置：画面中央（约 45%, 45%）
 
 完整提示词（中文）：
@@ -1150,7 +1119,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **红手与红花**
 
-- 1:09.1–1:11.1（春天里）：「红花作衣绿地作席 / 野蛮生长在春泥」
 - 色调：青绿；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -1173,7 +1141,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **藤蔓缠臂**
 
-- 1:13.3–1:15.1（春天里）：「野蛮生长在春泥 / 养万物生我饲衣鱼」
 - 色调：朱红 / 胭脂红；主体位置：画面中央（约 50%, 55%）
 
 完整提示词（中文）：
@@ -1196,7 +1163,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **缠指的红线**
 
-- 1:17.1–1:17.6（春天里）：「养万物生我饲衣鱼」
 - 色调：朱红 / 胭脂红；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -1219,7 +1185,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **眼眸特写** · 女主角（附上 S00 参考图）
 
-- 1:17.6–1:18.1（春天里）：「养万物生我饲衣鱼」
 - 色调：朱红 / 胭脂红；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -1244,7 +1209,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **盛开的山茶**
 
-- 1:18.1–1:18.6（春天里）：「养万物生我饲衣鱼」
+- 1:15.1–1:17.1（春天里）：「养万物生我饲衣鱼」
 - 色调：朱红 / 胭脂红；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -1267,7 +1232,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **飞散的花瓣**
 
-- 1:18.6–1:19.1（春天里）：「养万物生我饲衣鱼」
+- 1:19.6–1:19.8（春天里）：「健忘的症状」
 - 色调：朱红 / 胭脂红；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -1313,7 +1278,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **掌心的蓝蝶** · 女主角（附上 S00 参考图）
 
-- 1:26.8–1:28.8（副歌）：「你看我这手里的胭脂虫」
 - 色调：宣纸白（高调）；主体位置：画面右侧（约 62%, 50%）
 
 完整提示词（中文）：
@@ -1361,7 +1325,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **红盖头** · 女主角（附上 S00 参考图）
 
-- 1:41.1–1:43.1（主歌 II）：「哪怕看清了这副皮囊 / 男女共枕暖一张床」
 - 色调：朱红 / 胭脂红；主体位置：画面左侧（约 40%, 45%）
 
 完整提示词（中文）：
@@ -1386,7 +1349,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **捂住耳朵** · 女主角（附上 S00 参考图）
 
-- 1:53.1–1:55.1（桥段）：「我不要就这样 / 等到了惊蛰启」
 - 色调：近乎全黑；主体位置：画面中央（约 50%, 45%）
 
 完整提示词（中文）：
@@ -1411,7 +1373,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **深夜书桌**
 
-- 2:01.1–2:03.1（桥段）：「成了没日没夜的工作狂 / 负了我心里的少年郎」
+- 1:58.9–2:01.1（桥段）：「盼霜降 / 成了没日没夜的工作狂」
 - 色调：近乎全黑；主体位置：画面中央（约 42%, 55%）
 
 完整提示词（中文）：
@@ -1434,7 +1396,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **风雪中的飘带**
 
-- 2:09.8–2:11.8（最终副歌）：「这种赶春的人 / 该向左或向右」
+- 2:07.8–2:09.8（最终副歌）：「健忘的症状 / 这种赶春的人」
 - 色调：雪天灰蓝；主体位置：画面中央（约 50%, 45%）
 
 完整提示词（中文）：
@@ -1457,6 +1419,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **雪里的红花**
 
+- 1:17.6–1:18.1（春天里）：「养万物生我饲衣鱼」
 - 2:14.8–2:17.1（最终副歌）：「你看我这手里的胭脂虫」
 - 色调：雪天灰蓝；主体位置：画面中央（约 50%, 55%）
 
@@ -1528,6 +1491,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **窗台瓶梅**
 
+- 0:08.1–0:10.1（序）
 - 色调：宣纸白（高调）；主体位置：画面右侧（约 62%, 50%）
 
 完整提示词（中文）：
@@ -1550,6 +1514,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **枯枝红线**
 
+- 0:10.1–0:12.1（序）
 - 色调：雪天灰蓝；主体位置：画面右侧（约 60%, 45%）
 
 完整提示词（中文）：
@@ -1572,6 +1537,8 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **雪里的旧照片**
 
+- 0:15.8–0:18.0（主歌 I）：「健忘的症状 / 这种赶春的人」
+- 1:19.8–1:21.1（副歌）：「健忘的症状 / 这种赶春的人」
 - 色调：雪天灰蓝；主体位置：画面中央（约 55%, 55%）
 
 完整提示词（中文）：
@@ -1594,12 +1561,14 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **花苞微距**
 
-- 色调：宣纸白（高调）；主体位置：画面中央（约 55%, 50%）
+- 0:25.1–0:26.6（主歌 I）：「你看我这手里的胭脂虫」
+- 1:18.1–1:18.6（春天里）：「养万物生我饲衣鱼」
+- 色调：宣纸白（高调）；主体位置：画面中央（约 45%, 50%）
 
 完整提示词（中文）：
 
 ```text
-微距特写：一根细细的枝条上一颗饱满的朱红色花苞，带着一点霜，背景是大片留白；花苞在画面中部偏右。
+微距特写：一根细细的枝条上一颗饱满的朱红色花苞，带着一点霜，背景是大片留白；花苞在画面中部偏左。
 版面：纯白背景；主体放在画面中央，四周保持空白，主体不要贴边。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
@@ -1607,7 +1576,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 Full prompt (English):
 
 ```text
-Macro close-up: one plump vermilion bud on a thin twig with a little frost, lots of empty background; the bud right of centre.
+Macro close-up: one plump vermilion bud on a thin twig with a little frost, lots of empty background; the bud left of centre.
 Layout: a plain white background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
@@ -1616,6 +1585,9 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **满枝花骨朵**
 
+- 0:26.6–0:30.0（主歌 I）：「像不像那晚春的花骨朵」
+- 1:17.1–1:17.6（春天里）：「养万物生我饲衣鱼」
+- 1:30.4–1:33.1（副歌）：「像不像那晚春的花骨朵」
 - 色调：宣纸白（高调）；主体位置：画面左侧（约 40%, 45%）
 
 完整提示词（中文）：
@@ -1638,6 +1610,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **屋里的灯和两只杯子**
 
+- 0:51.0–0:53.0（预副歌）：「把我爱的人往里头装」
 - 色调：夜色深蓝；主体位置：画面中央（约 50%, 55%）
 
 完整提示词（中文）：
@@ -1660,6 +1633,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **窗纸上的两个影子**
 
+- 0:53.0–0:55.0（预副歌）：「把我爱的人往里头装」
 - 色调：夜色深蓝；主体位置：画面中央（约 50%, 45%）
 
 完整提示词（中文）：
@@ -1682,6 +1656,8 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **草地上的一朵红花**
 
+- 1:09.1–1:11.1（春天里）：「红花作衣绿地作席 / 野蛮生长在春泥」
+- 1:19.1–1:19.3（春天里）：「养万物生我饲衣鱼」
 - 色调：青绿；主体位置：画面中央（约 50%, 60%）
 
 完整提示词（中文）：
@@ -1704,6 +1680,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **春泥里的嫩芽**
 
+- 1:11.1–1:13.3（春天里）：「野蛮生长在春泥」
 - 色调：青绿；主体位置：画面中央（约 50%, 62%）
 
 完整提示词（中文）：
@@ -1726,6 +1703,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **爬满藤花的老墙**
 
+- 1:13.3–1:15.1（春天里）：「野蛮生长在春泥 / 养万物生我饲衣鱼」
 - 色调：青绿；主体位置：画面中央（约 45%, 50%）
 
 完整提示词（中文）：
@@ -1748,6 +1726,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **梅林里的岔路**
 
+- 1:23.8–1:26.8（副歌）：「这种赶春的人 / 该向左或向右 / 你看我这手里的胭脂虫」
 - 色调：宣纸白（高调）；主体位置：画面中央（约 50%, 55%）
 
 完整提示词（中文）：
@@ -1770,6 +1749,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **空嫁衣**
 
+- 1:39.1–1:41.1（主歌 II）：「哪怕看清了这副皮囊」
 - 色调：近乎全黑；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -1792,6 +1772,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **桌上的红盖头**
 
+- 1:41.1–1:43.1（主歌 II）：「哪怕看清了这副皮囊 / 男女共枕暖一张床」
 - 色调：朱红 / 胭脂红；主体位置：画面左侧（约 40%, 55%）
 
 完整提示词（中文）：
@@ -1814,6 +1795,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **烧短的红烛**
 
+- 1:45.1–1:47.1（主歌 II）：「男女共枕暖一张床 / 同床异梦迷一样」
 - 色调：夜色深蓝；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -1836,6 +1818,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **冰里的红花**
 
+- 1:50.9–1:53.1（桥段）：「同床异梦迷一样 / 我不要就这样」
 - 色调：朱红 / 胭脂红；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -1858,6 +1841,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **冰下的花瓣**
 
+- 1:53.1–1:55.1（桥段）：「我不要就这样 / 等到了惊蛰启」
 - 色调：近乎全黑；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -1880,6 +1864,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **天亮时的书桌**
 
+- 2:01.1–2:03.1（桥段）：「成了没日没夜的工作狂 / 负了我心里的少年郎」
 - 色调：近乎全黑；主体位置：画面中央（约 50%, 60%）
 
 完整提示词（中文）：
@@ -1902,12 +1887,13 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **没寄出的信**
 
-- 色调：宣纸白（高调）；主体位置：画面中央（约 55%, 55%）
+- 2:03.1–2:05.1（桥段）：「负了我心里的少年郎」
+- 色调：宣纸白（高调）；主体位置：画面中央（约 45%, 55%）
 
 完整提示词（中文）：
 
 ```text
-木桌上放着一封没有寄出的旧信，信封泛黄，旁边一枝干枯的梅花；主体在画面中部偏右，左侧留空。
+木桌上放着一封没有寄出的旧信，信封泛黄，旁边一枝干枯的梅花；主体在画面中部偏左，右侧留空。
 版面：纯白背景；主体放在画面中央，四周保持空白，主体不要贴边。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
@@ -1915,7 +1901,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 Full prompt (English):
 
 ```text
-An old unsent letter on a wooden table, the envelope yellowed, a dried plum twig beside it; subject right of centre, the left side empty.
+An old unsent letter on a wooden table, the envelope yellowed, a dried plum twig beside it; subject left of centre, the right side empty.
 Layout: a plain white background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
@@ -1924,6 +1910,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **枯树下的空长椅**
 
+- 2:05.1–2:07.8（桥段）：「负了我心里的少年郎 / 健忘的症状」
 - 色调：雪天灰蓝；主体位置：画面中央（约 55%, 50%）
 
 完整提示词（中文）：
@@ -1946,6 +1933,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **暗处的白花**
 
+- 2:23.9–2:26.6（尾声）：「像不像那晚春的花骨朵 / 错过的不肯罢休 / 不由衷的痛有谁懂」
 - 色调：夜色深蓝；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -1968,6 +1956,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **石阶上的红山茶**
 
+- 2:34.3–2:37.1（尾声）：「眼看着那缕胭脂红 / 玩笑一般地开在无人问津」
 - 色调：宣纸白（高调）；主体位置：画面中央（约 55%, 60%）
 
 完整提示词（中文）：

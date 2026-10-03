@@ -142,15 +142,29 @@ export async function boot(out, { base = '.' } = {}) {
     story.lyricStyles.forEach((st, i) => {
       const line = lyrics[i];
       if (!lineLive(line, st, t)) return;
-      if (slot) scrim(g, line, st, t, slot);
-      drawLine(g, line, st, t, { inkChar: inkGlyph });
+      const sl = slot ? inkOver(line, st, slot) : st;
+      if (slot) scrim(g, line, sl, t, slot);
+      drawLine(g, line, sl, t, { inkChar: inkGlyph });
       if (st.sweep) sweep(g, line, st, t, gcam);
     });
     for (const c of story.opening) drawCredit(g, t, c);
     reset(g);
   }
 
-  // pencil marks drawn on around key words once they have landed
+  // white type over a pale picture turns to ink (and the reverse), so the
+  // words never need a smudge of shadow behind them
+  const inkCache = new Map();
+  function inkOver(line, st, slot) {
+    const key = `${line.chars[0][1]}|${slot.id}`;
+    if (inkCache.has(key)) return inkCache.get(key);
+    const light = hexLum(st.color) > 0.5;
+    const lum = lumaUnder(slot, ...lineBox(layoutLine(line, st)));
+    let out = st;
+    if (light && lum > 0.62) out = { ...st, color: '#1d1a1c', glow: 'rgba(255,255,255,0.35)' };
+    else if (!light && lum < 0.35) out = { ...st, color: '#ffffff', glow: 'rgba(0,0,0,0.35)' };
+    inkCache.set(key, out);
+    return out;
+  }
 
   // a band of light gliding across a hero line once it has landed
   function sweep(g, line, st, t, gcam) {
