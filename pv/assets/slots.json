@@ -1,11 +1,11 @@
 {
   "style": {
-    "cn": "简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。",
-    "en": "Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape."
+    "cn": "极简手绘：像随手画的简笔插画，粗细均匀的黑色手绘线条，线条尽量少，只画轮廓；纯色平涂，最多三四种颜色（白、浅灰、黑、朱红，偶尔一点蓝）；背景是一整块纯色（纯白或纯黑），不画环境细节，最多用几笔简单的形状暗示场景；画面里只有一个主要物体，大面积留白。不要阴影、不要渐变、不要质感、不要头发丝和衣褶细节、不要精致插画感。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。",
+    "en": "Ultra-minimal hand-drawn doodle illustration: a few even black hand-drawn lines, outlines only, as few lines as possible; flat fills with at most three or four colors (white, light grey, black, vermilion red, rarely a touch of blue); the background is one solid flat color (plain white or plain black) with no environment detail, at most a few simple shapes to suggest the setting; one main subject and lots of empty space. No shading, no gradients, no texture, no hair strands or cloth folds, nothing polished. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape."
   },
   "heroine": {
-    "cn": "女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。",
-    "en": "Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression."
+    "cn": "女主角（简笔造型）：短发浅灰色，头顶两个白色大圆球发髻，简单的绿色眼睛和一笔红色眼线，白色无袖短旗袍，双臂是红色的。",
+    "en": "Heroine (simple doodle design): short light-grey hair, two big round white buns on top of her head, simple green eyes with one red eyeliner flick, a sleeveless white short qipao, and red arms."
   },
   "slots": [
     {
