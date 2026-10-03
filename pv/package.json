@@ -1,0 +1,15 @@
+{
+  "name": "huaguduo-pv",
+  "private": true,
+  "type": "module",
+  "description": "《花骨朵》PV renderer: Canvas 2D in headless Chromium, encoded with ffmpeg",
+  "scripts": {
+    "audio": "python3 tools/build_audio.py",
+    "frames": "python3 tools/extract_frames.py",
+    "render": "node tools/render.mjs",
+    "preview": "npx http-server . -p 8080 -c-1"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.1"
+  }
+}
