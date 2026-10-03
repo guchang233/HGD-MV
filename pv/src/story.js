@@ -79,7 +79,7 @@ const LYRICS = [
   /* 1 这种赶春的人 */ { ...T.sansInk, layout: 'h', y: 880, size: 92, in: 'mask', inDur: 0.35, out: 'mask', emph: { 3: red(1.5, { dy: -10, in: 'stamp' }) } },
   /* 2 该向左或向右 */ { ...T.sansW, layout: 'pos', size: 150, in: 'slide', out: 'zoom', pos: [[960, 170, 0.6], [520, 540], [520, 720, 1.4], [960, 540, 0.5], [1400, 540], [1400, 720, 1.4]], emph: { 1: { dir: 1 }, 2: { ...T.brushRed, dir: 1 }, 4: { dir: -1 }, 5: { ...T.brushRed, dir: -1 } } },
   /* 3 你看我这手里的胭脂虫 */ { ...T.serifInk, layout: 'pos', size: 64, in: 'type', out: 'shatter', pos: [[200, 230], [270, 230], [340, 230], [410, 230], [480, 230], [550, 230], [620, 230], [1210, 560, 4.2], [1500, 560, 4.2], [1790, 560, 4.2]], emph: each([7, 8, 9], { ...T.brushRed, in: 'stamp' }) },
-  /* 4 像不像那晚春的花骨朵 */ { ...T.serifInk, layout: 'pos', size: 120, in: 'stamp', out: 'drift', pos: [[230, 300], [230, 430, 0.8], [230, 560], [700, 880, 0.6], [790, 880, 0.6], [880, 880, 0.6], [970, 880, 0.6], [1260, 300, 1.9], [1500, 300, 1.9], [1740, 300, 1.9]], emph: { 1: { color: C.red }, 7: red(), 8: red(), 9: red() } },
+  /* 4 像不像那晚春的花骨朵 */ { ...T.serifInk, layout: 'pos', size: 120, in: 'stamp', out: 'drift', pos: [[230, 300], [230, 430, 0.8], [230, 560], [700, 880, 0.6], [790, 880, 0.6], [880, 880, 0.6], [970, 880, 0.6], [1260, 300, 1.9], [1500, 300, 1.9], [1740, 300, 1.9]], emph: { 1: { color: C.red }, 7: red(), 8: red(), 9: red() }, sweep: { at: 29.82, dur: 0.42, color: '255,236,220' } },
   /* 5 去年的严冬太寒冷 */ { ...ICE, layout: 'v', x: 1700, y: 120, size: 96, breaks: [5], in: 'freeze', inDur: 0.6, out: 'fade', outDur: 0.6, emph: { 6: { scale: 1.6, color: '#ffffff' }, 7: { scale: 1.6, color: '#ffffff' } }, ghost: { text: '寒', x: 760, y: 560, size: 760, color: '#d8ecff', alpha: 0.1, font: 'serif', drift: 0.12 } },
   /* 6 天寒地冻日不升 */ { ...ICE, layout: 'pos', size: 190, in: 'freeze', inDur: 0.5, out: 'shatter', pos: [[300, 300], [520, 300], [300, 520], [520, 520], [1500, 820, 0.45], [1590, 820, 0.45], [1680, 820, 0.45]] },
   /* 7 去年的街道太冷清 */ { ...ICE, glow: 'rgba(0,10,40,0.9)', layout: 'pos', size: 80, in: 'soft', inDur: 0.5, out: 'drift', pos: [[300, 820, 0.7], [420, 780, 0.8], [560, 735, 0.9], [740, 680, 1.05], [960, 620, 1.2], [1220, 550, 1.4], [1500, 470, 1.6], [1800, 380, 1.85]] },
@@ -110,7 +110,7 @@ const LYRICS = [
   /* 32 这种赶春的人 */ { ...T.serifW, layout: 'v', x: 1560, y: 150, size: 130, in: 'flip', out: 'blow', emph: { 3: red(1.3) } },
   /* 33 该向左或向右 */ { ...T.sansW, layout: 'pos', size: 190, in: 'slide', out: 'glitch', pos: [[960, 140, 0.5], [480, 520], [480, 770, 1.3], [960, 540, 0.5], [1440, 520], [1440, 770, 1.3]], emph: { 1: { dir: 1 }, 2: { ...T.brushRed, dir: 1 }, 4: { dir: -1 }, 5: { ...T.brushRed, dir: -1 } } },
   /* 34 你看我这手里的胭脂虫 */ { ...T.sansW, layout: 'pos', size: 72, in: 'type', out: 'shatter', pos: [[1240, 170], [1320, 170], [1400, 170], [1480, 170], [1560, 170], [1640, 170], [1720, 170], [560, 640, 4.8], [960, 640, 4.8], [1360, 640, 4.8]], emph: each([7, 8, 9], { ...T.brushRed, in: 'stamp' }) },
-  /* 35 像不像那晚春的花骨朵 */ { ...T.serifW, layout: 'pos', size: 130, in: 'stamp', out: 'blow', pos: [[300, 300], [300, 440, 0.8], [300, 580], [1600, 260, 0.7], [1600, 360, 0.7], [1600, 460, 0.7], [1600, 560, 0.7], [560, 780, 2.7], [960, 780, 2.7], [1360, 780, 2.7]], emph: { 7: red(), 8: red(), 9: red() }, sub: { y: 1050 } },
+  /* 35 像不像那晚春的花骨朵 */ { ...T.serifW, layout: 'pos', size: 130, in: 'stamp', out: 'blow', pos: [[300, 300], [300, 440, 0.8], [300, 580], [1600, 260, 0.7], [1600, 360, 0.7], [1600, 460, 0.7], [1600, 560, 0.7], [560, 780, 2.7], [960, 780, 2.7], [1360, 780, 2.7]], emph: { 7: red(), 8: red(), 9: red() }, sub: { y: 1050 }, sweep: { at: 141.95, dur: 0.5, color: '255,236,220' } },
   /* 36 错过的不肯罢休 */ { ...T.serifW, color: C.gold, glow: 'rgba(40,20,0,0.9)', layout: 'v', x: 1640, y: 160, size: 112, breaks: [3], in: 'soft', inDur: 0.5, out: 'drift' },
   /* 37 不由衷的痛有谁懂 */ { ...T.serifW, color: '#fff3d6', glow: 'rgba(60,30,0,0.85)', layout: 'h', y: 890, size: 76, in: 'soft', inDur: 0.6, out: 'fade', outDur: 0.8, emph: { 4: { color: C.hot, scale: 1.3 } } },
   /* 38 眼看着那缕胭脂红 */ { ...T.serifInk, layout: 'pos', size: 100, in: 'soft', out: 'drift', pos: [[250, 280], [250, 400], [250, 520], [1500, 300, 0.8], [1500, 400, 0.8], [1500, 620, 1.9], [1500, 830, 1.9], [1730, 720, 1.9]], emph: { 5: red(), 6: red(), 7: red() } },
@@ -192,7 +192,7 @@ export function buildStory(lyrics, env = {}) {
   const snowFinal = snowfall({ seed: 8, t0: 127, t1: 145, rate: 160, wind: -140, bokeh: 0.09 });
   const dust = motes({ seed: 9, t0: 146, t1: 152, count: 180 });
   const petalsCoda = fallingPetals({ seed: 10, t0: 150, t1: 162, rate: 7, wind: -70, white: 0.25, size: [16, 30], zRange: [0.5, 2] });
-  const shed = shedPetals({ seed: 11, t0: 157.2, t1: 161, rate: 60, path: [[560, 330], [1000, 520], [1400, 700], [1900, 980]] });
+  const shed = shedPetals({ seed: 11, t0: 157.2, t1: 161, rate: 60, path: [[1900, 90], [1560, 260], [1220, 420], [900, 560]] });
   const bfly1 = new G.Butterflies(21, 16, { t0: 25.05, x: 1500, y: 560, size: 34, speed: 1100, life: 3 });
   const bfly2 = new G.Butterflies(22, 40, { t0: 88.93, x: 960, y: 600, size: 44, speed: 1600, life: 3.5 });
   const bflySwarm = new G.Butterflies(24, 90, { t0: 89.2, x: 960, y: 560, size: 40, speed: 2600, life: 2.2, stagger: 0.3 });
@@ -251,7 +251,7 @@ export function buildStory(lyrics, env = {}) {
     enter: { type: 'whip', dir: -1 },
     over: (g, t, cam) => {
       layer(g, cam, D.back);
-      G.lattice(g, 430, 180, 1060, 640, span(t, 51.05, 54.2), { color: 'rgba(255,90,70,0.9)', cell: 90, width: 3 });
+      G.lattice(g, 430, 180, 1060, 640, span(t, 51.05, 54.2), { color: '#ff5a46', alpha: 0.85, cell: 90, width: 3 });
       snowPre.draw(g, t, { cam, alpha: 0.5 });
     },
   });

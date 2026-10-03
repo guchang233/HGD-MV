@@ -82,7 +82,7 @@ Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey
 
 ## S00
 
-**角色设定图** · 女主角（附上 S00 参考图） · 角色参考图
+**角色设定图** · 角色参考图（第一个生成）
 
 完整提示词（中文）：
 
@@ -152,12 +152,12 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 - 0:08.1–0:10.1（序）
 - 1:19.3–1:19.6（春天里）
 - 1:22.3–1:22.4（副歌）：「这种赶春的人」
-- 色调：宣纸白（高调）；主体位置：画面中央（约 50%, 50%）
+- 色调：宣纸白（高调）；主体位置：画面中央（约 50%, 42%）
 
 完整提示词（中文）：
 
 ```text
-两个相同的女主角侧脸相对，鼻尖几乎相触，闭着眼睛，构成镜像对称；左边一位是冷灰色调，右边一位是朱红色调，两人的发髻和发丝在画面中间交融；白色背景，近景。
+两个相同的女主角侧脸相对，鼻尖几乎相触，闭着眼睛，构成镜像对称；左边一位是冷灰色调，右边一位是朱红色调，两人的发髻和发丝在画面中间交融；白色背景，人物在画面上方三分之二，下方留出干净的空白。
 女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
 电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
 ```
@@ -165,7 +165,7 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 Full prompt (English):
 
 ```text
-Two identical heroines in profile facing each other, noses almost touching, eyes closed, mirror-symmetric; the left one in cool grey tones, the right one in vermilion tones, their buns and hair merging in the middle; white background, close-up.
+Two identical heroines in profile facing each other, noses almost touching, eyes closed, mirror-symmetric; the left one in cool grey tones, the right one in vermilion tones, their buns and hair merging in the middle; white background, the figures fill the upper two thirds and the bottom is left clean and empty.
 Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
 Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
@@ -865,18 +865,18 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 **水墨梅枝**
 
 - 2:37.1–2:41.0（尾声）：「玩笑一般地开在无人问津」
-- 色调：宣纸白（高调）；主体位置：画面右侧（约 60%, 60%）
+- 色调：宣纸白（高调）；主体位置：画面右侧（约 62%, 35%）
 
 完整提示词（中文）：
 
 ```text
-宣纸白背景上，一枝水墨画风格的梅枝从画面右下角伸入，枝头点缀着小小的朱红色梅花，大面积留白，极简、安静（和开场呼应）。
+宣纸白背景上，一枝水墨画风格的梅枝从画面右上角斜伸向左下，枝头点缀着小小的朱红色梅花，大面积留白，下方尤其空旷，极简、安静（和开场呼应）。
 电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
 ```
 
 Full prompt (English):
 
 ```text
-On white rice paper, a single ink-painted plum branch reaches in from the lower right corner, dotted with small vermilion blossoms; lots of empty space, minimal and quiet (echoing the opening).
+On white rice paper, a single ink-painted plum branch reaches in from the upper right corner and slants down toward the left, dotted with small vermilion blossoms; lots of empty space, especially along the bottom; minimal and quiet (echoing the opening).
 Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```

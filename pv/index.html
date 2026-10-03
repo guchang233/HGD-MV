@@ -67,7 +67,8 @@
         btn.textContent = '播放';
       }
     });
-    show(+(params.get('t') ?? 0));
+    seek.value = +(params.get('t') ?? 0);
+    show(+seek.value);
   }
 </script>
 </body>

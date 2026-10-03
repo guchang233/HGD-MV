@@ -50,11 +50,11 @@
       "mood": "paper",
       "focus": [
         0.5,
-        0.5
+        0.42
       ],
       "heroine": true,
-      "cn": "两个相同的女主角侧脸相对，鼻尖几乎相触，闭着眼睛，构成镜像对称；左边一位是冷灰色调，右边一位是朱红色调，两人的发髻和发丝在画面中间交融；白色背景，近景。",
-      "en": "Two identical heroines in profile facing each other, noses almost touching, eyes closed, mirror-symmetric; the left one in cool grey tones, the right one in vermilion tones, their buns and hair merging in the middle; white background, close-up."
+      "cn": "两个相同的女主角侧脸相对，鼻尖几乎相触，闭着眼睛，构成镜像对称；左边一位是冷灰色调，右边一位是朱红色调，两人的发髻和发丝在画面中间交融；白色背景，人物在画面上方三分之二，下方留出干净的空白。",
+      "en": "Two identical heroines in profile facing each other, noses almost touching, eyes closed, mirror-symmetric; the left one in cool grey tones, the right one in vermilion tones, their buns and hair merging in the middle; white background, the figures fill the upper two thirds and the bottom is left clean and empty."
     },
     {
       "id": "04",
@@ -413,11 +413,11 @@
       "name": "水墨梅枝",
       "mood": "paper",
       "focus": [
-        0.6,
-        0.6
+        0.62,
+        0.35
       ],
-      "cn": "宣纸白背景上，一枝水墨画风格的梅枝从画面右下角伸入，枝头点缀着小小的朱红色梅花，大面积留白，极简、安静（和开场呼应）。",
-      "en": "On white rice paper, a single ink-painted plum branch reaches in from the lower right corner, dotted with small vermilion blossoms; lots of empty space, minimal and quiet (echoing the opening)."
+      "cn": "宣纸白背景上，一枝水墨画风格的梅枝从画面右上角斜伸向左下，枝头点缀着小小的朱红色梅花，大面积留白，下方尤其空旷，极简、安静（和开场呼应）。",
+      "en": "On white rice paper, a single ink-painted plum branch reaches in from the upper right corner and slants down toward the left, dotted with small vermilion blossoms; lots of empty space, especially along the bottom; minimal and quiet (echoing the opening)."
     }
   ]
 }

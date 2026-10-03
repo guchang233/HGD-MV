@@ -361,10 +361,10 @@ function tinted(img, col) {
  */
 export function drawGhost(g, line, style, t) {
   const gh = style.ghost;
-  if (!gh || !lineLive(line, style, t)) return;
+  if (!gh || t < line.chars[0][1] || !lineLive(line, style, t)) return;
   const t0 = line.chars[0][1];
   const t1 = exitAt(line, style) + (style.outDur ?? 0.35);
-  const a = clamp((t - t0 + 0.05) / 0.25) * (1 - clamp((t - t1 + 0.3) / 0.3)) * (gh.alpha ?? 0.16);
+  const a = clamp((t - t0) / 0.25) * (1 - clamp((t - t1 + 0.3) / 0.3)) * (gh.alpha ?? 0.16);
   if (a <= 0.003) return;
   const text = gh.text ?? line.text;
   const size = gh.size ?? 420;

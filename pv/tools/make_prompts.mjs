@@ -97,7 +97,7 @@ for (const s of slots) {
   const u = merge(uses[s.id] ?? []);
   md.push(`## S${s.id}`);
   md.push('');
-  md.push(`**${s.name}**${s.heroine ? ' · 女主角（附上 S00 参考图）' : ''}${s.reference ? ' · 角色参考图' : ''}`);
+  md.push(`**${s.name}**${s.reference ? ' · 角色参考图（第一个生成）' : s.heroine ? ' · 女主角（附上 S00 参考图）' : ''}`);
   md.push('');
   if (!s.reference) {
     for (const [a, b] of u) {

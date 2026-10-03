@@ -69,6 +69,7 @@ export async function boot(out, { base = '.' } = {}) {
   const [tmp] = canvas();
   const [acc, gAcc] = canvas();
   const [post, gPost] = canvas();
+  const [fxCanvas, gFx] = canvas();
 
   const reset = (g) => {
     g.setTransform(1, 0, 0, 1, 0, 0);
@@ -143,9 +144,38 @@ export async function boot(out, { base = '.' } = {}) {
       if (!lineLive(line, st, t)) return;
       if (slot) scrim(g, line, st, t, slot);
       drawLine(g, line, st, t, { inkChar: inkGlyph });
+      if (st.sweep) sweep(g, line, st, t, gcam);
     });
     for (const c of story.opening) drawCredit(g, t, c);
     reset(g);
+  }
+
+  // a band of light gliding across a hero line once it has landed
+  function sweep(g, line, st, t, gcam) {
+    const sw = st.sweep;
+    const p = (t - sw.at) / (sw.dur ?? 0.45);
+    if (p <= 0 || p >= 1) return;
+    reset(gFx);
+    gFx.clearRect(0, 0, W, H);
+    layer(gFx, gcam, D.text);
+    drawLine(gFx, line, st, t, { inkChar: inkGlyph });
+    const [x, y, w, h] = lineBox(layoutLine(line, st));
+    const cx = x - 260 + (w + 520) * ease.inOutSine(p);
+    gFx.globalCompositeOperation = 'source-in';
+    gFx.translate(cx, y + h / 2);
+    gFx.rotate(0.38);
+    const band = gFx.createLinearGradient(-110, 0, 110, 0);
+    band.addColorStop(0, 'rgba(255,255,255,0)');
+    band.addColorStop(0.5, `rgba(${sw.color ?? '255,250,240'},0.95)`);
+    band.addColorStop(1, 'rgba(255,255,255,0)');
+    gFx.fillStyle = band;
+    gFx.fillRect(-110, -h * 2, 220, h * 4);
+    reset(gFx);
+    g.save();
+    g.setTransform(1, 0, 0, 1, 0, 0);
+    g.globalCompositeOperation = 'lighter';
+    g.drawImage(fxCanvas, 0, 0);
+    g.restore();
   }
 
   // soft shadow (or glow) behind a line when the picture under it fights the
@@ -213,7 +243,7 @@ export async function boot(out, { base = '.' } = {}) {
     let blur = 0;
     if (enter === 'flash' && age < 0.6) flash = (shot.enter.soft ? 0.6 : 0.85) * Math.exp(-age / (shot.enter.soft ? 0.18 : 0.1));
     if (enter === 'drop' && age < 0.8) {
-      flash = Math.max(flash, Math.exp(-age / 0.16));
+      flash = Math.max(flash, Math.exp(-age / 0.09));
       blur += 0.3 * Math.exp(-age / 0.12);
       ab += 0.016 * Math.exp(-age / 0.2);
     }
