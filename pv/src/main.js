@@ -1,8 +1,8 @@
 // Frame compositor.  A frame at time t is the average of several sub-frames
 // spread across the shutter interval (motion blur).  Each sub-frame renders
 // the shot — or both shots inside a transition — under the 2.5D camera, then
-// the lyrics; film post (aberration, glow, rays, flares, grain, subtitles,
-// HUD, letterbox) is applied once to the blended frame.
+// the lyrics; film post (soft glow, flashes, grain, subtitles, letterbox)
+// is applied once to the blended frame.
 import { W, H, clamp, ease, span, makeCanvas, ctx2d } from './core.js';
 import { loadTiming } from './timing.js';
 import { loadFonts, inkChar } from './type.js';
@@ -97,7 +97,7 @@ export async function boot(out, { base = '.' } = {}) {
     g.fillRect(0, 0, W, H);
     const cam = plus(gcam, shot.cam(t, shot));
     const cover = story.coverOf(shot, D.image);
-    if (shot.slot) drawCard(g, P[shot.slot], cam, D.image, cover);
+    if (shot.slot) drawCard(g, P[shot.slot], cam, D.image, cover, { t });
     else if (shot.split) drawSplit(g, shot, t, cam, P, cover);
     if (shot.draw) {
       reset(g);
@@ -128,7 +128,7 @@ export async function boot(out, { base = '.' } = {}) {
     // one-frame inserts: another moment, inverted and blood-tinted
     const ins = story.inserts.find(([t0, d]) => t >= t0 && t < t0 + d);
     if (ins && P[ins[2]]) {
-      drawCard(g, P[ins[2]], gcam, D.image, 1.15);
+      drawCard(g, P[ins[2]], gcam, D.image, 1.15, { t });
       reset(g);
       applyGrade(g, [['difference', '#ffffff'], ['multiply', 'rgba(255,70,60,1)']]);
       reset(g);
@@ -263,14 +263,13 @@ export async function boot(out, { base = '.' } = {}) {
     const enter = shot.enter?.type;
     let flash = 0;
     let flashColor = shot.enter?.color ?? '#ffffff';
-    let ab = 0.0006 * k;
+    let ab = 0;
     let blur = 0;
     // soft light rather than a hard white-out
     if (enter === 'flash' && age < 0.9) flash = 0.35 * Math.exp(-age / 0.22);
     if (enter === 'drop' && age < 0.9) {
       flash = Math.max(flash, 0.55 * Math.exp(-age / 0.14));
       blur += 0.08 * Math.exp(-age / 0.15);
-      ab += 0.004 * Math.exp(-age / 0.25);
     }
     if (enter === 'fade' && age < 1) {
       flash = 1 - span(age, 0, 0.9, ease.inOutSine);
@@ -282,7 +281,7 @@ export async function boot(out, { base = '.' } = {}) {
     gPost.fillRect(0, 0, W, H);
     if (ab > 0.0006) fx.chromatic(gPost, acc, ab);
     else gPost.drawImage(acc, 0, 0);
-    if (blur > 0.002) fx.zoomBlur(gPost, acc, blur);
+    
     reset(gPost);
     fx.bloom(gPost, post, keys(LOOK.bloom, t));
     if (shot.rays) fx.godRays(gPost, t, shot.rays[0], shot.rays[1], 0.7, '255,214,150');
@@ -296,8 +295,8 @@ export async function boot(out, { base = '.' } = {}) {
     }
     fx.lightLeak(gPost, t, keys(LOOK.leak, t));
     fx.flash(gPost, flashColor, flash);
-    fx.vignette(gPost, 0.32);
-    fx.grain(gPost, t, 0.035);
+    fx.vignette(gPost, 0.18);
+    fx.grain(gPost, t, 0.045);
 
     // ---- typography that stays locked to the screen
     const slot = shot.slot ? P[shot.slot] : null;

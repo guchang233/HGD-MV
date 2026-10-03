@@ -54,7 +54,7 @@ export function initSprites() {
   SPRITES.petalDeep = petalSprite('#e2453c', '#860a12', 'rgba(70,0,0,0.5)');
   SPRITES.petalWhite = petalSprite('#ffffff', '#efe6dd', 'rgba(60,50,46,0.55)');
   SPRITES.petalWhiteBack = petalSprite('#e9e4de', '#d6cbc0', 'rgba(60,50,46,0.5)');
-  SPRITES.snow = discSprite(64, [[0, 'rgba(255,255,255,1)'], [0.35, 'rgba(255,255,255,0.85)'], [1, 'rgba(255,255,255,0)']]);
+  SPRITES.snow = discSprite(64, [[0, 'rgba(255,255,255,0.95)'], [0.7, 'rgba(255,255,255,0.9)'], [0.85, 'rgba(255,255,255,0)'], [1, 'rgba(255,255,255,0)']]);
   SPRITES.bokeh = discSprite(128, [[0, 'rgba(235,242,255,0.55)'], [0.7, 'rgba(225,235,255,0.35)'], [0.85, 'rgba(225,235,255,0.15)'], [1, 'rgba(225,235,255,0)']]);
   SPRITES.ember = discSprite(64, [[0, 'rgba(255,240,200,1)'], [0.25, 'rgba(255,170,70,0.9)'], [1, 'rgba(255,80,20,0)']]);
   SPRITES.mote = discSprite(32, [[0, 'rgba(255,245,220,1)'], [1, 'rgba(255,220,160,0)']]);

@@ -347,10 +347,9 @@ function strokeTexture(len, width, seed, color) {
   const rgb = [(n >> 16) & 255, (n >> 8) & 255, n & 255];
   const shade = (k, a = 1) => `rgba(${Math.round(rgb[0] * k)},${Math.round(rgb[1] * k)},${Math.round(rgb[2] * k)},${a})`;
   const body = g.createLinearGradient(0, -width / 2, 0, width / 2);
-  body.addColorStop(0, shade(0.8));
-  body.addColorStop(0.25, shade(1));
-  body.addColorStop(0.75, shade(0.96));
-  body.addColorStop(1, shade(0.78));
+  body.addColorStop(0, shade(0.95));
+  body.addColorStop(0.5, shade(1));
+  body.addColorStop(1, shade(0.93));
   g.fillStyle = body;
   g.fill();
   // bristle streaks
@@ -360,7 +359,7 @@ function strokeTexture(len, width, seed, color) {
     const u0 = r() * 0.35;
     const u1 = 0.45 + r() * 0.55;
     const dark = r() < 0.55;
-    g.strokeStyle = dark ? shade(0.45, 0.1 + r() * 0.25) : `rgba(255,${120 + r() * 80},${100 + r() * 60},${0.06 + r() * 0.16})`;
+    g.strokeStyle = dark ? shade(0.45, 0.1 + r() * 0.25) : `rgba(255,${120 + r() * 80},${100 + r() * 60},${0.03 + r() * 0.06})`;
     g.lineWidth = 0.6 + r() * 2.4;
     g.beginPath();
     for (let j = 0; j <= 12; j++) {

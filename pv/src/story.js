@@ -32,15 +32,15 @@ export const keys = (list, t) => {
 export const LOOK = {
   // how hard the picture reacts to the drums
   intensity: [[0, 0.15], [15.7, 0.15], [15.8, 0.55], [29.9, 0.55], [30, 0.35], [46.9, 0.35], [47, 0.5], [62.8, 0.5], [62.9, 0.8], [79.7, 0.85], [79.8, 1], [94.9, 1], [95, 0.3], [110.8, 0.3], [110.9, 0.85], [127.7, 0.85], [127.8, 1], [143.8, 1], [143.9, 0.35], [161, 0.2], [170.4, 0]],
-  bloom: [[0, 0.25], [15.8, 0.2], [30, 0.3], [47, 0.25], [62.9, 0.22], [79.8, 0.3], [95, 0.2], [110.9, 0.22], [127.8, 0.35], [143.9, 0.4], [146.5, 0.55], [151, 0.3], [161, 0.25]],
+  bloom: [[0, 0.12], [170.4, 0.12]],
   letterbox: [[0, 0], [2.0, 0], [2.6, 1], [12.0, 1], [12.06, 0], [94.95, 0], [95.4, 1], [110.85, 1], [110.93, 0], [156.9, 0], [157.6, 1], [161, 1], [161.4, 0]],
   hud: [[0, 0], [15.75, 0], [15.8, 0.45], [29.9, 0.45], [30, 0.3], [62.8, 0.3], [62.9, 0.6], [79.8, 0.85], [94.9, 0.85], [95, 0], [110.85, 0], [110.93, 0.8], [143.85, 0.8], [143.93, 0], [170.4, 0]],
-  leak: [[0, 0], [47, 0], [47.6, 0.35], [62.7, 0.35], [62.9, 0], [143.9, 0], [144.6, 0.4], [156.5, 0.4], [157.5, 0]],
+  leak: [[0, 0], [170.4, 0]],
   section: [[0, 'PROLOGUE'], [15.8, 'VERSE I'], [30, 'WINTER'], [47, 'PRE-CHORUS'], [62.9, 'SPRING'], [79.8, 'CHORUS'], [95, 'VERSE II'], [110.9, 'BRIDGE'], [127.8, 'FINAL CHORUS'], [143.9, 'CODA'], [161, 'END']],
   // big hits that throw light from the subject: [t, amp, decay, x, y, rgb]
-  rays: [[93.06, 0.9, 0.5, 960, 600, '255,90,80'], [141.06, 1.0, 0.55, 960, 480, '255,110,90'], [141.81, 0.6, 0.4, 960, 460, '255,220,200']],
+  rays: [],
   // anamorphic flares on the biggest hits: [t, amp, decay, x, y, rgb]
-  flares: [[15.8, 0.7, 0.35, 960, 540, '255,255,255'], [79.81, 0.9, 0.4, 960, 540, '150,190,255'], [93.06, 1, 0.5, 960, 300, '255,90,70'], [127.81, 0.9, 0.4, 960, 540, '170,210,255'], [141.06, 1, 0.6, 960, 480, '255,120,90'], [146.56, 0.6, 1.2, 960, 320, '255,200,120']],
+  flares: [],
 };
 
 // ------------------------------------------------------------ palette --
@@ -54,65 +54,65 @@ const C = {
   gold: '#ffd88a',
   green: '#c9f5be',
 };
-const DARK_GLOW = 'rgba(0,0,0,0.85)';
-const LIGHT_GLOW = 'rgba(255,255,255,0.9)';
+const DARK_GLOW = 'rgba(0,0,0,0.35)';
+const LIGHT_GLOW = 'rgba(255,255,255,0.45)';
 
 // typographic presets (merged into each line's style)
 const T = {
-  serifW: { font: 'serif', weight: 800, color: C.white, glow: DARK_GLOW, glowBlur: 26 },
-  serifInk: { font: 'serif', weight: 800, color: C.ink, glow: LIGHT_GLOW, glowBlur: 24 },
-  sansW: { font: 'sans', weight: 900, color: C.white, glow: DARK_GLOW, glowBlur: 22 },
-  sansInk: { font: 'sans', weight: 900, color: C.ink, glow: LIGHT_GLOW, glowBlur: 20 },
-  brushRed: { font: 'brush', weight: 400, color: C.hot, glow: 'rgba(60,0,0,0.9)', glowBlur: 26, stroke: 'rgba(28,0,0,0.9)', strokeW: 7 },
-  brushW: { font: 'brush', weight: 400, color: C.white, glow: DARK_GLOW, glowBlur: 26 },
-  brushInk: { font: 'brush', weight: 400, color: C.ink, glow: LIGHT_GLOW, glowBlur: 24 },
+  serifW: { font: 'serif', weight: 800, color: C.white, glow: DARK_GLOW, glowBlur: 9 },
+  serifInk: { font: 'serif', weight: 800, color: C.ink, glow: LIGHT_GLOW, glowBlur: 8 },
+  sansW: { font: 'sans', weight: 900, color: C.white, glow: DARK_GLOW, glowBlur: 7 },
+  sansInk: { font: 'sans', weight: 900, color: C.ink, glow: LIGHT_GLOW, glowBlur: 7 },
+  brushRed: { font: 'brush', weight: 400, color: C.hot, glow: 'rgba(60,0,0,0.35)', glowBlur: 9 },
+  brushW: { font: 'brush', weight: 400, color: C.white, glow: DARK_GLOW, glowBlur: 9 },
+  brushInk: { font: 'brush', weight: 400, color: C.ink, glow: LIGHT_GLOW, glowBlur: 8 },
 };
 const red = (scale = 1, extra = {}) => ({ ...T.brushRed, scale, ...extra });
-const ICE = { ...T.serifW, color: C.ice, glow: 'rgba(0,20,60,0.9)' };
+const ICE = { ...T.serifW, color: C.ice, glow: 'rgba(0,20,60,0.35)' };
 const each = (idx, v) => Object.fromEntries(idx.map((i) => [i, v]));
 
 // ---------------------------------------------------- lyric typography --
 // One entry per line of assets/lyrics.json (same order).
 //   ghost: oversized hollow type behind the line;  sub: subtitle placement
 const LYRICS = [
-  /* 0 健忘的症状 */ { ...T.serifInk, layout: 'v', x: 1560, y: 170, size: 118, in: 'stamp', out: 'blow', ghost: { text: '健忘', x: 1180, y: 520, size: 560, color: '#1a1416', alpha: 0.09, vertical: true, font: 'serif' } },
+  /* 0 健忘的症状 */ { ...T.serifInk, layout: 'v', x: 1560, y: 170, size: 118, in: 'stamp', out: 'blow' },
   /* 1 这种赶春的人 */ { ...T.sansInk, layout: 'h', y: 880, size: 92, in: 'mask', inDur: 0.35, out: 'mask', emph: { 3: red(1.5, { dy: -10, in: 'stamp' }) } },
   /* 2 该向左或向右 */ { ...T.sansW, layout: 'pos', size: 150, in: 'slide', out: 'zoom', pos: [[960, 170, 0.6], [520, 540], [520, 720, 1.4], [960, 540, 0.5], [1400, 540], [1400, 720, 1.4]], emph: { 1: { dir: 1 }, 2: { ...T.brushRed, dir: 1 }, 4: { dir: -1 }, 5: { ...T.brushRed, dir: -1 } } },
   /* 3 你看我这手里的胭脂虫 */ { ...T.serifInk, layout: 'pos', size: 64, in: 'type', out: 'shatter', pos: [[200, 230], [270, 230], [340, 230], [410, 230], [480, 230], [550, 230], [620, 230], [1210, 560, 4.2], [1500, 560, 4.2], [1790, 560, 4.2]], emph: each([7, 8, 9], { ...T.brushRed, in: 'stamp' }) },
   /* 4 像不像那晚春的花骨朵 */ { ...T.serifInk, layout: 'pos', size: 120, in: 'stamp', out: 'drift', pos: [[230, 300], [230, 430, 0.8], [230, 560], [700, 880, 0.6], [790, 880, 0.6], [880, 880, 0.6], [970, 880, 0.6], [1260, 300, 1.9], [1500, 300, 1.9], [1740, 300, 1.9]], emph: { 1: { color: C.red }, 7: red(), 8: red(), 9: red() }, sweep: { at: 29.82, dur: 0.42, color: '255,236,220' } },
-  /* 5 去年的严冬太寒冷 */ { ...ICE, layout: 'v', x: 1700, y: 120, size: 96, breaks: [5], in: 'freeze', inDur: 0.6, out: 'fade', outDur: 0.6, emph: { 6: { scale: 1.6, color: '#ffffff' }, 7: { scale: 1.6, color: '#ffffff' } }, ghost: { text: '寒', x: 760, y: 560, size: 760, color: '#d8ecff', alpha: 0.1, font: 'serif', drift: 0.12 } },
+  /* 5 去年的严冬太寒冷 */ { ...ICE, layout: 'v', x: 1700, y: 120, size: 96, breaks: [5], in: 'freeze', inDur: 0.6, out: 'fade', outDur: 0.6, emph: { 6: { scale: 1.6, color: '#ffffff' }, 7: { scale: 1.6, color: '#ffffff' } } },
   /* 6 天寒地冻日不升 */ { ...ICE, layout: 'pos', size: 190, in: 'freeze', inDur: 0.5, out: 'shatter', pos: [[300, 300], [520, 300], [300, 520], [520, 520], [1500, 820, 0.45], [1590, 820, 0.45], [1680, 820, 0.45]] },
-  /* 7 去年的街道太冷清 */ { ...ICE, glow: 'rgba(0,10,40,0.9)', layout: 'pos', size: 80, in: 'soft', inDur: 0.5, out: 'drift', pos: [[300, 820, 0.7], [420, 780, 0.8], [560, 735, 0.9], [740, 680, 1.05], [960, 620, 1.2], [1220, 550, 1.4], [1500, 470, 1.6], [1800, 380, 1.85]] },
+  /* 7 去年的街道太冷清 */ { ...ICE, glow: 'rgba(0,10,40,0.35)', layout: 'pos', size: 80, in: 'soft', inDur: 0.5, out: 'drift', pos: [[300, 820, 0.7], [420, 780, 0.8], [560, 735, 0.9], [740, 680, 1.05], [960, 620, 1.2], [1220, 550, 1.4], [1500, 470, 1.6], [1800, 380, 1.85]] },
   /* 8 空巷孤影它伤人情 */ { ...T.serifW, layout: 'pos', size: 140, in: 'soft', inDur: 0.45, out: 'fade', outAt: 46.75, pos: [[260, 260], [260, 420], [1660, 260], [1660, 420], [960, 760, 0.45], [1180, 830, 1.1], [1340, 830, 1.1], [1500, 830, 1.1]], emph: each([5, 6, 7], red(1.1)) },
   /* 9 我想要一座房 */ { ...T.serifW, layout: 'pos', size: 70, in: 'rise', out: 'zoom', pos: [[820, 200], [900, 200], [980, 200], [760, 900, 2.0], [960, 900, 2.0], [1160, 900, 2.0]], sub: { y: 1040 } },
   /* 10 把我爱的人往里头装 */ { ...T.serifW, layout: 'h', y: 900, size: 76, in: 'scatter', inDur: 0.45, out: 'blow', emph: { 2: red(1.4) } },
-  /* 11 银装素裹胭脂妆 */ { ...T.serifInk, layout: 'pos', size: 120, in: 'soft', out: 'blow', pos: [[300, 280], [300, 420], [300, 560], [300, 700], [1180, 560, 1.7], [1420, 560, 1.7], [1660, 560, 1.7]], emph: each([4, 5, 6], { ...T.brushW, in: 'stamp', glow: 'rgba(80,0,0,0.9)' }) },
-  /* 12 花想容貌云想衣裳 */ { font: 'serif', weight: 600, color: '#2a2224', glow: LIGHT_GLOW, glowBlur: 26, layout: 'pos', size: 110, in: 'soft', inDur: 0.5, out: 'drift', pos: [[300, 300], [300, 440], [300, 580], [300, 720], [1620, 300], [1620, 440], [1620, 580], [1620, 720]] },
-  /* 13 我想要死在春天里 */ { ...T.sansW, layout: 'pos', size: 84, in: 'stamp', out: 'glitch', pos: [[240, 220], [340, 220], [440, 220], [960, 540, 5.0], [1480, 880], [1580, 880], [1680, 880], [1780, 880]], emph: { 3: { font: 'brush', weight: 400, color: '#0b0606', glow: 'rgba(255,60,40,0.95)', glowBlur: 40, in: 'zoom', inDur: 0.35, echo: true } }, sub: { x: 1630, y: 1000 } },
-  /* 14 红花作衣绿地作席 */ { ...T.brushRed, layout: 'pos', size: 190, in: 'stamp', out: 'slash', pos: [[300, 330], [520, 330], [740, 330], [960, 330], [960, 760], [1180, 760], [1400, 760], [1620, 760]], emph: each([4, 5, 6, 7], { color: C.green, glow: 'rgba(0,40,10,0.95)', stroke: 'rgba(0,30,10,0.9)' }) },
+  /* 11 银装素裹胭脂妆 */ { ...T.serifInk, layout: 'pos', size: 120, in: 'soft', out: 'blow', pos: [[300, 280], [300, 420], [300, 560], [300, 700], [1180, 560, 1.7], [1420, 560, 1.7], [1660, 560, 1.7]], emph: each([4, 5, 6], { ...T.brushW, in: 'stamp', glow: 'rgba(80,0,0,0.35)' }) },
+  /* 12 花想容貌云想衣裳 */ { font: 'serif', weight: 600, color: '#2a2224', glow: LIGHT_GLOW, glowBlur: 9, layout: 'pos', size: 110, in: 'soft', inDur: 0.5, out: 'drift', pos: [[300, 300], [300, 440], [300, 580], [300, 720], [1620, 300], [1620, 440], [1620, 580], [1620, 720]] },
+  /* 13 我想要死在春天里 */ { ...T.sansW, layout: 'pos', size: 84, in: 'stamp', out: 'cut', pos: [[240, 220], [340, 220], [440, 220], [960, 540, 5.0], [1480, 880], [1580, 880], [1680, 880], [1780, 880]], emph: { 3: { font: 'brush', weight: 400, color: '#0b0606', glow: 'rgba(255,60,40,0.35)', glowBlur: 14, in: 'zoom', inDur: 0.35, echo: false } }, sub: { x: 1630, y: 1000 } },
+  /* 14 红花作衣绿地作席 */ { ...T.brushRed, layout: 'pos', size: 190, in: 'stamp', out: 'slash', pos: [[300, 330], [520, 330], [740, 330], [960, 330], [960, 760], [1180, 760], [1400, 760], [1620, 760]], emph: each([4, 5, 6, 7], { color: C.green, glow: 'rgba(0,40,10,0.35)' }) },
   /* 15 野蛮生长在春泥 */ { ...T.brushW, layout: 'pos', size: 120, in: 'grow', inDur: 0.4, out: 'shatter', pos: [[560, 420, 3.2], [1360, 420, 3.2], [520, 880, 1.2], [700, 880, 1.2], [1260, 880, 1.2], [1400, 880, 1.2], [1540, 880, 1.2]], emph: { 0: { ...T.brushRed, in: 'stamp' }, 1: { ...T.brushRed, in: 'stamp' } }, sub: { y: 1040 } },
   /* 16 养万物生我饲衣鱼 */ { ...T.serifW, layout: 'grid', cols: 4, x: 960, y: 520, size: 150, in: 'flip', out: 'shatter', emph: each([4, 5, 6, 7], { color: C.red }) },
-  /* 17 健忘的症状 (chorus 1) */ { ...T.sansW, layout: 'h', y: 540, size: 250, track: 0.02, in: 'zoom', inDur: 0.22, out: 'cut', echo: true, ghost: { x: 960, y: 540, size: 520, alpha: 0.13, drift: 0.14 } },
+  /* 17 健忘的症状 (chorus 1) */ { ...T.sansW, layout: 'h', y: 540, size: 250, track: 0.02, in: 'zoom', inDur: 0.22, out: 'cut', echo: false },
   /* 18 这种赶春的人 */ { ...T.serifW, layout: 'v', x: 360, y: 120, size: 132, in: 'flip', out: 'blow', emph: { 3: red(1.3) } },
-  /* 19 该向左或向右 */ { ...T.sansW, layout: 'pos', size: 180, in: 'slide', out: 'glitch', pos: [[960, 140, 0.5], [480, 520], [480, 760, 1.3], [960, 540, 0.5], [1440, 520], [1440, 760, 1.3]], emph: { 1: { dir: 1 }, 2: { ...T.brushRed, dir: 1 }, 4: { dir: -1 }, 5: { ...T.brushRed, dir: -1 } } },
+  /* 19 该向左或向右 */ { ...T.sansW, layout: 'pos', size: 180, in: 'slide', out: 'cut', pos: [[960, 140, 0.5], [480, 520], [480, 760, 1.3], [960, 540, 0.5], [1440, 520], [1440, 760, 1.3]], emph: { 1: { dir: 1 }, 2: { ...T.brushRed, dir: 1 }, 4: { dir: -1 }, 5: { ...T.brushRed, dir: -1 } } },
   /* 20 你看我这手里的胭脂虫 */ { ...T.sansInk, layout: 'pos', size: 70, in: 'type', out: 'shatter', pos: [[180, 160], [260, 160], [340, 160], [420, 160], [500, 160], [580, 160], [660, 160], [560, 620, 4.6], [960, 620, 4.6], [1360, 620, 4.6]], emph: each([7, 8, 9], { ...T.brushRed, in: 'stamp' }) },
   /* 21 像不像那晚春的花骨朵 */ { ...T.serifInk, layout: 'pos', size: 130, in: 'stamp', out: 'cut', outAt: 93.0, pos: [[1500, 300], [1500, 440, 0.8], [1500, 580], [1760, 300, 0.7], [1760, 400, 0.7], [1760, 500, 0.7], [1760, 600, 0.7], [-999, -999], [-999, -999], [-999, -999]] },
   /* 22 我不想被你遗忘 */ { ...T.serifInk, layout: 'v', x: 1650, y: 190, size: 100, in: 'soft', inDur: 0.6, out: 'drift', outDur: 1.2, emph: { 5: { color: '#8a8380' }, 6: { color: '#b9b2ae' } } },
   /* 23 哪怕看清了这副皮囊 */ { ...T.serifW, layout: 'h', y: 880, size: 82, in: 'soft', inDur: 0.5, out: 'slash', emph: { 7: red(1.5, { dy: -12 }), 8: red(1.5, { dy: -12 }) } },
   /* 24 男女共枕暖一张床 */ { ...T.serifW, layout: 'pos', size: 120, in: 'slide', out: 'fade', pos: [[300, 540, 1.3], [1620, 540, 1.3], [880, 230], [1040, 230], [700, 860, 0.8], [840, 860, 0.8], [980, 860, 0.8], [1180, 860, 1.2]], emph: { 0: { dir: 1 }, 1: { dir: -1 }, 7: red(1, { in: 'stamp' }) } },
-  /* 25 同床异梦迷一样 */ { ...T.serifW, layout: 'pos', size: 150, in: 'soft', out: 'glitch', pos: [[420, 320], [620, 320], [1300, 760], [1500, 760], [960, 540, 0.7], [1080, 540, 0.7], [1200, 540, 0.7]], emph: { 2: { rot: Math.PI, color: '#cfc8ff' }, 3: { rot: Math.PI, color: '#cfc8ff' } } },
-  /* 26 我不要就这样 */ { ...T.sansW, layout: 'pos', size: 230, in: 'glitch', inDur: 0.3, out: 'glitch', pos: [[420, 440], [960, 440], [1500, 440], [760, 840, 0.55], [960, 840, 0.55], [1160, 840, 0.55]], emph: { 1: { color: C.hot }, 2: { color: C.hot } }, ghost: { text: '不要', x: 960, y: 470, size: 700, color: '#ff3b30', alpha: 0.12, drift: 0.1 } },
+  /* 25 同床异梦迷一样 */ { ...T.serifW, layout: 'pos', size: 150, in: 'soft', out: 'cut', pos: [[420, 320], [620, 320], [1300, 760], [1500, 760], [960, 540, 0.7], [1080, 540, 0.7], [1200, 540, 0.7]], emph: { 2: { rot: Math.PI, color: '#cfc8ff' }, 3: { rot: Math.PI, color: '#cfc8ff' } } },
+  /* 26 我不要就这样 */ { ...T.sansW, layout: 'pos', size: 230, in: 'stamp', inDur: 0.3, out: 'cut', pos: [[420, 440], [960, 440], [1500, 440], [760, 840, 0.55], [960, 840, 0.55], [1160, 840, 0.55]], emph: { 1: { color: C.hot }, 2: { color: C.hot } } },
   /* 27 等到了惊蛰启 */ { ...T.serifW, layout: 'h', x: 960, y: 140, size: 64, in: 'mask', out: 'fade', emph: { 3: { color: C.hot, scale: 1.4 }, 4: { color: C.hot, scale: 1.4 } } },
   /* 28 盼霜降 */ { ...T.serifW, layout: 'h', x: 960, y: 900, size: 92, in: 'stamp', out: 'fade', emph: { 1: { color: '#9fd0ff' }, 2: { color: '#9fd0ff' } } },
-  /* 29 成了没日没夜的工作狂 */ { ...T.sansW, layout: 'pos', size: 96, in: 'stamp', out: 'glitch', pos: [[220, 200, 0.7], [300, 200, 0.7], [560, 520, 1.7], [760, 520, 1.7], [960, 520, 1.7], [1160, 520, 1.7], [1350, 520, 0.7], [1500, 840, 1.3], [1660, 840, 1.3], [1820, 840, 1.3]], emph: { 3: { color: C.hot }, 5: { color: C.hot }, 7: red(1.4), 8: red(1.4), 9: red(1.4) } },
+  /* 29 成了没日没夜的工作狂 */ { ...T.sansW, layout: 'pos', size: 96, in: 'stamp', out: 'cut', pos: [[220, 200, 0.7], [300, 200, 0.7], [560, 520, 1.7], [760, 520, 1.7], [960, 520, 1.7], [1160, 520, 1.7], [1350, 520, 0.7], [1500, 840, 1.3], [1660, 840, 1.3], [1820, 840, 1.3]], emph: { 3: { color: C.hot }, 5: { color: C.hot }, 7: red(1.4), 8: red(1.4), 9: red(1.4) } },
   /* 30 负了我心里的少年郎 */ { ...T.serifW, layout: 'v', x: 1640, y: 150, size: 100, breaks: [6], in: 'soft', out: 'drift', outAt: 127.2, outDur: 0.45, emph: each([6, 7, 8], { scale: 1.3, color: C.gold }) },
-  /* 31 健忘的症状 (final) */ { ...T.sansW, layout: 'h', y: 540, size: 270, track: 0.02, in: 'zoom', inDur: 0.2, out: 'cut', echo: true, ghost: { x: 960, y: 540, size: 560, color: '#cfe4ff', alpha: 0.14, drift: 0.16 } },
+  /* 31 健忘的症状 (final) */ { ...T.sansW, layout: 'h', y: 540, size: 270, track: 0.02, in: 'zoom', inDur: 0.2, out: 'cut', echo: false },
   /* 32 这种赶春的人 */ { ...T.serifW, layout: 'v', x: 1560, y: 150, size: 130, in: 'flip', out: 'blow', emph: { 3: red(1.3) } },
-  /* 33 该向左或向右 */ { ...T.sansW, layout: 'pos', size: 190, in: 'slide', out: 'glitch', pos: [[960, 140, 0.5], [480, 520], [480, 770, 1.3], [960, 540, 0.5], [1440, 520], [1440, 770, 1.3]], emph: { 1: { dir: 1 }, 2: { ...T.brushRed, dir: 1 }, 4: { dir: -1 }, 5: { ...T.brushRed, dir: -1 } } },
+  /* 33 该向左或向右 */ { ...T.sansW, layout: 'pos', size: 190, in: 'slide', out: 'cut', pos: [[960, 140, 0.5], [480, 520], [480, 770, 1.3], [960, 540, 0.5], [1440, 520], [1440, 770, 1.3]], emph: { 1: { dir: 1 }, 2: { ...T.brushRed, dir: 1 }, 4: { dir: -1 }, 5: { ...T.brushRed, dir: -1 } } },
   /* 34 你看我这手里的胭脂虫 */ { ...T.sansW, layout: 'pos', size: 72, in: 'type', out: 'shatter', pos: [[1240, 170], [1320, 170], [1400, 170], [1480, 170], [1560, 170], [1640, 170], [1720, 170], [560, 640, 4.8], [960, 640, 4.8], [1360, 640, 4.8]], emph: each([7, 8, 9], { ...T.brushRed, in: 'stamp' }) },
   /* 35 像不像那晚春的花骨朵 */ { ...T.serifW, layout: 'pos', size: 130, in: 'stamp', out: 'blow', pos: [[300, 300], [300, 440, 0.8], [300, 580], [1600, 260, 0.7], [1600, 360, 0.7], [1600, 460, 0.7], [1600, 560, 0.7], [560, 780, 2.7], [960, 780, 2.7], [1360, 780, 2.7]], emph: { 7: red(), 8: red(), 9: red() }, sub: { y: 1050 }, sweep: { at: 141.95, dur: 0.5, color: '255,236,220' } },
-  /* 36 错过的不肯罢休 */ { ...T.serifW, color: C.gold, glow: 'rgba(40,20,0,0.9)', layout: 'v', x: 1640, y: 160, size: 112, breaks: [3], in: 'soft', inDur: 0.5, out: 'drift' },
-  /* 37 不由衷的痛有谁懂 */ { ...T.serifW, color: '#fff3d6', glow: 'rgba(60,30,0,0.85)', layout: 'h', y: 890, size: 76, in: 'soft', inDur: 0.6, out: 'fade', outDur: 0.8, emph: { 4: { color: C.hot, scale: 1.3 } } },
+  /* 36 错过的不肯罢休 */ { ...T.serifW, color: C.gold, glow: 'rgba(40,20,0,0.35)', layout: 'v', x: 1640, y: 160, size: 112, breaks: [3], in: 'soft', inDur: 0.5, out: 'drift' },
+  /* 37 不由衷的痛有谁懂 */ { ...T.serifW, color: '#fff3d6', glow: 'rgba(60,30,0,0.35)', layout: 'h', y: 890, size: 76, in: 'soft', inDur: 0.6, out: 'fade', outDur: 0.8, emph: { 4: { color: C.hot, scale: 1.3 } } },
   /* 38 眼看着那缕胭脂红 */ { ...T.serifInk, layout: 'pos', size: 100, in: 'soft', out: 'drift', pos: [[250, 280], [250, 400], [250, 520], [1500, 300, 0.8], [1500, 400, 0.8], [1500, 620, 1.9], [1500, 830, 1.9], [1730, 720, 1.9]], emph: { 5: red(), 6: red(), 7: red() } },
   /* 39 玩笑一般地开在无人问津 */ { ...T.serifInk, layout: 'h', y: 880, size: 78, in: 'soft', inDur: 0.5, out: 'drift', outDur: 1.2, outStagger: 0.06, emph: each([7, 8, 9, 10], { color: '#7d7470' }) },
 ];
@@ -208,16 +208,16 @@ export function buildStory(lyrics, env = {}) {
   const intensity = (t) => keys(LOOK.intensity, t);
 
   // --- particle systems -------------------------------------------------
-  const snowIntro = snowfall({ seed: 1, t0: 1.5, t1: 16, rate: 45, wind: -30, bokeh: 0.06 });
+  const snowIntro = snowfall({ seed: 1, t0: 1.5, t1: 16, rate: 45, wind: -30, bokeh: 0 });
   const petalsA = fallingPetals({ seed: 2, t0: 6, t1: 31, rate: 4, wind: 60, white: 0.3, size: [14, 26], zRange: [0.6, 2.2] });
-  const snowWinter = snowfall({ seed: 3, t0: 30, t1: 47.5, rate: 110, wind: -90, bokeh: 0.08 });
-  const snowPre = snowfall({ seed: 4, t0: 47, t1: 63, rate: 50, wind: -30, bokeh: 0.05 });
+  const snowWinter = snowfall({ seed: 3, t0: 30, t1: 47.5, rate: 110, wind: -90, bokeh: 0 });
+  const snowPre = snowfall({ seed: 4, t0: 47, t1: 63, rate: 50, wind: -30, bokeh: 0 });
   const petalsRouge = fallingPetals({ seed: 12, t0: 55, t1: 59.5, rate: 14, wind: -50, deep: 0.3, size: [16, 30], zRange: [0.4, 2] });
   const petalsRed = fallingPetals({ seed: 5, t0: 62, t1: 80, rate: 9, wind: 90, deep: 0.6, size: [18, 36], zRange: [0.35, 1.8] });
   const sparks = embers({ seed: 6, t0: 71, t1: 80, rate: 60, x: [200, 1720], y: 1100 });
   const petalsV2 = fallingPetals({ seed: 7, t0: 94, t1: 111.5, rate: 5, wind: -40, white: 0.4, size: [14, 26], zRange: [0.7, 2.2] });
-  const snowDial = snowfall({ seed: 13, t0: 117.2, t1: 119.5, rate: 150, wind: -60, bokeh: 0.06, preroll: 5 });
-  const snowFinal = snowfall({ seed: 8, t0: 127, t1: 145, rate: 160, wind: -140, bokeh: 0.09 });
+  const snowDial = snowfall({ seed: 13, t0: 117.2, t1: 119.5, rate: 150, wind: -60, bokeh: 0, preroll: 5 });
+  const snowFinal = snowfall({ seed: 8, t0: 127, t1: 145, rate: 160, wind: -140, bokeh: 0 });
   const dust = motes({ seed: 9, t0: 146, t1: 152, count: 180 });
   const petalsCoda = fallingPetals({ seed: 10, t0: 150, t1: 162, rate: 7, wind: -70, white: 0.25, size: [16, 30], zRange: [0.5, 2] });
   const shed = shedPetals({ seed: 11, t0: 157.2, t1: 161, rate: 60, path: [[1900, 90], [1560, 260], [1220, 420], [900, 560]] });
@@ -289,12 +289,12 @@ export function buildStory(lyrics, env = {}) {
   S(59.05, 61.05, '15', (t, s) => ({ x: 0, y: -40 * s.p(t), z: 60 + 260 * ease.inOutSine(s.p(t)) + 600 * span(t, 62.2, 62.93, ease.inExpo), roll: 0 }), {
     grade: GRADE.paper,
     enter: { type: 'soft' },
-    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); G.speedLines(g, t, 960, 540, span(t, 62.0, 62.93), { color: '#ffffff' }); },
+    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front);  },
   });
   S(61.05, 62.93, '40', (t, s) => ({ x: 0, y: 0, z: 140 * ease.inOutSine(s.p(t)) + 700 * span(t, 62.2, 62.93, ease.inExpo), roll: 0 }), {
     grade: GRADE.paper,
     enter: { type: 'focus' },
-    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); G.speedLines(g, t, 960, 540, span(t, 62.0, 62.93), { color: '#ffffff' }); },
+    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front);  },
   });
 
   // ================================================================ SPRING
@@ -302,7 +302,7 @@ export function buildStory(lyrics, env = {}) {
   S(64.43, 67.06, '41', move.snap(760, 320, -160, -80), {
     grade: GRADE.red,
     enter: { type: 'focus', x: 760, y: 470 },
-    over: (g, t, cam, P, gcam) => { layer(g, cam, D.back); G.ring(g, t, 64.43, 960, 540, { color: '#ff3b30', r1: 1200, width: 40 }); petalsRed.draw(g, t, { cam: gcam }); },
+    over: (g, t, cam, P, gcam) => { layer(g, cam, D.back);  petalsRed.draw(g, t, { cam: gcam }); },
   });
   S(67.06, 69.06, '17', move.roll(-0.035, 0.035, 220), { enter: { type: 'bars' }, over: fall(petalsRed) });
   S(69.06, 71.06, '42', move.truck(170, -170, 340), { enter: { type: 'thread' }, over: fall(petalsRed) });
@@ -321,7 +321,7 @@ export function buildStory(lyrics, env = {}) {
   // ================================================================ CHORUS 1
   S(79.81, 81.06, '14', move.snap(820, 60), {
     enter: 'drop',
-    over: (g, t, cam, P, gcam) => { layer(g, gcam, D.text + 60); for (const c of lyrics[17].chars) G.ring(g, t, c[1], 960, 540, { r1: 1100, width: 26 }); },
+    over: (g, t, cam, P, gcam) => { layer(g, gcam, D.text + 60); },
   });
   S(81.06, 82.31, '19', move.push(60, 360), { enter: { type: 'focus' } });
   S(82.31, 83.81, '48', move.truck(-160, 120, 160), { enter: { type: 'bars' } });
@@ -351,7 +351,7 @@ export function buildStory(lyrics, env = {}) {
   S(125.06, 127.81, '26', (t, s) => ({ x: 0, y: 0, z: 300 * ease.inOutSine(s.p(t)) + 700 * span(t, 126.8, 127.81, ease.inExpo), roll: 0 }), {
     grade: GRADE.dim,
     enter: { type: 'soft' },
-    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); G.speedLines(g, t, 960, 540, span(t, 126.6, 127.81)); },
+    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front);  },
   });
 
   // ================================================================ FINAL CHORUS
@@ -361,7 +361,6 @@ export function buildStory(lyrics, env = {}) {
     over: (g, t, cam, P, gcam) => {
       snowFinal.draw(g, t, { cam: gcam });
       layer(g, gcam, D.text + 60);
-      for (const c of lyrics[31].chars) G.ring(g, t, c[1], 960, 540, { r1: 1100, width: 26, color: '#cfe4ff' });
     },
   });
   S(129.81, 131.81, '54', move.roll(-0.03, 0.03, 280), { grade: GRADE.night, enter: { type: 'focus' }, over: fall(snowFinal) });
@@ -375,8 +374,8 @@ export function buildStory(lyrics, env = {}) {
     over: (g, t, cam, P, gcam) => {
       snowFinal.draw(g, t, { cam: gcam });
       layer(g, cam, D.back);
-      G.ring(g, t, 141.06, 960, 480, { color: '#ff4b3e', r1: 1400, width: 50, dur: 0.9 });
-      G.ring(g, t, 141.81, 960, 460, { color: '#ffffff', r1: 1300, width: 30, dur: 0.8 });
+      
+      
       burst1.draw(g, t, { cam: gcam });
       burst2.draw(g, t, { cam: gcam });
       burstNear.draw(g, t, { cam: gcam, alpha: 0.9 });
@@ -388,13 +387,11 @@ export function buildStory(lyrics, env = {}) {
   S(146.56, 149.06, '31', (t, s) => ({ x: 0, y: 140 - 220 * ease.inOutSine(s.p(t)), z: 380 - 300 * ease.outCubic(s.p(t)), roll: 0 }), {
     grade: GRADE.gold,
     enter: { type: 'light', color: '255,236,200', x: 960, y: 300 },
-    rays: [960, 300],
     over: (g, t, cam, P, gcam) => { g.globalCompositeOperation = 'lighter'; dust.draw(g, t, { cam: gcam }); g.globalCompositeOperation = 'source-over'; },
   });
   S(149.06, 151.06, '57', move.push(40, 240), {
     grade: GRADE.gold,
     enter: { type: 'soft' },
-    rays: [700, 260],
     over: (g, t, cam, P, gcam) => { g.globalCompositeOperation = 'lighter'; dust.draw(g, t, { cam: gcam }); g.globalCompositeOperation = 'source-over'; },
   });
   S(151.06, 154.31, '32', move.truck(-130, 110, 130), {
@@ -479,7 +476,7 @@ function redThread(g, t, x0, y0, x1, y1) {
   g.save();
   g.strokeStyle = '#ff3b30';
   g.lineWidth = 3;
-  g.shadowColor = 'rgba(255,40,30,0.9)';
+  g.shadowColor = 'rgba(255,40,30,0.3)';
   g.shadowBlur = 16;
   g.beginPath();
   g.moveTo(x0, y0);
@@ -494,7 +491,6 @@ function introThread(g, t, cam) {
   // the red thread pulled across the dark, a ring on every kick
   const p = span(t, 0.06, 1.9, ease.inOutCubic);
   redThread(g, t, -40, 540, lerp(-40, W + 40, p), 540 + 6 * Math.sin(t * 2));
-  for (const [ti] of events('kicks', 0, 2.1, 0.3)) G.ring(g, t, ti, lerp(-40, W + 40, span(ti, 0.06, 1.9, ease.inOutCubic)), 540, { color: '#ff4b3e', r1: 120, width: 6, dur: 0.7 });
 }
 
 function titleCard(g, t, cam, plum) {
@@ -652,7 +648,7 @@ function growth(g, t, cam, sparks) {
 function swarm(g, t, cam, flies) {
   fillV(g, '#f5f2ec', '#e3ddd2');
   layer(g, cam, D.back);
-  G.speedLines(g, t, 960, 560, 0.8, { color: '#2a2224', blend: 'source-over', seed: 3 });
+  
   layer(g, cam, D.front);
   flies.draw(g, t);
 }
@@ -670,8 +666,8 @@ function whipSplit(t, hits) {
 /** Split screen: two slots side by side, divider at div(t). */
 export function drawSplit(g, shot, t, cam, P, cover) {
   const x = shot.split.div(t);
-  drawCard(g, P[shot.split.left], cam, D.image, cover * 1.12, { anchor: [W / 4, H / 2], clip: [0, 0, x, H] });
-  drawCard(g, P[shot.split.right], cam, D.image, cover * 1.12, { anchor: [(3 * W) / 4, H / 2], clip: [x, 0, W - x, H] });
+  drawCard(g, P[shot.split.left], cam, D.image, cover * 1.12, { anchor: [W / 4, H / 2], clip: [0, 0, x, H], t });
+  drawCard(g, P[shot.split.right], cam, D.image, cover * 1.12, { anchor: [(3 * W) / 4, H / 2], clip: [x, 0, W - x, H], t });
   g.setTransform(1, 0, 0, 1, 0, 0);
   g.fillStyle = '#ffffff';
   g.fillRect(x - 2, 0, 4, H);
@@ -679,21 +675,6 @@ export function drawSplit(g, shot, t, cam, P, cover) {
 
 function titleDrop(g, t, cam, t0, line, burst) {
   fillV(g, '#060506', '#0c0809');
-  layer(g, cam, D.image);
-  const bp = span(t, t0, t0 + 1.4, ease.outCubic);
-  g.save();
-  g.globalAlpha = bp * 0.95;
-  g.translate(960, 640);
-  g.scale(0.5 + 0.6 * bp, 0.4 + 0.6 * bp);
-  for (let i = 0; i < 40; i++) {
-    const a = (i / 40) * TAU;
-    const r0 = 40 + 120 * Math.abs(Math.sin(a * 3.1 + 1));
-    g.fillStyle = 'rgba(170,0,12,0.18)';
-    g.beginPath();
-    g.ellipse(Math.cos(a) * r0 * 0.6, Math.sin(a) * r0 * 0.25 + 40, 200, 70, 0, 0, TAU);
-    g.fill();
-  }
-  g.restore();
   layer(g, cam, D.back);
   drawBlossom(g, 960, 600, 150 * (0.8 + 0.2 * ease.outBack(span(t, t0, t0 + 0.8))), 0.4, span(t, t0, t0 + 1.0), BLOSSOM_WHITE, 0.37, 1);
   layer(g, cam, D.text);
@@ -708,12 +689,10 @@ function titleDrop(g, t, cam, t0, line, burst) {
     g.font = font(300, 400, FONTS.brush);
     g.textAlign = 'center';
     g.textBaseline = 'middle';
-    g.shadowColor = 'rgba(255,40,30,0.8)';
-    g.shadowBlur = 40;
     g.fillStyle = '#e8121e';
     g.fillText(ch, 0, 0);
     g.restore();
-    G.ring(g, t, ct, 960 + (i - 1) * 330, 300, { color: '#ff3b30', r1: 600, width: 20 });
+    
   });
   g.font = font(26, 500, LATIN);
   horizontalLayout(g, 'HUA  GU  DUO', 960, 500, 26, 1.2).forEach((c, i) => softChar(g, c.ch, c.x, c.y, 26, span(t, 94.0 + i * 0.03, 94.4 + i * 0.03), { color: '#ff9a8a', family: LATIN, weight: 500 }));
@@ -723,7 +702,7 @@ function titleDrop(g, t, cam, t0, line, burst) {
 let mirrorTmp = null;
 function mirrorDream(g, t, cam, slot) {
   // 同床异梦: the same room reflected upside down and tinted another colour
-  drawCard(g, slot, cam, D.image, 1.12, { anchor: [W / 2, H * 0.25] });
+  drawCard(g, slot, cam, D.image, 1.12, { anchor: [W / 2, H * 0.25], t });
   mirrorTmp ??= makeCanvas(W, H / 2);
   const m = mirrorTmp.getContext('2d');
   m.drawImage(g.canvas, 0, 0, W, H / 2, 0, 0, W, H / 2);
