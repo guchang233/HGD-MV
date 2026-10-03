@@ -100,7 +100,7 @@ const LYRICS = [
   /* 22 我不想被你遗忘 */ { ...T.serifInk, layout: 'v', x: 1650, y: 190, size: 100, in: 'soft', inDur: 0.6, out: 'drift', outDur: 1.2, emph: { 5: { color: '#8a8380' }, 6: { color: '#b9b2ae' } } },
   /* 23 哪怕看清了这副皮囊 */ { ...T.serifW, layout: 'h', y: 880, size: 82, in: 'soft', inDur: 0.5, out: 'slash', emph: { 7: red(1.5, { dy: -12 }), 8: red(1.5, { dy: -12 }) } },
   /* 24 男女共枕暖一张床 */ { ...T.serifW, layout: 'pos', size: 120, in: 'slide', out: 'fade', pos: [[300, 540, 1.3], [1620, 540, 1.3], [880, 230], [1040, 230], [700, 860, 0.8], [840, 860, 0.8], [980, 860, 0.8], [1180, 860, 1.2]], emph: { 0: { dir: 1 }, 1: { dir: -1 }, 7: red(1, { in: 'stamp' }) } },
-  /* 25 同床异梦迷一样 */ { ...T.serifW, layout: 'pos', size: 150, in: 'soft', out: 'cut', pos: [[420, 320], [620, 320], [1300, 760], [1500, 760], [960, 540, 0.7], [1080, 540, 0.7], [1200, 540, 0.7]], emph: { 2: { rot: Math.PI, color: '#cfc8ff' }, 3: { rot: Math.PI, color: '#cfc8ff' } } },
+  /* 25 同床异梦迷一样 */ { ...T.serifW, layout: 'pos', size: 150, in: 'soft', out: 'cut', pos: [[420, 320], [620, 320], [1300, 760], [1500, 760], [840, 540, 0.7], [960, 540, 0.7], [1080, 540, 0.7]], emph: { 2: { rot: Math.PI, color: '#cfc8ff' }, 3: { rot: Math.PI, color: '#cfc8ff' } } },
   /* 26 我不要就这样 */ { ...T.sansW, layout: 'pos', size: 230, in: 'stamp', inDur: 0.3, out: 'cut', pos: [[420, 440], [960, 440], [1500, 440], [760, 840, 0.55], [960, 840, 0.55], [1160, 840, 0.55]], emph: { 1: { color: C.hot }, 2: { color: C.hot } } },
   /* 27 等到了惊蛰启 */ { ...T.serifW, layout: 'h', x: 960, y: 140, size: 64, in: 'mask', out: 'fade', emph: { 3: { color: C.hot, scale: 1.4 }, 4: { color: C.hot, scale: 1.4 } } },
   /* 28 盼霜降 */ { ...T.serifW, layout: 'h', x: 960, y: 900, size: 92, in: 'stamp', out: 'fade', emph: { 1: { color: '#9fd0ff' }, 2: { color: '#9fd0ff' } } },
@@ -115,34 +115,6 @@ const LYRICS = [
   /* 37 不由衷的痛有谁懂 */ { ...T.serifW, color: '#fff3d6', glow: 'rgba(60,30,0,0.35)', layout: 'h', y: 890, size: 76, in: 'soft', inDur: 0.6, out: 'fade', outDur: 0.8, emph: { 4: { color: C.hot, scale: 1.3 } } },
   /* 38 眼看着那缕胭脂红 */ { ...T.serifInk, layout: 'pos', size: 100, in: 'soft', out: 'drift', pos: [[250, 280], [250, 400], [250, 520], [1500, 300, 0.8], [1500, 400, 0.8], [1500, 620, 1.9], [1500, 830, 1.9], [1730, 720, 1.9]], emph: { 5: red(), 6: red(), 7: red() } },
   /* 39 玩笑一般地开在无人问津 */ { ...T.serifInk, layout: 'h', y: 880, size: 78, in: 'soft', inDur: 0.5, out: 'drift', outDur: 1.2, outStagger: 0.06, emph: each([7, 8, 9, 10], { color: '#7d7470' }) },
-];
-
-// pencil notes drawn over key words: [line, char indexes, kind, colour]
-const INK = '#2b2a35';
-const CHALK = '#f3efe9';
-const ROUGE = '#d8262b';
-const NOTES = [
-  [0, [3, 4], 'circle', INK],
-  [2, [2], 'arrowL', ROUGE],
-  [2, [5], 'arrowR', ROUGE],
-  [3, [7, 8, 9], 'circle', ROUGE],
-  [4, [7, 8, 9], 'underline', ROUGE],
-  [9, [3, 4, 5], 'underline', CHALK],
-  [13, [3], 'circle', ROUGE],
-  [15, [0, 1], 'underline', CHALK],
-  [19, [2], 'arrowL', ROUGE],
-  [19, [5], 'arrowR', ROUGE],
-  [20, [7, 8, 9], 'circle', ROUGE],
-  [22, [5, 6], 'scribble', '#8a8380'],
-  [26, [1, 2], 'underline', ROUGE],
-  [28, [1, 2], 'circle', '#bfe0ff'],
-  [30, [6, 7, 8], 'circle', '#ffd88a'],
-  [33, [2], 'arrowL', ROUGE],
-  [33, [5], 'arrowR', ROUGE],
-  [34, [7, 8, 9], 'circle', ROUGE],
-  [35, [7, 8, 9], 'circle', ROUGE],
-  [38, [5, 6, 7], 'underline', ROUGE],
-  [39, [7, 8, 9, 10], 'underline', '#8a8380'],
 ];
 
 // chapter cards at the top of each section: [time, number, title, english]
@@ -165,10 +137,7 @@ const OPENING = [
 ];
 
 // one-frame flash inserts on chorus off-beats: [time, duration, slot]
-const INSERTS = [
-  [82.3, 0.1, '03'], [85.3, 0.08, '04'], [87.8, 0.1, '05'], [91.8, 0.1, '18'],
-  [130.3, 0.1, '05'], [133.3, 0.08, '16'], [136.3, 0.1, '20'], [140.3, 0.1, '21'],
-];
+const INSERTS = [];
 
 // grade overlays (blend fills) per shot
 export const GRADE = {
@@ -218,16 +187,13 @@ export function buildStory(lyrics, env = {}) {
   const petalsV2 = fallingPetals({ seed: 7, t0: 94, t1: 111.5, rate: 5, wind: -40, white: 0.4, size: [14, 26], zRange: [0.7, 2.2] });
   const snowDial = snowfall({ seed: 13, t0: 117.2, t1: 119.5, rate: 150, wind: -60, bokeh: 0, preroll: 5 });
   const snowFinal = snowfall({ seed: 8, t0: 127, t1: 145, rate: 160, wind: -140, bokeh: 0 });
-  const dust = motes({ seed: 9, t0: 146, t1: 152, count: 180 });
   const petalsCoda = fallingPetals({ seed: 10, t0: 150, t1: 162, rate: 7, wind: -70, white: 0.25, size: [16, 30], zRange: [0.5, 2] });
   const shed = shedPetals({ seed: 11, t0: 157.2, t1: 161, rate: 60, path: [[1900, 90], [1560, 260], [1220, 420], [900, 560]] });
-  const bfly1 = new G.Butterflies(21, 16, { t0: 25.05, x: 1500, y: 560, size: 34, speed: 1100, life: 3 });
   const bfly2 = new G.Butterflies(22, 40, { t0: 88.93, x: 960, y: 600, size: 44, speed: 1600, life: 3.5 });
   const bflySwarm = new G.Butterflies(24, 90, { t0: 89.2, x: 960, y: 560, size: 40, speed: 2600, life: 2.2, stagger: 0.3 });
   const bfly3 = new G.Butterflies(23, 46, { t0: 137.06, x: 960, y: 620, size: 46, speed: 1700, life: 3.5 });
   const burst1 = petalBurst({ seed: 31, t0: 141.06, x: 960, y: 480, count: 480, power: 1.8, size: [24, 56], z: [0.9, 1.4] });
   const burst2 = petalBurst({ seed: 32, t0: 141.81, x: 960, y: 460, count: 260, power: 1.3, white: 0.3, size: [20, 46] });
-  const burstNear = petalBurst({ seed: 33, t0: 141.08, x: 960, y: 480, count: 30, power: 1.4, size: [70, 130], z: [0.55, 0.8], toward: 0.5, life: 2.2 });
   const titleBurst = petalBurst({ seed: 34, t0: 93.06, x: 960, y: 560, count: 260, power: 1.3, white: 0.5, size: [18, 40] });
 
   // --- generative plum for the title and the ending -----------------------
@@ -241,31 +207,30 @@ export function buildStory(lyrics, env = {}) {
   const fall = (field, o = {}) => (g, t, cam, P, gcam) => field.draw(g, t, { cam: gcam, ...o });
 
   // ================================================================ PROLOGUE
-  F(0, BAR(1), (g, t, cam) => introThread(g, t, cam), { cam: move.drift(-40, 40, 0, 120) });
-  S(BAR(1), BAR(3), '01', move.drift(-90, 90, 0, 240), { grade: GRADE.night, enter: { type: 'ink', x: 1700, y: 540 }, over: fall(snowIntro) });
-  S(BAR(3), BAR(4), '02', move.pull(340, 40, 0, -20), { enter: { type: 'light', x: 1300, y: 400 }, over: fall(petalsA, { alpha: 0.8 }) });
-  S(BAR(4), BAR(5), '03', move.push(0, 260), { enter: { type: 'soft' }, over: fall(petalsA, { alpha: 0.8 }) });
-  S(BAR(5), BAR(6), '04', move.drift(80, -80, 40, 320), { enter: { type: 'thread' } });
-  F(BAR(6), 15.8, (g, t, cam) => titleCard(g, t, cam, plum), {
-    enter: { type: 'brush' },
-    cam: (t) => ({ x: 0, y: 0, z: 140 * span(t, 12.055, 14.8, ease.inOutSine) + 760 * span(t, 14.8, 15.8, ease.inExpo), roll: 0.02 * span(t, 14.8, 15.8, ease.inExpo) }),
-  });
+  // The heroine only appears where she is the "I" of the lyric; everything
+  // else is told with places and objects.  Cameras are slow pushes.
+  F(0, BAR(1), (g, t, cam) => introThread(g, t, cam), { cam: move.push() });
+  S(BAR(1), BAR(3), '01', move.push(), { grade: GRADE.night, enter: { type: 'ink', x: 1700, y: 540 }, over: fall(snowIntro) });
+  S(BAR(3), BAR(4), '02', move.pull(), { enter: { type: 'light', x: 1300, y: 400 }, over: fall(petalsA, { alpha: 0.8 }) });
+  S(BAR(4), BAR(5), '58', move.push(), { enter: { type: 'soft' }, over: fall(petalsA, { alpha: 0.6 }) });
+  S(BAR(5), BAR(6), '59', move.push(), { enter: { type: 'thread' }, over: fall(snowIntro, { alpha: 0.7 }) });
+  F(BAR(6), 15.8, (g, t, cam) => titleCard(g, t, cam, plum), { enter: { type: 'brush' }, cam: move.push() });
 
   // ================================================================ VERSE 1
-  S(15.8, BAR(9) - 0.05, '05', move.snap(560, 60, -40, 0), { enter: { type: 'bars' } });
-  S(BAR(9) - 0.05, 19.8, '35', move.truck(-130, 130, 300), { enter: { type: 'focus', x: 960, y: 420 } });
-  S(19.8, 22.8, null, move.push(0, 140), { split: { left: '06', right: '07', div: (t) => lerp(W, W / 2, span(t, 19.8, 20.3, ease.outExpo)) + whipSplit(t, [20.55, 20.8, 21.05, 21.55, 21.8]) } });
-  S(22.8, 25.05, '08', move.push(0, 320, 60, -30), { enter: { type: 'paper' } });
-  S(25.05, 26.55, '09', move.snap(640, 80), { enter: { type: 'focus', x: 700, y: 540 }, over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); bfly1.draw(g, t); } });
-  S(26.55, 30.0, '10', move.truck(-150, 170, 140), { enter: { type: 'soft' }, over: (g, t, cam, P, gcam) => { layer(g, gcam, D.text + 60); budBloom(g, t, 1520, 610); } });
+  S(15.8, BAR(9) - 0.05, '60', move.push(), { grade: GRADE.cold, enter: { type: 'bars' }, over: fall(snowIntro, { alpha: 0.6 }) });
+  S(BAR(9) - 0.05, 19.8, '35', move.push(), { enter: { type: 'focus', x: 960, y: 420 } });
+  S(19.8, 22.8, '07', move.push(), { enter: { type: 'soft' } });
+  S(22.8, 25.05, '08', move.push(), { enter: { type: 'paper' } });
+  S(25.05, 26.55, '61', move.push(), { enter: { type: 'focus', x: 1050, y: 540 } });
+  S(26.55, 30.0, '62', move.pull(), { enter: { type: 'soft' } });
 
   // ================================================================ WINTER
-  S(30.0, BAR(16), '11', move.push(0, 220), { grade: GRADE.cold, enter: { type: 'light', color: '220,236,255' }, over: fall(snowWinter) });
-  S(BAR(16), 35.05, '36', move.roll(-0.02, 0.025, 400), { grade: GRADE.cold, enter: { type: 'soft' }, over: fall(snowWinter) });
-  F(35.05, 38.3, (g, t, cam) => { paleSun(g, t, cam); snowWinter.draw(g, t, { cam }); }, { enter: 'dissolve', cam: move.truck(-70, 130, 60) });
-  S(38.3, 41.05, '12', move.push(0, 560, 40, -20), { grade: GRADE.night, enter: { type: 'paper', dir: -1 }, over: fall(snowWinter) });
-  S(41.05, 43.05, '37', move.push(0, 280, 30, -10), { grade: GRADE.night, enter: { type: 'soft' }, over: fall(snowWinter) });
-  S(43.05, 47.05, '13', move.drift(-110, 70, 40, 300), {
+  S(30.0, BAR(16), '11', move.push(), { grade: GRADE.cold, enter: { type: 'light', color: '220,236,255' }, over: fall(snowWinter) });
+  S(BAR(16), 35.05, '36', move.push(), { grade: GRADE.cold, enter: { type: 'soft' }, over: fall(snowWinter) });
+  F(35.05, 38.3, (g, t, cam) => { paleSun(g, t, cam); snowWinter.draw(g, t, { cam }); }, { enter: 'dissolve', cam: move.push() });
+  S(38.3, 41.05, '12', move.push(), { grade: GRADE.night, enter: { type: 'paper', dir: -1 }, over: fall(snowWinter) });
+  S(41.05, 43.05, '37', move.push(), { grade: GRADE.night, enter: { type: 'soft' }, over: fall(snowWinter) });
+  S(43.05, 47.05, '13', move.push(), {
     grade: GRADE.dim,
     enter: { type: 'ink', x: 760, y: 600 },
     over: (g, t, cam, P, gcam) => {
@@ -276,131 +241,78 @@ export function buildStory(lyrics, env = {}) {
   });
 
   // ================================================================ PRE-CHORUS
-  F(47.05, 49.8, (g, t, cam) => housePiece(g, t, cam, snowPre), { cam: move.push(0, 300, 0, -20) });
-  S(49.8, 51.05, '38', move.pull(320, 60), { grade: GRADE.warm, enter: { type: 'light', x: 960, y: 420, color: '255,200,140' }, over: fall(snowPre) });
-  const latticeOver = (g, t, cam, P, gcam) => {
-    layer(g, cam, D.back);
-    G.lattice(g, 430, 180, 1060, 640, span(t, 51.05, 54.2), { color: '#ff5a46', alpha: 0.85, cell: 90, width: 3 });
-    snowPre.draw(g, t, { cam: gcam, alpha: 0.5 });
-  };
-  S(51.05, 53.05, '14', move.push(40, 300), { enter: { type: 'thread' }, over: latticeOver });
-  S(53.05, 55.05, '39', move.push(60, 320), { enter: { type: 'soft' }, over: latticeOver });
-  F(55.05, 59.05, (g, t, cam) => silverRouge(g, t, cam, petalsRouge), { enter: { type: 'brush', dir: -1 }, cam: move.drift(-60, 60, 0, 160), bright: true });
-  S(59.05, 61.05, '15', (t, s) => ({ x: 0, y: -40 * s.p(t), z: 60 + 260 * ease.inOutSine(s.p(t)) + 600 * span(t, 62.2, 62.93, ease.inExpo), roll: 0 }), {
-    grade: GRADE.paper,
-    enter: { type: 'soft' },
-    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front);  },
-  });
-  S(61.05, 62.93, '40', (t, s) => ({ x: 0, y: 0, z: 140 * ease.inOutSine(s.p(t)) + 700 * span(t, 62.2, 62.93, ease.inExpo), roll: 0 }), {
-    grade: GRADE.paper,
-    enter: { type: 'focus' },
-    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front);  },
-  });
+  S(47.05, 51.05, '38', move.push(), { grade: GRADE.warm, enter: { type: 'light', x: 960, y: 420, color: '255,200,140' }, over: fall(snowPre) });
+  S(51.05, 53.05, '63', move.push(), { enter: { type: 'soft' } });
+  S(53.05, 55.05, '64', move.pull(), { enter: { type: 'focus' }, over: fall(snowPre, { alpha: 0.6 }) });
+  F(55.05, 59.05, (g, t, cam) => silverRouge(g, t, cam, petalsRouge), { enter: { type: 'brush', dir: -1 }, cam: move.push(), bright: true });
+  S(59.05, 61.05, '15', move.push(), { grade: GRADE.paper, enter: { type: 'soft' } });
+  S(61.05, 62.93, '40', move.push(), { grade: GRADE.paper, enter: { type: 'focus' } });
 
   // ================================================================ SPRING
-  S(62.93, 64.43, '16', move.push(80, 300, -120, -60), { grade: GRADE.red, enter: 'drop', over: fall(petalsRed) });
-  S(64.43, 67.06, '41', move.snap(760, 320, -160, -80), {
-    grade: GRADE.red,
-    enter: { type: 'focus', x: 760, y: 470 },
-    over: (g, t, cam, P, gcam) => { layer(g, cam, D.back);  petalsRed.draw(g, t, { cam: gcam }); },
-  });
-  S(67.06, 69.06, '17', move.roll(-0.035, 0.035, 220), { enter: { type: 'bars' }, over: fall(petalsRed) });
-  S(69.06, 71.06, '42', move.truck(170, -170, 340), { enter: { type: 'thread' }, over: fall(petalsRed) });
-  S(71.06, 73.31, '18', move.push(60, 320), {
-    grade: GRADE.red,
-    enter: { type: 'soft' },
-    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); wildVines(g, t, 71.06); sparks.draw(g, t, { cam: gcam }); },
-  });
-  S(73.31, 75.06, '43', move.snap(640, 180, 0, 60), { grade: GRADE.red, enter: { type: 'focus' }, over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); wildVines(g, t, 71.06, 0.6); sparks.draw(g, t, { cam: gcam }); } });
-  F(75.06, 77.06, (g, t, cam) => growth(g, t, cam, sparks), { enter: { type: 'light', color: '255,140,110' }, cam: move.push(0, 260) });
-  // build-up montage into the drop: a cut on every beat, then every eighth
-  const montage = ['44', '45', '46', '47', '05', '03', '14'];
+  S(62.93, 67.06, '41', move.push(), { grade: GRADE.red, enter: 'drop', over: fall(petalsRed) });
+  S(67.06, 69.06, '17', move.push(), { enter: { type: 'bars' }, over: fall(petalsRed) });
+  S(69.06, 71.06, '66', move.pull(), { enter: { type: 'soft' }, over: fall(petalsRed, { alpha: 0.7 }) });
+  S(71.06, 73.31, '67', move.push(), { enter: { type: 'paper' } });
+  S(73.31, 75.06, '68', move.push(), { enter: { type: 'focus' } });
+  S(75.06, 77.06, '46', move.push(), { grade: GRADE.red, enter: { type: 'light', color: '255,140,110' }, over: fall(petalsRed, { alpha: 0.6 }) });
+  // build-up into the drop: a cut on every beat, then every eighth
+  const montage = ['62', '55', '61', '17', '66', '01', '47'];
   const cuts = [77.06, 77.56, 78.06, 78.56, 79.06, 79.31, 79.56];
-  cuts.forEach((c, i) => S(c, cuts[i + 1] ?? 79.81, montage[i], move.snap(560, 160, (i % 2 ? 1 : -1) * 90, 0), { grade: GRADE.red }));
+  cuts.forEach((c, i) => S(c, cuts[i + 1] ?? 79.81, montage[i], move.push()));
 
   // ================================================================ CHORUS 1
-  S(79.81, 81.06, '14', move.snap(820, 60), {
-    enter: 'drop',
-    over: (g, t, cam, P, gcam) => { layer(g, gcam, D.text + 60); },
-  });
-  S(81.06, 82.31, '19', move.push(60, 360), { enter: { type: 'focus' } });
-  S(82.31, 83.81, '48', move.truck(-160, 120, 160), { enter: { type: 'bars' } });
-  S(83.81, 86.81, null, move.push(0, 160), { enter: { type: 'whip', dir: 1 }, split: { left: '06', right: '07', div: (t) => W / 2 + whipSplit(t, [84.06, 84.56, 84.81, 85.56, 85.81]) } });
-  S(86.81, 88.81, '49', move.truck(-170, 170, 180), { enter: { type: 'soft' } });
-  S(88.81, 89.31, '08', move.snap(720, 160), { over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); bfly2.draw(g, t); } });
-  F(89.31, 90.43, (g, t, cam) => swarm(g, t, cam, bflySwarm), { enter: { type: 'light', color: '200,220,255' }, cam: move.push(0, 300), bright: true });
-  S(90.43, 93.06, '09', move.push(60, 540, 140, -40), { enter: { type: 'iris', x: 760, y: 540 }, over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); bfly2.draw(g, t); } });
-  F(93.06, 95.06, (g, t, cam) => titleDrop(g, t, cam, 93.06, lyrics[21], titleBurst), { enter: 'drop', cam: move.pull(420, 60) });
+  S(79.81, 81.06, '60', move.pull(), { grade: GRADE.cold, enter: 'drop' });
+  S(81.06, 82.31, '06', move.push(), { enter: { type: 'focus' } });
+  S(82.31, 83.81, '48', move.push(), { enter: { type: 'bars' } });
+  S(83.81, 86.81, '70', move.push(), { enter: { type: 'soft' }, over: fall(petalsV2, { alpha: 0.6 }) });
+  S(86.81, 89.31, '08', move.push(), { enter: { type: 'paper' }, over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); bfly2.draw(g, t); } });
+  F(89.31, 90.43, (g, t, cam) => swarm(g, t, cam, bflySwarm), { enter: { type: 'light', color: '200,220,255' }, cam: move.push(), bright: true });
+  S(90.43, 93.06, '62', move.push(), { enter: { type: 'iris', x: 760, y: 540 } });
+  F(93.06, 95.06, (g, t, cam) => titleDrop(g, t, cam, 93.06, lyrics[21], titleBurst), { enter: 'drop', cam: move.pull() });
 
   // ================================================================ VERSE 2
-  S(95.06, 97.06, '20', move.drift(-90, 70, 0, 220), { grade: GRADE.paper, enter: { type: 'light' }, over: fall(petalsV2) });
-  S(97.06, 99.06, '50', move.drift(60, -60, 0, 200), { grade: GRADE.paper, enter: { type: 'soft' }, over: fall(petalsV2) });
-  S(99.06, 101.06, '21', move.truck(-130, 90, 150), { enter: { type: 'ink', x: 700, y: 480 }, over: fall(petalsV2, { alpha: 0.7 }) });
-  S(101.06, 103.06, '51', move.push(0, 240), { enter: { type: 'paper' }, over: fall(petalsV2, { alpha: 0.7 }) });
-  S(103.06, 105.06, '22', move.push(0, 240), { grade: GRADE.warm, enter: { type: 'soft' } });
-  S(105.06, 107.06, '23', move.pull(400, 60), { enter: { type: 'thread' } });
-  F(107.06, 110.93, (g, t, cam, P) => mirrorDream(g, t, cam, P['22']), { uses: ['22'], enter: { type: 'soft' }, cam: move.push(40, 240) });
+  S(95.06, 97.06, '20', move.push(), { grade: GRADE.paper, enter: { type: 'light' }, over: fall(petalsV2) });
+  S(97.06, 99.06, '50', move.push(), { grade: GRADE.paper, enter: { type: 'soft' }, over: fall(petalsV2) });
+  S(99.06, 101.06, '71', move.push(), { enter: { type: 'ink', x: 960, y: 480 } });
+  S(101.06, 103.06, '72', move.push(), { enter: { type: 'paper' } });
+  S(103.06, 105.06, '22', move.push(), { grade: GRADE.warm, enter: { type: 'soft' } });
+  S(105.06, 107.06, '73', move.push(), { grade: GRADE.warm, enter: { type: 'focus' } });
+  F(107.06, 110.93, (g, t, cam, P) => mirrorDream(g, t, cam, P['22']), { uses: ['22'], enter: { type: 'soft' }, cam: move.push() });
 
   // ================================================================ BRIDGE
-  S(110.93, BAR(56) + 1, '23', move.snap(820, 140), { grade: GRADE.red, enter: 'drop' });
-  S(BAR(56) + 1, 115.06, '52', move.roll(0.04, -0.04, 320), { grade: GRADE.red, enter: { type: 'focus' } });
-  F(115.06, 118.93, (g, t, cam) => { dialPiece(g, t, cam); snowDial.draw(g, t, { cam, alpha: span(t, 117.2, 117.7) }); }, { enter: { type: 'light', color: '210,255,230' }, cam: move.push(0, 200) });
-  S(118.93, 121.06, '24', move.push(40, 320), { enter: { type: 'paper' }, over: (g, t, cam, P, gcam) => dayNight(g, t, cam) });
-  S(121.06, 123.06, '53', move.push(40, 260), { enter: { type: 'soft' }, over: (g, t, cam, P, gcam) => dayNight(g, t, cam) });
-  S(123.06, 125.06, '25', move.truck(-170, 170, 170), { enter: { type: 'bars' } });
-  S(125.06, 127.81, '26', (t, s) => ({ x: 0, y: 0, z: 300 * ease.inOutSine(s.p(t)) + 700 * span(t, 126.8, 127.81, ease.inExpo), roll: 0 }), {
-    grade: GRADE.dim,
-    enter: { type: 'soft' },
-    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front);  },
-  });
+  S(110.93, BAR(56) + 1, '74', move.push(), { grade: GRADE.red, enter: 'drop' });
+  S(BAR(56) + 1, 115.06, '75', move.push(), { enter: { type: 'focus' } });
+  F(115.06, 118.93, (g, t, cam) => { dialPiece(g, t, cam); snowDial.draw(g, t, { cam, alpha: span(t, 117.2, 117.7) }); }, { enter: { type: 'light', color: '210,255,230' }, cam: move.push() });
+  S(118.93, 121.06, '53', move.push(), { enter: { type: 'paper' } });
+  S(121.06, 123.06, '76', move.push(), { enter: { type: 'soft' } });
+  S(123.06, 125.06, '77', move.push(), { enter: { type: 'bars' } });
+  S(125.06, 127.81, '78', move.pull(), { grade: GRADE.dim, enter: { type: 'soft' } });
 
   // ================================================================ FINAL CHORUS
-  S(127.81, 129.81, '27', move.snap(900, 80), {
+  S(127.81, 129.81, '54', move.push(), { grade: GRADE.night, enter: 'drop', over: fall(snowFinal) });
+  S(129.81, 131.81, '28', move.push(), { grade: GRADE.night, enter: { type: 'focus' }, over: fall(snowFinal) });
+  S(131.81, 134.81, '07', move.pull(), { grade: GRADE.night, enter: { type: 'paper' }, over: fall(snowFinal) });
+  S(134.81, 137.06, '55', move.push(), { grade: GRADE.night, enter: { type: 'brush' }, over: fall(snowFinal) });
+  S(137.06, 138.56, '08', move.push(), { grade: GRADE.night, enter: { type: 'soft' }, over: (g, t, cam, P, gcam) => { snowFinal.draw(g, t, { cam: gcam }); layer(g, cam, D.front); bfly3.draw(g, t); } });
+  S(138.56, 141.06, '56', move.push(), { grade: GRADE.night, enter: { type: 'soft' }, over: fall(snowFinal) });
+  S(141.06, 143.93, '29', move.push(), {
     grade: GRADE.night,
     enter: 'drop',
     over: (g, t, cam, P, gcam) => {
       snowFinal.draw(g, t, { cam: gcam });
-      layer(g, gcam, D.text + 60);
-    },
-  });
-  S(129.81, 131.81, '54', move.roll(-0.03, 0.03, 280), { grade: GRADE.night, enter: { type: 'focus' }, over: fall(snowFinal) });
-  S(131.81, 134.81, null, move.push(0, 160), { grade: GRADE.night, enter: { type: 'whip', dir: -1 }, split: { left: '28', right: '07', div: (t) => W / 2 + whipSplit(t, [132.06, 132.43, 132.81, 133.56, 133.93]) }, over: fall(snowFinal) });
-  S(134.81, 137.06, '55', move.push(80, 400), { grade: GRADE.night, enter: { type: 'brush' }, over: fall(snowFinal) });
-  S(137.06, 138.56, '08', move.snap(720, 150), { grade: GRADE.night, over: (g, t, cam, P, gcam) => { snowFinal.draw(g, t, { cam: gcam }); layer(g, cam, D.front); bfly3.draw(g, t); } });
-  S(138.56, 141.06, '56', move.push(0, 280), { grade: GRADE.night, enter: { type: 'soft' }, over: fall(snowFinal) });
-  S(141.06, 143.93, '29', move.snap(860, 260), {
-    grade: GRADE.night,
-    enter: 'drop',
-    over: (g, t, cam, P, gcam) => {
-      snowFinal.draw(g, t, { cam: gcam });
-      layer(g, cam, D.back);
-      
-      
       burst1.draw(g, t, { cam: gcam });
       burst2.draw(g, t, { cam: gcam });
-      burstNear.draw(g, t, { cam: gcam, alpha: 0.9 });
     },
   });
 
   // ================================================================ CODA
-  S(143.93, 146.56, '30', move.drift(-70, 70, 0, 240), { grade: GRADE.warm, enter: { type: 'light', color: '255,230,190' }, over: (g, t, cam, P, gcam) => { burst1.draw(g, t, { cam: gcam, alpha: 0.6 }); petalsCoda.draw(g, t, { cam: gcam }); } });
-  S(146.56, 149.06, '31', (t, s) => ({ x: 0, y: 140 - 220 * ease.inOutSine(s.p(t)), z: 380 - 300 * ease.outCubic(s.p(t)), roll: 0 }), {
-    grade: GRADE.gold,
-    enter: { type: 'light', color: '255,236,200', x: 960, y: 300 },
-    over: (g, t, cam, P, gcam) => { g.globalCompositeOperation = 'lighter'; dust.draw(g, t, { cam: gcam }); g.globalCompositeOperation = 'source-over'; },
-  });
-  S(149.06, 151.06, '57', move.push(40, 240), {
-    grade: GRADE.gold,
-    enter: { type: 'soft' },
-    over: (g, t, cam, P, gcam) => { g.globalCompositeOperation = 'lighter'; dust.draw(g, t, { cam: gcam }); g.globalCompositeOperation = 'source-over'; },
-  });
-  S(151.06, 154.31, '32', move.truck(-130, 110, 130), {
-    enter: { type: 'ink', x: 820, y: 540 },
-    over: (g, t, cam, P, gcam) => { petalsCoda.draw(g, t, { cam: gcam }); layer(g, cam, D.front); redThread(g, t, 1500 - 400 * span(t, 153.06, 154.0, ease.outCubic), 860, 1900, 700); },
-  });
-  S(154.31, 157.06, '33', move.push(0, 260, 40, 30), { enter: { type: 'soft' }, over: fall(petalsCoda) });
-  S(157.06, 161.0, '34', move.drift(70, -50, 0, 200), { enter: { type: 'ink', x: 1500, y: 800 }, over: (g, t, cam, P, gcam) => { shed.draw(g, t, { cam: gcam }); petalsCoda.draw(g, t, { cam: gcam, alpha: 0.6 }); } });
-  F(161.0, DURATION, (g, t, cam) => endCard(g, t, cam, plumEnd), { enter: 'fade', cam: move.push(0, 160) });
+  S(143.93, 146.56, '80', move.push(), { enter: { type: 'light', color: '255,230,190' }, over: (g, t, cam, P, gcam) => { burst1.draw(g, t, { cam: gcam, alpha: 0.6 }); petalsCoda.draw(g, t, { cam: gcam }); } });
+  S(146.56, 149.06, '31', move.pull(), { grade: GRADE.gold, enter: { type: 'light', color: '255,236,200', x: 960, y: 300 } });
+  S(149.06, 151.06, '57', move.push(), { grade: GRADE.gold, enter: { type: 'soft' } });
+  S(151.06, 154.31, '32', move.push(), { enter: { type: 'ink', x: 820, y: 540 }, over: fall(petalsCoda) });
+  S(154.31, 157.06, '81', move.push(), { enter: { type: 'soft' }, over: fall(petalsCoda) });
+  S(157.06, 161.0, '34', move.push(), { enter: { type: 'ink', x: 1500, y: 800 }, over: (g, t, cam, P, gcam) => { shed.draw(g, t, { cam: gcam }); petalsCoda.draw(g, t, { cam: gcam, alpha: 0.6 }); } });
+  F(161.0, DURATION, (g, t, cam) => endCard(g, t, cam, plumEnd), { enter: 'fade', cam: move.push() });
 
   // ------------------------------------------------------ wiring --
   shots.sort((a, b) => a.t0 - b.t0);
@@ -445,7 +357,6 @@ export function buildStory(lyrics, env = {}) {
     globalCam,
     coverOf,
     lyricStyles: LYRICS,
-    notes: NOTES,
     chapters: CHAPTERS,
     opening: OPENING,
     inserts: INSERTS,
@@ -513,15 +424,6 @@ function titleCard(g, t, cam, plum) {
   horizontalLayout(g, '洛天依 原创曲', 960, 240, 26, 0.6).forEach((c, i) => softChar(g, c.ch, c.x, c.y, 26, span(t, 13.6 + i * 0.04, 14.1 + i * 0.04), { color: '#ffffff', family: FONTS.sans, weight: 500 }));
 }
 
-function budBloom(g, t, x, y) {
-  const times = [29.05, 29.3, 29.8];
-  times.forEach((t0, i) => {
-    const p = span(t, t0, t0 + 0.45);
-    if (p <= 0) return;
-    drawBlossom(g, x + (i - 1) * 240, y - 300, 60, i, p, undefined, 0.3 + i * 0.2, 1);
-  });
-}
-
 // distant ridges at three depths, so the camera move shows parallax
 function ridges(g, cam, cols, base = 600) {
   [[4200, base, 110, cols[0]], [3200, base + 130, 150, cols[1]], [2300, base + 270, 190, cols[2]]].forEach(([d, y0, amp, col], i) => {
@@ -544,34 +446,6 @@ function paleSun(g, t, cam) {
   layer(g, cam, 5200);
   G.sunMoon(g, 960, 760 - 260 * rise + 560 * fall, 70, 0, { alpha: 0.8 * (1 - fall) });
   ridges(g, cam, ['#3a4762', '#27324a', '#151c2e'], 660);
-}
-
-function housePiece(g, t, cam, snow) {
-  fillV(g, '#05060b', '#141a2c');
-  // a few stars far away
-  layer(g, cam, 5000);
-  const r = mulberry32(77);
-  g.fillStyle = '#ffffff';
-  for (let i = 0; i < 90; i++) {
-    const x = r() * W * 1.3 - W * 0.15;
-    const y = r() * H * 0.6;
-    g.globalAlpha = 0.25 + 0.5 * r() * (0.6 + 0.4 * Math.sin(t * 2 + i));
-    g.fillRect(x, y, 2, 2);
-  }
-  g.globalAlpha = 1;
-  ridges(g, cam, ['#10162a', '#0b1020', '#070a14'], 760);
-  layer(g, cam, 2000);
-  const k = clamp((t - 47.05) / 2.6);
-  const lit = span(t, 49.6, 49.8);
-  if (lit > 0) {
-    const grd = g.createRadialGradient(960, 560, 0, 960, 560, 700);
-    grd.addColorStop(0, `rgba(255,170,90,${0.45 * lit})`);
-    grd.addColorStop(1, 'rgba(255,120,60,0)');
-    g.fillStyle = grd;
-    g.fillRect(0, 0, W, H);
-  }
-  G.house(g, 960, 520, 300, k, { glow: lit });
-  snow.draw(g, t, { cam, alpha: 0.7 });
 }
 
 function silverRouge(g, t, cam, petals) {
@@ -605,62 +479,12 @@ function redBloom(g, t, fx) {
   g.restore();
 }
 
-function wildVines(g, t, t0, alpha = 1) {
-  // dark red stems lashing up from the bottom of the frame
-  const r = mulberry32(9);
-  g.save();
-  g.globalAlpha *= alpha;
-  g.lineCap = 'round';
-  for (let i = 0; i < 22; i++) {
-    const x = r() * W;
-    const delay = r() * 1.2;
-    const p = clamp((t - t0 - delay) / 0.9);
-    if (p <= 0) continue;
-    const len = (300 + r() * 600) * ease.outCubic(p);
-    const sway = (r() - 0.5) * 400;
-    g.strokeStyle = r() < 0.5 ? 'rgba(120,6,12,0.92)' : 'rgba(20,10,10,0.92)';
-    g.lineWidth = 6 + r() * 18;
-    g.beginPath();
-    g.moveTo(x, H + 20);
-    g.quadraticCurveTo(x + sway * 0.5, H - len * 0.5, x + sway * p, H - len);
-    g.stroke();
-    if (p > 0.6) drawBlossom(g, x + sway * p, H - len, 18 + r() * 22, r() * 6, clamp((p - 0.6) / 0.4), undefined, r(), 1);
-  }
-  g.restore();
-}
-
-function growth(g, t, cam, sparks) {
-  // 养万物生: everything grows at once
-  fillV(g, '#140203', '#4d0a0f');
-  layer(g, cam, D.image);
-  const grd = g.createRadialGradient(960, 620, 0, 960, 620, 900);
-  grd.addColorStop(0, 'rgba(255,90,60,0.35)');
-  grd.addColorStop(1, 'rgba(255,60,40,0)');
-  g.fillStyle = grd;
-  g.fillRect(-200, -200, W + 400, H + 400);
-  layer(g, cam, D.back);
-  wildVines(g, t, 75.06);
-  layer(g, cam, D.front);
-  wildVines(g, t, 75.6, 0.8);
-  sparks.draw(g, t, { cam });
-}
-
 function swarm(g, t, cam, flies) {
   fillV(g, '#f5f2ec', '#e3ddd2');
   layer(g, cam, D.back);
   
   layer(g, cam, D.front);
   flies.draw(g, t);
-}
-
-function whipSplit(t, hits) {
-  // the divider lurches left on 向左 and right on 向右
-  let off = 0;
-  hits.forEach((h, i) => {
-    const dir = i < 2 ? -1 : i === 2 ? 0 : 1;
-    off += dir * 260 * ease.outExpo(span(t, h, h + 0.25)) * (1 - span(t, h + 0.25, h + 0.9, ease.inOutSine));
-  });
-  return off;
 }
 
 /** Split screen: two slots side by side, divider at div(t). */
@@ -752,28 +576,6 @@ function dialPiece(g, t, cam) {
     g.fillStyle = grd;
     g.fillRect(0, 0, W, H);
   }
-}
-
-function dayNight(g, t, cam) {
-  const beat = Math.floor((t - 0.055) * 2);
-  const night = beat % 2 === 1;
-  applyGrade(g, night ? [['multiply', 'rgba(20,30,90,0.7)']] : [['soft-light', 'rgba(255,200,120,0.45)']]);
-  layer(g, cam, D.back);
-  G.sunMoon(g, 1660, 230, 80, night ? 1 : 0, { alpha: 0.95 });
-  // clock hands spinning
-  g.save();
-  g.translate(1660, 230);
-  g.strokeStyle = 'rgba(255,255,255,0.85)';
-  g.lineWidth = 6;
-  g.lineCap = 'round';
-  const a = (t - 118.93) * 9;
-  g.beginPath();
-  g.moveTo(0, 0);
-  g.lineTo(Math.cos(a) * 120, Math.sin(a) * 120);
-  g.moveTo(0, 0);
-  g.lineTo(Math.cos(a / 12) * 80, Math.sin(a / 12) * 80);
-  g.stroke();
-  g.restore();
 }
 
 function endCard(g, t, cam, plum) {

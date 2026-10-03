@@ -684,6 +684,237 @@
       "cn": "金色晨光里女主角的侧脸，闭着眼，发丝被风吹起；主体在画面左侧，下方留空。",
       "en": "The heroine's profile in golden morning light, eyes closed, hair lifted by the wind; subject on the left, bottom empty.",
       "heroine": true
+    },
+    {
+      "id": "58",
+      "name": "窗台瓶梅",
+      "mood": "paper",
+      "focus": [
+        0.62,
+        0.5
+      ],
+      "cn": "雪天的窗台上，一只小小的白瓷瓶里插着一枝含苞的红梅，窗外在下雪；瓶子在画面右侧偏中，左侧留空。",
+      "en": "On a windowsill on a snowy day, a small white porcelain vase holds one plum twig with red buds, snow falling outside the window; the vase right of centre, the left side empty."
+    },
+    {
+      "id": "59",
+      "name": "枯枝红线",
+      "mood": "snow",
+      "focus": [
+        0.6,
+        0.45
+      ],
+      "cn": "雪中一根光秃秃的细枝上系着一根红线，红线的一端被风吹起；树枝在画面右侧，左侧留空。",
+      "en": "In falling snow, a red thread is tied to a bare thin twig, its loose end lifted by the wind; the twig on the right, the left side empty."
+    },
+    {
+      "id": "60",
+      "name": "雪里的旧照片",
+      "mood": "snow",
+      "focus": [
+        0.55,
+        0.55
+      ],
+      "cn": "雪地上半埋着一张泛白的旧照片，照片的画面已经褪色得看不清，只剩几块淡淡的色块，雪花落在上面；照片在画面中部偏右，左侧留空。",
+      "en": "An old faded photograph half buried in snow, its picture washed out into a few pale blotches so nothing can be recognised, snowflakes settling on it; the photo right of centre, the left side empty."
+    },
+    {
+      "id": "61",
+      "name": "花苞微距",
+      "mood": "paper",
+      "focus": [
+        0.55,
+        0.5
+      ],
+      "cn": "微距特写：一根细细的枝条上一颗饱满的朱红色花苞，带着一点霜，背景是大片留白；花苞在画面中部偏右。",
+      "en": "Macro close-up: one plump vermilion bud on a thin twig with a little frost, lots of empty background; the bud right of centre."
+    },
+    {
+      "id": "62",
+      "name": "满枝花骨朵",
+      "mood": "paper",
+      "focus": [
+        0.4,
+        0.45
+      ],
+      "cn": "一根梅枝从画面左边伸进来，枝上排满了红色的花骨朵，其中一朵刚刚开了一点；右侧大面积留白。",
+      "en": "A plum branch enters from the left edge, lined with red buds, one of them just starting to open; a wide empty space on the right."
+    },
+    {
+      "id": "63",
+      "name": "屋里的灯和两只杯子",
+      "mood": "night",
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "cn": "温暖的小木屋室内，一张小木桌上放着两只冒着热气的茶杯，旁边一盏小油灯，窗外在下雪；没有人；桌子在画面中下部，上方留空。",
+      "en": "Inside a warm little wooden house: two steaming tea cups on a small wooden table beside a small oil lamp, snow falling outside the window; nobody there; the table in the lower middle, empty space above."
+    },
+    {
+      "id": "64",
+      "name": "窗纸上的两个影子",
+      "mood": "night",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "cn": "雪夜，从屋外看一扇糊着窗纸的木格窗，屋里透出暖黄的灯光，窗纸上映着两个依偎在一起的模糊人影（只是影子）；窗户在画面中部，下方留空。",
+      "en": "On a snowy night, seen from outside, a wooden lattice window covered with paper glows warm yellow, two blurred shadows leaning together are cast on the paper (only shadows); window in the middle, empty space below."
+    },
+    {
+      "id": "66",
+      "name": "草地上的一朵红花",
+      "mood": "green",
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "cn": "低视角：青绿的草地近景，草叶间开着一朵红花，远处是开阔的草原和几朵白云；红花在画面中部偏下。",
+      "en": "Low angle: close-up of green grass with one red flower among the blades, an open meadow and a few white clouds far behind; the flower below centre."
+    },
+    {
+      "id": "67",
+      "name": "春泥里的嫩芽",
+      "mood": "green",
+      "focus": [
+        0.5,
+        0.62
+      ],
+      "cn": "湿润的春泥里冒出许多嫩芽和弯弯的藤蔓，有几颗红色花苞；主体在画面下半部，上方留空。",
+      "en": "Many fresh shoots and curling vines push up out of wet spring mud, with a few red buds; subject in the lower half, empty space above."
+    },
+    {
+      "id": "68",
+      "name": "爬满藤花的老墙",
+      "mood": "green",
+      "focus": [
+        0.45,
+        0.5
+      ],
+      "cn": "一面斑驳的老墙被肆意生长的绿色藤蔓和红色小花爬满，蔓延到画面外；墙在画面左侧和中部，右侧留空一些。",
+      "en": "An old weathered wall overrun by wildly growing green vines and small red flowers spilling out of frame; the wall on the left and middle, some empty space on the right."
+    },
+    {
+      "id": "70",
+      "name": "梅林里的岔路",
+      "mood": "paper",
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "cn": "梅林中的一条小路在画面中央分成向左和向右两条，路上落着红色花瓣；左右对称，中上方留空。",
+      "en": "A little path through a plum orchard splits in the centre into a left and a right branch, red petals on the ground; symmetrical, the upper middle empty."
+    },
+    {
+      "id": "71",
+      "name": "空嫁衣",
+      "mood": "dark",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "昏暗的房间里，一件空荡荡的红色嫁衣挂在木衣架上，没有人穿；嫁衣在画面中央，两侧是暗色留白。",
+      "en": "In a dim room an empty red wedding dress hangs on a wooden clothes stand, nobody wearing it; dress in the centre, dark empty space on both sides."
+    },
+    {
+      "id": "72",
+      "name": "桌上的红盖头",
+      "mood": "red",
+      "focus": [
+        0.4,
+        0.55
+      ],
+      "cn": "一块红盖头随意地搭在木桌边上，垂下来，旁边一枝白花；主体在画面左侧，右侧留空。",
+      "en": "A red bridal veil lies carelessly over the edge of a wooden table, hanging down, a white flower beside it; subject on the left, empty space on the right."
+    },
+    {
+      "id": "73",
+      "name": "烧短的红烛",
+      "mood": "night",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "床边的小桌上，一支烧得很短的红蜡烛，烛泪流下来，背后是垂下的红色帐幔；蜡烛在画面中央，上方留空。",
+      "en": "On a small bedside table a red candle burnt down short, wax dripping, red bed curtains hanging behind; candle in the centre, empty space above."
+    },
+    {
+      "id": "74",
+      "name": "冰里的红花",
+      "mood": "red",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "一朵红花顶破了冻裂的冰面开出来，冰的裂纹向四周散开；红花在画面中央。",
+      "en": "A red flower breaks through a cracked sheet of ice and blooms, the cracks spreading outward; the flower in the centre."
+    },
+    {
+      "id": "75",
+      "name": "冰下的花瓣",
+      "mood": "dark",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "俯视结冰的湖面，冰下封着许多红色花瓣，冰面上有一道刚裂开的长缝；构图简单。",
+      "en": "Looking down at a frozen pond, many red petals trapped under the ice, a long fresh crack across the surface; simple composition."
+    },
+    {
+      "id": "76",
+      "name": "天亮时的书桌",
+      "mood": "dark",
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "cn": "天快亮了，窗外是淡蓝的晨光，书桌上堆着纸张，蜡烛已经燃尽，冒着一缕细烟；没有人；书桌在画面中下部。",
+      "en": "Almost dawn, pale blue light outside the window, papers piled on a desk, a candle burnt out with a thin wisp of smoke; nobody there; the desk in the lower middle."
+    },
+    {
+      "id": "77",
+      "name": "没寄出的信",
+      "mood": "paper",
+      "focus": [
+        0.55,
+        0.55
+      ],
+      "cn": "木桌上放着一封没有寄出的旧信，信封泛黄，旁边一枝干枯的梅花；主体在画面中部偏右，左侧留空。",
+      "en": "An old unsent letter on a wooden table, the envelope yellowed, a dried plum twig beside it; subject right of centre, the left side empty."
+    },
+    {
+      "id": "78",
+      "name": "枯树下的空长椅",
+      "mood": "snow",
+      "focus": [
+        0.55,
+        0.5
+      ],
+      "cn": "黄昏的雪中，远处一棵枯树，树下一张空着的长椅，一串脚印从长椅旁离开、伸向画面外；没有人；大面积留白。",
+      "en": "Snow at dusk: a bare tree in the distance with an empty bench beneath it, a line of footprints leading away from the bench out of frame; nobody there; lots of empty space."
+    },
+    {
+      "id": "80",
+      "name": "暗处的白花",
+      "mood": "night",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "夜色中一朵巨大的白色花朵，花心是红色，几片花瓣正在飘落；花在画面中央，周围是暗色留白。",
+      "en": "At night a huge white flower with a red centre, a few petals drifting down; flower in the centre, dark empty space around it."
+    },
+    {
+      "id": "81",
+      "name": "石阶上的红山茶",
+      "mood": "paper",
+      "focus": [
+        0.55,
+        0.6
+      ],
+      "cn": "一朵红山茶花独自落在空无一人的石阶上，旁边几片花瓣；主体在画面中部偏右下，左上留空。",
+      "en": "A single red camellia lies alone on empty stone steps, a few petals beside it; subject right of centre and low, empty space top left."
     }
   ]
 }

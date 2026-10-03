@@ -249,29 +249,7 @@ export function lumaUnder(slot, x, y, w, h) {
  * an edge).  o.anchor puts the picture's focus at a screen point (split
  * screens); o.clip limits drawing to a rect.
  */
-// ------------------------------------------------- hand-drawn treatment --
-// Drawn animation never holds perfectly still: each frame is re-traced and
-// the lines "boil".  Three slightly warped copies of every picture are
-// cycled eight times a second; a sheet of paper grain sits on top.
-function warp(img, seed) {
-  const iw = img.naturalWidth ?? img.width;
-  const ih = img.naturalHeight ?? img.height;
-  const a = makeCanvas(iw, ih);
-  const ga = a.getContext('2d');
-  const r = mulberry32(seed);
-  const amp = 1.1 * (iw / 1536);
-  const p1 = r() * TAU;
-  const p2 = r() * TAU;
-  const f1 = 0.012 + r() * 0.01;
-  const f2 = 0.012 + r() * 0.01;
-  const step = 16;
-  for (let x = 0; x < iw; x += step) ga.drawImage(img, x, 0, step, ih, x, amp * Math.sin(x * f1 + p1), step, ih);
-  const b = makeCanvas(iw, ih);
-  const gb = b.getContext('2d');
-  for (let y = 0; y < ih; y += step) gb.drawImage(a, 0, y, iw, step, amp * Math.sin(y * f2 + p2), y, iw, step);
-  return b;
-}
-
+// paper grain printed into the pictures
 let paper = null;
 function paperSheet() {
   if (paper) return paper;
@@ -303,17 +281,9 @@ function paperSheet() {
   return paper;
 }
 
-function boiled(slot, t) {
-  if (slot.placeholder || t == null) return slot.img;
-  slot.boil ??= [slot.img, null, null];
-  const k = Math.floor(t * 8) % 3;
-  if (!slot.boil[k]) slot.boil[k] = warp(slot.img, parseInt(slot.id, 10) * 7 + k);
-  return slot.boil[k];
-}
-
 export function drawCard(g, slot, cam, d, cover = 1, o = {}) {
   if (!slot) return;
-  const img = boiled(slot, o.t);
+  const img = slot.img;
   const iw = img.naturalWidth ?? img.width;
   const ih = img.naturalHeight ?? img.height;
   const s = Math.max(W / iw, H / ih) * cover * (o.zoom ?? 1);
@@ -336,7 +306,7 @@ export function drawCard(g, slot, cam, d, cover = 1, o = {}) {
   if (!slot.placeholder) {
     // paper grain printed into the picture
     g.globalCompositeOperation = 'multiply';
-    g.globalAlpha = 0.55;
+    g.globalAlpha = 0.35;
     g.fillStyle = g.createPattern(paperSheet(), 'repeat');
     g.fillRect(x, y, iw * s, ih * s);
     g.globalAlpha = 1;

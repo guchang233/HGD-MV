@@ -102,6 +102,27 @@ Heroine: a girl with short light-grey hair and two big round white buns on top o
 | [S55](#s55) | 雪里的红花 | 2:14.8–2:17.1 | 最终副歌 | 雪天灰蓝 |  |
 | [S56](#s56) | 雪夜脚印 | 2:18.6–2:21.1 | 最终副歌 | 雪天灰蓝 |  |
 | [S57](#s57) | 晨光侧脸 | 2:29.1–2:31.1 | 尾声 | 金色晨光 | ✓ |
+| [S58](#s58) | 窗台瓶梅 |  | — | 宣纸白（高调） |  |
+| [S59](#s59) | 枯枝红线 |  | — | 雪天灰蓝 |  |
+| [S60](#s60) | 雪里的旧照片 |  | — | 雪天灰蓝 |  |
+| [S61](#s61) | 花苞微距 |  | — | 宣纸白（高调） |  |
+| [S62](#s62) | 满枝花骨朵 |  | — | 宣纸白（高调） |  |
+| [S63](#s63) | 屋里的灯和两只杯子 |  | — | 夜色深蓝 |  |
+| [S64](#s64) | 窗纸上的两个影子 |  | — | 夜色深蓝 |  |
+| [S66](#s66) | 草地上的一朵红花 |  | — | 青绿 |  |
+| [S67](#s67) | 春泥里的嫩芽 |  | — | 青绿 |  |
+| [S68](#s68) | 爬满藤花的老墙 |  | — | 青绿 |  |
+| [S70](#s70) | 梅林里的岔路 |  | — | 宣纸白（高调） |  |
+| [S71](#s71) | 空嫁衣 |  | — | 近乎全黑 |  |
+| [S72](#s72) | 桌上的红盖头 |  | — | 朱红 / 胭脂红 |  |
+| [S73](#s73) | 烧短的红烛 |  | — | 夜色深蓝 |  |
+| [S74](#s74) | 冰里的红花 |  | — | 朱红 / 胭脂红 |  |
+| [S75](#s75) | 冰下的花瓣 |  | — | 近乎全黑 |  |
+| [S76](#s76) | 天亮时的书桌 |  | — | 近乎全黑 |  |
+| [S77](#s77) | 没寄出的信 |  | — | 宣纸白（高调） |  |
+| [S78](#s78) | 枯树下的空长椅 |  | — | 雪天灰蓝 |  |
+| [S80](#s80) | 暗处的白花 |  | — | 夜色深蓝 |  |
+| [S81](#s81) | 石阶上的红山茶 |  | — | 宣纸白（高调） |  |
 
 ## S00
 
@@ -1500,5 +1521,467 @@ Full prompt (English):
 The heroine's profile in golden morning light, eyes closed, hair lifted by the wind; subject on the left, bottom empty.
 Layout: a solid warm gold background; put the subject in the left of the frame, keep the other side empty, nothing touching the edges.
 Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S58
+
+**窗台瓶梅**
+
+- 色调：宣纸白（高调）；主体位置：画面右侧（约 62%, 50%）
+
+完整提示词（中文）：
+
+```text
+雪天的窗台上，一只小小的白瓷瓶里插着一枝含苞的红梅，窗外在下雪；瓶子在画面右侧偏中，左侧留空。
+版面：纯白背景；主体放在画面右侧，另一侧保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+On a windowsill on a snowy day, a small white porcelain vase holds one plum twig with red buds, snow falling outside the window; the vase right of centre, the left side empty.
+Layout: a plain white background; put the subject in the right of the frame, keep the other side empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S59
+
+**枯枝红线**
+
+- 色调：雪天灰蓝；主体位置：画面右侧（约 60%, 45%）
+
+完整提示词（中文）：
+
+```text
+雪中一根光秃秃的细枝上系着一根红线，红线的一端被风吹起；树枝在画面右侧，左侧留空。
+版面：中等灰蓝色的纯色背景；主体放在画面右侧，另一侧保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+In falling snow, a red thread is tied to a bare thin twig, its loose end lifted by the wind; the twig on the right, the left side empty.
+Layout: a solid medium blue-grey background; put the subject in the right of the frame, keep the other side empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S60
+
+**雪里的旧照片**
+
+- 色调：雪天灰蓝；主体位置：画面中央（约 55%, 55%）
+
+完整提示词（中文）：
+
+```text
+雪地上半埋着一张泛白的旧照片，照片的画面已经褪色得看不清，只剩几块淡淡的色块，雪花落在上面；照片在画面中部偏右，左侧留空。
+版面：中等灰蓝色的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+An old faded photograph half buried in snow, its picture washed out into a few pale blotches so nothing can be recognised, snowflakes settling on it; the photo right of centre, the left side empty.
+Layout: a solid medium blue-grey background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S61
+
+**花苞微距**
+
+- 色调：宣纸白（高调）；主体位置：画面中央（约 55%, 50%）
+
+完整提示词（中文）：
+
+```text
+微距特写：一根细细的枝条上一颗饱满的朱红色花苞，带着一点霜，背景是大片留白；花苞在画面中部偏右。
+版面：纯白背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+Macro close-up: one plump vermilion bud on a thin twig with a little frost, lots of empty background; the bud right of centre.
+Layout: a plain white background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S62
+
+**满枝花骨朵**
+
+- 色调：宣纸白（高调）；主体位置：画面左侧（约 40%, 45%）
+
+完整提示词（中文）：
+
+```text
+一根梅枝从画面左边伸进来，枝上排满了红色的花骨朵，其中一朵刚刚开了一点；右侧大面积留白。
+版面：纯白背景；主体放在画面左侧，另一侧保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+A plum branch enters from the left edge, lined with red buds, one of them just starting to open; a wide empty space on the right.
+Layout: a plain white background; put the subject in the left of the frame, keep the other side empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S63
+
+**屋里的灯和两只杯子**
+
+- 色调：夜色深蓝；主体位置：画面中央（约 50%, 55%）
+
+完整提示词（中文）：
+
+```text
+温暖的小木屋室内，一张小木桌上放着两只冒着热气的茶杯，旁边一盏小油灯，窗外在下雪；没有人；桌子在画面中下部，上方留空。
+版面：深夜蓝的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+Inside a warm little wooden house: two steaming tea cups on a small wooden table beside a small oil lamp, snow falling outside the window; nobody there; the table in the lower middle, empty space above.
+Layout: a solid deep night-blue background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S64
+
+**窗纸上的两个影子**
+
+- 色调：夜色深蓝；主体位置：画面中央（约 50%, 45%）
+
+完整提示词（中文）：
+
+```text
+雪夜，从屋外看一扇糊着窗纸的木格窗，屋里透出暖黄的灯光，窗纸上映着两个依偎在一起的模糊人影（只是影子）；窗户在画面中部，下方留空。
+版面：深夜蓝的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+On a snowy night, seen from outside, a wooden lattice window covered with paper glows warm yellow, two blurred shadows leaning together are cast on the paper (only shadows); window in the middle, empty space below.
+Layout: a solid deep night-blue background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S66
+
+**草地上的一朵红花**
+
+- 色调：青绿；主体位置：画面中央（约 50%, 60%）
+
+完整提示词（中文）：
+
+```text
+低视角：青绿的草地近景，草叶间开着一朵红花，远处是开阔的草原和几朵白云；红花在画面中部偏下。
+版面：柔和青绿色的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+Low angle: close-up of green grass with one red flower among the blades, an open meadow and a few white clouds far behind; the flower below centre.
+Layout: a solid soft green background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S67
+
+**春泥里的嫩芽**
+
+- 色调：青绿；主体位置：画面中央（约 50%, 62%）
+
+完整提示词（中文）：
+
+```text
+湿润的春泥里冒出许多嫩芽和弯弯的藤蔓，有几颗红色花苞；主体在画面下半部，上方留空。
+版面：柔和青绿色的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+Many fresh shoots and curling vines push up out of wet spring mud, with a few red buds; subject in the lower half, empty space above.
+Layout: a solid soft green background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S68
+
+**爬满藤花的老墙**
+
+- 色调：青绿；主体位置：画面中央（约 45%, 50%）
+
+完整提示词（中文）：
+
+```text
+一面斑驳的老墙被肆意生长的绿色藤蔓和红色小花爬满，蔓延到画面外；墙在画面左侧和中部，右侧留空一些。
+版面：柔和青绿色的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+An old weathered wall overrun by wildly growing green vines and small red flowers spilling out of frame; the wall on the left and middle, some empty space on the right.
+Layout: a solid soft green background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S70
+
+**梅林里的岔路**
+
+- 色调：宣纸白（高调）；主体位置：画面中央（约 50%, 55%）
+
+完整提示词（中文）：
+
+```text
+梅林中的一条小路在画面中央分成向左和向右两条，路上落着红色花瓣；左右对称，中上方留空。
+版面：纯白背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+A little path through a plum orchard splits in the centre into a left and a right branch, red petals on the ground; symmetrical, the upper middle empty.
+Layout: a plain white background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S71
+
+**空嫁衣**
+
+- 色调：近乎全黑；主体位置：画面中央（约 50%, 50%）
+
+完整提示词（中文）：
+
+```text
+昏暗的房间里，一件空荡荡的红色嫁衣挂在木衣架上，没有人穿；嫁衣在画面中央，两侧是暗色留白。
+版面：纯黑背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+In a dim room an empty red wedding dress hangs on a wooden clothes stand, nobody wearing it; dress in the centre, dark empty space on both sides.
+Layout: a plain black background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S72
+
+**桌上的红盖头**
+
+- 色调：朱红 / 胭脂红；主体位置：画面左侧（约 40%, 55%）
+
+完整提示词（中文）：
+
+```text
+一块红盖头随意地搭在木桌边上，垂下来，旁边一枝白花；主体在画面左侧，右侧留空。
+版面：朱红色的纯色背景；主体放在画面左侧，另一侧保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+A red bridal veil lies carelessly over the edge of a wooden table, hanging down, a white flower beside it; subject on the left, empty space on the right.
+Layout: a solid vermilion red background; put the subject in the left of the frame, keep the other side empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S73
+
+**烧短的红烛**
+
+- 色调：夜色深蓝；主体位置：画面中央（约 50%, 50%）
+
+完整提示词（中文）：
+
+```text
+床边的小桌上，一支烧得很短的红蜡烛，烛泪流下来，背后是垂下的红色帐幔；蜡烛在画面中央，上方留空。
+版面：深夜蓝的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+On a small bedside table a red candle burnt down short, wax dripping, red bed curtains hanging behind; candle in the centre, empty space above.
+Layout: a solid deep night-blue background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S74
+
+**冰里的红花**
+
+- 色调：朱红 / 胭脂红；主体位置：画面中央（约 50%, 50%）
+
+完整提示词（中文）：
+
+```text
+一朵红花顶破了冻裂的冰面开出来，冰的裂纹向四周散开；红花在画面中央。
+版面：朱红色的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+A red flower breaks through a cracked sheet of ice and blooms, the cracks spreading outward; the flower in the centre.
+Layout: a solid vermilion red background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S75
+
+**冰下的花瓣**
+
+- 色调：近乎全黑；主体位置：画面中央（约 50%, 50%）
+
+完整提示词（中文）：
+
+```text
+俯视结冰的湖面，冰下封着许多红色花瓣，冰面上有一道刚裂开的长缝；构图简单。
+版面：纯黑背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+Looking down at a frozen pond, many red petals trapped under the ice, a long fresh crack across the surface; simple composition.
+Layout: a plain black background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S76
+
+**天亮时的书桌**
+
+- 色调：近乎全黑；主体位置：画面中央（约 50%, 60%）
+
+完整提示词（中文）：
+
+```text
+天快亮了，窗外是淡蓝的晨光，书桌上堆着纸张，蜡烛已经燃尽，冒着一缕细烟；没有人；书桌在画面中下部。
+版面：纯黑背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+Almost dawn, pale blue light outside the window, papers piled on a desk, a candle burnt out with a thin wisp of smoke; nobody there; the desk in the lower middle.
+Layout: a plain black background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S77
+
+**没寄出的信**
+
+- 色调：宣纸白（高调）；主体位置：画面中央（约 55%, 55%）
+
+完整提示词（中文）：
+
+```text
+木桌上放着一封没有寄出的旧信，信封泛黄，旁边一枝干枯的梅花；主体在画面中部偏右，左侧留空。
+版面：纯白背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+An old unsent letter on a wooden table, the envelope yellowed, a dried plum twig beside it; subject right of centre, the left side empty.
+Layout: a plain white background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S78
+
+**枯树下的空长椅**
+
+- 色调：雪天灰蓝；主体位置：画面中央（约 55%, 50%）
+
+完整提示词（中文）：
+
+```text
+黄昏的雪中，远处一棵枯树，树下一张空着的长椅，一串脚印从长椅旁离开、伸向画面外；没有人；大面积留白。
+版面：中等灰蓝色的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+Snow at dusk: a bare tree in the distance with an empty bench beneath it, a line of footprints leading away from the bench out of frame; nobody there; lots of empty space.
+Layout: a solid medium blue-grey background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S80
+
+**暗处的白花**
+
+- 色调：夜色深蓝；主体位置：画面中央（约 50%, 50%）
+
+完整提示词（中文）：
+
+```text
+夜色中一朵巨大的白色花朵，花心是红色，几片花瓣正在飘落；花在画面中央，周围是暗色留白。
+版面：深夜蓝的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+At night a huge white flower with a red centre, a few petals drifting down; flower in the centre, dark empty space around it.
+Layout: a solid deep night-blue background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S81
+
+**石阶上的红山茶**
+
+- 色调：宣纸白（高调）；主体位置：画面中央（约 55%, 60%）
+
+完整提示词（中文）：
+
+```text
+一朵红山茶花独自落在空无一人的石阶上，旁边几片花瓣；主体在画面中部偏右下，左上留空。
+版面：纯白背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+A single red camellia lies alone on empty stone steps, a few petals beside it; subject right of centre and low, empty space top left.
+Layout: a plain white background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```

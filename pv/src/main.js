@@ -13,7 +13,7 @@ import { drawLine, drawGhost, drawSubtitle, layoutLine, lineBox, lineLive, exitA
 import { buildStory, applyGrade, drawSplit, drawCredit, keys, LOOK, DURATION } from './story.js';
 import { D, layer, plus } from './camera.js';
 import { TRANSITIONS } from './transitions.js';
-import { chapter, sketchCircle, sketchUnderline, sketchArrow, sketchScribble } from './graphics.js';
+import { chapter } from './graphics.js';
 
 // Picture files: render.mjs writes build/images.json (it accepts names like
 // 05.png or S05_雪夜.jpg); without it, probe <id>.png|jpg|jpeg|webp.
@@ -147,32 +147,10 @@ export async function boot(out, { base = '.' } = {}) {
       if (st.sweep) sweep(g, line, st, t, gcam);
     });
     for (const c of story.opening) drawCredit(g, t, c);
-    notes(g, t);
     reset(g);
   }
 
   // pencil marks drawn on around key words once they have landed
-  function notes(g, t) {
-    story.notes.forEach(([li, idx, kind, color], n) => {
-      const line = lyrics[li];
-      const st = story.lyricStyles[li];
-      if (!lineLive(line, st, t)) return;
-      const items = layoutLine(line, st).filter((c) => idx.includes(c.i));
-      const t0 = Math.max(...items.map((c) => c.t)) + 0.18;
-      const p = (t - t0) / 0.45;
-      if (p <= 0) return;
-      const out = clamp((t - exitAt(line, st)) / 0.3);
-      const o = { color, alpha: 1 - out, seed: n + 1, width: 3.8 };
-      const [x, y, w, h] = lineBox(items);
-      const cx = x + w / 2;
-      const cy = y + h / 2;
-      if (kind === 'circle') sketchCircle(g, cx, cy, w / 2 + 34, h / 2 + 28, p, o);
-      else if (kind === 'underline') sketchUnderline(g, x, x + w, y + h + 6, p, o);
-      else if (kind === 'scribble') sketchScribble(g, x, cy - 8, w, 16, p, o);
-      else if (kind === 'arrowL') sketchArrow(g, cx - w / 2 - 20, cy + h * 0.2, cx - w / 2 - 190, cy + h * 0.35, p, o);
-      else if (kind === 'arrowR') sketchArrow(g, cx + w / 2 + 20, cy + h * 0.2, cx + w / 2 + 190, cy + h * 0.35, p, { ...o, bend: -0.15 });
-    });
-  }
 
   // a band of light gliding across a hero line once it has landed
   function sweep(g, line, st, t, gcam) {

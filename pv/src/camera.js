@@ -2,8 +2,7 @@
 // in screen coordinates as it looks with the camera at rest.  Moving the
 // camera (x, y, z = dolly forward, roll) slides and scales near layers more
 // than far ones, which is what makes flat cards read as depth.
-import { W, H, clamp, ease, fbm1 } from './core.js';
-import { events } from './timing.js';
+import { W, H } from './core.js';
 
 export const F = 1500; // a layer at D = F moves 1:1 with the camera
 
@@ -65,45 +64,26 @@ export function coverNeed(c, d) {
 }
 
 // ------------------------------------------------------- global camera --
-// Continuous across cuts: hand-held drift, kick-drum punch-ins, snare roll
-// swings in the choruses and impact shake.  Shot cameras add on top.
-export function makeGlobalCam({ intensity, impacts = [] }) {
-  return (t) => {
-    const k = intensity(t);
-    // a soft breath on the kick: the dolly eases forward and settles (no shake)
-    let z = 0;
-    for (const [ti, st] of events('kicks', t - 1.2, t, 0.5)) {
-      const a = t - ti;
-      z += 16 * k * Math.min(st, 1.2) * (1 - Math.exp(-a / 0.05)) * Math.exp(-a / 0.3);
-    }
-    // big moments: a slow push rather than a jolt
-    for (const [t0] of impacts) {
-      const a = t - t0;
-      if (a >= 0 && a < 3) z += 60 * (1 - Math.exp(-a / 0.12)) * Math.exp(-a / 0.9);
-    }
-    // a very slow float
-    const x = 10 * fbm1(t * 0.11, 11);
-    const y = 6 * fbm1(t * 0.09, 13);
-    const roll = 0.0025 * fbm1(t * 0.07, 15);
-    return { x, y, z, roll };
-  };
+// The camera is locked off between shots: no hand-held float, no beat
+// punch-ins.  Only the shot moves below act.
+export function makeGlobalCam() {
+  return () => still();
 }
 
 // ------------------------------------------------------- shot cameras --
 // Each preset returns (t, shot) => {x, y, z, roll}; p runs 0..1 over the shot.
+// Every move is a slow, steady push in or out; the old preset names are
+// kept so the storyboard reads the same, but none of them snap, swing or
+// roll any more.
+const slowPush = (dz) => (t, s) => ({ x: 0, y: 0, z: dz * s.p(t), roll: 0 });
+const slowPull = (dz) => (t, s) => ({ x: 0, y: 0, z: dz * (1 - s.p(t)), roll: 0 });
 export const move = {
   hold: () => () => still(),
-  push: (z0 = 0, z1 = 260, x = 0, y = 0) => (t, s) => ({ x, y, z: z0 + (z1 - z0) * ease.inOutSine(s.p(t)), roll: 0 }),
-  pull: (z0 = 380, z1 = 40, x = 0, y = 0) => (t, s) => ({ x, y, z: z0 + (z1 - z0) * ease.outCubic(s.p(t)), roll: 0 }),
-  // fast settle from a punched-in start, then a slow creep
-  snap: (z0 = 520, z1 = 60, x = 0, y = 0) => (t, s) => ({ x, y, z: z1 + (Math.min(z0, 320) - z1) * (1 - ease.outCubic(clamp((t - s.t0) / 1.4))) + 60 * s.p(t), roll: 0 }),
-  truck: (x0 = -180, x1 = 180, z = 120, y = 0) => (t, s) => ({ x: x0 + (x1 - x0) * ease.inOutSine(s.p(t)), y, z, roll: 0 }),
-  crane: (y0 = -120, y1 = 120, z = 120, x = 0) => (t, s) => ({ x, y: y0 + (y1 - y0) * ease.inOutSine(s.p(t)), z, roll: 0 }),
-  // gentle tilt (presets are scaled down: big rolls read as shaky)
-  roll: (r0 = -0.015, r1 = 0.015, z = 160) => (t, s) => ({ x: 0, y: 0, z, roll: 0.4 * (r0 + (r1 - r0) * ease.inOutSine(s.p(t))) }),
-  // dolly in while drifting sideways (the classic slow parallax move)
-  drift: (x0 = -120, x1 = 120, z0 = 0, z1 = 220, y = 0) => (t, s) => {
-    const p = ease.inOutSine(s.p(t));
-    return { x: x0 + (x1 - x0) * p, y, z: z0 + (z1 - z0) * p, roll: 0 };
-  },
+  push: () => slowPush(120),
+  pull: () => slowPull(120),
+  snap: () => slowPush(100),
+  truck: () => slowPush(100),
+  crane: () => slowPush(100),
+  roll: () => slowPush(100),
+  drift: () => slowPush(110),
 };
