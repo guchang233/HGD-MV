@@ -22,11 +22,11 @@
   <div id="stage"><canvas id="pv" width="1920" height="1080"></canvas></div>
   <div id="bar">
     <button id="play">播放</button>
-    <input id="seek" type="range" min="0" max="74.5" step="0.0166667" value="0">
+    <input id="seek" type="range" min="0" max="170.4" step="0.0166667" value="0">
     <span id="time">0.00</span>
   </div>
 </div>
-<audio id="audio" src="build/pv_audio.wav" preload="auto"></audio>
+<audio id="audio" src="build/song.wav" preload="auto"></audio>
 <script type="module">
   import { boot } from './src/main.js';
   const params = new URLSearchParams(location.search);

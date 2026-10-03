@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 // Render the PV frame by frame in headless Chromium and encode it with ffmpeg.
 //
-//   node pv/tools/render.mjs                     full render -> 花骨朵_PV.mp4
+//   node pv/tools/render.mjs                      full render -> 花骨朵_PV.mp4
 //   node pv/tools/render.mjs --stills 3,16.5,47.2 review stills -> pv/build/stills
 //   node pv/tools/render.mjs --from 30 --to 40 --fps 30 --out draft.mp4
+// The soundtrack is the original song, taken whole from 花骨朵.mp4.
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -34,7 +35,7 @@ async function loadPlaywright() {
   }
 }
 
-const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.jpg': 'image/jpeg', '.png': 'image/png', '.woff2': 'font/woff2', '.wav': 'audio/wav' };
+const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.jpg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.woff2': 'font/woff2', '.wav': 'audio/wav' };
 function serve() {
   const server = http.createServer((req, res) => {
     const rel = decodeURIComponent(new URL(req.url, 'http://x').pathname);
@@ -70,9 +71,14 @@ async function renderTo(page, t, file, quality) {
 }
 
 async function main() {
-  if (!fs.existsSync(path.join(BUILD, 'pv_audio.wav')) || !fs.existsSync(path.join(BUILD, 'frames'))) {
-    console.error('Run pv/tools/build_audio.py and pv/tools/extract_frames.py first.');
+  if (!fs.existsSync(path.join(PV_DIR, 'assets', 'plates', 'manifest.json'))) {
+    console.error('Missing pv/assets/plates (see pv/README.md, AI plates).');
     process.exit(1);
+  }
+  fs.mkdirSync(BUILD, { recursive: true });
+  const audio = path.join(BUILD, 'song.wav');
+  if (!fs.existsSync(audio)) {
+    spawnSync('ffmpeg', ['-v', 'error', '-y', '-i', path.join(ROOT, '花骨朵.mp4'), '-vn', '-c:a', 'pcm_s16le', '-ar', '44100', audio], { stdio: 'inherit' });
   }
   const { chromium } = await loadPlaywright();
   const server = await serve();
@@ -136,24 +142,25 @@ async function main() {
   server.close();
 
   const outFile = path.resolve(ROOT, args.out ?? '花骨朵_PV.mp4');
-  const enc = spawnSync(
-    'ffmpeg',
-    [
-      '-v', 'error', '-y',
-      '-framerate', String(FPS), '-start_number', String(first), '-i', path.join(frameDir, '%05d.jpg'),
-      '-ss', String(from), '-t', String(to - from), '-i', path.join(BUILD, 'pv_audio.wav'),
-      '-frames:v', String(total),
-      '-c:v', 'libx264', '-preset', args.preset ?? 'slow', '-crf', String(args.crf ?? 21),
-      '-maxrate', '18M', '-bufsize', '36M', '-x264-params', 'aq-mode=3:aq-strength=0.9',
-      '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-tune', 'film',
-      '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
-      '-c:a', 'aac', '-b:a', '256k', '-af', `afade=t=out:st=${Math.max(0, to - from - 0.6)}:d=0.6`,
-      '-movflags', '+faststart', '-metadata', 'title=花骨朵 PV',
-      outFile,
-    ],
-    { stdio: 'inherit' },
-  );
-  if (enc.status !== 0) process.exit(enc.status ?? 1);
+  const input = ['-framerate', String(FPS), '-start_number', String(first), '-i', path.join(frameDir, '%05d.jpg')];
+  const video = ['-frames:v', String(total), '-c:v', 'libx264', '-preset', args.preset ?? 'slow',
+    '-x264-params', 'aq-mode=3:aq-strength=0.9', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-tune', 'film',
+    '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709'];
+  const sound = ['-c:a', 'aac', '-b:a', '256k', '-af', `afade=t=out:st=${Math.max(0, to - from - 0.6)}:d=0.6`];
+  const run = (argv) => {
+    const r = spawnSync('ffmpeg', ['-v', 'error', '-y', ...argv], { stdio: 'inherit', cwd: BUILD });
+    if (r.status !== 0) process.exit(r.status ?? 1);
+  };
+  if (args.bitrate) {
+    // two-pass ABR: hits a predictable file size (GitHub caps files at 100 MB)
+    const rate = String(args.bitrate);
+    run([...input, ...video, '-b:v', rate, '-maxrate', '14M', '-bufsize', '28M', '-pass', '1', '-an', '-f', 'null', '/dev/null']);
+    run([...input, '-ss', String(from), '-t', String(to - from), '-i', audio, ...video, '-b:v', rate, '-maxrate', '14M', '-bufsize', '28M', '-pass', '2', ...sound,
+      '-movflags', '+faststart', '-metadata', 'title=花骨朵 PV', outFile]);
+  } else {
+    run([...input, '-ss', String(from), '-t', String(to - from), '-i', audio, ...video, '-crf', String(args.crf ?? 21), '-maxrate', '18M', '-bufsize', '36M', ...sound,
+      '-movflags', '+faststart', '-metadata', 'title=花骨朵 PV', outFile]);
+  }
   console.log(`wrote ${outFile}`);
 }
 

@@ -153,7 +153,9 @@ export class PlumTree {
       const nx = -dy / len;
       const ny = dx / len;
       const tone = s.depth === 0 ? 24 : s.depth === 1 ? 30 : 40;
-      g.fillStyle = `rgba(${tone},${tone - 3},${tone - 6},${(s.depth >= 3 ? 0.88 : 0.95) * inkA})`;
+      g.fillStyle = o.inverse
+        ? `rgba(${236 - tone},${232 - tone},${226 - tone},${(s.depth >= 3 ? 0.88 : 0.95) * inkA})`
+        : `rgba(${tone},${tone - 3},${tone - 6},${(s.depth >= 3 ? 0.88 : 0.95) * inkA})`;
       g.beginPath();
       g.moveTo(s.x0 + (nx * s.w0) / 2, s.y0 + (ny * s.w0) / 2);
       g.lineTo(x1 + (nx * w1) / 2, y1 + (ny * w1) / 2);
@@ -171,7 +173,7 @@ export class PlumTree {
         const a0 = 0.05 + 0.3 * ((s.s * 7.3) % 1);
         const a1 = Math.min(1, a0 + 0.35 + 0.5 * ((s.s * 3.1) % 1)) * k;
         if (a1 > a0) {
-          g.strokeStyle = `rgba(118,112,104,${0.42 * inkA})`;
+          g.strokeStyle = o.inverse ? `rgba(150,144,138,${0.5 * inkA})` : `rgba(118,112,104,${0.42 * inkA})`;
           g.lineWidth = s.w0 * 0.22;
           g.lineCap = 'round';
           g.beginPath();
@@ -182,7 +184,7 @@ export class PlumTree {
         if (((s.s * 13.7) % 1) < 0.45) {
           // a scratchy dry streak near the edge
           const e = -0.32;
-          g.strokeStyle = `rgba(222,220,212,${0.45 * inkA})`;
+          g.strokeStyle = o.inverse ? `rgba(20,18,18,${0.5 * inkA})` : `rgba(222,220,212,${0.45 * inkA})`;
           g.lineWidth = Math.max(0.8, s.w0 * 0.06);
           g.beginPath();
           g.moveTo(lerp(s.x0, x1, 0.15) + nx * e * s.w0, lerp(s.y0, y1, 0.15) + ny * e * s.w0);
@@ -194,7 +196,7 @@ export class PlumTree {
     // 2. knots / moss dots
     for (const kn of this.knots) {
       if (grownT < kn.t + 0.05) continue;
-      g.fillStyle = `rgba(10,9,8,${0.9 * inkA})`;
+      g.fillStyle = o.inverse ? `rgba(250,248,244,${0.9 * inkA})` : `rgba(10,9,8,${0.9 * inkA})`;
       g.beginPath();
       g.ellipse(kn.x, kn.y, kn.r, kn.r * 0.55, kn.a, 0, TAU);
       g.fill();

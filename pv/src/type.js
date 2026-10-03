@@ -10,6 +10,9 @@ export async function loadFonts(base) {
     new FontFace('PV Serif SC', `url(${base}/NotoSerifSC-VF.woff2)`, { weight: '200 900' }),
     new FontFace('PV Garamond', `url(${base}/CormorantGaramond-VF.woff2)`, { weight: '300 700' }),
     new FontFace('PV Garamond', `url(${base}/CormorantGaramond-Italic.woff2)`, { style: 'italic', weight: '400' }),
+    new FontFace('PV Sans SC', `url(${base}/NotoSansSC-VF.woff2)`, { weight: '100 900' }),
+    new FontFace('PV Brush', `url(${base}/ZhiMangXing.woff2)`),
+    new FontFace('PV Cursive', `url(${base}/LiuJianMaoCao.woff2)`),
   ];
   for (const f of faces) document.fonts.add(await f.load());
   await document.fonts.ready;

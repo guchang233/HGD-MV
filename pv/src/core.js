@@ -4,7 +4,7 @@
 
 export const W = 1920;
 export const H = 1080;
-export const BAR = 162; // letterbox bar height -> 1920x756 picture (the MV's 2.54:1)
+export const BAR = 0; // full 16:9 frame; letterboxing is an animated effect
 export const VIEW = { x: 0, y: BAR, w: W, h: H - 2 * BAR };
 
 export const PALETTE = {

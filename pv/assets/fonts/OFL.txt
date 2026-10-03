@@ -7,3 +7,7 @@ Google Fonts and are licensed under the SIL Open Font License 1.1
   CormorantGaramond-VF.woff2     Cormorant Garamond (variable, wght 300-700)
   CormorantGaramond-Italic.woff2 Cormorant Garamond Italic
                                  Copyright 2015 The Cormorant Project Authors
+  NotoSansSC-VF.woff2            Noto Sans SC (variable, wght 100-900)
+                                 Copyright 2014-2021 Adobe (http://www.adobe.com/)
+  ZhiMangXing.woff2              Zhi Mang Xing, Copyright 2018 The Zhi Mang Xing Project Authors
+  LiuJianMaoCao.woff2            Liu Jian Mao Cao, Copyright 2018 The Liu Jian Mao Cao Project Authors
