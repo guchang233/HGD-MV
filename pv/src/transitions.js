@@ -3,7 +3,32 @@
 // (0..1 over [cut - pre, cut + post]).  Fast ones smear their own motion
 // across the shutter interval `o.dp` (in units of p) so whips read as a
 // real camera whip rather than a hard slide.
-import { W, H, TAU, clamp, ease, lerp, mulberry32 } from './core.js';
+import { W, H, TAU, clamp, ease, lerp, mulberry32, makeCanvas } from './core.js';
+import { brushSwipe } from './graphics.js';
+
+// low-resolution copies stand in for a gaussian blur (cheap in software)
+const soft = [];
+function blurred(src, level) {
+  const k = level > 0.66 ? 2 : level > 0.33 ? 1 : 0;
+  const w = [480, 320, 192][k];
+  soft[k] ??= makeCanvas(w, Math.round((w * 9) / 16));
+  const c = soft[k];
+  const g = c.getContext('2d');
+  g.filter = 'blur(1.5px)';
+  g.drawImage(src, 0, 0, c.width, c.height);
+  g.filter = 'none';
+  return c;
+}
+// draw src with a defocus amount 0..1
+function defocus(g, src, amount, alpha = 1) {
+  g.globalAlpha = alpha;
+  g.drawImage(src, 0, 0);
+  if (amount > 0.02) {
+    g.globalAlpha = alpha * clamp(amount * 1.4);
+    g.drawImage(blurred(src, amount), 0, 0, W, H);
+  }
+  g.globalAlpha = 1;
+}
 
 // rgba helper for a "#rrggbb" + alpha
 const tint = (hex, a) => {
@@ -255,6 +280,200 @@ export const TRANSITIONS = {
           g.restore();
         }
       }
+    },
+  },
+
+  // soft focus: A drifts out of focus, B comes into focus through it
+  soft: {
+    pre: 0.3,
+    post: 0.5,
+    draw(g, A, B, p) {
+      const e = ease.inOutSine(p);
+      const sA = 1 + 0.05 * e;
+      const sB = 1.05 - 0.05 * e;
+      g.setTransform(sA, 0, 0, sA, (W / 2) * (1 - sA), (H / 2) * (1 - sA));
+      defocus(g, A, clamp(e * 1.6));
+      g.setTransform(sB, 0, 0, sB, (W / 2) * (1 - sB), (H / 2) * (1 - sB));
+      g.globalAlpha = ease.inOutSine(clamp((p - 0.2) / 0.6));
+      const tmpA = g.globalAlpha;
+      defocus(g, B, clamp((1 - e) * 1.6), tmpA);
+      g.setTransform(1, 0, 0, 1, 0, 0);
+    },
+  },
+  // warm light blooms from a point, peaks on the cut and lets B through
+  light: {
+    pre: 0.35,
+    post: 0.6,
+    draw(g, A, B, p, o) {
+      const pc = this.pre / (this.pre + this.post);
+      const up = p < pc ? ease.inCubic(p / pc) : 1 - ease.outCubic((p - pc) / (1 - pc));
+      defocus(g, p < pc ? A : B, up * 0.8);
+      const x = o.x ?? W * 0.5;
+      const y = o.y ?? H * 0.4;
+      const col = o.color ?? '255,236,214';
+      g.globalCompositeOperation = 'screen';
+      const r = W * (0.4 + 0.8 * up);
+      const grd = g.createRadialGradient(x, y, 0, x, y, r);
+      grd.addColorStop(0, `rgba(${col},${0.7 * up})`);
+      grd.addColorStop(0.5, `rgba(${col},${0.3 * up})`);
+      grd.addColorStop(1, `rgba(${col},0)`);
+      g.fillStyle = grd;
+      g.fillRect(0, 0, W, H);
+      g.globalCompositeOperation = 'source-over';
+    },
+  },
+  // three loaded brush strokes sweep across; B is painted in behind them
+  brush: {
+    pre: 0,
+    post: 0.7,
+    draw(g, A, B, p, o) {
+      g.drawImage(A, 0, 0);
+      const dir = o.dir ?? 1;
+      const ang = -0.32;
+      const dx = Math.cos(ang) * dir;
+      const dy = Math.sin(ang) * dir;
+      const nx = -Math.sin(ang);
+      const ny = Math.cos(ang);
+      const band = H * 0.62;
+      const L = W * 1.6;
+      for (let i = 0; i < 2; i++) {
+        const q = clamp((p - i * 0.12) / 0.55);
+        if (q <= 0) continue;
+        const k = ease.inOutCubic(q);
+        const cx = W / 2 + (i - 0.5) * band * 1.1 * nx;
+        const cy = H / 2 + (i - 0.5) * band * 1.1 * ny;
+        const sx = cx - (dx * L) / 2;
+        const sy = cy - (dy * L) / 2;
+        const ex = sx + dx * L * k;
+        const ey = sy + dy * L * k;
+        const h = band / 2 + 4;
+        g.save();
+        g.beginPath();
+        g.moveTo(sx + nx * h, sy + ny * h);
+        g.lineTo(ex + nx * h, ey + ny * h);
+        g.lineTo(ex - nx * h, ey - ny * h);
+        g.lineTo(sx - nx * h, sy - ny * h);
+        g.closePath();
+        g.clip();
+        g.drawImage(B, 0, 0);
+        g.restore();
+        // the stroke itself, fading once the brush has passed
+        const fade = 1 - ease.inQuad(clamp((p - 0.3 - i * 0.08) / 0.35));
+        if (fade > 0.01) {
+          g.globalAlpha = 0.75 * fade;
+          brushSwipe(g, sx, sy, sx + dx * L, sy + dy * L, band * 0.35, q, { seed: 11 + i, color: o.color ?? '#c8141e' });
+          g.globalAlpha = 1;
+        }
+      }
+    },
+  },
+  // red and paper-white bars rise to cover the frame, then lift away
+  bars: {
+    pre: 0.3,
+    post: 0.35,
+    draw(g, A, B, p, o) {
+      const pc = this.pre / (this.pre + this.post);
+      g.drawImage(p < pc ? A : B, 0, 0);
+      const n = 5;
+      const w = W / n;
+      const cols = o.colors ?? ['#151113'];
+      for (let i = 0; i < n; i++) {
+        const d = i * 0.06;
+        let top;
+        let bot;
+        if (p < pc) {
+          const q = ease.inOutCubic(clamp((p / pc) * 1.3 - d));
+          top = H * (1 - q);
+          bot = H;
+        } else {
+          const q = ease.inOutCubic(clamp(((p - pc) / (1 - pc)) * 1.3 - d));
+          top = 0;
+          bot = H * (1 - q);
+        }
+        if (bot - top < 0.5) continue;
+        g.fillStyle = cols[i % cols.length];
+        g.fillRect(i * w - 1, top, w + 2, bot - top);
+        g.fillStyle = o.edge ?? '#d8262b';
+        const ey = p < pc ? top : bot - 3;
+        if (ey > 0 && ey < H - 1) g.fillRect(i * w - 1, ey, w + 2, 3);
+      }
+    },
+  },
+  // a red thread is drawn across the frame; B follows behind it
+  thread: {
+    pre: 0,
+    post: 0.75,
+    draw(g, A, B, p, o) {
+      g.drawImage(A, 0, 0);
+      const e = ease.inOutCubic(p);
+      const X = lerp(-200, W + 200, e);
+      const curve = (y) => X + 140 * Math.sin(y / H * Math.PI * 1.6 + 0.6);
+      g.save();
+      g.beginPath();
+      g.moveTo(-10, -10);
+      for (let y = -10; y <= H + 10; y += 20) g.lineTo(curve(y), y);
+      g.lineTo(-10, H + 10);
+      g.closePath();
+      g.clip();
+      g.drawImage(B, 0, 0);
+      g.restore();
+      // soft shadow ahead of the thread and the thread itself
+      g.save();
+      g.strokeStyle = 'rgba(0,0,0,0.18)';
+      g.lineWidth = 26;
+      g.filter = 'blur(10px)';
+      g.beginPath();
+      for (let y = -10; y <= H + 10; y += 20) g.lineTo(curve(y) + 6, y);
+      g.stroke();
+      g.filter = 'none';
+      g.strokeStyle = o.color ?? '#e0262b';
+      g.lineWidth = 3.5;
+      g.shadowColor = 'rgba(255,40,30,0.8)';
+      g.shadowBlur = 14;
+      g.beginPath();
+      for (let y = -10; y <= H + 10; y += 20) g.lineTo(curve(y), y);
+      g.stroke();
+      g.restore();
+    },
+  },
+  // focus pull through the subject of A into B
+  focus: {
+    pre: 0.25,
+    post: 0.45,
+    draw(g, A, B, p, o) {
+      const pc = this.pre / (this.pre + this.post);
+      const cx = o.x ?? W / 2;
+      const cy = o.y ?? H / 2;
+      const e = ease.inOutCubic(p);
+      const sA = 1 + 0.45 * e;
+      const sB = 1.25 - 0.25 * e;
+      g.setTransform(sA, 0, 0, sA, cx * (1 - sA), cy * (1 - sA));
+      defocus(g, A, clamp(p / pc));
+      g.setTransform(sB, 0, 0, sB, cx * (1 - sB), cy * (1 - sB));
+      defocus(g, B, clamp((1 - p) / (1 - pc) - 0.15), ease.inOutSine(clamp((p - pc * 0.6) / (1 - pc * 0.6) * 1.6)));
+      g.setTransform(1, 0, 0, 1, 0, 0);
+    },
+  },
+  // B slides up over A like a new sheet of paper; A sinks back
+  paper: {
+    pre: 0,
+    post: 0.6,
+    draw(g, A, B, p, o) {
+      const e = ease.inOutCubic(p);
+      const s = 1 - 0.06 * e;
+      g.setTransform(s, 0, 0, s, (W / 2) * (1 - s), (H / 2) * (1 - s));
+      g.drawImage(A, 0, 0);
+      g.setTransform(1, 0, 0, 1, 0, 0);
+      g.fillStyle = `rgba(10,8,8,${0.45 * e})`;
+      g.fillRect(0, 0, W, H);
+      const dir = o.dir ?? 1;
+      const y = dir > 0 ? H * (1 - e) : -H * (1 - e);
+      const grd = g.createLinearGradient(0, y - 60 * dir, 0, y);
+      grd.addColorStop(0, 'rgba(0,0,0,0)');
+      grd.addColorStop(1, `rgba(0,0,0,${0.35 * (1 - e * 0.5)})`);
+      g.fillStyle = grd;
+      g.fillRect(0, dir > 0 ? y - 60 : y + H, W, 60);
+      g.drawImage(B, 0, y);
     },
   },
 };

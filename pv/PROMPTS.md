@@ -57,14 +57,14 @@ Heroine: a girl with short light-grey hair and two big round white buns on top o
 | [S10](#s10) | 指向远方 | 0:26.6–0:30.0 | 主歌 I | 宣纸白（高调） | ✓ |
 | [S11](#s11) | 冰封古镇 | 0:30.0–0:32.1 | 严冬 | 雪天灰蓝 |  |
 | [S12](#s12) | 空巷红灯 | 0:38.3–0:41.0 | 严冬 | 夜色深蓝 |  |
-| [S13](#s13) | 独坐红椅 | 0:43.0–0:47.0 | 严冬 | 夜色深蓝 | ✓ |
+| [S13](#s13) | 空椅 | 0:43.0–0:47.0 | 严冬 | 夜色深蓝 |  |
 | [S14](#s14) | 花树里的少女 | 0:51.0–0:53.0<br>1:19.6–1:21.1 | 预副歌、春天里 | 近乎全黑 | ✓ |
 | [S15](#s15) | 云想衣裳 | 0:59.0–1:01.0 | 预副歌 | 宣纸白（高调） |  |
 | [S16](#s16) | 红房少女 | 1:02.9–1:04.4<br>2:13.3–2:13.4 | 春天里、最终副歌 | 朱红 / 胭脂红 | ✓ |
-| [S17](#s17) | 红花绿地 | 1:07.1–1:09.1 | 春天里 | 青绿 | ✓ |
+| [S17](#s17) | 红花绿地 | 1:07.1–1:09.1 | 春天里 | 青绿 |  |
 | [S18](#s18) | 凤冠山茶 | 1:11.1–1:13.3<br>1:31.8–1:31.9 | 春天里、副歌 | 朱红 / 胭脂红 |  |
 | [S19](#s19) | 黑暗中的正脸 | 1:21.1–1:22.3 | 副歌 | 近乎全黑 | ✓ |
-| [S20](#s20) | 梅枝拱门 | 1:35.1–1:37.1<br>2:16.3–2:16.4 | 主歌 II、最终副歌 | 宣纸白（高调） | ✓ |
+| [S20](#s20) | 梅枝拱门 | 1:35.1–1:37.1<br>2:16.3–2:16.4 | 主歌 II、最终副歌 | 宣纸白（高调） |  |
 | [S21](#s21) | 哭泣的新娘 | 1:39.1–1:41.1<br>2:20.3–2:20.4 | 主歌 II、最终副歌 | 朱红 / 胭脂红 | ✓ |
 | [S22](#s22) | 红帐古床 | 1:43.1–1:45.1<br>1:47.1–1:50.9 | 主歌 II | 夜色深蓝 |  |
 | [S23](#s23) | 交叉的红臂 | 1:45.1–1:47.1<br>1:50.9–1:53.1 | 主歌 II、桥段 | 近乎全黑 | ✓ |
@@ -81,26 +81,26 @@ Heroine: a girl with short light-grey hair and two big round white buns on top o
 | [S34](#s34) | 水墨梅枝 | 2:37.1–2:41.0 | 尾声 | 宣纸白（高调） |  |
 | [S35](#s35) | 伸手接雪 | 0:18.0–0:19.8 | 主歌 I | 宣纸白（高调） | ✓ |
 | [S36](#s36) | 雪中脚印 | 0:32.1–0:35.0 | 严冬 | 雪天灰蓝 |  |
-| [S37](#s37) | 空巷回头 | 0:41.0–0:43.0 | 严冬 | 夜色深蓝 | ✓ |
+| [S37](#s37) | 空巷红灯 | 0:41.0–0:43.0 | 严冬 | 夜色深蓝 |  |
 | [S38](#s38) | 雪夜亮灯的小屋 | 0:49.8–0:51.0 | 预副歌 | 夜色深蓝 |  |
 | [S39](#s39) | 窗里的少女 | 0:53.0–0:55.0 | 预副歌 | 近乎全黑 | ✓ |
-| [S40](#s40) | 云上的背影 | 1:01.0–1:02.9 | 预副歌 | 宣纸白（高调） | ✓ |
-| [S41](#s41) | 落在脸上的花瓣 | 1:04.4–1:07.1 | 春天里 | 朱红 / 胭脂红 | ✓ |
+| [S40](#s40) | 云做的裙子 | 1:01.0–1:02.9 | 预副歌 | 宣纸白（高调） |  |
+| [S41](#s41) | 红绸上的花瓣 | 1:04.4–1:07.1 | 春天里 | 朱红 / 胭脂红 |  |
 | [S42](#s42) | 红手与红花 | 1:09.1–1:11.1 | 春天里 | 青绿 |  |
 | [S43](#s43) | 藤蔓缠臂 | 1:13.3–1:15.1 | 春天里 | 朱红 / 胭脂红 |  |
 | [S44](#s44) | 缠指的红线 | 1:17.1–1:17.6 | 春天里 | 朱红 / 胭脂红 |  |
 | [S45](#s45) | 眼眸特写 | 1:17.6–1:18.1 | 春天里 | 朱红 / 胭脂红 | ✓ |
 | [S46](#s46) | 盛开的山茶 | 1:18.1–1:18.6 | 春天里 | 朱红 / 胭脂红 |  |
-| [S47](#s47) | 向后倒下 | 1:18.6–1:19.1 | 春天里 | 朱红 / 胭脂红 | ✓ |
-| [S48](#s48) | 奔跑 | 1:22.3–1:23.8 | 副歌 | 近乎全黑 | ✓ |
+| [S47](#s47) | 飞散的花瓣 | 1:18.6–1:19.1 | 春天里 | 朱红 / 胭脂红 |  |
+| [S48](#s48) | 飞扬的飘带 | 1:22.3–1:23.8 | 副歌 | 近乎全黑 |  |
 | [S49](#s49) | 掌心的蓝蝶 | 1:26.8–1:28.8 | 副歌 | 宣纸白（高调） | ✓ |
-| [S50](#s50) | 梅枝下远去 | 1:37.1–1:39.1 | 主歌 II | 宣纸白（高调） | ✓ |
+| [S50](#s50) | 落梅小径 | 1:37.1–1:39.1 | 主歌 II | 宣纸白（高调） |  |
 | [S51](#s51) | 红盖头 | 1:41.1–1:43.1 | 主歌 II | 朱红 / 胭脂红 | ✓ |
 | [S52](#s52) | 捂住耳朵 | 1:53.1–1:55.1 | 桥段 | 近乎全黑 | ✓ |
-| [S53](#s53) | 伏案睡着 | 2:01.1–2:03.1 | 桥段 | 近乎全黑 | ✓ |
-| [S54](#s54) | 风中伸手 | 2:09.8–2:11.8 | 最终副歌 | 雪天灰蓝 | ✓ |
-| [S55](#s55) | 雪地仰望 | 2:14.8–2:17.1 | 最终副歌 | 雪天灰蓝 | ✓ |
-| [S56](#s56) | 雪夜回望 | 2:18.6–2:21.1 | 最终副歌 | 雪天灰蓝 | ✓ |
+| [S53](#s53) | 深夜书桌 | 2:01.1–2:03.1 | 桥段 | 近乎全黑 |  |
+| [S54](#s54) | 风雪中的飘带 | 2:09.8–2:11.8 | 最终副歌 | 雪天灰蓝 |  |
+| [S55](#s55) | 雪里的红花 | 2:14.8–2:17.1 | 最终副歌 | 雪天灰蓝 |  |
+| [S56](#s56) | 雪夜脚印 | 2:18.6–2:21.1 | 最终副歌 | 雪天灰蓝 |  |
 | [S57](#s57) | 晨光侧脸 | 2:29.1–2:31.1 | 尾声 | 金色晨光 | ✓ |
 
 ## S00
@@ -425,7 +425,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 ## S13
 
-**独坐红椅** · 女主角（附上 S00 参考图）
+**空椅**
 
 - 0:43.0–0:47.0（严冬）：「去年的街道太冷清 / 空巷孤影它伤人情」
 - 色调：夜色深蓝；主体位置：画面左侧（约 40%, 55%）
@@ -433,18 +433,16 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-昏暗的房间里，冷蓝色的月光透过白色纱帘照进来，女主角独自坐在一把红色雕花古椅上，低着头，双手放在膝上，白色飘带垂落在地；整体偏暗，人物在左侧到中部，右侧是暗色的留白。
+昏暗的房间里，冷蓝色的月光透过白色纱帘照在一把空着的红色雕花木椅上，椅背上搭着一条白色飘带；椅子在画面左侧，右侧是暗色留白。
 版面：深夜蓝的纯色背景；主体放在画面左侧，另一侧保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-A dim room where cold blue moonlight falls through pale white curtains; the heroine sits alone on a red carved antique chair, head lowered, hands on her knees, white ribbons trailing to the floor; mostly dark, figure from the left to the center, dark empty space on the right.
+In a dim room, cold blue moonlight falls through pale curtains onto an empty red carved wooden chair, a white ribbon draped over its back; chair on the left, dark empty space on the right.
 Layout: a solid deep night-blue background; put the subject in the left of the frame, keep the other side empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
@@ -525,7 +523,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 ## S17
 
-**红花绿地** · 女主角（附上 S00 参考图）
+**红花绿地**
 
 - 1:07.1–1:09.1（春天里）：「红花作衣绿地作席」
 - 色调：青绿；主体位置：画面中央（约 50%, 50%）
@@ -533,18 +531,16 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-俯视镜头：女主角躺在一大片开满红花的青绿色草地上，红色花瓣被风吹起，春天，明亮。
+俯视：青绿色的草地上开满一朵朵红花，几片红色花瓣被风吹起，中间空出一块草地。
 版面：柔和青绿色的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-Top-down shot: the heroine lies in a vast green meadow full of red flowers, red petals lifted by the wind, spring, bright.
+Top-down: a green meadow dotted with red flowers, a few red petals lifted by the wind, an empty patch of grass in the middle.
 Layout: a solid soft green background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
@@ -599,7 +595,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 ## S20
 
-**梅枝拱门** · 女主角（附上 S00 参考图）
+**梅枝拱门**
 
 - 1:35.1–1:37.1（主歌 II）：「我不想被你遗忘」
 - 2:16.3–2:16.4（最终副歌）：「你看我这手里的胭脂虫」
@@ -608,18 +604,16 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-白色背景上，深色的老梅枝从两侧向上合拢成一道拱门，枝头开满红梅，女主角小小地站在拱门下回头；水墨质感，人物在画面中部偏左，右侧留白。
+白色背景上，两根老梅枝从两侧向上合拢成一道拱门，枝头开着红梅，拱门下是一条空空的小路；拱门在画面中部偏左，右侧留白。
 版面：纯白背景；主体放在画面中央，四周保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-On a white background, dark old plum branches curve up from both sides to form an arch covered in red blossoms; the heroine stands small beneath it, looking back; ink-painting texture, figure just left of center, right side open.
+On white, two old plum branches curve up from both sides into an arch covered in red blossoms, an empty path beneath it; arch just left of center, right side empty.
 Layout: a plain white background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
@@ -1016,7 +1010,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 ## S37
 
-**空巷回头** · 女主角（附上 S00 参考图）
+**空巷红灯**
 
 - 0:41.0–0:43.0（严冬）：「去年的街道太冷清」
 - 色调：夜色深蓝；主体位置：画面中央（约 50%, 50%）
@@ -1024,18 +1018,16 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-深夜下雪的空巷里，女主角站在巷子中间回头看，身后墙上挂着一盏红灯笼。
+深夜下雪的空巷，地上一串浅浅的脚印，墙上挂着一盏红灯笼，没有人。
 版面：深夜蓝的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-In an empty snowy lane at night, the heroine stands in the middle of the lane looking back over her shoulder, a single red lantern on the wall behind her.
+An empty snowy lane at night, a faint trail of footprints on the ground, a single red lantern on the wall, nobody there.
 Layout: a solid deep night-blue background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
@@ -1089,7 +1081,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 ## S40
 
-**云上的背影** · 女主角（附上 S00 参考图）
+**云做的裙子**
 
 - 1:01.0–1:02.9（预副歌）：「花想容貌云想衣裳」
 - 色调：宣纸白（高调）；主体位置：画面中央（约 50%, 50%）
@@ -1097,24 +1089,22 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-女主角站在云上的背影，长长的白色裙摆和云融在一起，零星红色花瓣飘散；人物居中，左右两侧留空。
+苍白的天空中，一件由云朵组成的白色长裙飘浮着，零星的红色花瓣飘散；居中，左右两侧留空。
 版面：纯白背景；主体放在画面中央，四周保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-The heroine seen from behind standing on clouds, her long white skirt melting into the clouds, a few red petals drifting; figure centered, both sides empty.
+In a pale sky, a long white dress made of clouds floats on its own, a few red petals drifting; centered, both sides empty.
 Layout: a plain white background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S41
 
-**落在脸上的花瓣** · 女主角（附上 S00 参考图）
+**红绸上的花瓣**
 
 - 1:04.4–1:07.1（春天里）：「我想要死在春天里 / 红花作衣绿地作席」
 - 色调：朱红 / 胭脂红；主体位置：画面中央（约 45%, 45%）
@@ -1122,18 +1112,16 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-俯视特写：女主角闭着眼躺在红色丝绸上，几片红色花瓣落在她的脸颊和头发上。
+俯视特写：红色丝绸的褶皱上散落着几片红色花瓣和一根白色发带。
 版面：朱红色的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-Top-down close-up: the heroine lies with closed eyes on red silk, a few red petals resting on her cheek and hair.
+Top-down close-up: a few red petals and a white hair ribbon scattered on folds of red silk.
 Layout: a solid vermilion red background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
@@ -1256,7 +1244,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 ## S47
 
-**向后倒下** · 女主角（附上 S00 参考图）
+**飞散的花瓣**
 
 - 1:18.6–1:19.1（春天里）：「养万物生我饲衣鱼」
 - 色调：朱红 / 胭脂红；主体位置：画面中央（约 50%, 50%）
@@ -1264,24 +1252,22 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-女主角张开双臂向后倒下，周围的红色花瓣向四周飞散。
+红色背景中，一大团红白花瓣从中心向四周炸开飞散。
 版面：朱红色的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-The heroine falls backwards with her arms spread wide, red petals flying out all around her.
+On red, a burst of red and white petals explodes outward from the center.
 Layout: a solid vermilion red background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S48
 
-**奔跑** · 女主角（附上 S00 参考图）
+**飞扬的飘带**
 
 - 1:22.3–1:23.8（副歌）：「这种赶春的人 / 该向左或向右」
 - 色调：近乎全黑；主体位置：画面右侧（约 62%, 50%）
@@ -1289,18 +1275,16 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-黑色背景中，女主角向画面右侧奔跑，白色飘带向后飞扬；人物在画面右侧，左侧留空。
+黑色背景中，一条长长的白色飘带被风吹着向画面右侧飞扬；飘带在画面右侧，左侧留空。
 版面：纯黑背景；主体放在画面右侧，另一侧保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-Against black, the heroine runs toward the right, white ribbons streaming behind her; figure on the right, left side empty.
+Against black, one long white ribbon streams toward the right in the wind; ribbon on the right, left side empty.
 Layout: a plain black background; put the subject in the right of the frame, keep the other side empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
@@ -1331,7 +1315,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 ## S50
 
-**梅枝下远去** · 女主角（附上 S00 参考图）
+**落梅小径**
 
 - 1:37.1–1:39.1（主歌 II）：「我不想被你遗忘 / 哪怕看清了这副皮囊」
 - 色调：宣纸白（高调）；主体位置：画面左侧（约 40%, 55%）
@@ -1339,18 +1323,16 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-白色背景中，女主角从一根垂下的红梅枝下走过，背影渐渐远去；人物在画面左侧，右侧留空。
+白色背景中，一根垂下的红梅枝，花瓣落在下面的小路上；主体在画面左侧，右侧留空。
 版面：纯白背景；主体放在画面左侧，另一侧保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-On white, the heroine walks away beneath a hanging branch of red plum blossoms, seen from behind; figure on the left, right side empty.
+On white, a hanging branch of red plum blossoms, petals falling onto the path below; subject on the left, right side empty.
 Layout: a plain white background; put the subject in the left of the frame, keep the other side empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
@@ -1406,7 +1388,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 ## S53
 
-**伏案睡着** · 女主角（附上 S00 参考图）
+**深夜书桌**
 
 - 2:01.1–2:03.1（桥段）：「成了没日没夜的工作狂 / 负了我心里的少年郎」
 - 色调：近乎全黑；主体位置：画面中央（约 42%, 55%）
@@ -1414,24 +1396,22 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-深夜，女主角趴在堆满纸张的书桌上睡着了，一盏小台灯亮着。
+深夜，一张堆满纸张的书桌，一盏小台灯亮着，椅子空着，墙上的钟指向三点。
 版面：纯黑背景；主体放在画面中央，四周保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-Late at night, the heroine has fallen asleep slumped over a desk piled with paper, one small desk lamp on.
+Late at night, a desk piled with paper, one small desk lamp on, the chair empty, a clock on the wall at three.
 Layout: a plain black background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S54
 
-**风中伸手** · 女主角（附上 S00 参考图）
+**风雪中的飘带**
 
 - 2:09.8–2:11.8（最终副歌）：「这种赶春的人 / 该向左或向右」
 - 色调：雪天灰蓝；主体位置：画面中央（约 50%, 45%）
@@ -1439,24 +1419,22 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-风雪中，女主角向前伸出红色的手，白色飘带被风吹得笔直。
+暴风雪中，一条白色飘带被风吹得笔直，挂在一根枯枝上。
 版面：中等灰蓝色的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-In the blizzard, the heroine reaches forward with a red hand, white ribbons blown straight out by the wind.
+In a blizzard, a white ribbon blown straight out by the wind, caught on a bare branch.
 Layout: a solid medium blue-grey background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S55
 
-**雪地仰望** · 女主角（附上 S00 参考图）
+**雪里的红花**
 
 - 2:14.8–2:17.1（最终副歌）：「你看我这手里的胭脂虫」
 - 色调：雪天灰蓝；主体位置：画面中央（约 50%, 55%）
@@ -1464,24 +1442,22 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-女主角跪坐在雪地里，仰头望着落下的雪，双手放在膝上。
+白茫茫的雪地上，一朵小小的红花从雪里钻出来，雪还在下。
 版面：中等灰蓝色的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-The heroine kneels in the snow, looking up at the falling snow, hands on her knees.
+On a white field of snow, a tiny red flower pokes up through the snow while snow keeps falling.
 Layout: a solid medium blue-grey background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S56
 
-**雪夜回望** · 女主角（附上 S00 参考图）
+**雪夜脚印**
 
 - 2:18.6–2:21.1（最终副歌）：「像不像那晚春的花骨朵」
 - 色调：雪天灰蓝；主体位置：画面中央（约 50%, 50%）
@@ -1489,18 +1465,16 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 完整提示词（中文）：
 
 ```text
-雪夜里，女主角半转过身回头看向镜头，飘带在风里飘。
+雪夜里，一串脚印从画面近处延伸向远方，渐渐被新雪盖住。
 版面：中等灰蓝色的纯色背景；主体放在画面中央，四周保持空白，主体不要贴边。
-女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。
 随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-On a snowy night, the heroine half turns to look back toward the viewer, ribbons fluttering in the wind.
+On a snowy night, a trail of footprints runs from the foreground into the distance, slowly covered by new snow.
 Layout: a solid medium blue-grey background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
-Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 

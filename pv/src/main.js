@@ -4,7 +4,7 @@
 // the lyrics; film post (aberration, glow, rays, flares, grain, subtitles,
 // HUD, letterbox) is applied once to the blended frame.
 import { W, H, clamp, ease, span, makeCanvas, ctx2d } from './core.js';
-import { loadTiming, pulse } from './timing.js';
+import { loadTiming } from './timing.js';
 import { loadFonts, inkChar } from './type.js';
 import { initSprites, setStreaks } from './particles.js';
 import { FX } from './fx.js';
@@ -13,7 +13,7 @@ import { drawLine, drawGhost, drawSubtitle, layoutLine, lineBox, lineLive, exitA
 import { buildStory, applyGrade, drawSplit, drawCredit, keys, LOOK, DURATION } from './story.js';
 import { D, layer, plus } from './camera.js';
 import { TRANSITIONS } from './transitions.js';
-import { hud, glitchSlices, chapter } from './graphics.js';
+import { chapter, sketchCircle, sketchUnderline, sketchArrow, sketchScribble } from './graphics.js';
 
 // Picture files: render.mjs writes build/images.json (it accepts names like
 // 05.png or S05_雪夜.jpg); without it, probe <id>.png|jpg|jpeg|webp.
@@ -147,7 +147,31 @@ export async function boot(out, { base = '.' } = {}) {
       if (st.sweep) sweep(g, line, st, t, gcam);
     });
     for (const c of story.opening) drawCredit(g, t, c);
+    notes(g, t);
     reset(g);
+  }
+
+  // pencil marks drawn on around key words once they have landed
+  function notes(g, t) {
+    story.notes.forEach(([li, idx, kind, color], n) => {
+      const line = lyrics[li];
+      const st = story.lyricStyles[li];
+      if (!lineLive(line, st, t)) return;
+      const items = layoutLine(line, st).filter((c) => idx.includes(c.i));
+      const t0 = Math.max(...items.map((c) => c.t)) + 0.18;
+      const p = (t - t0) / 0.45;
+      if (p <= 0) return;
+      const out = clamp((t - exitAt(line, st)) / 0.3);
+      const o = { color, alpha: 1 - out, seed: n + 1, width: 3.8 };
+      const [x, y, w, h] = lineBox(items);
+      const cx = x + w / 2;
+      const cy = y + h / 2;
+      if (kind === 'circle') sketchCircle(g, cx, cy, w / 2 + 34, h / 2 + 28, p, o);
+      else if (kind === 'underline') sketchUnderline(g, x, x + w, y + h + 6, p, o);
+      else if (kind === 'scribble') sketchScribble(g, x, cy - 8, w, 16, p, o);
+      else if (kind === 'arrowL') sketchArrow(g, cx - w / 2 - 20, cy + h * 0.2, cx - w / 2 - 190, cy + h * 0.35, p, o);
+      else if (kind === 'arrowR') sketchArrow(g, cx + w / 2 + 20, cy + h * 0.2, cx + w / 2 + 190, cy + h * 0.35, p, { ...o, bend: -0.15 });
+    });
   }
 
   // a band of light gliding across a hero line once it has landed
@@ -239,19 +263,19 @@ export async function boot(out, { base = '.' } = {}) {
     const enter = shot.enter?.type;
     let flash = 0;
     let flashColor = shot.enter?.color ?? '#ffffff';
-    let ab = 0.0012 * k + 0.006 * k * pulse('snares', t, 0.1, 0.5);
+    let ab = 0.0006 * k;
     let blur = 0;
-    if (enter === 'flash' && age < 0.6) flash = (shot.enter.soft ? 0.6 : 0.85) * Math.exp(-age / (shot.enter.soft ? 0.18 : 0.1));
-    if (enter === 'drop' && age < 0.8) {
-      flash = Math.max(flash, Math.exp(-age / 0.09));
-      blur += 0.3 * Math.exp(-age / 0.12);
-      ab += 0.016 * Math.exp(-age / 0.2);
+    // soft light rather than a hard white-out
+    if (enter === 'flash' && age < 0.9) flash = 0.35 * Math.exp(-age / 0.22);
+    if (enter === 'drop' && age < 0.9) {
+      flash = Math.max(flash, 0.55 * Math.exp(-age / 0.14));
+      blur += 0.08 * Math.exp(-age / 0.15);
+      ab += 0.004 * Math.exp(-age / 0.25);
     }
     if (enter === 'fade' && age < 1) {
       flash = 1 - span(age, 0, 0.9, ease.inOutSine);
       flashColor = '#000000';
     }
-    if (k >= 0.7) flash = Math.max(flash, 0.09 * k * pulse('snares', t, 0.06, 0.6));
 
     reset(gPost);
     gPost.fillStyle = '#000';
@@ -260,7 +284,6 @@ export async function boot(out, { base = '.' } = {}) {
     else gPost.drawImage(acc, 0, 0);
     if (blur > 0.002) fx.zoomBlur(gPost, acc, blur);
     reset(gPost);
-    if (shot.glitch) glitchSlices(gPost, acc, t, shot.glitch * pulse('snares', t, 0.12, 0.4) * 1.5);
     fx.bloom(gPost, post, keys(LOOK.bloom, t));
     if (shot.rays) fx.godRays(gPost, t, shot.rays[0], shot.rays[1], 0.7, '255,214,150');
     for (const [t0, amp, decay, x, y, col] of LOOK.rays) {
@@ -283,17 +306,6 @@ export async function boot(out, { base = '.' } = {}) {
     const subDark = shot.bright ?? (slot ? lumaUnder(slot, 560, 940, 800, 90) > 0.62 : false);
     const subs = (g, y, dark) => story.lyricStyles.forEach((st, i) => drawSubtitle(g, lyrics[i], st, t, { y, dark, until: lyrics[i + 1] ? lyrics[i + 1].chars[0][1] - 0.2 : Infinity }));
     if (lb <= 0.5) subs(gPost, 1000, subDark);
-    const ha = keys(LOOK.hud, t);
-    if (ha > 0.01) {
-      let sec = LOOK.section[0][1];
-      for (const [t0, name] of LOOK.section) if (t >= t0) sec = name;
-      let line = 0;
-      lyrics.forEach((l, i) => {
-        if (t >= l.chars[0][1] - 0.05) line = i + 1;
-      });
-      const pic = shot.slots.length ? `IMG ${shot.slots.map((s) => `S${s}`).join('+')}` : 'IMG —';
-      hud(gPost, t, { alpha: ha, color: bright ? '30,24,24' : '255,255,255', tl: '花骨朵  /  HUA GU DUO', sec: `${sec}  ·  BPM 120`, br: `LYRIC ${String(line).padStart(2, '0')}/${lyrics.length}   ${pic}` });
-    }
     for (const [t0, num, cn, en] of story.chapters) chapter(gPost, t, t0, num, cn, en, { color: bright ? '30,24,24' : '255,255,255' });
 
     // ---- letterbox + output

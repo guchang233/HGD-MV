@@ -117,6 +117,34 @@ const LYRICS = [
   /* 39 玩笑一般地开在无人问津 */ { ...T.serifInk, layout: 'h', y: 880, size: 78, in: 'soft', inDur: 0.5, out: 'drift', outDur: 1.2, outStagger: 0.06, emph: each([7, 8, 9, 10], { color: '#7d7470' }) },
 ];
 
+// pencil notes drawn over key words: [line, char indexes, kind, colour]
+const INK = '#2b2a35';
+const CHALK = '#f3efe9';
+const ROUGE = '#d8262b';
+const NOTES = [
+  [0, [3, 4], 'circle', INK],
+  [2, [2], 'arrowL', ROUGE],
+  [2, [5], 'arrowR', ROUGE],
+  [3, [7, 8, 9], 'circle', ROUGE],
+  [4, [7, 8, 9], 'underline', ROUGE],
+  [9, [3, 4, 5], 'underline', CHALK],
+  [13, [3], 'circle', ROUGE],
+  [15, [0, 1], 'underline', CHALK],
+  [19, [2], 'arrowL', ROUGE],
+  [19, [5], 'arrowR', ROUGE],
+  [20, [7, 8, 9], 'circle', ROUGE],
+  [22, [5, 6], 'scribble', '#8a8380'],
+  [26, [1, 2], 'underline', ROUGE],
+  [28, [1, 2], 'circle', '#bfe0ff'],
+  [30, [6, 7, 8], 'circle', '#ffd88a'],
+  [33, [2], 'arrowL', ROUGE],
+  [33, [5], 'arrowR', ROUGE],
+  [34, [7, 8, 9], 'circle', ROUGE],
+  [35, [7, 8, 9], 'circle', ROUGE],
+  [38, [5, 6, 7], 'underline', ROUGE],
+  [39, [7, 8, 9, 10], 'underline', '#8a8380'],
+];
+
 // chapter cards at the top of each section: [time, number, title, english]
 const CHAPTERS = [
   [16.2, '01', '赶春的人', 'VERSE I'],
@@ -209,120 +237,121 @@ export function buildStory(lyrics, env = {}) {
   const plumEnd = new PlumTree({ seed: 33, root: { x: -90, y: 1200 }, angle: -0.6, width: 46, tip: 5, length: 1500, speed: 700, start: 161.2, depthMax: 3, budRate: 0.22, whipRate: 0.2 });
   plumEnd.bloomRest(162.5, 166.5, 1, 9);
 
-  const fall = (field, o = {}) => (g, t, cam) => field.draw(g, t, { cam, ...o });
+  // particles ride the continuous camera, so snow and petals carry across cuts
+  const fall = (field, o = {}) => (g, t, cam, P, gcam) => field.draw(g, t, { cam: gcam, ...o });
 
   // ================================================================ PROLOGUE
   F(0, BAR(1), (g, t, cam) => introThread(g, t, cam), { cam: move.drift(-40, 40, 0, 120) });
   S(BAR(1), BAR(3), '01', move.drift(-90, 90, 0, 240), { grade: GRADE.night, enter: { type: 'ink', x: 1700, y: 540 }, over: fall(snowIntro) });
-  S(BAR(3), BAR(4), '02', move.pull(340, 40, 0, -20), { enter: 'flash', over: fall(petalsA, { alpha: 0.8 }) });
-  S(BAR(4), BAR(5), '03', move.push(0, 260), { enter: { type: 'whip', dir: 1 }, over: fall(petalsA, { alpha: 0.8 }) });
-  S(BAR(5), BAR(6), '04', move.drift(80, -80, 40, 320), { enter: { type: 'whip', dir: -1 } });
+  S(BAR(3), BAR(4), '02', move.pull(340, 40, 0, -20), { enter: { type: 'light', x: 1300, y: 400 }, over: fall(petalsA, { alpha: 0.8 }) });
+  S(BAR(4), BAR(5), '03', move.push(0, 260), { enter: { type: 'soft' }, over: fall(petalsA, { alpha: 0.8 }) });
+  S(BAR(5), BAR(6), '04', move.drift(80, -80, 40, 320), { enter: { type: 'thread' } });
   F(BAR(6), 15.8, (g, t, cam) => titleCard(g, t, cam, plum), {
-    enter: 'flash',
+    enter: { type: 'brush' },
     cam: (t) => ({ x: 0, y: 0, z: 140 * span(t, 12.055, 14.8, ease.inOutSine) + 760 * span(t, 14.8, 15.8, ease.inExpo), roll: 0.02 * span(t, 14.8, 15.8, ease.inExpo) }),
   });
 
   // ================================================================ VERSE 1
-  S(15.8, BAR(9) - 0.05, '05', move.snap(560, 60, -40, 0), { enter: 'flash' });
-  S(BAR(9) - 0.05, 19.8, '35', move.truck(-130, 130, 300), { enter: { type: 'zoom', x: 700, y: 600 } });
+  S(15.8, BAR(9) - 0.05, '05', move.snap(560, 60, -40, 0), { enter: { type: 'bars' } });
+  S(BAR(9) - 0.05, 19.8, '35', move.truck(-130, 130, 300), { enter: { type: 'focus', x: 960, y: 420 } });
   S(19.8, 22.8, null, move.push(0, 140), { split: { left: '06', right: '07', div: (t) => lerp(W, W / 2, span(t, 19.8, 20.3, ease.outExpo)) + whipSplit(t, [20.55, 20.8, 21.05, 21.55, 21.8]) } });
-  S(22.8, 25.05, '08', move.push(0, 320, 60, -30), { enter: { type: 'whip', dir: 1 } });
-  S(25.05, 26.55, '09', move.snap(640, 80), { enter: 'flash', over: (g, t, cam) => { layer(g, cam, D.front); bfly1.draw(g, t); } });
-  S(26.55, 30.0, '10', move.truck(-150, 170, 140), { enter: { type: 'whip', dir: -1 }, over: (g, t, cam, P, gcam) => { layer(g, gcam, D.text + 60); budBloom(g, t, 1520, 610); } });
+  S(22.8, 25.05, '08', move.push(0, 320, 60, -30), { enter: { type: 'paper' } });
+  S(25.05, 26.55, '09', move.snap(640, 80), { enter: { type: 'focus', x: 700, y: 540 }, over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); bfly1.draw(g, t); } });
+  S(26.55, 30.0, '10', move.truck(-150, 170, 140), { enter: { type: 'soft' }, over: (g, t, cam, P, gcam) => { layer(g, gcam, D.text + 60); budBloom(g, t, 1520, 610); } });
 
   // ================================================================ WINTER
-  S(30.0, BAR(16), '11', move.push(0, 220), { grade: GRADE.cold, enter: { type: 'flash', color: '#d8ecff' }, over: fall(snowWinter) });
-  S(BAR(16), 35.05, '36', move.roll(-0.02, 0.025, 400), { grade: GRADE.cold, enter: { type: 'slats', color: '#d8ecff' }, over: fall(snowWinter) });
+  S(30.0, BAR(16), '11', move.push(0, 220), { grade: GRADE.cold, enter: { type: 'light', color: '220,236,255' }, over: fall(snowWinter) });
+  S(BAR(16), 35.05, '36', move.roll(-0.02, 0.025, 400), { grade: GRADE.cold, enter: { type: 'soft' }, over: fall(snowWinter) });
   F(35.05, 38.3, (g, t, cam) => { paleSun(g, t, cam); snowWinter.draw(g, t, { cam }); }, { enter: 'dissolve', cam: move.truck(-70, 130, 60) });
-  S(38.3, 41.05, '12', move.push(0, 560, 40, -20), { grade: GRADE.night, enter: { type: 'whip', dir: 1 }, over: fall(snowWinter) });
-  S(41.05, 43.05, '37', move.push(0, 280, 30, -10), { grade: GRADE.night, enter: 'dissolve', over: fall(snowWinter) });
+  S(38.3, 41.05, '12', move.push(0, 560, 40, -20), { grade: GRADE.night, enter: { type: 'paper', dir: -1 }, over: fall(snowWinter) });
+  S(41.05, 43.05, '37', move.push(0, 280, 30, -10), { grade: GRADE.night, enter: { type: 'soft' }, over: fall(snowWinter) });
   S(43.05, 47.05, '13', move.drift(-110, 70, 40, 300), {
     grade: GRADE.dim,
     enter: { type: 'ink', x: 760, y: 600 },
-    over: (g, t, cam) => {
+    over: (g, t, cam, P, gcam) => {
       // 伤人情: red ink bleeds through the picture on the words
       redBloom(g, t, env.fx);
-      snowWinter.draw(g, t, { cam, alpha: 0.5 });
+      snowWinter.draw(g, t, { cam: gcam, alpha: 0.5 });
     },
   });
 
   // ================================================================ PRE-CHORUS
   F(47.05, 49.8, (g, t, cam) => housePiece(g, t, cam, snowPre), { cam: move.push(0, 300, 0, -20) });
-  S(49.8, 51.05, '38', move.pull(320, 60), { grade: GRADE.warm, enter: 'flash', over: fall(snowPre) });
-  const latticeOver = (g, t, cam) => {
+  S(49.8, 51.05, '38', move.pull(320, 60), { grade: GRADE.warm, enter: { type: 'light', x: 960, y: 420, color: '255,200,140' }, over: fall(snowPre) });
+  const latticeOver = (g, t, cam, P, gcam) => {
     layer(g, cam, D.back);
     G.lattice(g, 430, 180, 1060, 640, span(t, 51.05, 54.2), { color: '#ff5a46', alpha: 0.85, cell: 90, width: 3 });
-    snowPre.draw(g, t, { cam, alpha: 0.5 });
+    snowPre.draw(g, t, { cam: gcam, alpha: 0.5 });
   };
-  S(51.05, 53.05, '14', move.push(40, 300), { enter: { type: 'whip', dir: -1 }, over: latticeOver });
-  S(53.05, 55.05, '39', move.push(60, 320), { enter: { type: 'slats' }, over: latticeOver });
-  F(55.05, 59.05, (g, t, cam) => silverRouge(g, t, cam, petalsRouge), { enter: 'flash', cam: move.drift(-60, 60, 0, 160), bright: true });
+  S(51.05, 53.05, '14', move.push(40, 300), { enter: { type: 'thread' }, over: latticeOver });
+  S(53.05, 55.05, '39', move.push(60, 320), { enter: { type: 'soft' }, over: latticeOver });
+  F(55.05, 59.05, (g, t, cam) => silverRouge(g, t, cam, petalsRouge), { enter: { type: 'brush', dir: -1 }, cam: move.drift(-60, 60, 0, 160), bright: true });
   S(59.05, 61.05, '15', (t, s) => ({ x: 0, y: -40 * s.p(t), z: 60 + 260 * ease.inOutSine(s.p(t)) + 600 * span(t, 62.2, 62.93, ease.inExpo), roll: 0 }), {
     grade: GRADE.paper,
-    enter: 'dissolve',
-    over: (g, t, cam) => { layer(g, cam, D.front); G.speedLines(g, t, 960, 540, span(t, 62.0, 62.93), { color: '#ffffff' }); },
+    enter: { type: 'soft' },
+    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); G.speedLines(g, t, 960, 540, span(t, 62.0, 62.93), { color: '#ffffff' }); },
   });
   S(61.05, 62.93, '40', (t, s) => ({ x: 0, y: 0, z: 140 * ease.inOutSine(s.p(t)) + 700 * span(t, 62.2, 62.93, ease.inExpo), roll: 0 }), {
     grade: GRADE.paper,
-    enter: 'dissolve',
-    over: (g, t, cam) => { layer(g, cam, D.front); G.speedLines(g, t, 960, 540, span(t, 62.0, 62.93), { color: '#ffffff' }); },
+    enter: { type: 'focus' },
+    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); G.speedLines(g, t, 960, 540, span(t, 62.0, 62.93), { color: '#ffffff' }); },
   });
 
   // ================================================================ SPRING
   S(62.93, 64.43, '16', move.push(80, 300, -120, -60), { grade: GRADE.red, enter: 'drop', over: fall(petalsRed) });
   S(64.43, 67.06, '41', move.snap(760, 320, -160, -80), {
     grade: GRADE.red,
-    enter: { type: 'zoom', x: 760, y: 470 },
-    over: (g, t, cam) => { layer(g, cam, D.back); G.ring(g, t, 64.43, 960, 540, { color: '#ff3b30', r1: 1200, width: 40 }); petalsRed.draw(g, t, { cam }); },
+    enter: { type: 'focus', x: 760, y: 470 },
+    over: (g, t, cam, P, gcam) => { layer(g, cam, D.back); G.ring(g, t, 64.43, 960, 540, { color: '#ff3b30', r1: 1200, width: 40 }); petalsRed.draw(g, t, { cam: gcam }); },
   });
-  S(67.06, 69.06, '17', move.roll(-0.035, 0.035, 220), { enter: { type: 'whip', dir: 1 }, over: fall(petalsRed) });
-  S(69.06, 71.06, '42', move.truck(170, -170, 340), { enter: { type: 'slash' }, over: fall(petalsRed) });
+  S(67.06, 69.06, '17', move.roll(-0.035, 0.035, 220), { enter: { type: 'bars' }, over: fall(petalsRed) });
+  S(69.06, 71.06, '42', move.truck(170, -170, 340), { enter: { type: 'thread' }, over: fall(petalsRed) });
   S(71.06, 73.31, '18', move.push(60, 320), {
     grade: GRADE.red,
-    enter: 'flash',
-    over: (g, t, cam) => { layer(g, cam, D.front); wildVines(g, t, 71.06); sparks.draw(g, t, { cam }); },
+    enter: { type: 'soft' },
+    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); wildVines(g, t, 71.06); sparks.draw(g, t, { cam: gcam }); },
   });
-  S(73.31, 75.06, '43', move.snap(640, 180, 0, 60), { grade: GRADE.red, enter: { type: 'zoom' }, over: (g, t, cam) => { layer(g, cam, D.front); wildVines(g, t, 71.06, 0.6); sparks.draw(g, t, { cam }); } });
-  F(75.06, 77.06, (g, t, cam) => growth(g, t, cam, sparks), { enter: 'flash', cam: move.push(0, 260) });
+  S(73.31, 75.06, '43', move.snap(640, 180, 0, 60), { grade: GRADE.red, enter: { type: 'focus' }, over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); wildVines(g, t, 71.06, 0.6); sparks.draw(g, t, { cam: gcam }); } });
+  F(75.06, 77.06, (g, t, cam) => growth(g, t, cam, sparks), { enter: { type: 'light', color: '255,140,110' }, cam: move.push(0, 260) });
   // build-up montage into the drop: a cut on every beat, then every eighth
   const montage = ['44', '45', '46', '47', '05', '03', '14'];
   const cuts = [77.06, 77.56, 78.06, 78.56, 79.06, 79.31, 79.56];
-  cuts.forEach((c, i) => S(c, cuts[i + 1] ?? 79.81, montage[i], move.snap(560, 160, (i % 2 ? 1 : -1) * 90, 0), { enter: 'flash', grade: GRADE.red }));
+  cuts.forEach((c, i) => S(c, cuts[i + 1] ?? 79.81, montage[i], move.snap(560, 160, (i % 2 ? 1 : -1) * 90, 0), { grade: GRADE.red }));
 
   // ================================================================ CHORUS 1
   S(79.81, 81.06, '14', move.snap(820, 60), {
     enter: 'drop',
     over: (g, t, cam, P, gcam) => { layer(g, gcam, D.text + 60); for (const c of lyrics[17].chars) G.ring(g, t, c[1], 960, 540, { r1: 1100, width: 26 }); },
   });
-  S(81.06, 82.31, '19', move.push(60, 360), { enter: { type: 'zoom' } });
-  S(82.31, 83.81, '48', move.truck(-160, 120, 160), { enter: { type: 'whip', dir: 1 } });
+  S(81.06, 82.31, '19', move.push(60, 360), { enter: { type: 'focus' } });
+  S(82.31, 83.81, '48', move.truck(-160, 120, 160), { enter: { type: 'bars' } });
   S(83.81, 86.81, null, move.push(0, 160), { enter: { type: 'whip', dir: 1 }, split: { left: '06', right: '07', div: (t) => W / 2 + whipSplit(t, [84.06, 84.56, 84.81, 85.56, 85.81]) } });
-  S(86.81, 88.81, '49', move.truck(-170, 170, 180), { enter: { type: 'whip', dir: -1 } });
-  S(88.81, 89.31, '08', move.snap(720, 160), { enter: 'flash', over: (g, t, cam) => { layer(g, cam, D.front); bfly2.draw(g, t); } });
-  F(89.31, 90.43, (g, t, cam) => swarm(g, t, cam, bflySwarm), { enter: { type: 'whip', dir: 1 }, cam: move.push(0, 300), bright: true });
-  S(90.43, 93.06, '09', move.push(60, 540, 140, -40), { enter: { type: 'iris', x: 760, y: 540 }, over: (g, t, cam) => { layer(g, cam, D.front); bfly2.draw(g, t); } });
+  S(86.81, 88.81, '49', move.truck(-170, 170, 180), { enter: { type: 'soft' } });
+  S(88.81, 89.31, '08', move.snap(720, 160), { over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); bfly2.draw(g, t); } });
+  F(89.31, 90.43, (g, t, cam) => swarm(g, t, cam, bflySwarm), { enter: { type: 'light', color: '200,220,255' }, cam: move.push(0, 300), bright: true });
+  S(90.43, 93.06, '09', move.push(60, 540, 140, -40), { enter: { type: 'iris', x: 760, y: 540 }, over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); bfly2.draw(g, t); } });
   F(93.06, 95.06, (g, t, cam) => titleDrop(g, t, cam, 93.06, lyrics[21], titleBurst), { enter: 'drop', cam: move.pull(420, 60) });
 
   // ================================================================ VERSE 2
-  S(95.06, 97.06, '20', move.drift(-90, 70, 0, 220), { grade: GRADE.paper, enter: { type: 'flash', soft: true }, over: fall(petalsV2) });
-  S(97.06, 99.06, '50', move.drift(60, -60, 0, 200), { grade: GRADE.paper, enter: 'dissolve', over: fall(petalsV2) });
+  S(95.06, 97.06, '20', move.drift(-90, 70, 0, 220), { grade: GRADE.paper, enter: { type: 'light' }, over: fall(petalsV2) });
+  S(97.06, 99.06, '50', move.drift(60, -60, 0, 200), { grade: GRADE.paper, enter: { type: 'soft' }, over: fall(petalsV2) });
   S(99.06, 101.06, '21', move.truck(-130, 90, 150), { enter: { type: 'ink', x: 700, y: 480 }, over: fall(petalsV2, { alpha: 0.7 }) });
-  S(101.06, 103.06, '51', move.push(0, 240), { enter: 'dissolve', over: fall(petalsV2, { alpha: 0.7 }) });
-  S(103.06, 105.06, '22', move.push(0, 240), { grade: GRADE.warm, enter: 'dissolve' });
-  S(105.06, 107.06, '23', move.pull(400, 60), { enter: { type: 'push', dir: 1 } });
-  F(107.06, 110.93, (g, t, cam, P) => mirrorDream(g, t, cam, P['22']), { uses: ['22'], enter: 'flash', cam: move.push(40, 240) });
+  S(101.06, 103.06, '51', move.push(0, 240), { enter: { type: 'paper' }, over: fall(petalsV2, { alpha: 0.7 }) });
+  S(103.06, 105.06, '22', move.push(0, 240), { grade: GRADE.warm, enter: { type: 'soft' } });
+  S(105.06, 107.06, '23', move.pull(400, 60), { enter: { type: 'thread' } });
+  F(107.06, 110.93, (g, t, cam, P) => mirrorDream(g, t, cam, P['22']), { uses: ['22'], enter: { type: 'soft' }, cam: move.push(40, 240) });
 
   // ================================================================ BRIDGE
-  S(110.93, BAR(56) + 1, '23', move.snap(820, 140), { grade: GRADE.red, enter: 'drop', glitch: 0.6 });
-  S(BAR(56) + 1, 115.06, '52', move.roll(0.04, -0.04, 320), { grade: GRADE.red, enter: { type: 'glitch' }, glitch: 0.8 });
-  F(115.06, 118.93, (g, t, cam) => { dialPiece(g, t, cam); snowDial.draw(g, t, { cam, alpha: span(t, 117.2, 117.7) }); }, { enter: 'flash', cam: move.push(0, 200) });
-  S(118.93, 121.06, '24', move.push(40, 320), { enter: { type: 'whip', dir: -1 }, glitch: 0.5, over: (g, t, cam) => dayNight(g, t, cam) });
-  S(121.06, 123.06, '53', move.push(40, 260), { enter: { type: 'glitch' }, glitch: 0.5, over: (g, t, cam) => dayNight(g, t, cam) });
-  S(123.06, 125.06, '25', move.truck(-170, 170, 170), { enter: { type: 'slats' } });
+  S(110.93, BAR(56) + 1, '23', move.snap(820, 140), { grade: GRADE.red, enter: 'drop' });
+  S(BAR(56) + 1, 115.06, '52', move.roll(0.04, -0.04, 320), { grade: GRADE.red, enter: { type: 'focus' } });
+  F(115.06, 118.93, (g, t, cam) => { dialPiece(g, t, cam); snowDial.draw(g, t, { cam, alpha: span(t, 117.2, 117.7) }); }, { enter: { type: 'light', color: '210,255,230' }, cam: move.push(0, 200) });
+  S(118.93, 121.06, '24', move.push(40, 320), { enter: { type: 'paper' }, over: (g, t, cam, P, gcam) => dayNight(g, t, cam) });
+  S(121.06, 123.06, '53', move.push(40, 260), { enter: { type: 'soft' }, over: (g, t, cam, P, gcam) => dayNight(g, t, cam) });
+  S(123.06, 125.06, '25', move.truck(-170, 170, 170), { enter: { type: 'bars' } });
   S(125.06, 127.81, '26', (t, s) => ({ x: 0, y: 0, z: 300 * ease.inOutSine(s.p(t)) + 700 * span(t, 126.8, 127.81, ease.inExpo), roll: 0 }), {
     grade: GRADE.dim,
-    enter: 'dissolve',
-    over: (g, t, cam) => { layer(g, cam, D.front); G.speedLines(g, t, 960, 540, span(t, 126.6, 127.81)); },
+    enter: { type: 'soft' },
+    over: (g, t, cam, P, gcam) => { layer(g, cam, D.front); G.speedLines(g, t, 960, 540, span(t, 126.6, 127.81)); },
   });
 
   // ================================================================ FINAL CHORUS
@@ -330,50 +359,50 @@ export function buildStory(lyrics, env = {}) {
     grade: GRADE.night,
     enter: 'drop',
     over: (g, t, cam, P, gcam) => {
-      snowFinal.draw(g, t, { cam });
+      snowFinal.draw(g, t, { cam: gcam });
       layer(g, gcam, D.text + 60);
       for (const c of lyrics[31].chars) G.ring(g, t, c[1], 960, 540, { r1: 1100, width: 26, color: '#cfe4ff' });
     },
   });
-  S(129.81, 131.81, '54', move.roll(-0.03, 0.03, 280), { grade: GRADE.night, enter: { type: 'zoom' }, over: fall(snowFinal) });
+  S(129.81, 131.81, '54', move.roll(-0.03, 0.03, 280), { grade: GRADE.night, enter: { type: 'focus' }, over: fall(snowFinal) });
   S(131.81, 134.81, null, move.push(0, 160), { grade: GRADE.night, enter: { type: 'whip', dir: -1 }, split: { left: '28', right: '07', div: (t) => W / 2 + whipSplit(t, [132.06, 132.43, 132.81, 133.56, 133.93]) }, over: fall(snowFinal) });
-  S(134.81, 137.06, '55', move.push(80, 400), { grade: GRADE.night, enter: { type: 'whip', dir: 1 }, over: fall(snowFinal) });
-  S(137.06, 138.56, '08', move.snap(720, 150), { grade: GRADE.night, enter: 'flash', over: (g, t, cam) => { snowFinal.draw(g, t, { cam }); layer(g, cam, D.front); bfly3.draw(g, t); } });
-  S(138.56, 141.06, '56', move.push(0, 280), { grade: GRADE.night, enter: { type: 'zoom' }, over: fall(snowFinal) });
+  S(134.81, 137.06, '55', move.push(80, 400), { grade: GRADE.night, enter: { type: 'brush' }, over: fall(snowFinal) });
+  S(137.06, 138.56, '08', move.snap(720, 150), { grade: GRADE.night, over: (g, t, cam, P, gcam) => { snowFinal.draw(g, t, { cam: gcam }); layer(g, cam, D.front); bfly3.draw(g, t); } });
+  S(138.56, 141.06, '56', move.push(0, 280), { grade: GRADE.night, enter: { type: 'soft' }, over: fall(snowFinal) });
   S(141.06, 143.93, '29', move.snap(860, 260), {
     grade: GRADE.night,
     enter: 'drop',
-    over: (g, t, cam) => {
-      snowFinal.draw(g, t, { cam });
+    over: (g, t, cam, P, gcam) => {
+      snowFinal.draw(g, t, { cam: gcam });
       layer(g, cam, D.back);
       G.ring(g, t, 141.06, 960, 480, { color: '#ff4b3e', r1: 1400, width: 50, dur: 0.9 });
       G.ring(g, t, 141.81, 960, 460, { color: '#ffffff', r1: 1300, width: 30, dur: 0.8 });
-      burst1.draw(g, t, { cam });
-      burst2.draw(g, t, { cam });
-      burstNear.draw(g, t, { cam, alpha: 0.9 });
+      burst1.draw(g, t, { cam: gcam });
+      burst2.draw(g, t, { cam: gcam });
+      burstNear.draw(g, t, { cam: gcam, alpha: 0.9 });
     },
   });
 
   // ================================================================ CODA
-  S(143.93, 146.56, '30', move.drift(-70, 70, 0, 240), { grade: GRADE.warm, enter: 'flash', over: (g, t, cam) => { burst1.draw(g, t, { cam, alpha: 0.6 }); petalsCoda.draw(g, t, { cam }); } });
+  S(143.93, 146.56, '30', move.drift(-70, 70, 0, 240), { grade: GRADE.warm, enter: { type: 'light', color: '255,230,190' }, over: (g, t, cam, P, gcam) => { burst1.draw(g, t, { cam: gcam, alpha: 0.6 }); petalsCoda.draw(g, t, { cam: gcam }); } });
   S(146.56, 149.06, '31', (t, s) => ({ x: 0, y: 140 - 220 * ease.inOutSine(s.p(t)), z: 380 - 300 * ease.outCubic(s.p(t)), roll: 0 }), {
     grade: GRADE.gold,
-    enter: { type: 'flash', color: '#fff1d0' },
+    enter: { type: 'light', color: '255,236,200', x: 960, y: 300 },
     rays: [960, 300],
-    over: (g, t, cam) => { g.globalCompositeOperation = 'lighter'; dust.draw(g, t, { cam }); g.globalCompositeOperation = 'source-over'; },
+    over: (g, t, cam, P, gcam) => { g.globalCompositeOperation = 'lighter'; dust.draw(g, t, { cam: gcam }); g.globalCompositeOperation = 'source-over'; },
   });
   S(149.06, 151.06, '57', move.push(40, 240), {
     grade: GRADE.gold,
-    enter: 'dissolve',
+    enter: { type: 'soft' },
     rays: [700, 260],
-    over: (g, t, cam) => { g.globalCompositeOperation = 'lighter'; dust.draw(g, t, { cam }); g.globalCompositeOperation = 'source-over'; },
+    over: (g, t, cam, P, gcam) => { g.globalCompositeOperation = 'lighter'; dust.draw(g, t, { cam: gcam }); g.globalCompositeOperation = 'source-over'; },
   });
   S(151.06, 154.31, '32', move.truck(-130, 110, 130), {
     enter: { type: 'ink', x: 820, y: 540 },
-    over: (g, t, cam) => { petalsCoda.draw(g, t, { cam }); layer(g, cam, D.front); redThread(g, t, 1500 - 400 * span(t, 153.06, 154.0, ease.outCubic), 860, 1900, 700); },
+    over: (g, t, cam, P, gcam) => { petalsCoda.draw(g, t, { cam: gcam }); layer(g, cam, D.front); redThread(g, t, 1500 - 400 * span(t, 153.06, 154.0, ease.outCubic), 860, 1900, 700); },
   });
-  S(154.31, 157.06, '33', move.push(0, 260, 40, 30), { enter: 'dissolve', over: fall(petalsCoda) });
-  S(157.06, 161.0, '34', move.drift(70, -50, 0, 200), { enter: { type: 'ink', x: 1500, y: 800 }, over: (g, t, cam) => { shed.draw(g, t, { cam }); petalsCoda.draw(g, t, { cam, alpha: 0.6 }); } });
+  S(154.31, 157.06, '33', move.push(0, 260, 40, 30), { enter: { type: 'soft' }, over: fall(petalsCoda) });
+  S(157.06, 161.0, '34', move.drift(70, -50, 0, 200), { enter: { type: 'ink', x: 1500, y: 800 }, over: (g, t, cam, P, gcam) => { shed.draw(g, t, { cam: gcam }); petalsCoda.draw(g, t, { cam: gcam, alpha: 0.6 }); } });
   F(161.0, DURATION, (g, t, cam) => endCard(g, t, cam, plumEnd), { enter: 'fade', cam: move.push(0, 160) });
 
   // ------------------------------------------------------ wiring --
@@ -386,7 +415,7 @@ export function buildStory(lyrics, env = {}) {
   });
 
   const impacts = shots.filter((s) => s.enter?.type === 'drop').map((s) => [s.t0, 26, 0.2]);
-  const globalCam = makeGlobalCam({ intensity, impacts, swings: [[79.81, 93.06], [127.81, 141.06]] });
+  const globalCam = makeGlobalCam({ intensity, impacts });
 
   const indexAt = (t) => {
     let lo = 0;
@@ -419,6 +448,7 @@ export function buildStory(lyrics, env = {}) {
     globalCam,
     coverOf,
     lyricStyles: LYRICS,
+    notes: NOTES,
     chapters: CHAPTERS,
     opening: OPENING,
     inserts: INSERTS,

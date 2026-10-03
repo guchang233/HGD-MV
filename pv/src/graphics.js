@@ -553,3 +553,101 @@ export function glitchSlices(g, src, t, amount, o = {}) {
 }
 
 export { hash };
+
+// -------------------------------------------------------- pencil marks --
+// Hand-drawn annotations that draw themselves on: loose doubled pencil
+// lines with a little wobble, like notes scribbled over the picture.
+function pencilPath(g, pts, p, o) {
+  const n = pts.length;
+  const upto = Math.max(1, Math.floor((n - 1) * clamp(p)));
+  for (const [w, a, off] of [[o.width ?? 2.4, 0.85, 0], [(o.width ?? 2.4) * 0.5, 0.45, 1.6]]) {
+    g.strokeStyle = rgba(o.color ?? '#2b2a35', (o.alpha ?? 1) * a);
+    g.lineWidth = w;
+    g.beginPath();
+    for (let i = 0; i <= upto; i++) {
+      const [x, y] = pts[i];
+      if (i === 0) g.moveTo(x + off, y - off * 0.5);
+      else g.lineTo(x + off, y - off * 0.5);
+    }
+    g.stroke();
+  }
+}
+
+/** Loose ellipse that overshoots its start, drawn on as p goes 0..1. */
+export function sketchCircle(g, x, y, rx, ry, p, o = {}) {
+  if (p <= 0) return;
+  const r = mulberry32(o.seed ?? 1);
+  const turns = 1.18;
+  const a0 = -2.2 + r() * 0.6;
+  const pts = [];
+  for (let i = 0; i <= 90; i++) {
+    const u = i / 90;
+    const a = a0 + u * turns * TAU;
+    const wob = 1 + 0.05 * Math.sin(u * 9 + r() * 0.3) + (u - 0.5) * 0.06;
+    pts.push([x + Math.cos(a) * rx * wob, y + Math.sin(a) * ry * wob + u * ry * 0.1]);
+  }
+  g.save();
+  g.lineCap = 'round';
+  g.lineJoin = 'round';
+  pencilPath(g, pts, ease.outCubic(p), o);
+  g.restore();
+}
+
+/** Quick double underline swept from x0 to x1. */
+export function sketchUnderline(g, x0, x1, y, p, o = {}) {
+  if (p <= 0) return;
+  const r = mulberry32(o.seed ?? 2);
+  g.save();
+  g.lineCap = 'round';
+  for (let k = 0; k < (o.lines ?? 2); k++) {
+    const q = clamp(p * 1.6 - k * 0.5);
+    if (q <= 0) continue;
+    const pts = [];
+    const yy = y + k * 10;
+    for (let i = 0; i <= 30; i++) {
+      const u = i / 30;
+      pts.push([lerp(x0 - 10 + k * 20, x1 + 10 - k * 30, u), yy + Math.sin(u * 3 + r() * 6) * 3 + (u - 0.5) * (r() - 0.5) * 12]);
+    }
+    pencilPath(g, pts, ease.outCubic(q), o);
+  }
+  g.restore();
+}
+
+/** Hand-drawn arrow from (x0,y0) to (x1,y1). */
+export function sketchArrow(g, x0, y0, x1, y1, p, o = {}) {
+  if (p <= 0) return;
+  const pts = [];
+  const bend = o.bend ?? 0.15;
+  const mx = (x0 + x1) / 2 - (y1 - y0) * bend;
+  const my = (y0 + y1) / 2 + (x1 - x0) * bend;
+  for (let i = 0; i <= 30; i++) {
+    const u = i / 30;
+    pts.push([(1 - u) * (1 - u) * x0 + 2 * (1 - u) * u * mx + u * u * x1, (1 - u) * (1 - u) * y0 + 2 * (1 - u) * u * my + u * u * y1]);
+  }
+  g.save();
+  g.lineCap = 'round';
+  pencilPath(g, pts, ease.outCubic(clamp(p * 1.3)), o);
+  const hp = clamp((p - 0.7) / 0.3);
+  if (hp > 0) {
+    const a = Math.atan2(y1 - my, x1 - mx);
+    for (const s of [-1, 1]) {
+      const hx = x1 - Math.cos(a + s * 0.5) * 26;
+      const hy = y1 - Math.sin(a + s * 0.5) * 26;
+      pencilPath(g, [[x1, y1], [lerp(x1, hx, 0.5), lerp(y1, hy, 0.5)], [hx, hy]], hp, o);
+    }
+  }
+  g.restore();
+}
+
+/** Tight scribble over a rect (crossing something out). */
+export function sketchScribble(g, x, y, w, h, p, o = {}) {
+  if (p <= 0) return;
+  const r = mulberry32(o.seed ?? 3);
+  const pts = [];
+  for (let i = 0; i <= 14; i++) pts.push([x + (i % 2 ? w : 0) + (r() - 0.5) * 20, y + (i / 14) * h + (r() - 0.5) * 10]);
+  g.save();
+  g.lineCap = 'round';
+  g.lineJoin = 'round';
+  pencilPath(g, pts, p, o);
+  g.restore();
+}

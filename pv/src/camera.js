@@ -2,8 +2,8 @@
 // in screen coordinates as it looks with the camera at rest.  Moving the
 // camera (x, y, z = dolly forward, roll) slides and scales near layers more
 // than far ones, which is what makes flat cards read as depth.
-import { W, H, clamp, ease, fbm1, noise1 } from './core.js';
-import { pulse, events } from './timing.js';
+import { W, H, clamp, ease, fbm1 } from './core.js';
+import { events } from './timing.js';
 
 export const F = 1500; // a layer at D = F moves 1:1 with the camera
 
@@ -67,34 +67,24 @@ export function coverNeed(c, d) {
 // ------------------------------------------------------- global camera --
 // Continuous across cuts: hand-held drift, kick-drum punch-ins, snare roll
 // swings in the choruses and impact shake.  Shot cameras add on top.
-export function makeGlobalCam({ intensity, impacts = [], swings = [] }) {
+export function makeGlobalCam({ intensity, impacts = [] }) {
   return (t) => {
     const k = intensity(t);
-    const kick = pulse('kicks', t, 0.11, 0.35);
-    // punch-in on the kick: the dolly jumps forward and settles
-    const z = 70 * k * k * Math.min(kick, 1.6);
-    // hand-held float
-    let x = 16 * fbm1(t * 0.23, 11) + 6 * k * fbm1(t * 1.7, 12);
-    let y = 10 * fbm1(t * 0.19, 13) + 4 * k * fbm1(t * 1.5, 14);
-    let roll = 0.005 * fbm1(t * 0.15, 15);
-    // shake on hard hits
-    let shake = 7 * k * k * pulse('kicks', t, 0.07, 0.6);
-    for (const [t0, amp, decay] of impacts) {
+    // a soft breath on the kick: the dolly eases forward and settles (no shake)
+    let z = 0;
+    for (const [ti, st] of events('kicks', t - 1.2, t, 0.5)) {
+      const a = t - ti;
+      z += 16 * k * Math.min(st, 1.2) * (1 - Math.exp(-a / 0.05)) * Math.exp(-a / 0.3);
+    }
+    // big moments: a slow push rather than a jolt
+    for (const [t0] of impacts) {
       const a = t - t0;
-      if (a >= 0 && a < decay * 6) shake += amp * Math.exp(-a / decay);
+      if (a >= 0 && a < 3) z += 60 * (1 - Math.exp(-a / 0.12)) * Math.exp(-a / 0.9);
     }
-    x += shake * noise1(t * 37, 1);
-    y += shake * noise1(t * 37, 2);
-    roll += shake * 0.0009 * noise1(t * 29, 3);
-    // roll swings on the snare, alternating sides
-    for (const [a, b] of swings) {
-      if (t < a || t > b + 1) continue;
-      const hits = events('snares', a, Math.min(t, b), 0.45);
-      hits.forEach(([ti], i) => {
-        const age = t - ti;
-        roll += (i % 2 ? 1 : -1) * 0.018 * Math.exp(-age / 0.22) * Math.cos(age * 14);
-      });
-    }
+    // a very slow float
+    const x = 10 * fbm1(t * 0.11, 11);
+    const y = 6 * fbm1(t * 0.09, 13);
+    const roll = 0.0025 * fbm1(t * 0.07, 15);
     return { x, y, z, roll };
   };
 }
@@ -106,10 +96,11 @@ export const move = {
   push: (z0 = 0, z1 = 260, x = 0, y = 0) => (t, s) => ({ x, y, z: z0 + (z1 - z0) * ease.inOutSine(s.p(t)), roll: 0 }),
   pull: (z0 = 380, z1 = 40, x = 0, y = 0) => (t, s) => ({ x, y, z: z0 + (z1 - z0) * ease.outCubic(s.p(t)), roll: 0 }),
   // fast settle from a punched-in start, then a slow creep
-  snap: (z0 = 520, z1 = 60, x = 0, y = 0) => (t, s) => ({ x, y, z: z0 + (z1 - z0) * ease.outExpo(clamp((t - s.t0) / 0.6)) + 70 * s.p(t), roll: 0 }),
+  snap: (z0 = 520, z1 = 60, x = 0, y = 0) => (t, s) => ({ x, y, z: z1 + (Math.min(z0, 320) - z1) * (1 - ease.outCubic(clamp((t - s.t0) / 1.4))) + 60 * s.p(t), roll: 0 }),
   truck: (x0 = -180, x1 = 180, z = 120, y = 0) => (t, s) => ({ x: x0 + (x1 - x0) * ease.inOutSine(s.p(t)), y, z, roll: 0 }),
   crane: (y0 = -120, y1 = 120, z = 120, x = 0) => (t, s) => ({ x, y: y0 + (y1 - y0) * ease.inOutSine(s.p(t)), z, roll: 0 }),
-  roll: (r0 = -0.04, r1 = 0.04, z = 160) => (t, s) => ({ x: 0, y: 0, z, roll: r0 + (r1 - r0) * ease.inOutSine(s.p(t)) }),
+  // gentle tilt (presets are scaled down: big rolls read as shaky)
+  roll: (r0 = -0.015, r1 = 0.015, z = 160) => (t, s) => ({ x: 0, y: 0, z, roll: 0.4 * (r0 + (r1 - r0) * ease.inOutSine(s.p(t))) }),
   // dolly in while drifting sideways (the classic slow parallax move)
   drift: (x0 = -120, x1 = 120, z0 = 0, z1 = 220, y = 0) => (t, s) => {
     const p = ease.inOutSine(s.p(t));

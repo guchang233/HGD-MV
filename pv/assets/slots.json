@@ -166,15 +166,14 @@
     },
     {
       "id": "13",
-      "name": "独坐红椅",
+      "name": "空椅",
       "mood": "night",
       "focus": [
         0.4,
         0.55
       ],
-      "heroine": true,
-      "cn": "昏暗的房间里，冷蓝色的月光透过白色纱帘照进来，女主角独自坐在一把红色雕花古椅上，低着头，双手放在膝上，白色飘带垂落在地；整体偏暗，人物在左侧到中部，右侧是暗色的留白。",
-      "en": "A dim room where cold blue moonlight falls through pale white curtains; the heroine sits alone on a red carved antique chair, head lowered, hands on her knees, white ribbons trailing to the floor; mostly dark, figure from the left to the center, dark empty space on the right."
+      "cn": "昏暗的房间里，冷蓝色的月光透过白色纱帘照在一把空着的红色雕花木椅上，椅背上搭着一条白色飘带；椅子在画面左侧，右侧是暗色留白。",
+      "en": "In a dim room, cold blue moonlight falls through pale curtains onto an empty red carved wooden chair, a white ribbon draped over its back; chair on the left, dark empty space on the right."
     },
     {
       "id": "14",
@@ -220,10 +219,8 @@
         0.5,
         0.5
       ],
-      "heroine": true,
-      "cn": "俯视镜头：女主角躺在一大片开满红花的青绿色草地上，红色花瓣被风吹起，春天，明亮。",
-      "en": "Top-down shot: the heroine lies in a vast green meadow full of red flowers, red petals lifted by the wind, spring, bright.",
-      "cropY": 0.5
+      "cn": "俯视：青绿色的草地上开满一朵朵红花，几片红色花瓣被风吹起，中间空出一块草地。",
+      "en": "Top-down: a green meadow dotted with red flowers, a few red petals lifted by the wind, an empty patch of grass in the middle."
     },
     {
       "id": "18",
@@ -256,9 +253,8 @@
         0.42,
         0.55
       ],
-      "heroine": true,
-      "cn": "白色背景上，深色的老梅枝从两侧向上合拢成一道拱门，枝头开满红梅，女主角小小地站在拱门下回头；水墨质感，人物在画面中部偏左，右侧留白。",
-      "en": "On a white background, dark old plum branches curve up from both sides to form an arch covered in red blossoms; the heroine stands small beneath it, looking back; ink-painting texture, figure just left of center, right side open."
+      "cn": "白色背景上，两根老梅枝从两侧向上合拢成一道拱门，枝头开着红梅，拱门下是一条空空的小路；拱门在画面中部偏左，右侧留白。",
+      "en": "On white, two old plum branches curve up from both sides into an arch covered in red blossoms, an empty path beneath it; arch just left of center, right side empty."
     },
     {
       "id": "21",
@@ -454,15 +450,14 @@
     },
     {
       "id": "37",
-      "name": "空巷回头",
+      "name": "空巷红灯",
       "mood": "night",
       "focus": [
         0.5,
         0.5
       ],
-      "cn": "深夜下雪的空巷里，女主角站在巷子中间回头看，身后墙上挂着一盏红灯笼。",
-      "en": "In an empty snowy lane at night, the heroine stands in the middle of the lane looking back over her shoulder, a single red lantern on the wall behind her.",
-      "heroine": true
+      "cn": "深夜下雪的空巷，地上一串浅浅的脚印，墙上挂着一盏红灯笼，没有人。",
+      "en": "An empty snowy lane at night, a faint trail of footprints on the ground, a single red lantern on the wall, nobody there."
     },
     {
       "id": "38",
@@ -489,27 +484,25 @@
     },
     {
       "id": "40",
-      "name": "云上的背影",
+      "name": "云做的裙子",
       "mood": "paper",
       "focus": [
         0.5,
         0.5
       ],
-      "cn": "女主角站在云上的背影，长长的白色裙摆和云融在一起，零星红色花瓣飘散；人物居中，左右两侧留空。",
-      "en": "The heroine seen from behind standing on clouds, her long white skirt melting into the clouds, a few red petals drifting; figure centered, both sides empty.",
-      "heroine": true
+      "cn": "苍白的天空中，一件由云朵组成的白色长裙飘浮着，零星的红色花瓣飘散；居中，左右两侧留空。",
+      "en": "In a pale sky, a long white dress made of clouds floats on its own, a few red petals drifting; centered, both sides empty."
     },
     {
       "id": "41",
-      "name": "落在脸上的花瓣",
+      "name": "红绸上的花瓣",
       "mood": "red",
       "focus": [
         0.45,
         0.45
       ],
-      "cn": "俯视特写：女主角闭着眼躺在红色丝绸上，几片红色花瓣落在她的脸颊和头发上。",
-      "en": "Top-down close-up: the heroine lies with closed eyes on red silk, a few red petals resting on her cheek and hair.",
-      "heroine": true
+      "cn": "俯视特写：红色丝绸的褶皱上散落着几片红色花瓣和一根白色发带。",
+      "en": "Top-down close-up: a few red petals and a white hair ribbon scattered on folds of red silk."
     },
     {
       "id": "42",
@@ -569,27 +562,25 @@
     },
     {
       "id": "47",
-      "name": "向后倒下",
+      "name": "飞散的花瓣",
       "mood": "red",
       "focus": [
         0.5,
         0.5
       ],
-      "cn": "女主角张开双臂向后倒下，周围的红色花瓣向四周飞散。",
-      "en": "The heroine falls backwards with her arms spread wide, red petals flying out all around her.",
-      "heroine": true
+      "cn": "红色背景中，一大团红白花瓣从中心向四周炸开飞散。",
+      "en": "On red, a burst of red and white petals explodes outward from the center."
     },
     {
       "id": "48",
-      "name": "奔跑",
+      "name": "飞扬的飘带",
       "mood": "dark",
       "focus": [
         0.62,
         0.5
       ],
-      "cn": "黑色背景中，女主角向画面右侧奔跑，白色飘带向后飞扬；人物在画面右侧，左侧留空。",
-      "en": "Against black, the heroine runs toward the right, white ribbons streaming behind her; figure on the right, left side empty.",
-      "heroine": true
+      "cn": "黑色背景中，一条长长的白色飘带被风吹着向画面右侧飞扬；飘带在画面右侧，左侧留空。",
+      "en": "Against black, one long white ribbon streams toward the right in the wind; ribbon on the right, left side empty."
     },
     {
       "id": "49",
@@ -605,15 +596,14 @@
     },
     {
       "id": "50",
-      "name": "梅枝下远去",
+      "name": "落梅小径",
       "mood": "paper",
       "focus": [
         0.4,
         0.55
       ],
-      "cn": "白色背景中，女主角从一根垂下的红梅枝下走过，背影渐渐远去；人物在画面左侧，右侧留空。",
-      "en": "On white, the heroine walks away beneath a hanging branch of red plum blossoms, seen from behind; figure on the left, right side empty.",
-      "heroine": true
+      "cn": "白色背景中，一根垂下的红梅枝，花瓣落在下面的小路上；主体在画面左侧，右侧留空。",
+      "en": "On white, a hanging branch of red plum blossoms, petals falling onto the path below; subject on the left, right side empty."
     },
     {
       "id": "51",
@@ -641,51 +631,47 @@
     },
     {
       "id": "53",
-      "name": "伏案睡着",
+      "name": "深夜书桌",
       "mood": "dark",
       "focus": [
         0.42,
         0.55
       ],
-      "cn": "深夜，女主角趴在堆满纸张的书桌上睡着了，一盏小台灯亮着。",
-      "en": "Late at night, the heroine has fallen asleep slumped over a desk piled with paper, one small desk lamp on.",
-      "heroine": true
+      "cn": "深夜，一张堆满纸张的书桌，一盏小台灯亮着，椅子空着，墙上的钟指向三点。",
+      "en": "Late at night, a desk piled with paper, one small desk lamp on, the chair empty, a clock on the wall at three."
     },
     {
       "id": "54",
-      "name": "风中伸手",
+      "name": "风雪中的飘带",
       "mood": "snow",
       "focus": [
         0.5,
         0.45
       ],
-      "cn": "风雪中，女主角向前伸出红色的手，白色飘带被风吹得笔直。",
-      "en": "In the blizzard, the heroine reaches forward with a red hand, white ribbons blown straight out by the wind.",
-      "heroine": true
+      "cn": "暴风雪中，一条白色飘带被风吹得笔直，挂在一根枯枝上。",
+      "en": "In a blizzard, a white ribbon blown straight out by the wind, caught on a bare branch."
     },
     {
       "id": "55",
-      "name": "雪地仰望",
+      "name": "雪里的红花",
       "mood": "snow",
       "focus": [
         0.5,
         0.55
       ],
-      "cn": "女主角跪坐在雪地里，仰头望着落下的雪，双手放在膝上。",
-      "en": "The heroine kneels in the snow, looking up at the falling snow, hands on her knees.",
-      "heroine": true
+      "cn": "白茫茫的雪地上，一朵小小的红花从雪里钻出来，雪还在下。",
+      "en": "On a white field of snow, a tiny red flower pokes up through the snow while snow keeps falling."
     },
     {
       "id": "56",
-      "name": "雪夜回望",
+      "name": "雪夜脚印",
       "mood": "snow",
       "focus": [
         0.5,
         0.5
       ],
-      "cn": "雪夜里，女主角半转过身回头看向镜头，飘带在风里飘。",
-      "en": "On a snowy night, the heroine half turns to look back toward the viewer, ribbons fluttering in the wind.",
-      "heroine": true
+      "cn": "雪夜里，一串脚印从画面近处延伸向远方，渐渐被新雪盖住。",
+      "en": "On a snowy night, a trail of footprints runs from the foreground into the distance, slowly covered by new snow."
     },
     {
       "id": "57",
