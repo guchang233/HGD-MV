@@ -3,8 +3,12 @@
 //
 //   node pv/tools/render.mjs                      full render -> 花骨朵_PV.mp4
 //   node pv/tools/render.mjs --stills 3,16.5,47.2 review stills -> pv/build/stills
-//   node pv/tools/render.mjs --from 30 --to 40 --fps 30 --out draft.mp4
-// The soundtrack is the original song, taken whole from 花骨朵.mp4.
+//   node pv/tools/render.mjs --from 30 --to 40 --out draft.mp4
+//   options: --fps 30  --samples 6 (motion-blur sub-frames)  --shutter 180
+//            --workers 4  --bitrate 4M (two-pass) | --crf 21  --force
+// The soundtrack is the original song, taken whole from 花骨朵.mp4.  Pictures
+// are read from pv/assets/images (see pv/PROMPTS.md); empty slots render as
+// placeholders.
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -22,9 +26,31 @@ const args = Object.fromEntries(
     return acc;
   }, []),
 );
-const FPS = Number(args.fps ?? 60);
+const FPS = Number(args.fps ?? 30);
+const SAMPLES = Number(args.samples ?? 6);
+const SHUTTER = (Number(args.shutter ?? 180) / 360) / FPS; // exposure in seconds
 const WORKERS = Number(args.workers ?? Math.max(1, Math.min(4, os.cpus().length)));
 const QUALITY = Number(args.quality ?? 0.95);
+
+// Map picture files to slot ids: 05.png, S05.jpg, 05_少女与孩子.webp ...
+// plus depth layers from tools/ai/make_layers.py (layers/05_bg.webp, _fg).
+function scanImages() {
+  const dir = path.join(PV_DIR, 'assets', 'images');
+  const files = {};
+  if (!fs.existsSync(dir)) return files;
+  for (const name of fs.readdirSync(dir).sort()) {
+    const m = /^[Ss]?(\d{2})(?:[ _\-.].*)?\.(png|jpe?g|webp)$/i.exec(name);
+    if (m && !files[m[1]]) files[m[1]] = `assets/images/${encodeURIComponent(name)}`;
+  }
+  const layers = path.join(dir, 'layers');
+  if (fs.existsSync(layers)) {
+    for (const name of fs.readdirSync(layers)) {
+      const m = /^(\d{2})_(bg|fg)\.(png|webp)$/.exec(name);
+      if (m && files[m[1]]) files[`${m[1]}_${m[2]}`] = `assets/images/layers/${name}`;
+    }
+  }
+  return files;
+}
 
 async function loadPlaywright() {
   try {
@@ -35,7 +61,7 @@ async function loadPlaywright() {
   }
 }
 
-const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.jpg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.woff2': 'font/woff2', '.wav': 'audio/wav' };
+const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.woff2': 'font/woff2', '.wav': 'audio/wav' };
 function serve() {
   const server = http.createServer((req, res) => {
     const rel = decodeURIComponent(new URL(req.url, 'http://x').pathname);
@@ -61,21 +87,21 @@ async function openWorker(browser, url) {
 
 async function renderTo(page, t, file, quality) {
   const data = await page.evaluate(
-    async ([t, q]) => {
-      await window.PV.renderFrame(t);
+    async ([t, q, samples, shutter]) => {
+      await window.PV.renderFrame(t, { samples, shutter });
       return window.PV.capture(q);
     },
-    [t, quality],
+    [t, quality, SAMPLES, SHUTTER],
   );
   fs.writeFileSync(file, Buffer.from(data.slice(data.indexOf(',') + 1), 'base64'));
 }
 
 async function main() {
-  if (!fs.existsSync(path.join(PV_DIR, 'assets', 'plates', 'manifest.json'))) {
-    console.error('Missing pv/assets/plates (see pv/README.md, AI plates).');
-    process.exit(1);
-  }
   fs.mkdirSync(BUILD, { recursive: true });
+  const images = scanImages();
+  fs.writeFileSync(path.join(BUILD, 'images.json'), JSON.stringify(images, null, 1));
+  const filled = Object.keys(images).filter((k) => /^\d{2}$/.test(k));
+  console.log(`pictures: ${filled.length ? filled.map((k) => `S${k}`).join(' ') : 'none yet'} (empty slots render as placeholders)`);
   const audio = path.join(BUILD, 'song.wav');
   if (!fs.existsSync(audio)) {
     spawnSync('ffmpeg', ['-v', 'error', '-y', '-i', path.join(ROOT, '花骨朵.mp4'), '-vn', '-c:a', 'pcm_s16le', '-ar', '44100', audio], { stdio: 'inherit' });
@@ -108,10 +134,10 @@ async function main() {
   const to = Math.min(Number(args.to ?? duration), duration);
   const first = Math.round(from * FPS);
   const last = Math.round(to * FPS); // exclusive
-  const frameDir = path.join(BUILD, `out_${FPS}`);
+  const frameDir = path.join(BUILD, `out_${FPS}_${SAMPLES}`);
   fs.mkdirSync(frameDir, { recursive: true });
   const total = last - first;
-  console.log(`rendering ${total} frames @ ${FPS} fps with ${WORKERS} workers`);
+  console.log(`rendering ${total} frames @ ${FPS} fps, ${SAMPLES} motion-blur samples, ${WORKERS} workers`);
 
   let done = 0;
   const started = Date.now();
@@ -128,9 +154,9 @@ async function main() {
           done++;
           continue;
         }
-        await renderTo(page, i / FPS, file, QUALITY);
+        await renderTo(page, (i + 0.5) / FPS, file, QUALITY);
         done++;
-        if (done % 60 === 0) {
+        if (done % 30 === 0) {
           const el = (Date.now() - started) / 1000;
           console.log(`  ${done}/${total}  ${(done / el).toFixed(1)} fps  eta ${((total - done) / (done / el)).toFixed(0)}s`);
         }

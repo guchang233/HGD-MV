@@ -1,182 +1,281 @@
-// Frame compositor: plate shot -> set pieces -> kinetic lyrics -> film post.
-import { W, H, makeCanvas, ctx2d, lerp, ease, span, noise1 } from './core.js';
+// Frame compositor.  A frame at time t is the average of several sub-frames
+// spread across the shutter interval (motion blur).  Each sub-frame renders
+// the shot — or both shots inside a transition — under the 2.5D camera, then
+// the lyrics; film post (aberration, glow, rays, flares, grain, subtitles,
+// HUD, letterbox) is applied once to the blended frame.
+import { W, H, clamp, ease, span, makeCanvas, ctx2d } from './core.js';
 import { loadTiming, pulse } from './timing.js';
 import { loadFonts, inkChar } from './type.js';
-import { initSprites } from './particles.js';
+import { initSprites, setStreaks } from './particles.js';
 import { FX } from './fx.js';
-import { Plates, drawPlate } from './plates.js';
-import { drawLine, FONTS } from './lyrics.js';
-import { buildStory, applyGrade, DURATION } from './story.js';
+import { Slots, drawCard, lumaUnder } from './slots.js';
+import { drawLine, drawGhost, drawSubtitle, layoutLine, lineBox, lineLive, exitAt, FONTS } from './lyrics.js';
+import { buildStory, applyGrade, drawSplit, drawCredit, keys, LOOK, DURATION } from './story.js';
+import { D, layer, plus } from './camera.js';
+import { TRANSITIONS } from './transitions.js';
 import { hud, glitchSlices, chapter } from './graphics.js';
 
-// piecewise-linear keyframes [[t, v], ...]
-const keys = (list, t) => {
-  if (t <= list[0][0]) return list[0][1];
-  for (let i = 1; i < list.length; i++) {
-    if (t <= list[i][0]) return lerp(list[i - 1][1], list[i][1], (t - list[i - 1][0]) / (list[i][0] - list[i - 1][0]));
-  }
-  return list[list.length - 1][1];
+// Picture files: render.mjs writes build/images.json (it accepts names like
+// 05.png or S05_雪夜.jpg); without it, probe <id>.png|jpg|jpeg|webp.
+async function findImages(base, defs) {
+  try {
+    const r = await fetch(`${base}/build/images.json`, { cache: 'no-store' });
+    if (r.ok) return await r.json();
+  } catch {}
+  const files = {};
+  await Promise.all(
+    defs.map(async (d) => {
+      for (const ext of ['png', 'jpg', 'jpeg', 'webp']) {
+        const url = `${base}/assets/images/${d.id}.${ext}`;
+        try {
+          if ((await fetch(url, { method: 'HEAD' })).ok) {
+            files[d.id] = url;
+            return;
+          }
+        } catch {}
+      }
+    }),
+  );
+  return files;
+}
+
+const hexLum = (hex) => {
+  const n = parseInt((hex ?? '#ffffff').slice(1, 7), 16);
+  return (0.2126 * ((n >> 16) & 255) + 0.7152 * ((n >> 8) & 255) + 0.0722 * (n & 255)) / 255;
 };
 
-// how hard the picture reacts to the drums, section by section
-const INTENSITY = [[0, 0.15], [15.7, 0.15], [15.8, 0.55], [29.9, 0.55], [30, 0.35], [46.9, 0.35], [47, 0.5], [62.8, 0.5], [62.9, 0.8], [79.7, 0.85], [79.8, 1], [94.9, 1], [95, 0.3], [110.8, 0.3], [110.9, 0.85], [127.7, 0.85], [127.8, 1], [143.8, 1], [143.9, 0.35], [161, 0.2], [170.4, 0]];
-const BLOOM = [[0, 0.25], [15.8, 0.2], [30, 0.3], [47, 0.25], [62.9, 0.22], [79.8, 0.3], [95, 0.2], [110.9, 0.22], [127.8, 0.35], [143.9, 0.4], [146.5, 0.55], [151, 0.3], [161, 0.25]];
-const LETTERBOX = [[0, 0], [2.0, 0], [2.6, 1], [12.0, 1], [12.06, 0], [94.95, 0], [95.4, 1], [110.85, 1], [110.93, 0], [156.9, 0], [157.6, 1], [161, 1], [161.4, 0]];
-const HUD_ALPHA = [[0, 0], [15.75, 0], [15.8, 0.45], [29.9, 0.45], [30, 0.3], [62.8, 0.3], [62.9, 0.6], [79.8, 0.85], [94.9, 0.85], [95, 0], [110.85, 0], [110.93, 0.8], [143.85, 0.8], [143.93, 0], [170.4, 0]];
-const LEAK = [[0, 0], [47, 0], [47.6, 0.35], [62.7, 0.35], [62.9, 0], [143.9, 0], [144.6, 0.4], [156.5, 0.4], [157.5, 0]];
-const SECTION = [[0, 'PROLOGUE'], [15.8, 'VERSE I'], [30, 'WINTER'], [47, 'PRE-CHORUS'], [62.9, 'SPRING'], [79.8, 'CHORUS'], [95, 'VERSE II'], [110.9, 'BRIDGE'], [127.8, 'FINAL CHORUS'], [143.9, 'CODA'], [161, 'END']];
-// big hits that also throw light rays from the subject: [t, amp, decay, x, y, rgb]
-const RAYS = [[93.06, 0.9, 0.5, 960, 600, '255,90,80'], [141.06, 1.0, 0.55, 960, 480, '255,110,90'], [141.81, 0.6, 0.4, 960, 460, '255,220,200']];
-
 export async function boot(out, { base = '.' } = {}) {
-  const [, , lyrics, manifest] = await Promise.all([
+  const [, , lyrics, slotData] = await Promise.all([
     loadTiming(`${base}/assets/timing.json`),
     loadFonts(`${base}/assets/fonts`),
     fetch(`${base}/assets/lyrics.json`).then((r) => r.json()),
-    fetch(`${base}/assets/plates/manifest.json`).then((r) => r.json()),
+    fetch(`${base}/assets/slots.json`).then((r) => r.json()),
   ]);
+  const files = await findImages(base, slotData.slots);
   initSprites();
   const fx = new FX();
-  const plates = new Plates(`${base}/assets/plates`, manifest);
-  const story = buildStory(lyrics);
+  const slots = new Slots(slotData.slots, files);
+  const story = buildStory(lyrics, { fx });
+  const { shots } = story;
 
+  const canvas = () => {
+    const c = makeCanvas(W, H);
+    return [c, ctx2d(c)];
+  };
   const gOut = ctx2d(out);
-  const scene = makeCanvas(W, H);
-  const gScene = ctx2d(scene);
-  const post = makeCanvas(W, H);
-  const gPost = ctx2d(post);
+  const [scene, gScene] = canvas();
+  const [ca, gA] = canvas();
+  const [cb, gB] = canvas();
+  const [tmp] = canvas();
+  const [acc, gAcc] = canvas();
+  const [post, gPost] = canvas();
 
   const reset = (g) => {
     g.setTransform(1, 0, 0, 1, 0, 0);
     g.globalAlpha = 1;
     g.globalCompositeOperation = 'source-over';
     g.filter = 'none';
+    g.shadowBlur = 0;
   };
   const inkGlyph = (g, c, p) => inkChar(g, c.ch, c.x, c.y, c.size, p, { color: c.st.color, weight: c.st.weight ?? 800, family: FONTS[c.st.font] ?? FONTS.serif, seed: c.i + 3 });
 
-  async function renderFrame(t) {
-    const shot = story.shotAt(t);
-    const insert = story.inserts.find(([t0, d]) => t >= t0 && t < t0 + d);
-    const names = [...(shot.plate ? [shot.plate] : shot.plates ?? []), ...(insert ? [insert[2]] : [])];
-    const P = await plates.get(names);
-    const k = keys(INTENSITY, t);
-    const age = t - shot.t0;
+  // A two-shot transition straddling t, if any: {A, B, T, p, opts}
+  const transitionAt = (t) => {
+    const cur = shots[story.indexAt(t)];
+    const T1 = TRANSITIONS[cur.enter?.type];
+    if (T1 && cur.prev && t < cur.t0 + T1.post) return { A: cur.prev, B: cur, T: T1, p: (t - cur.t0 + T1.pre) / (T1.pre + T1.post), opts: cur.enter };
+    const nx = cur.next;
+    const T2 = TRANSITIONS[nx?.enter?.type];
+    if (T2 && T2.pre > 0 && t >= nx.t0 - T2.pre) return { A: cur, B: nx, T: T2, p: (t - nx.t0 + T2.pre) / (T2.pre + T2.post), opts: nx.enter };
+    return null;
+  };
 
-    // ---- shot
-    reset(gScene);
-    gScene.fillStyle = '#000';
-    gScene.fillRect(0, 0, W, H);
-    if (shot.plate) {
-      const c = shot.cam(t, shot);
-      const c0 = shot.cam(shot.t0, shot);
-      const kick = 1 + (shot.kick ?? 0) * pulse('kicks', t, 0.12, 0.4);
-      drawPlate(gScene, P[shot.plate], { ...c, zoom: c.zoom * kick, z0: c0.zoom, x0: c0.x, y0: c0.y, par: shot.par ?? 0.9 });
-    } else {
-      shot.draw(gScene, t, P);
+  function renderShot(g, shot, t, gcam, P) {
+    reset(g);
+    g.fillStyle = '#000';
+    g.fillRect(0, 0, W, H);
+    const cam = plus(gcam, shot.cam(t, shot));
+    const cover = story.coverOf(shot, D.image);
+    if (shot.slot) drawCard(g, P[shot.slot], cam, D.image, cover);
+    else if (shot.split) drawSplit(g, shot, t, cam, P, cover);
+    if (shot.draw) {
+      reset(g);
+      shot.draw(g, t, cam, P);
     }
-    reset(gScene);
-    applyGrade(gScene, shot.grade);
+    reset(g);
+    applyGrade(g, shot.grade);
     if (shot.over) {
-      shot.over(gScene, t);
-      reset(gScene);
+      reset(g);
+      shot.over(g, t, cam, P, gcam);
     }
-    if (insert) {
-      // a couple of frames of another moment, inverted and blood-tinted
-      drawPlate(gScene, P[insert[2]], { zoom: 1.15, par: 0 });
-      reset(gScene);
-      applyGrade(gScene, [['difference', '#ffffff'], ['multiply', 'rgba(255,70,60,1)']]);
-      reset(gScene);
+    reset(g);
+  }
+
+  function renderSample(g, t, shot, P, dp) {
+    const gcam = story.globalCam(t);
+    const tr = transitionAt(t);
+    if (tr) {
+      renderShot(gA, tr.A, t, gcam, P);
+      renderShot(gB, tr.B, t, gcam, P);
+      reset(g);
+      g.fillStyle = '#000';
+      g.fillRect(0, 0, W, H);
+      tr.T.draw(g, ca, cb, clamp(tr.p), { ...tr.opts, tmp, fx, dp: dp / (tr.T.pre + tr.T.post) });
+      reset(g);
+    } else renderShot(g, shot, t, gcam, P);
+
+    // one-frame inserts: another moment, inverted and blood-tinted
+    const ins = story.inserts.find(([t0, d]) => t >= t0 && t < t0 + d);
+    if (ins && P[ins[2]]) {
+      drawCard(g, P[ins[2]], gcam, D.image, 1.15);
+      reset(g);
+      applyGrade(g, [['difference', '#ffffff'], ['multiply', 'rgba(255,70,60,1)']]);
+      reset(g);
     }
 
-    // ---- kinetic lyrics
-    const textPulse = k >= 0.7 ? 0.035 * k * pulse('kicks', t, 0.1, 0.5) : 0;
-    story.lyricStyles.forEach((st, i) => drawLine(gScene, lyrics[i], st, t, { inkChar: inkGlyph, pulse: textPulse }));
-    reset(gScene);
+    // ---- kinetic lyrics, under the continuous global camera
+    const slot = shot.slot ? P[shot.slot] : null;
+    layer(g, gcam, D.back);
+    story.lyricStyles.forEach((st, i) => st.ghost && drawGhost(g, lyrics[i], st, t));
+    layer(g, gcam, D.text);
+    story.lyricStyles.forEach((st, i) => {
+      const line = lyrics[i];
+      if (!lineLive(line, st, t)) return;
+      if (slot) scrim(g, line, st, t, slot);
+      drawLine(g, line, st, t, { inkChar: inkGlyph });
+    });
+    for (const c of story.opening) drawCredit(g, t, c);
+    reset(g);
+  }
 
-    // ---- transitions and drum reactions
+  // soft shadow (or glow) behind a line when the picture under it fights the
+  // text colour — keeps lyrics legible whatever the final image looks like
+  function scrim(g, line, st, t, slot) {
+    const light = hexLum(st.color) > 0.5;
+    const [x, y, w, h] = lineBox(layoutLine(line, st));
+    const lum = lumaUnder(slot, x, y, w, h);
+    const need = light ? lum - 0.45 : 0.5 - lum;
+    if (need <= 0.02) return;
+    const first = line.chars[0][1];
+    const env = clamp((t - first + 0.1) / 0.3) * (1 - clamp((t - exitAt(line, st)) / (st.outDur ?? 0.35)));
+    const a = Math.min(0.3, need) * env;
+    if (a <= 0.01) return;
+    const cx = x + w / 2;
+    const cy = y + h / 2;
+    const r = Math.max(w, h) * 0.75;
+    g.save();
+    g.translate(cx, cy);
+    g.scale((w * 0.75 + 80) / r, (h * 0.85 + 80) / r);
+    const grd = g.createRadialGradient(0, 0, 0, 0, 0, r);
+    const col = light ? '0,0,0' : '255,255,255';
+    grd.addColorStop(0, `rgba(${col},${a})`);
+    grd.addColorStop(0.6, `rgba(${col},${a * 0.6})`);
+    grd.addColorStop(1, `rgba(${col},0)`);
+    g.fillStyle = grd;
+    g.fillRect(-r, -r, 2 * r, 2 * r);
+    g.restore();
+  }
+
+  /**
+   * Render the frame centred on t.  samples > 1 averages sub-frames across
+   * the shutter interval `shutter` (seconds).
+   */
+  async function renderFrame(t, { samples = 1, shutter = 0 } = {}) {
+    const shot = shots[story.indexAt(t)];
+    const trC = transitionAt(t);
+    const ids = new Set(shot.slots);
+    for (const s of [shot.prev, shot.next, trC?.A, trC?.B]) s?.slots.forEach((id) => ids.add(id));
+    for (const [t0, d, id] of story.inserts) if (t + shutter >= t0 && t - shutter < t0 + d) ids.add(id);
+    const P = await slots.get([...ids]);
+    setStreaks(samples < 3);
+
+    const n = Math.max(1, samples);
+    const dp = shutter / n;
+    for (let k = 0; k < n; k++) {
+      let ts = n > 1 ? t + shutter * ((k + 0.5) / n - 0.5) : t;
+      // never blend across a hard cut
+      if (!trC) ts = clamp(ts, shot.t0, shot.t1 - 1e-4);
+      renderSample(gScene, ts, shot, P, dp);
+      gAcc.globalAlpha = 1 / (k + 1);
+      gAcc.drawImage(scene, 0, 0);
+    }
+    gAcc.globalAlpha = 1;
+    composite(t, shot, P);
+  }
+
+  function composite(t, shot, P) {
+    const k = story.intensity(t);
+    const age = t - shot.t0;
+    const enter = shot.enter?.type;
     let flash = 0;
-    let flashColor = '#ffffff';
+    let flashColor = shot.enter?.color ?? '#ffffff';
     let ab = 0.0012 * k + 0.006 * k * pulse('snares', t, 0.1, 0.5);
     let blur = 0;
-    let shake = 9 * k * k * pulse('kicks', t, 0.08, 0.6);
-    let whip = 0;
-    if (shot.enter === 'flash' && age < 0.6) flash = Math.max(flash, 0.85 * Math.exp(-age / 0.1));
-    if (shot.enter === 'drop' && age < 0.8) {
+    if (enter === 'flash' && age < 0.6) flash = (shot.enter.soft ? 0.6 : 0.85) * Math.exp(-age / (shot.enter.soft ? 0.18 : 0.1));
+    if (enter === 'drop' && age < 0.8) {
       flash = Math.max(flash, Math.exp(-age / 0.16));
       blur += 0.3 * Math.exp(-age / 0.12);
       ab += 0.016 * Math.exp(-age / 0.2);
-      shake += 22 * Math.exp(-age / 0.22);
     }
-    if (shot.enter === 'whip' && age < 0.3) {
-      whip = Math.exp(-age / 0.06);
-      ab += 0.006 * whip;
-    }
-    if (shot.enter === 'fade' && age < 1) {
+    if (enter === 'fade' && age < 1) {
       flash = 1 - span(age, 0, 0.9, ease.inOutSine);
       flashColor = '#000000';
     }
     if (k >= 0.7) flash = Math.max(flash, 0.09 * k * pulse('snares', t, 0.06, 0.6));
 
-    // ---- film post
     reset(gPost);
     gPost.fillStyle = '#000';
     gPost.fillRect(0, 0, W, H);
-    const sx = shake * noise1(t * 31, 1);
-    const sy = shake * noise1(t * 31, 2);
-    const pad = Math.ceil(Math.abs(sx) + Math.abs(sy));
-    if (ab > 0.0006) fx.chromatic(gPost, scene, ab);
-    else gPost.drawImage(scene, 0, 0);
-    if (pad > 0 || whip > 0) {
-      // camera shake / whip smear: re-place the frame, enlarged so no edge shows
-      const gt = fx.ga;
-      reset(gt);
-      gt.drawImage(post, 0, 0);
-      reset(gPost);
-      gPost.drawImage(fx.a, sx - pad, sy - pad, W + 2 * pad, H + 2 * pad);
-      if (whip > 0.01) {
-        for (let i = 1; i <= 6; i++) {
-          gPost.globalAlpha = 0.22 * whip;
-          gPost.drawImage(fx.a, i * 38 * whip - pad, -pad, W + 2 * pad, H + 2 * pad);
-          gPost.drawImage(fx.a, -(i * 38 * whip) - pad, -pad, W + 2 * pad, H + 2 * pad);
-        }
-        gPost.globalAlpha = 1;
-      }
-    }
-    if (blur > 0.002) fx.zoomBlur(gPost, scene, blur);
+    if (ab > 0.0006) fx.chromatic(gPost, acc, ab);
+    else gPost.drawImage(acc, 0, 0);
+    if (blur > 0.002) fx.zoomBlur(gPost, acc, blur);
     reset(gPost);
-    if (shot.glitch) glitchSlices(gPost, scene, t, shot.glitch * pulse('snares', t, 0.12, 0.4) * 1.5);
-    fx.bloom(gPost, post, keys(BLOOM, t));
+    if (shot.glitch) glitchSlices(gPost, acc, t, shot.glitch * pulse('snares', t, 0.12, 0.4) * 1.5);
+    fx.bloom(gPost, post, keys(LOOK.bloom, t));
     if (shot.rays) fx.godRays(gPost, t, shot.rays[0], shot.rays[1], 0.7, '255,214,150');
-    for (const [t0, amp, decay, x, y, col] of RAYS) {
+    for (const [t0, amp, decay, x, y, col] of LOOK.rays) {
       const a = t - t0;
       if (a >= 0 && a < decay * 5) fx.godRays(gPost, t, x, y, amp * Math.exp(-a / decay), col);
     }
-    fx.lightLeak(gPost, t, keys(LEAK, t));
+    for (const [t0, amp, decay, x, y, col] of LOOK.flares) {
+      const a = t - t0;
+      if (a >= -0.02 && a < decay * 5) fx.flare(gPost, x, y, amp * Math.exp(-Math.max(0, a) / decay), col);
+    }
+    fx.lightLeak(gPost, t, keys(LOOK.leak, t));
     fx.flash(gPost, flashColor, flash);
     fx.vignette(gPost, 0.32);
     fx.grain(gPost, t, 0.035);
-    const ha = keys(HUD_ALPHA, t);
+
+    // ---- typography that stays locked to the screen
+    const slot = shot.slot ? P[shot.slot] : null;
+    const lb = keys(LOOK.letterbox, t);
+    const bright = shot.bright ?? (slot ? slot.mean > 0.6 : false);
+    const subDark = shot.bright ?? (slot ? lumaUnder(slot, 560, 940, 800, 90) > 0.62 : false);
+    const subs = (g, y, dark) => story.lyricStyles.forEach((st, i) => drawSubtitle(g, lyrics[i], st, t, { y, dark, until: lyrics[i + 1] ? lyrics[i + 1].chars[0][1] - 0.2 : Infinity }));
+    if (lb <= 0.5) subs(gPost, 1000, subDark);
+    const ha = keys(LOOK.hud, t);
     if (ha > 0.01) {
-      let sec = SECTION[0][1];
-      for (const [t0, name] of SECTION) if (t >= t0) sec = name;
+      let sec = LOOK.section[0][1];
+      for (const [t0, name] of LOOK.section) if (t >= t0) sec = name;
       let line = 0;
       lyrics.forEach((l, i) => {
         if (t >= l.chars[0][1] - 0.05) line = i + 1;
       });
-      const bright = shot.bright ?? (shot.plate ? (P[shot.plate]?.lum ?? 0) > 0.62 : false);
-      hud(gPost, t, { alpha: ha, color: bright ? '30,24,24' : '255,255,255', tl: '花骨朵  /  HUA GU DUO', tr: `LYRIC  ${String(line).padStart(2, '0')} / ${lyrics.length}`, bl: `${sec}   ·   BPM 120` });
+      const pic = shot.slots.length ? `IMG ${shot.slots.map((s) => `S${s}`).join('+')}` : 'IMG —';
+      hud(gPost, t, { alpha: ha, color: bright ? '30,24,24' : '255,255,255', tl: '花骨朵  /  HUA GU DUO', sec: `${sec}  ·  BPM 120`, br: `LYRIC ${String(line).padStart(2, '0')}/${lyrics.length}   ${pic}` });
     }
-
-    for (const [t0, num, cn, en] of story.chapters) chapter(gPost, t, t0, num, cn, en);
+    for (const [t0, num, cn, en] of story.chapters) chapter(gPost, t, t0, num, cn, en, { color: bright ? '30,24,24' : '255,255,255' });
 
     // ---- letterbox + output
     reset(gOut);
     gOut.drawImage(post, 0, 0);
-    const lb = keys(LETTERBOX, t) * 120;
-    if (lb > 0.5) {
+    if (lb > 0.004) {
+      const h = lb * 120;
       gOut.fillStyle = '#000';
-      gOut.fillRect(0, 0, W, lb);
-      gOut.fillRect(0, H - lb, W, lb);
+      gOut.fillRect(0, 0, W, h);
+      gOut.fillRect(0, H - h, W, h);
+      // subtitles sit inside the lower bar while it is closed
+      if (lb > 0.5) subs(gOut, 1036, false);
     }
   }
 
@@ -184,5 +283,7 @@ export async function boot(out, { base = '.' } = {}) {
     duration: DURATION,
     renderFrame,
     capture: (q = 0.94) => out.toDataURL('image/jpeg', q),
+    slotUses: () => story.slotUses(),
+    images: files,
   };
 }

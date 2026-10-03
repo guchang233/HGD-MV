@@ -1,11 +1,13 @@
 // Motion-graphics vocabulary for the PV: HUD furniture, shockwaves, speed
 // lines, lattice frames, a self-drawing house, the 24 solar terms dial,
-// brush swipes, ink splashes, butterflies, glitch slices and split screens.
+// brush strokes, ink splashes, butterflies and glitch slices.
 import { W, H, TAU, clamp, ease, lerp, hash, mulberry32, noise1, makeCanvas, ctx2d, rgba } from './core.js';
 import { font } from './type.js';
 import { FONTS } from './lyrics.js';
 
 // ------------------------------------------------------------------ HUD --
+// Camera-viewfinder furniture: corner brackets, title, section, timecode,
+// bar/beat counter, lyric and picture-slot index, song progress.
 export function hud(g, t, o = {}) {
   const a = o.alpha ?? 1;
   if (a <= 0) return;
@@ -16,7 +18,6 @@ export function hud(g, t, o = {}) {
   g.globalAlpha = a;
   g.strokeStyle = `rgba(${col},0.75)`;
   g.lineWidth = 2;
-  // corner brackets
   for (const [x, y, sx, sy] of [[m, m, 1, 1], [W - m, m, -1, 1], [m, H - m, 1, -1], [W - m, H - m, -1, -1]]) {
     g.beginPath();
     g.moveTo(x, y + sy * L);
@@ -25,37 +26,51 @@ export function hud(g, t, o = {}) {
     g.stroke();
   }
   g.font = font(15, 500, FONTS.sans);
-  g.fillStyle = `rgba(${col},0.8)`;
+  g.letterSpacing = '2px';
+  g.fillStyle = `rgba(${col},0.85)`;
   g.textBaseline = 'middle';
   g.textAlign = 'left';
   if (o.tl) g.fillText(o.tl, m + 12, m + 54);
-  if (o.bl) g.fillText(o.bl, m + 12, H - m - 54);
+  if (o.sec) {
+    g.fillStyle = `rgba(${col},0.55)`;
+    g.fillText(o.sec, m + 12, m + 78);
+  }
+  // bar / beat counter
+  const beatIdx = Math.floor((t - 0.055) * 2);
+  const bar = Math.max(0, Math.floor(beatIdx / 4) + 1);
+  const beat = ((beatIdx % 4) + 4) % 4;
+  g.fillStyle = `rgba(${col},0.85)`;
+  g.fillText(`BAR ${String(bar).padStart(3, '0')}`, m + 12, H - m - 54);
+  for (let i = 0; i < 4; i++) {
+    const on = i === beat && t >= 0.055;
+    g.fillStyle = on ? 'rgba(226,72,58,1)' : `rgba(${col},0.35)`;
+    g.fillRect(m + 112 + i * 16, H - m - 59, 10, 10);
+  }
   g.textAlign = 'right';
-  if (o.tr) g.fillText(o.tr, W - m - 12, m + 54);
+  if (o.br) g.fillText(o.br, W - m - 12, H - m - 54);
   const tc = o.tc ?? t;
   const mm = Math.floor(tc / 60);
   const ss = Math.floor(tc % 60);
-  const ff = Math.floor((tc % 1) * 60);
-  g.fillText(`${String(mm).padStart(2, '0')}:${String(ss).padStart(2, '0')}:${String(ff).padStart(2, '0')}`, W - m - 12, H - m - 54);
-  // blinking record dot on the beat
-  const blink = (Math.floor((t - 0.055) * 2) % 2 === 0) ? 1 : 0.25;
-  g.fillStyle = `rgba(226,72,58,${blink})`;
+  const ff = Math.floor((tc % 1) * 30);
+  g.fillStyle = `rgba(${col},0.85)`;
+  g.fillText(`${String(mm).padStart(2, '0')}:${String(ss).padStart(2, '0')}:${String(ff).padStart(2, '0')}`, W - m - 12, m + 54);
+  // record dot blinking on the beat
+  g.fillStyle = `rgba(226,72,58,${beat % 2 === 0 ? 1 : 0.25})`;
   g.beginPath();
-  g.arc(W - m - 12, m + 24, 5, 0, TAU);
+  g.arc(W - m - 132, m + 54, 5, 0, TAU);
   g.fill();
-  // ticks along the bottom edge
+  // progress ticks along the top edge
   g.strokeStyle = `rgba(${col},0.35)`;
   g.lineWidth = 1;
   for (let i = 0; i <= 40; i++) {
     const x = W / 2 - 400 + i * 20;
     g.beginPath();
-    g.moveTo(x, H - m);
-    g.lineTo(x, H - m - (i % 5 === 0 ? 12 : 6));
+    g.moveTo(x, m);
+    g.lineTo(x, m + (i % 5 === 0 ? 12 : 6));
     g.stroke();
   }
-  const prog = clamp(tc / 170.4);
-  g.fillStyle = `rgba(226,72,58,0.9)`;
-  g.fillRect(W / 2 - 400, H - m + 4, 800 * prog, 2);
+  g.fillStyle = 'rgba(226,72,58,0.9)';
+  g.fillRect(W / 2 - 400, m - 6, 800 * clamp(tc / 170.4), 2);
   g.restore();
 }
 
@@ -121,21 +136,6 @@ export function speedLines(g, t, x, y, amount, o = {}) {
     g.lineTo(x + Math.cos(a) * r1, y + Math.sin(a) * r1);
     g.stroke();
   }
-  g.restore();
-}
-
-/** Thin horizontal scan line sweeping down the frame. */
-export function scanline(g, t, t0, dur, o = {}) {
-  const p = (t - t0) / dur;
-  if (p < 0 || p > 1) return;
-  const y = lerp(-40, H + 40, ease.inOutCubic(p));
-  g.save();
-  g.globalCompositeOperation = 'screen';
-  const grd = g.createLinearGradient(0, y - 60, 0, y + 4);
-  grd.addColorStop(0, 'rgba(255,255,255,0)');
-  grd.addColorStop(1, rgba(o.color ?? '#ffffff', 0.35));
-  g.fillStyle = grd;
-  g.fillRect(0, y - 60, W, 64);
   g.restore();
 }
 
@@ -316,31 +316,100 @@ export function sunMoon(g, x, y, r, phase, o = {}) {
 }
 
 // ----------------------------------------------------------- brush swipe --
-/** A wet red brush stroke dragged from (x0,y0) to (x1,y1); p = 0..1. */
-export function brushSwipe(g, x0, y0, x1, y1, width, p, o = {}) {
-  if (p <= 0) return;
-  const r = mulberry32(o.seed ?? 3);
-  const k = ease.outCubic(clamp(p));
-  const ex = lerp(x0, x1, k);
-  const ey = lerp(y0, y1, k);
-  const ang = Math.atan2(y1 - y0, x1 - x0);
-  const nx = -Math.sin(ang);
-  const ny = Math.cos(ang);
-  g.save();
-  g.globalAlpha = o.alpha ?? 0.95;
+// A loaded calligraphy brush dragged across the frame.  The stroke is
+// painted once into a texture — pressed head, bristle streaks, dry-brush
+// tail — and revealed along its length as the brush travels.
+const strokeCache = new Map();
+function strokeTexture(len, width, seed, color) {
+  const key = `${len}|${width}|${seed}|${color}`;
+  if (strokeCache.has(key)) return strokeCache.get(key);
+  const r = mulberry32(seed);
+  const pad = Math.ceil(width * 0.5);
+  const c = makeCanvas(len + pad * 2, width + pad * 2);
+  const g = ctx2d(c);
+  g.translate(pad, c.height / 2);
+  // thickness along the stroke: quick press, full belly, lifting tail
+  const prof = (u) => {
+    const press = ease.outCubic(clamp(u / 0.07));
+    const lift = 1 - 0.7 * ease.inQuad(clamp((u - 0.5) / 0.5));
+    return (0.82 + 0.18 * press) * lift;
+  };
+  const edge = (u, side) => (width / 2) * prof(u) * (1 + 0.05 * noise1(u * 30, seed + side)) + 0.02 * width * noise1(u * 90, seed + side * 3);
+  const N = 120;
+  g.beginPath();
+  for (let i = 0; i <= N; i++) g.lineTo((i / N) * len, -edge(i / N, 1));
+  for (let i = N; i >= 0; i--) g.lineTo((i / N) * len, edge(i / N, 2));
+  // blunt, rounded entry of the pressed brush (藏锋)
+  const e0 = (edge(0, 1) + edge(0, 2)) / 2;
+  g.ellipse(0, (edge(0, 2) - edge(0, 1)) / 2, e0 * 0.55, e0, 0, Math.PI / 2, (3 * Math.PI) / 2);
+  g.closePath();
+  const n = parseInt(color.slice(1), 16);
+  const rgb = [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+  const shade = (k, a = 1) => `rgba(${Math.round(rgb[0] * k)},${Math.round(rgb[1] * k)},${Math.round(rgb[2] * k)},${a})`;
+  const body = g.createLinearGradient(0, -width / 2, 0, width / 2);
+  body.addColorStop(0, shade(0.8));
+  body.addColorStop(0.25, shade(1));
+  body.addColorStop(0.75, shade(0.96));
+  body.addColorStop(1, shade(0.78));
+  g.fillStyle = body;
+  g.fill();
+  // bristle streaks
   g.lineCap = 'round';
-  for (let i = 0; i < 26; i++) {
-    const off = (r() - 0.5) * width;
-    const wid = width * (0.05 + r() * 0.16);
-    const end = 0.75 + r() * 0.25;
-    const tone = Math.floor(150 + r() * 70);
-    g.strokeStyle = o.color ?? `rgb(${tone},${Math.floor(r() * 18)},${Math.floor(10 + r() * 18)})`;
-    g.lineWidth = wid;
+  for (let i = 0; i < 160; i++) {
+    const v = r() - 0.5;
+    const u0 = r() * 0.35;
+    const u1 = 0.45 + r() * 0.55;
+    const dark = r() < 0.55;
+    g.strokeStyle = dark ? shade(0.45, 0.1 + r() * 0.25) : `rgba(255,${120 + r() * 80},${100 + r() * 60},${0.06 + r() * 0.16})`;
+    g.lineWidth = 0.6 + r() * 2.4;
     g.beginPath();
-    g.moveTo(x0 + nx * off, y0 + ny * off);
-    g.lineTo(lerp(x0, ex, end) + nx * off * 0.9, lerp(y0, ey, end) + ny * off * 0.9);
+    for (let j = 0; j <= 12; j++) {
+      const u = u0 + ((u1 - u0) * j) / 12;
+      g.lineTo(u * len, v * 1.9 * edge(u, 1));
+    }
     g.stroke();
   }
+  // dry brush: the ink runs out in streaks toward the tail
+  g.globalCompositeOperation = 'destination-out';
+  for (let i = 0; i < 90; i++) {
+    const v = r() - 0.5;
+    const u0 = 0.4 + r() * 0.45;
+    g.strokeStyle = `rgba(0,0,0,${0.5 + r() * 0.5})`;
+    g.lineWidth = 1 + r() * r() * 9;
+    g.beginPath();
+    for (let j = 0; j <= 10; j++) {
+      const u = u0 + ((1.02 - u0) * j) / 10;
+      g.lineTo(u * len, v * 1.9 * edge(Math.min(u, 1), 1));
+    }
+    g.stroke();
+  }
+  g.globalCompositeOperation = 'source-over';
+  // a few drops flicked off the head
+  for (let i = 0; i < 14; i++) {
+    g.fillStyle = shade(0.85, 0.9);
+    g.beginPath();
+    g.arc(r() * len * 0.25, (r() - 0.5) * width * 1.5, 1 + r() * r() * 7, 0, TAU);
+    g.fill();
+  }
+  const item = { c, pad };
+  strokeCache.set(key, item);
+  return item;
+}
+
+/** A red brush stroke dragged from (x0,y0) to (x1,y1); p = 0..1. */
+export function brushSwipe(g, x0, y0, x1, y1, width, p, o = {}) {
+  if (p <= 0) return;
+  const len = Math.round(Math.hypot(x1 - x0, y1 - y0));
+  const { c, pad } = strokeTexture(len, Math.round(width), o.seed ?? 3, o.color ?? '#c8141e');
+  const k = ease.outCubic(clamp(p));
+  g.save();
+  g.translate(x0, y0);
+  g.rotate(Math.atan2(y1 - y0, x1 - x0));
+  g.globalAlpha *= o.alpha ?? 0.97;
+  g.beginPath();
+  g.rect(-pad, -c.height / 2, pad + len * k + (k >= 1 ? pad : 0), c.height);
+  g.clip();
+  g.drawImage(c, -pad, -c.height / 2);
   g.restore();
 }
 
@@ -481,59 +550,6 @@ export function glitchSlices(g, src, t, amount, o = {}) {
       g.restore();
     }
   }
-}
-
-/** Two images side by side with a sliding divider (左/右). */
-export function splitScreen(g, left, right, t, divX, o = {}) {
-  g.save();
-  g.beginPath();
-  g.rect(0, 0, divX, H);
-  g.clip();
-  left(g, t);
-  g.restore();
-  g.save();
-  g.beginPath();
-  g.rect(divX, 0, W - divX, H);
-  g.clip();
-  right(g, t);
-  g.restore();
-  g.save();
-  g.fillStyle = o.color ?? '#ffffff';
-  g.fillRect(divX - 2, 0, 4, H);
-  g.restore();
-}
-
-/** Full-frame colour inversion (strobe) over what is already drawn. */
-export function invert(g, amount) {
-  if (amount <= 0.01) return;
-  g.save();
-  g.globalCompositeOperation = 'difference';
-  g.globalAlpha = clamp(amount);
-  g.fillStyle = '#ffffff';
-  g.fillRect(0, 0, W, H);
-  g.restore();
-}
-
-/** Halftone dot screen used as a graphic texture. */
-const dotCache = new Map();
-export function halftone(g, color, alpha, cell = 14) {
-  const key = `${color}|${cell}`;
-  let pat = dotCache.get(key);
-  if (!pat) {
-    const c = makeCanvas(cell, cell);
-    const x = ctx2d(c);
-    x.fillStyle = color;
-    x.beginPath();
-    x.arc(cell / 2, cell / 2, cell * 0.28, 0, TAU);
-    x.fill();
-    pat = g.createPattern(c, 'repeat');
-    dotCache.set(key, pat);
-  }
-  g.save();
-  g.globalAlpha = alpha;
-  g.fillStyle = pat;
-  g.fillRect(0, 0, W, H);
-  g.restore();
 }
 
 export { hash };

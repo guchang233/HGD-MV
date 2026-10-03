@@ -75,7 +75,7 @@ export class FX {
     t.globalCompositeOperation = 'copy';
     t.drawImage(rim, view.x, view.y, view.w, view.h);
     t.globalCompositeOperation = 'source-in';
-    t.fillStyle = `rgba(36,28,26,${0.55 * (1 - p)})`;
+    t.fillStyle = `rgba(36,28,26,${0.3 * (1 - p)})`;
     t.fillRect(0, 0, W, H);
     t.restore();
     g.drawImage(this.b, 0, 0);
@@ -118,7 +118,7 @@ export class FX {
       t.save();
       t.setTransform(1, 0, 0, 1, 0, 0);
       t.globalCompositeOperation = 'copy';
-      t.setTransform(s, 0, 0, s, cx * (1 - s), cy * (1 - s));
+      if (s !== 1) t.setTransform(s, 0, 0, s, cx * (1 - s), cy * (1 - s));
       t.drawImage(src, 0, 0);
       t.setTransform(1, 0, 0, 1, 0, 0);
       t.globalCompositeOperation = 'multiply';
@@ -131,7 +131,7 @@ export class FX {
   }
 
   /** Zoom blur toward the centre (rushes and impacts). */
-  zoomBlur(g, src, amount, steps = 12, cx = W / 2, cy = H / 2) {
+  zoomBlur(g, src, amount, steps = 8, cx = W / 2, cy = H / 2) {
     if (amount <= 0.001) return;
     g.save();
     for (let i = 1; i <= steps; i++) {
@@ -218,6 +218,32 @@ export class FX {
       g.fillStyle = grd;
       g.fillRect(view.x, view.y, view.w, view.h);
     }
+    g.restore();
+  }
+
+  /** Anamorphic lens flare: a long horizontal streak with a hot core. */
+  flare(g, x, y, amount, color = '150,190,255') {
+    if (amount <= 0.003) return;
+    g.save();
+    g.globalCompositeOperation = 'screen';
+    g.globalAlpha = clamp(amount);
+    g.translate(x, y);
+    g.save();
+    g.scale(7, 0.16);
+    const r = 300;
+    const streak = g.createRadialGradient(0, 0, 0, 0, 0, r);
+    streak.addColorStop(0, `rgba(${color},0.95)`);
+    streak.addColorStop(0.2, `rgba(${color},0.45)`);
+    streak.addColorStop(1, `rgba(${color},0)`);
+    g.fillStyle = streak;
+    g.fillRect(-r, -r, 2 * r, 2 * r);
+    g.restore();
+    const core = g.createRadialGradient(0, 0, 0, 0, 0, 160);
+    core.addColorStop(0, 'rgba(255,255,255,0.9)');
+    core.addColorStop(0.3, `rgba(${color},0.35)`);
+    core.addColorStop(1, `rgba(${color},0)`);
+    g.fillStyle = core;
+    g.fillRect(-160, -160, 320, 320);
     g.restore();
   }
 

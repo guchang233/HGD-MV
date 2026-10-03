@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
-"""Split every AI plate into 2.5D parallax layers.
+"""Optional: split the slot pictures into 2.5D parallax layers.
 
 Depth-Anything-V2 (small) estimates relative depth; the nearest region
 becomes a feathered foreground layer, and the hole it leaves in the
-background is inpainted so the layers can slide apart.  Plates with no
-clear subject stay single-layer.  Writes pv/assets/plates/<name>[_bg|_fg].webp
-and manifest.json.
+background is inpainted so the layers can slide apart under the camera.
+Pictures with no clear subject stay single-layer.  Reads
+pv/assets/images/<id>*.(png|jpg|webp), writes
+pv/assets/images/layers/<id>_bg.webp and <id>_fg.webp, which render.mjs
+picks up automatically.
+
+    pip install torch transformers opencv-python-headless pillow
+    python pv/tools/ai/make_layers.py [--force]
 """
-import json
 import pathlib
+import re
 import sys
 
 import cv2
@@ -18,13 +23,15 @@ from PIL import Image
 from transformers import pipeline
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
-SRC = ROOT / "pv" / "build" / "plates"
-OUT = ROOT / "pv" / "assets" / "plates"
-SIZE = (2400, 1350)
+SRC = ROOT / "pv" / "assets" / "images"
+OUT = SRC / "layers"
+NAME = re.compile(r"^[Ss]?(\d{2})(?:[ _\-.].*)?\.(png|jpe?g|webp)$", re.I)
+WIDTH = 2400
 
 
 def layers(depth_model, img):
-    small = img.resize((960, 540), Image.BICUBIC)
+    SIZE = img.size
+    small = img.resize((960, round(960 * SIZE[1] / SIZE[0])), Image.BICUBIC)
     with torch.inference_mode():
         d = depth_model(small)["predicted_depth"].squeeze().float().numpy()
     d = cv2.resize(d, SIZE, interpolation=cv2.INTER_CUBIC)
@@ -66,25 +73,27 @@ def layers(depth_model, img):
 def main():
     force = "--force" in sys.argv
     OUT.mkdir(parents=True, exist_ok=True)
-    mpath = OUT / "manifest.json"
-    manifest = json.loads(mpath.read_text()) if mpath.exists() else {}
+    pictures = {}
+    for f in sorted(SRC.iterdir()):
+        m = NAME.match(f.name)
+        if m and m.group(1) not in pictures:
+            pictures[m.group(1)] = f
     torch.set_num_threads(4)
     depth = pipeline("depth-estimation", model="depth-anything/Depth-Anything-V2-Small-hf", device="cpu")
-    for jpg in sorted(SRC.glob("*.jpg")):
-        name = jpg.stem
-        if name in manifest and not force:
+    for sid, f in pictures.items():
+        if (OUT / f"{sid}_bg.webp").exists() and not force:
             continue
-        img = Image.open(jpg).convert("RGB").resize(SIZE, Image.LANCZOS)
+        img = Image.open(f).convert("RGB")
+        img = img.resize((WIDTH, round(WIDTH * img.height / img.width)), Image.LANCZOS)
         bg, fg, frac = layers(depth, img)
         if bg is None:
-            img.save(OUT / f"{name}.webp", quality=84, method=5)
-            manifest[name] = {"fg": False}
-        else:
-            bg.save(OUT / f"{name}_bg.webp", quality=84, method=5)
-            fg.save(OUT / f"{name}_fg.webp", quality=86, method=5)
-            manifest[name] = {"fg": True}
-        print(f"{name:18s} fg={manifest[name]['fg']} subject={frac:.2f}", flush=True)
-        mpath.write_text(json.dumps(manifest, indent=1, sort_keys=True))
+            for old in OUT.glob(f"{sid}_*.webp"):
+                old.unlink()
+            print(f"S{sid}: single layer (subject {frac:.2f})", flush=True)
+            continue
+        bg.save(OUT / f"{sid}_bg.webp", quality=88, method=5)
+        fg.save(OUT / f"{sid}_fg.webp", quality=90, method=5)
+        print(f"S{sid}: 2 layers (subject {frac:.2f})", flush=True)
 
 
 if __name__ == "__main__":

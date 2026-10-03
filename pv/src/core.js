@@ -47,6 +47,7 @@ export const ease = {
   inOutSine: (t) => -(Math.cos(Math.PI * t) - 1) / 2,
   outSine: (t) => Math.sin((t * Math.PI) / 2),
   outBack: (t, k = 1.70158) => 1 + (k + 1) * Math.pow(t - 1, 3) + k * Math.pow(t - 1, 2),
+  inBack: (t, k = 1.70158) => (k + 1) * t * t * t - k * t * t,
   // damped spring settling at 1 (used for blooms and stamps)
   spring: (t, freq = 4.5, damp = 5.5) => (t <= 0 ? 0 : 1 - Math.exp(-damp * t) * Math.cos(freq * TAU * t * 0.5)),
 };
@@ -154,10 +155,14 @@ export function makeCanvas(w, h) {
   return c;
 }
 
+// Bilinear filtering: in software rendering it is ~6x faster than 'high'
+// for the full-frame transformed draws every sub-frame makes, and nearly
+// indistinguishable at the 1-1.5x magnifications used.  Small sprites switch
+// to 'medium' (mipmapped) where they are drawn much smaller than stored.
 export function ctx2d(c) {
   const g = c.getContext('2d');
   g.imageSmoothingEnabled = true;
-  g.imageSmoothingQuality = 'high';
+  g.imageSmoothingQuality = 'low';
   return g;
 }
 

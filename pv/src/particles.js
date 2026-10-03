@@ -2,6 +2,11 @@
 // of its age, so any frame can be rendered independently.
 import { TAU, clamp, makeCanvas, ctx2d, mulberry32 } from './core.js';
 import { petalPath } from './plum.js';
+import { F, project } from './camera.js';
+
+// motion streaks stand in for motion blur when frames are not supersampled
+let STREAKS = true;
+export const setStreaks = (on) => (STREAKS = on);
 
 // ---------------------------------------------------------------- sprites --
 function sprite(size, paint) {
@@ -92,24 +97,35 @@ export class Field {
       live.push([q, s]);
     }
     live.sort((m, n) => n[1].z - m[1].z);
+    const quality = g.imageSmoothingQuality;
+    g.imageSmoothingQuality = 'medium';
+    const cam = o.cam;
     for (const [q, s] of live) {
-      const k = 1 / s.z;
-      const sx = cx + (s.x - cx) * k;
-      const sy = cy + (s.y - cy) * k;
+      let k = 1 / s.z;
+      let sx = cx + (s.x - cx) * k;
+      let sy = cy + (s.y - cy) * k;
+      if (cam) {
+        // each particle sits at its own distance from the 2.5D camera
+        const [px, py, kk] = project(cam, F * s.z * (o.depth ?? 1), sx, sy);
+        sx = px;
+        sy = py;
+        k *= kk;
+      }
       const size = q.size * k;
       if (sx < -size * 2 || sx > 1920 + size * 2 || sy < -size * 2 || sy > 1080 + size * 2) continue;
       let alpha = (o.alpha ?? 1) * (q.alpha ?? 1);
       alpha *= clamp(s.a / 0.18) * clamp((q.life - s.a) / (q.life * fade));
       if (q.zFade) alpha *= clamp((s.z - 0.12) / 0.4) * clamp((q.zFade - s.z) / (q.zFade * 0.5));
       if (alpha <= 0.003) continue;
-      this.drawOne(g, q, s, sx, sy, size, alpha, k, t, cx, cy);
+      this.drawOne(g, q, s, sx, sy, size, alpha, k, t, cx, cy, cam ? cam.roll : 0);
     }
+    g.imageSmoothingQuality = quality;
   }
 
-  drawOne(g, q, s, sx, sy, size, alpha, k, t, cx, cy) {
+  drawOne(g, q, s, sx, sy, size, alpha, k, t, cx, cy, roll = 0) {
     const kind = q.kind;
     if (kind === 'petal' || kind === 'white') {
-      const rot = q.rot + q.spin * s.a;
+      const rot = q.rot + q.spin * s.a + roll;
       const flip = Math.cos(q.flip + q.flipS * s.a);
       const front = flip >= 0;
       const img =
@@ -120,7 +136,7 @@ export class Field {
       const vx = (driftV(q.vx, q.tx, q.tau, s.a) - (s.x - cx) * driftV(q.vz, q.tz, q.tau, s.a) / s.z) * k;
       const vy = (driftV(q.vy, q.ty, q.tau, s.a) - (s.y - cy) * driftV(q.vz, q.tz, q.tau, s.a) / s.z) * k;
       const speed = Math.hypot(vx, vy);
-      const ghosts = speed > 900 ? 3 : speed > 450 ? 2 : 0;
+      const ghosts = !STREAKS ? 0 : speed > 900 ? 3 : speed > 450 ? 2 : 0;
       for (let i = ghosts; i >= 0; i--) {
         const back = i * 0.012;
         g.save();
@@ -265,16 +281,16 @@ export function shedPetals({ seed, t0, t1, rate, path, wind = [-170, -60], white
 }
 
 /** Snowfall with depth: tiny distant flakes to large out-of-focus bokeh. */
-export function snowfall({ seed, t0, t1, rate = 90, wind = -40, bokeh = 0.08 }) {
+export function snowfall({ seed, t0, t1, rate = 90, wind = -40, bokeh = 0.08, preroll = 6 }) {
   const r = mulberry32(seed);
-  const n = Math.round((t1 - t0 + 6) * rate);
+  const n = Math.round((t1 - t0 + preroll) * rate);
   const ps = [];
   for (let i = 0; i < n; i++) {
     const isBokeh = r() < bokeh;
     const z = isBokeh ? r.range(0.18, 0.45) : r.range(0.6, 3.2);
     ps.push({
       kind: isBokeh ? 'bokeh' : 'snow',
-      t0: t0 - 6 + r() * (t1 - t0 + 6),
+      t0: t0 - preroll + r() * (t1 - t0 + preroll),
       life: 8,
       x: r.range(-200, 2120) * z - 960 * (z - 1),
       y: r.range(-200, -20) * z - 378 * (z - 1),

@@ -113,8 +113,8 @@ function inkGlyphMask(p, seed, n = 48) {
   return m.c;
 }
 
-const scratch = makeCanvas(512, 512);
-const gscratch = ctx2d(scratch);
+let scratch = null;
+let gscratch = null;
 
 /**
  * Draw one character revealing like ink soaking into paper.
@@ -137,6 +137,10 @@ export function inkChar(g, ch, x, y, size, p, o = {}) {
     g.drawImage(c, -s / 2, -s / 2);
   } else {
     const k = Math.min(1, 512 / s);
+    if (!scratch) {
+      scratch = makeCanvas(512, 512);
+      gscratch = ctx2d(scratch);
+    }
     gscratch.save();
     gscratch.globalCompositeOperation = 'copy';
     gscratch.drawImage(c, 0, 0, s * k, s * k);

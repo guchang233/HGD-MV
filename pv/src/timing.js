@@ -16,6 +16,11 @@ export async function loadTiming(url) {
 
 export const timing = () => data;
 
+/** Install timing data directly (Node tools). */
+export function setTiming(d) {
+  data = d;
+}
+
 /** Time of beat k (k may be fractional). */
 export const beatAt = (k) => BEAT0 + k * BEAT;
 /** Time of the downbeat starting bar n. */

@@ -8,110 +8,416 @@
     "en": "Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic."
   },
   "slots": [
-    { "id": "00", "name": "角色设定图", "mood": "paper", "focus": [0.5, 0.5], "uses": [], "heroine": true, "reference": true,
+    {
+      "id": "00",
+      "name": "角色设定图",
+      "mood": "paper",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "heroine": true,
+      "reference": true,
       "cn": "女主角的角色设定图：正面全身、侧面全身和面部特写三视图并排，纯白背景，干净的线稿与平涂上色，用来保持后续画面中角色一致。",
-      "en": "Character reference sheet of the heroine: front full body, side full body and a face close-up side by side on a pure white background, clean line art with flat colors, to keep the character consistent in later images." },
-    { "id": "01", "name": "雪夜红梅", "mood": "night", "focus": [0.66, 0.55], "uses": [[2.05, 6.05]],
+      "en": "Character reference sheet of the heroine: front full body, side full body and a face close-up side by side on a pure white background, clean line art with flat colors, to keep the character consistent in later images."
+    },
+    {
+      "id": "01",
+      "name": "雪夜红梅",
+      "mood": "night",
+      "focus": [
+        0.66,
+        0.55
+      ],
       "cn": "深夜大雪中，一枝苍劲的老梅枝从画面右下角斜伸向左上，枝头开着朱红色的梅花和花苞，枝干带水墨笔触；背景是近乎全黑的深蓝夜空，大片雪花缓缓飘落，有虚化的雪花光斑。画面左半部分保持干净的暗色留白。",
-      "en": "Deep in a snowy night, an old gnarled plum branch reaches diagonally from the lower right toward the upper left, carrying vermilion blossoms and buds, its bark painted with ink-brush texture; near-black deep navy sky, large snowflakes drifting with soft bokeh. Keep the left half clean and dark as negative space." },
-    { "id": "02", "name": "捧花的少女", "mood": "paper", "focus": [0.66, 0.45], "uses": [[6.05, 8.05]], "heroine": true,
+      "en": "Deep in a snowy night, an old gnarled plum branch reaches diagonally from the lower right toward the upper left, carrying vermilion blossoms and buds, its bark painted with ink-brush texture; near-black deep navy sky, large snowflakes drifting with soft bokeh. Keep the left half clean and dark as negative space."
+    },
+    {
+      "id": "02",
+      "name": "捧花的少女",
+      "mood": "paper",
+      "focus": [
+        0.66,
+        0.45
+      ],
+      "heroine": true,
       "cn": "女主角半身正面像，位于画面右侧三分之一，红色的双手在胸前轻轻捧着一朵盛开的白花，低垂眼帘，嘴角微微上扬；纯白背景，两条白色飘带向身后两侧舒展。画面左侧大面积留白。",
-      "en": "Half-length front view of the heroine in the right third of the frame, gently cupping a blooming white flower at her chest with her red hands, eyes lowered, a faint smile; pure white background, two white ribbons spreading out behind her. Large empty space on the left." },
-    { "id": "03", "name": "对镜的双生", "mood": "paper", "focus": [0.5, 0.5], "uses": [[8.05, 10.05]], "heroine": true,
+      "en": "Half-length front view of the heroine in the right third of the frame, gently cupping a blooming white flower at her chest with her red hands, eyes lowered, a faint smile; pure white background, two white ribbons spreading out behind her. Large empty space on the left."
+    },
+    {
+      "id": "03",
+      "name": "对镜的双生",
+      "mood": "paper",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "heroine": true,
       "cn": "两个相同的女主角侧脸相对，鼻尖几乎相触，闭着眼睛，构成镜像对称；左边一位是冷灰色调，右边一位是朱红色调，两人的发髻和发丝在画面中间交融；白色背景，近景。",
-      "en": "Two identical heroines in profile facing each other, noses almost touching, eyes closed, mirror-symmetric; the left one in cool grey tones, the right one in vermilion tones, their buns and hair merging in the middle; white background, close-up." },
-    { "id": "04", "name": "红线翻花绳", "mood": "paper", "focus": [0.58, 0.5], "uses": [[10.05, 12.05]],
+      "en": "Two identical heroines in profile facing each other, noses almost touching, eyes closed, mirror-symmetric; the left one in cool grey tones, the right one in vermilion tones, their buns and hair merging in the middle; white background, close-up."
+    },
+    {
+      "id": "04",
+      "name": "红线翻花绳",
+      "mood": "paper",
+      "focus": [
+        0.58,
+        0.5
+      ],
       "cn": "两双手玩翻花绳的特写，一根红线在指间交错成几何图形，红线微微发光；柔和的米白背景，浅景深，手部位于画面中央偏右。",
-      "en": "Close-up of two pairs of hands playing cat's cradle, a single red string crossing between the fingers in a geometric pattern, the string faintly glowing; soft off-white background, shallow depth of field, hands just right of center." },
-    { "id": "05", "name": "少女与孩子", "mood": "paper", "focus": [0.36, 0.6], "uses": [[15.8, 19.8]], "heroine": true,
+      "en": "Close-up of two pairs of hands playing cat's cradle, a single red string crossing between the fingers in a geometric pattern, the string faintly glowing; soft off-white background, shallow depth of field, hands just right of center."
+    },
+    {
+      "id": "05",
+      "name": "少女与孩子",
+      "mood": "paper",
+      "focus": [
+        0.36,
+        0.6
+      ],
+      "heroine": true,
       "cn": "雪后的白色世界里，女主角弯下腰，伸手和两个穿冬衣的小孩说话（一个穿黄色棉服背着书包，一个穿红色棉袄），白色飘带在风中扬起；人物整体位于画面左侧到中部，右侧三分之一留白。",
-      "en": "In a white world after snowfall, the heroine bends down and reaches out to two small children in winter coats (one in a yellow parka with a backpack, one in a red padded jacket), her white ribbons lifting in the wind; the figures sit from the left to the center, with the right third left empty." },
-    { "id": "06", "name": "张开双臂", "mood": "paper", "focus": [0.5, 0.5], "uses": [[19.8, 22.8], [83.81, 86.81]], "heroine": true, "split": true,
+      "en": "In a white world after snowfall, the heroine bends down and reaches out to two small children in winter coats (one in a yellow parka with a backpack, one in a red padded jacket), her white ribbons lifting in the wind; the figures sit from the left to the center, with the right third left empty."
+    },
+    {
+      "id": "06",
+      "name": "张开双臂",
+      "mood": "paper",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "heroine": true,
+      "split": true,
       "cn": "女主角面向画面左侧，张开红色的双臂迎风而立，白色飘带和裙摆被风吹向右侧，全身像，纯白背景；人物居中，身形紧凑（画面会被裁成左右分屏的一半）。",
-      "en": "The heroine stands facing left with her red arms spread wide into the wind, white ribbons and skirt blown to the right, full body, pure white background; figure centered and compact (the image will be cropped to one half of a split screen)." },
-    { "id": "07", "name": "雪中岔路", "mood": "snow", "focus": [0.5, 0.55], "uses": [[19.8, 22.8], [131.81, 134.81]], "split": true,
+      "en": "The heroine stands facing left with her red arms spread wide into the wind, white ribbons and skirt blown to the right, full body, pure white background; figure centered and compact (the image will be cropped to one half of a split screen)."
+    },
+    {
+      "id": "07",
+      "name": "雪中岔路",
+      "mood": "snow",
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "split": true,
       "cn": "黄昏时分的雪原，一条小路在画面中央分成向左和向右的两条岔路，远处有几棵枯树，天空灰蓝，孤寂；岔路口位于画面正中（会被裁成分屏的一半）。",
-      "en": "A snowy field at dusk where a single path splits in the center into two branches, one going left and one going right; a few bare trees in the distance, grey-blue sky, lonely; the fork sits dead center (the image will be cropped to one half of a split screen)." },
-    { "id": "08", "name": "红手蓝蝶", "mood": "paper", "focus": [0.35, 0.62], "uses": [[22.8, 25.05], [88.81, 89.31], [137.06, 138.56]],
+      "en": "A snowy field at dusk where a single path splits in the center into two branches, one going left and one going right; a few bare trees in the distance, grey-blue sky, lonely; the fork sits dead center (the image will be cropped to one half of a split screen)."
+    },
+    {
+      "id": "08",
+      "name": "红手蓝蝶",
+      "mood": "paper",
+      "focus": [
+        0.35,
+        0.62
+      ],
       "cn": "微距特写：一只朱红色的手（像戴着红手套）微微弯曲手指，一只宝蓝色的大闪蝶停在指节上，翅膀半张；白色背景，主体在画面左下，右上方留白。",
-      "en": "Macro close-up: a vermilion hand (as if in a red glove) with slightly curled fingers, a vivid blue morpho butterfly resting on the knuckles with its wings half open; white background, subject in the lower left, upper right left empty." },
-    { "id": "09", "name": "眼眸与蓝蝶", "mood": "paper", "focus": [0.38, 0.5], "uses": [[25.05, 26.55], [90.43, 93.06]], "heroine": true,
+      "en": "Macro close-up: a vermilion hand (as if in a red glove) with slightly curled fingers, a vivid blue morpho butterfly resting on the knuckles with its wings half open; white background, subject in the lower left, upper right left empty."
+    },
+    {
+      "id": "09",
+      "name": "眼眸与蓝蝶",
+      "mood": "paper",
+      "focus": [
+        0.38,
+        0.5
+      ],
+      "heroine": true,
       "cn": "女主角面部的极近特写：一只翠绿色的眼睛、眼尾一抹红，脸颊旁是她红色的手，一只蓝色蝴蝶停在手上；主体在画面左侧到中部，右侧留出放大字的空间。",
-      "en": "Extreme close-up of the heroine's face: one emerald eye with red at its corner, her red hand beside her cheek with a blue butterfly on it; subject from the left to the center, the right side left open for large lettering." },
-    { "id": "10", "name": "指向远方", "mood": "paper", "focus": [0.3, 0.55], "uses": [[26.55, 30.0]], "heroine": true,
+      "en": "Extreme close-up of the heroine's face: one emerald eye with red at its corner, her red hand beside her cheek with a blue butterfly on it; subject from the left to the center, the right side left open for large lettering."
+    },
+    {
+      "id": "10",
+      "name": "指向远方",
+      "mood": "paper",
+      "focus": [
+        0.3,
+        0.55
+      ],
+      "heroine": true,
       "cn": "女主角侧身，抬起红色的手臂指向远处一只越飞越远的小蓝蝶，白色背景；人物在画面左侧，右侧是开阔的留白天空。",
-      "en": "The heroine in side view raises her red arm and points at a tiny blue butterfly flying away into the distance, white background; figure on the left, open empty sky on the right." },
-    { "id": "11", "name": "冰封古镇", "mood": "snow", "focus": [0.42, 0.55], "uses": [[30.0, 35.05]],
+      "en": "The heroine in side view raises her red arm and points at a tiny blue butterfly flying away into the distance, white background; figure on the left, open empty sky on the right."
+    },
+    {
+      "id": "11",
+      "name": "冰封古镇",
+      "mood": "snow",
+      "focus": [
+        0.42,
+        0.55
+      ],
       "cn": "暴风雪中的中国古镇夜景，屋檐挂满冰凌，街道空无一人，几盏被雪覆盖的红灯笼发出微弱的光，整体深蓝色调，广角；画面右侧较暗。",
-      "en": "An ancient Chinese town at night in a blizzard, icicles hanging from the eaves, empty streets, a few snow-covered red lanterns glowing faintly, deep blue tones, wide angle; the right side kept darker." },
-    { "id": "12", "name": "空巷红灯", "mood": "night", "focus": [0.62, 0.45], "uses": [[38.3, 41.05]],
+      "en": "An ancient Chinese town at night in a blizzard, icicles hanging from the eaves, empty streets, a few snow-covered red lanterns glowing faintly, deep blue tones, wide angle; the right side kept darker."
+    },
+    {
+      "id": "12",
+      "name": "空巷红灯",
+      "mood": "night",
+      "focus": [
+        0.62,
+        0.45
+      ],
       "cn": "深夜下雪的狭长古巷，单点透视延伸向画面右上方的远处，一盏红灯笼挂在墙上，女主角长长的影子投在雪地和墙面上（人物本身不在画面里），冷清孤寂。",
-      "en": "A long, narrow old alley at night in falling snow, one-point perspective receding toward the upper right, a single red lantern on the wall, the heroine's long shadow cast across the snow and the wall (she herself is out of frame), cold and lonely." },
-    { "id": "13", "name": "独坐红椅", "mood": "paper", "focus": [0.4, 0.55], "uses": [[41.05, 45.05]], "heroine": true,
-      "cn": "白色纱帘之间，女主角独自坐在一把红色雕花古椅上，低着头，双手放在膝上，白色飘带垂落在地；画面整体偏白，人物在左侧到中部。",
-      "en": "Between pale white curtains, the heroine sits alone on a red carved antique chair, head lowered, hands on her knees, white ribbons trailing to the floor; overall bright, figure from the left to the center." },
-    { "id": "14", "name": "花树里的少女", "mood": "dark", "focus": [0.5, 0.5], "uses": [[51.05, 55.05], [79.81, 81.06]], "heroine": true,
+      "en": "A long, narrow old alley at night in falling snow, one-point perspective receding toward the upper right, a single red lantern on the wall, the heroine's long shadow cast across the snow and the wall (she herself is out of frame), cold and lonely."
+    },
+    {
+      "id": "13",
+      "name": "独坐红椅",
+      "mood": "night",
+      "focus": [
+        0.4,
+        0.55
+      ],
+      "heroine": true,
+      "cn": "昏暗的房间里，冷蓝色的月光透过白色纱帘照进来，女主角独自坐在一把红色雕花古椅上，低着头，双手放在膝上，白色飘带垂落在地；整体偏暗，人物在左侧到中部，右侧是暗色的留白。",
+      "en": "A dim room where cold blue moonlight falls through pale white curtains; the heroine sits alone on a red carved antique chair, head lowered, hands on her knees, white ribbons trailing to the floor; mostly dark, figure from the left to the center, dark empty space on the right."
+    },
+    {
+      "id": "14",
+      "name": "花树里的少女",
+      "mood": "dark",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "heroine": true,
       "cn": "纯黑背景中，一棵由无数白色花朵组成的巨大花树，花心是红色，女主角闭着眼站在花树的中心，像被花朵包裹；对称构图，居中。",
-      "en": "Against pure black, a giant tree made of countless white flowers with red centers; the heroine stands with closed eyes at its heart, wrapped in blossoms; symmetrical, centered." },
-    { "id": "15", "name": "云想衣裳", "mood": "paper", "focus": [0.5, 0.45], "uses": [[59.05, 62.93]],
+      "en": "Against pure black, a giant tree made of countless white flowers with red centers; the heroine stands with closed eyes at its heart, wrapped in blossoms; symmetrical, centered."
+    },
+    {
+      "id": "15",
+      "name": "云想衣裳",
+      "mood": "paper",
+      "focus": [
+        0.5,
+        0.45
+      ],
       "cn": "苍白明亮的天空中，云朵像一件白色丝绸长裙般舒展流动，零星的花瓣在空中飘散，梦幻、柔和、高调。",
-      "en": "In a pale, bright sky, clouds unfurl and flow like a long white silk gown, a few petals drifting through the air; dreamy, soft, high-key." },
-    { "id": "16", "name": "红房少女", "mood": "red", "focus": [0.38, 0.45], "uses": [[62.93, 67.06]], "heroine": true,
+      "en": "In a pale, bright sky, clouds unfurl and flow like a long white silk gown, a few petals drifting through the air; dreamy, soft, high-key."
+    },
+    {
+      "id": "16",
+      "name": "红房少女",
+      "mood": "red",
+      "focus": [
+        0.38,
+        0.45
+      ],
+      "heroine": true,
       "cn": "俯视镜头：女主角闭着眼安详地躺在一间华丽的红色房间里，身下是红色丝绸，周围散落着中式首饰、梳子、手镯、团扇和红花；人物位于画面左侧到中部，右侧留空。",
-      "en": "Top-down shot: the heroine lies peacefully with closed eyes in a lavish red room on red silk, surrounded by scattered Chinese jewelry, combs, bracelets, round fans and red flowers; figure from the left to the center, right side open." },
-    { "id": "17", "name": "红花绿地", "mood": "green", "focus": [0.5, 0.5], "uses": [[67.06, 71.06]], "heroine": true,
+      "en": "Top-down shot: the heroine lies peacefully with closed eyes in a lavish red room on red silk, surrounded by scattered Chinese jewelry, combs, bracelets, round fans and red flowers; figure from the left to the center, right side open."
+    },
+    {
+      "id": "17",
+      "name": "红花绿地",
+      "mood": "green",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "heroine": true,
       "cn": "俯视镜头：女主角躺在一大片开满红花的青绿色草地上，红色花瓣被风吹起，春天，明亮。",
-      "en": "Top-down shot: the heroine lies in a vast green meadow full of red flowers, red petals lifted by the wind, spring, bright." },
-    { "id": "18", "name": "凤冠山茶", "mood": "red", "focus": [0.5, 0.45], "uses": [[71.06, 75.06]],
-      "cn": "新娘凤冠的特写：由硕大的红山茶花组成，金色发钗和珠帘垂下遮住了半张脸，只露出下巴和红唇；戏剧性的侧光，背景偏白。",
-      "en": "Close-up of a bride's phoenix crown made of huge red camellias, gold hairpins and beaded tassels hanging down to veil half her face so only her chin and red lips show; dramatic side light, pale background." },
-    { "id": "19", "name": "黑暗中的正脸", "mood": "dark", "focus": [0.5, 0.45], "uses": [[81.06, 83.81], [134.81, 137.06]], "heroine": true,
+      "en": "Top-down shot: the heroine lies in a vast green meadow full of red flowers, red petals lifted by the wind, spring, bright."
+    },
+    {
+      "id": "18",
+      "name": "凤冠山茶",
+      "mood": "red",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "cn": "新娘凤冠的特写：由硕大的红山茶花组成，金色发钗和珠帘垂下遮住了半张脸，只露出下巴和红唇；戏剧性的侧光，深色背景。",
+      "en": "Close-up of a bride's phoenix crown made of huge red camellias, gold hairpins and beaded tassels hanging down to veil half her face so only her chin and red lips show; dramatic side light, dark background."
+    },
+    {
+      "id": "19",
+      "name": "黑暗中的正脸",
+      "mood": "dark",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "heroine": true,
       "cn": "黑暗中女主角的正脸特写，翠绿色的眼睛直视镜头，皮肤上有细微的裂纹（像瓷器），一缕冷光照亮半边脸；居中。",
-      "en": "Front close-up of the heroine's face in darkness, emerald eyes looking straight into the lens, faint cracks on her skin like porcelain, a thin cold light catching half her face; centered." },
-    { "id": "20", "name": "梅枝拱门", "mood": "paper", "focus": [0.42, 0.55], "uses": [[95.06, 99.06]], "heroine": true,
+      "en": "Front close-up of the heroine's face in darkness, emerald eyes looking straight into the lens, faint cracks on her skin like porcelain, a thin cold light catching half her face; centered."
+    },
+    {
+      "id": "20",
+      "name": "梅枝拱门",
+      "mood": "paper",
+      "focus": [
+        0.42,
+        0.55
+      ],
+      "heroine": true,
       "cn": "白色背景上，深色的老梅枝从两侧向上合拢成一道拱门，枝头开满红梅，女主角小小地站在拱门下回头；水墨质感，人物在画面中部偏左，右侧留白。",
-      "en": "On a white background, dark old plum branches curve up from both sides to form an arch covered in red blossoms; the heroine stands small beneath it, looking back; ink-painting texture, figure just left of center, right side open." },
-    { "id": "21", "name": "哭泣的新娘", "mood": "red", "focus": [0.4, 0.45], "uses": [[99.06, 103.06]], "heroine": true,
+      "en": "On a white background, dark old plum branches curve up from both sides to form an arch covered in red blossoms; the heroine stands small beneath it, looking back; ink-painting texture, figure just left of center, right side open."
+    },
+    {
+      "id": "21",
+      "name": "哭泣的新娘",
+      "mood": "red",
+      "focus": [
+        0.4,
+        0.45
+      ],
+      "heroine": true,
       "cn": "哭泣的新娘特写，戴着由红山茶组成的凤冠，珠帘半遮双眼，泪水从脸颊滑落；红与白，主体在左侧，下方和右侧留白。",
-      "en": "Close-up of a crying bride wearing a phoenix crown of red camellias, a bead curtain half veiling her eyes, tears running down her cheeks; red and white, subject on the left, space left open below and on the right." },
-    { "id": "22", "name": "红帐古床", "mood": "night", "focus": [0.5, 0.5], "uses": [[103.06, 105.06], [107.06, 110.93]],
+      "en": "Close-up of a crying bride wearing a phoenix crown of red camellias, a bead curtain half veiling her eyes, tears running down her cheeks; red and white, subject on the left, space left open below and on the right."
+    },
+    {
+      "id": "22",
+      "name": "红帐古床",
+      "mood": "night",
+      "focus": [
+        0.5,
+        0.5
+      ],
       "cn": "昏暗的古代卧室里，一张挂着红色帐幔的雕花木床，床上并排两个枕头，烛光摇曳，暖色与深影，居中对称。",
-      "en": "In a dim old bedroom, a carved wooden canopy bed hung with red curtains, two pillows side by side, flickering candlelight, warm tones and deep shadows, centered and symmetrical." },
-    { "id": "23", "name": "交叉的红臂", "mood": "paper", "focus": [0.5, 0.45], "uses": [[105.06, 107.06], [110.93, 115.06]], "heroine": true,
-      "cn": "女主角用交叉的红色双臂遮住嘴，只露出一双直视镜头的眼睛，眼神倔强；白色背景，近景居中。",
-      "en": "The heroine hides her mouth behind her crossed red arms, only her stubborn eyes visible, staring into the lens; white background, centered close-up." },
-    { "id": "24", "name": "红手白花", "mood": "paper", "focus": [0.58, 0.55], "uses": [[118.93, 123.06]],
-      "cn": "一双红色的手从画面右侧伸入，捧着一朵白花，几片花瓣散落；纯白背景，主体在中部偏右。",
-      "en": "A pair of red hands reaching in from the right, cupping a white flower, a few petals falling; pure white background, subject just right of center." },
-    { "id": "25", "name": "一排新娘", "mood": "dark", "focus": [0.5, 0.5], "uses": [[123.06, 125.06]], "heroine": true,
+      "en": "In a dim old bedroom, a carved wooden canopy bed hung with red curtains, two pillows side by side, flickering candlelight, warm tones and deep shadows, centered and symmetrical."
+    },
+    {
+      "id": "23",
+      "name": "交叉的红臂",
+      "mood": "dark",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "heroine": true,
+      "cn": "深色背景中，女主角用交叉的红色双臂遮住嘴，只露出一双直视镜头的眼睛，眼神倔强；一束硬光从上方打下，近景居中。",
+      "en": "Against a dark background, the heroine hides her mouth behind her crossed red arms, only her stubborn eyes visible, staring into the lens; a hard light from above, centered close-up."
+    },
+    {
+      "id": "24",
+      "name": "红手白花",
+      "mood": "dark",
+      "focus": [
+        0.58,
+        0.55
+      ],
+      "cn": "一双红色的手从画面右侧伸入，捧着一朵白花，几片花瓣散落；纯黑背景，柔和的顶光，主体在中部偏右。",
+      "en": "A pair of red hands reaching in from the right, cupping a white flower, a few petals falling; pure black background, soft top light, subject just right of center."
+    },
+    {
+      "id": "25",
+      "name": "一排新娘",
+      "mood": "dark",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "heroine": true,
       "cn": "纯黑背景前，一排穿着红色刺绣嫁衣的新娘并排站立，她们的头是一朵朵巨大的红花；在她们中间站着小小的、穿白衣的女主角；超现实，对称。",
-      "en": "Against pure black, a row of brides in red embroidered wedding robes stands side by side, their heads replaced by enormous red flowers; among them stands the small heroine in white; surreal, symmetrical." },
-    { "id": "26", "name": "少年郎", "mood": "snow", "focus": [0.4, 0.6], "uses": [[125.06, 127.81]],
+      "en": "Against pure black, a row of brides in red embroidered wedding robes stands side by side, their heads replaced by enormous red flowers; among them stands the small heroine in white; surreal, symmetrical."
+    },
+    {
+      "id": "26",
+      "name": "少年郎",
+      "mood": "snow",
+      "focus": [
+        0.4,
+        0.6
+      ],
       "cn": "黄昏的雪中，远处一棵枯树下站着一个少年的剪影，背对镜头，水墨般淡远的意境，大面积留白。",
-      "en": "Dusk in falling snow: the silhouette of a young man stands under a bare tree in the distance with his back to us; faint ink-wash mood, lots of empty space." },
-    { "id": "27", "name": "风雪中的少女", "mood": "snow", "focus": [0.5, 0.5], "uses": [[127.81, 131.81]], "heroine": true,
+      "en": "Dusk in falling snow: the silhouette of a young man stands under a bare tree in the distance with his back to us; faint ink-wash mood, lots of empty space."
+    },
+    {
+      "id": "27",
+      "name": "风雪中的少女",
+      "mood": "snow",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "heroine": true,
       "cn": "夜晚的暴风雪中，女主角双手抱紧自己，白色飘带被风狂乱地吹起，冷蓝色光线，雪地；人物居中。",
-      "en": "In a blizzard at night, the heroine hugs herself tightly, white ribbons whipped wildly by the wind, cold blue light, snowy ground; figure centered." },
-    { "id": "28", "name": "逆风", "mood": "snow", "focus": [0.5, 0.5], "uses": [[131.81, 134.81]], "heroine": true, "split": true,
+      "en": "In a blizzard at night, the heroine hugs herself tightly, white ribbons whipped wildly by the wind, cold blue light, snowy ground; figure centered."
+    },
+    {
+      "id": "28",
+      "name": "逆风",
+      "mood": "snow",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "heroine": true,
+      "split": true,
       "cn": "星空下的风雪夜，女主角弯腰顶着风前行，衣摆和飘带被吹向后方；人物居中，身形紧凑（画面会被裁成分屏的一半）。",
-      "en": "A snowy, windy night under the stars: the heroine bends forward, pushing into the wind, her hem and ribbons blown back; figure centered and compact (the image will be cropped to one half of a split screen)." },
-    { "id": "29", "name": "雪夜背影", "mood": "snow", "focus": [0.5, 0.6], "uses": [[138.56, 143.93]], "heroine": true,
+      "en": "A snowy, windy night under the stars: the heroine bends forward, pushing into the wind, her hem and ribbons blown back; figure centered and compact (the image will be cropped to one half of a split screen)."
+    },
+    {
+      "id": "29",
+      "name": "雪夜背影",
+      "mood": "snow",
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "heroine": true,
       "cn": "雪夜中女主角的背影，仰望夜空，衣服上有红色的痕迹，风吹起发丝和飘带；人物居中略偏下，上方是飘雪的夜空。",
-      "en": "The heroine seen from behind in the snowy night, looking up at the sky, red stains on her dress, wind lifting her hair and ribbons; figure centered and slightly low, snowy night sky above." },
-    { "id": "30", "name": "白花遮面", "mood": "night", "focus": [0.4, 0.5], "uses": [[143.93, 146.56]], "heroine": true,
+      "en": "The heroine seen from behind in the snowy night, looking up at the sky, red stains on her dress, wind lifting her hair and ribbons; figure centered and slightly low, snowy night sky above."
+    },
+    {
+      "id": "30",
+      "name": "白花遮面",
+      "mood": "night",
+      "focus": [
+        0.4,
+        0.5
+      ],
+      "heroine": true,
       "cn": "夜色中，一朵巨大的白色花朵挡住了女主角的半张脸，花心是红色，露出一只翠绿的眼睛，柔和的月光；主体在画面左侧到中部，右侧留白。",
-      "en": "At night, a huge white flower with a red center covers half of the heroine's face, one emerald eye visible, soft moonlight; subject from the left to the center, right side open." },
-    { "id": "31", "name": "金色日出", "mood": "gold", "focus": [0.5, 0.35], "uses": [[146.56, 151.06]],
+      "en": "At night, a huge white flower with a red center covers half of the heroine's face, one emerald eye visible, soft moonlight; subject from the left to the center, right side open."
+    },
+    {
+      "id": "31",
+      "name": "金色日出",
+      "mood": "gold",
+      "focus": [
+        0.5,
+        0.35
+      ],
       "cn": "金色的朝阳从厚重的云层后迸发，照亮积雪的群山，前景有一棵孤零零的枯树，强烈的丁达尔光束；太阳在画面中上方，下方三分之一较暗。",
-      "en": "A golden sunrise bursts through heavy clouds, lighting snow-covered mountains, a lone bare tree in the foreground, strong god rays; the sun sits in the upper center, the lower third darker." },
-    { "id": "32", "name": "梅树中的少女", "mood": "paper", "focus": [0.42, 0.5], "uses": [[151.06, 154.31]], "heroine": true,
+      "en": "A golden sunrise bursts through heavy clouds, lighting snow-covered mountains, a lone bare tree in the foreground, strong god rays; the sun sits in the upper center, the lower third darker."
+    },
+    {
+      "id": "32",
+      "name": "梅树中的少女",
+      "mood": "paper",
+      "focus": [
+        0.42,
+        0.5
+      ],
+      "heroine": true,
       "cn": "白色背景中，女主角安静地躺在一棵开满红梅的老梅树枝杈间，闭着眼，裙摆垂落；人物在画面中部偏左，左右两侧留白。",
-      "en": "On a white background, the heroine lies quietly among the branches of an old plum tree full of red blossoms, eyes closed, her skirt hanging down; figure just left of center, both sides left open." },
-    { "id": "33", "name": "山茶入梦", "mood": "paper", "focus": [0.45, 0.42], "uses": [[154.31, 157.06]], "heroine": true,
+      "en": "On a white background, the heroine lies quietly among the branches of an old plum tree full of red blossoms, eyes closed, her skirt hanging down; figure just left of center, both sides left open."
+    },
+    {
+      "id": "33",
+      "name": "山茶入梦",
+      "mood": "paper",
+      "focus": [
+        0.45,
+        0.42
+      ],
+      "heroine": true,
       "cn": "近景：熟睡的女主角，发间插着一朵很大的红山茶花，周围是梅枝和零星的白花，嘴角带着平静的微笑；人物在画面中部偏左，下方留白。",
-      "en": "Close-up: the heroine asleep with a large red camellia in her hair, surrounded by plum branches and a few white blossoms, a calm smile; subject just left of center, space left open below." },
-    { "id": "34", "name": "水墨梅枝", "mood": "paper", "focus": [0.6, 0.6], "uses": [[157.06, 161.0]],
+      "en": "Close-up: the heroine asleep with a large red camellia in her hair, surrounded by plum branches and a few white blossoms, a calm smile; subject just left of center, space left open below."
+    },
+    {
+      "id": "34",
+      "name": "水墨梅枝",
+      "mood": "paper",
+      "focus": [
+        0.6,
+        0.6
+      ],
       "cn": "宣纸白背景上，一枝水墨画风格的梅枝从画面右下角伸入，枝头点缀着小小的朱红色梅花，大面积留白，极简、安静（和开场呼应）。",
-      "en": "On white rice paper, a single ink-painted plum branch reaches in from the lower right corner, dotted with small vermilion blossoms; lots of empty space, minimal and quiet (echoing the opening)." }
+      "en": "On white rice paper, a single ink-painted plum branch reaches in from the lower right corner, dotted with small vermilion blossoms; lots of empty space, minimal and quiet (echoing the opening)."
+    }
   ]
 }
