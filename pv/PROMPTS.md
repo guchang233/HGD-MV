@@ -23,21 +23,21 @@ PV 里所有插画镜头都是编号的「画面槽位」。图片还没放进�
 ## 统一画风
 
 ```text
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 ```text
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## 女主角
 
 ```text
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
 ```
 
 ```text
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
 ```
 
 ## 槽位一览
@@ -87,17 +87,17 @@ Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey
 完整提示词（中文）：
 
 ```text
-女主角的角色设定图：正面全身、侧面全身和面部特写三视图并排，纯白背景，干净的线稿与平涂上色，用来保持后续画面中角色一致。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角的简单角色设定：正面全身、侧面全身、面部特写并排，纯白背景，手绘黑线稿加平涂，用来保持后续画面中角色一致。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
-Character reference sheet of the heroine: front full body, side full body and a face close-up side by side on a pure white background, clean line art with flat colors, to keep the character consistent in later images.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple character sheet of the heroine: front full body, side full body and a face close-up side by side on a plain white background, hand-drawn black outlines with flat colors, to keep the character consistent in later images.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S01
@@ -111,14 +111,14 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 深夜大雪中，一枝苍劲的老梅枝从画面右下角斜伸向左上，枝头开着朱红色的梅花和花苞，枝干带水墨笔触；背景是近乎全黑的深蓝夜空，大片雪花缓缓飘落，有虚化的雪花光斑。画面左半部分保持干净的暗色留白。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Deep in a snowy night, an old gnarled plum branch reaches diagonally from the lower right toward the upper left, carrying vermilion blossoms and buds, its bark painted with ink-brush texture; near-black deep navy sky, large snowflakes drifting with soft bokeh. Keep the left half clean and dark as negative space.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S02
@@ -133,16 +133,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 女主角半身正面像，位于画面右侧三分之一，红色的双手在胸前轻轻捧着一朵盛开的白花，低垂眼帘，嘴角微微上扬；纯白背景，两条白色飘带向身后两侧舒展。画面左侧大面积留白。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Half-length front view of the heroine in the right third of the frame, gently cupping a blooming white flower at her chest with her red hands, eyes lowered, a faint smile; pure white background, two white ribbons spreading out behind her. Large empty space on the left.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S03
@@ -158,16 +158,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 两个相同的女主角侧脸相对，鼻尖几乎相触，闭着眼睛，构成镜像对称；左边一位是冷灰色调，右边一位是朱红色调，两人的发髻和发丝在画面中间交融；白色背景，人物在画面上方三分之二，下方留出干净的空白。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Two identical heroines in profile facing each other, noses almost touching, eyes closed, mirror-symmetric; the left one in cool grey tones, the right one in vermilion tones, their buns and hair merging in the middle; white background, the figures fill the upper two thirds and the bottom is left clean and empty.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S04
@@ -182,14 +182,14 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 两双手玩翻花绳的特写，一根红线在指间交错成几何图形，红线微微发光；柔和的米白背景，浅景深，手部位于画面中央偏右。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Close-up of two pairs of hands playing cat's cradle, a single red string crossing between the fingers in a geometric pattern, the string faintly glowing; soft off-white background, shallow depth of field, hands just right of center.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S05
@@ -206,16 +206,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 雪后的白色世界里，女主角弯下腰，伸手和两个穿冬衣的小孩说话（一个穿黄色棉服背着书包，一个穿红色棉袄），白色飘带在风中扬起；人物整体位于画面左侧到中部，右侧三分之一留白。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 In a white world after snowfall, the heroine bends down and reaches out to two small children in winter coats (one in a yellow parka with a backpack, one in a red padded jacket), her white ribbons lifting in the wind; the figures sit from the left to the center, with the right third left empty.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S06
@@ -230,16 +230,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 女主角面向画面左侧，张开红色的双臂迎风而立，白色飘带和裙摆被风吹向右侧，全身像，纯白背景；人物居中，身形紧凑（画面会被裁成左右分屏的一半）。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 The heroine stands facing left with her red arms spread wide into the wind, white ribbons and skirt blown to the right, full body, pure white background; figure centered and compact (the image will be cropped to one half of a split screen).
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S07
@@ -255,14 +255,14 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 黄昏时分的雪原，一条小路在画面中央分成向左和向右的两条岔路，远处有几棵枯树，天空灰蓝，孤寂；岔路口位于画面正中（会被裁成分屏的一半）。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 A snowy field at dusk where a single path splits in the center into two branches, one going left and one going right; a few bare trees in the distance, grey-blue sky, lonely; the fork sits dead center (the image will be cropped to one half of a split screen).
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S08
@@ -278,14 +278,14 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 微距特写：一只朱红色的手（像戴着红手套）微微弯曲手指，一只宝蓝色的大闪蝶停在指节上，翅膀半张；白色背景，主体在画面左下，右上方留白。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Macro close-up: a vermilion hand (as if in a red glove) with slightly curled fingers, a vivid blue morpho butterfly resting on the knuckles with its wings half open; white background, subject in the lower left, upper right left empty.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S09
@@ -301,16 +301,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 女主角面部的极近特写：一只翠绿色的眼睛、眼尾一抹红，脸颊旁是她红色的手，一只蓝色蝴蝶停在手上；主体在画面左侧到中部，右侧留出放大字的空间。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Extreme close-up of the heroine's face: one emerald eye with red at its corner, her red hand beside her cheek with a blue butterfly on it; subject from the left to the center, the right side left open for large lettering.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S10
@@ -324,16 +324,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 女主角侧身，抬起红色的手臂指向远处一只越飞越远的小蓝蝶，白色背景；人物在画面左侧，右侧是开阔的留白天空。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 The heroine in side view raises her red arm and points at a tiny blue butterfly flying away into the distance, white background; figure on the left, open empty sky on the right.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S11
@@ -347,14 +347,14 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 暴风雪中的中国古镇夜景，屋檐挂满冰凌，街道空无一人，几盏被雪覆盖的红灯笼发出微弱的光，整体深蓝色调，广角；画面右侧较暗。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 An ancient Chinese town at night in a blizzard, icicles hanging from the eaves, empty streets, a few snow-covered red lanterns glowing faintly, deep blue tones, wide angle; the right side kept darker.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S12
@@ -368,14 +368,14 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 深夜下雪的狭长古巷，单点透视延伸向画面右上方的远处，一盏红灯笼挂在墙上，女主角长长的影子投在雪地和墙面上（人物本身不在画面里），冷清孤寂。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 A long, narrow old alley at night in falling snow, one-point perspective receding toward the upper right, a single red lantern on the wall, the heroine's long shadow cast across the snow and the wall (she herself is out of frame), cold and lonely.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S13
@@ -389,16 +389,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 昏暗的房间里，冷蓝色的月光透过白色纱帘照进来，女主角独自坐在一把红色雕花古椅上，低着头，双手放在膝上，白色飘带垂落在地；整体偏暗，人物在左侧到中部，右侧是暗色的留白。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 A dim room where cold blue moonlight falls through pale white curtains; the heroine sits alone on a red carved antique chair, head lowered, hands on her knees, white ribbons trailing to the floor; mostly dark, figure from the left to the center, dark empty space on the right.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S14
@@ -413,16 +413,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 纯黑背景中，一棵由无数白色花朵组成的巨大花树，花心是红色，女主角闭着眼站在花树的中心，像被花朵包裹；对称构图，居中。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Against pure black, a giant tree made of countless white flowers with red centers; the heroine stands with closed eyes at its heart, wrapped in blossoms; symmetrical, centered.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S15
@@ -436,14 +436,14 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 苍白明亮的天空中，云朵像一件白色丝绸长裙般舒展流动，零星的花瓣在空中飘散，梦幻、柔和、高调。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 In a pale, bright sky, clouds unfurl and flow like a long white silk gown, a few petals drifting through the air; dreamy, soft, high-key.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S16
@@ -459,16 +459,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 俯视镜头：女主角闭着眼安详地躺在一间华丽的红色房间里，身下是红色丝绸，周围散落着中式首饰、梳子、手镯、团扇和红花；人物位于画面左侧到中部，右侧留空。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Top-down shot: the heroine lies peacefully with closed eyes in a lavish red room on red silk, surrounded by scattered Chinese jewelry, combs, bracelets, round fans and red flowers; figure from the left to the center, right side open.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S17
@@ -483,16 +483,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 俯视镜头：女主角躺在一大片开满红花的青绿色草地上，红色花瓣被风吹起，春天，明亮。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Top-down shot: the heroine lies in a vast green meadow full of red flowers, red petals lifted by the wind, spring, bright.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S18
@@ -508,14 +508,14 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 新娘凤冠的特写：由硕大的红山茶花组成，金色发钗和珠帘垂下遮住了半张脸，只露出下巴和红唇；戏剧性的侧光，深色背景。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Close-up of a bride's phoenix crown made of huge red camellias, gold hairpins and beaded tassels hanging down to veil half her face so only her chin and red lips show; dramatic side light, dark background.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S19
@@ -530,16 +530,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 黑暗中女主角的正脸特写，翠绿色的眼睛直视镜头，皮肤上有细微的裂纹（像瓷器），一缕冷光照亮半边脸；居中。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Front close-up of the heroine's face in darkness, emerald eyes looking straight into the lens, faint cracks on her skin like porcelain, a thin cold light catching half her face; centered.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S20
@@ -554,16 +554,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 白色背景上，深色的老梅枝从两侧向上合拢成一道拱门，枝头开满红梅，女主角小小地站在拱门下回头；水墨质感，人物在画面中部偏左，右侧留白。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 On a white background, dark old plum branches curve up from both sides to form an arch covered in red blossoms; the heroine stands small beneath it, looking back; ink-painting texture, figure just left of center, right side open.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S21
@@ -578,16 +578,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 哭泣的新娘特写，戴着由红山茶组成的凤冠，珠帘半遮双眼，泪水从脸颊滑落；红与白，主体在左侧，下方和右侧留白。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Close-up of a crying bride wearing a phoenix crown of red camellias, a bead curtain half veiling her eyes, tears running down her cheeks; red and white, subject on the left, space left open below and on the right.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S22
@@ -602,14 +602,14 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 昏暗的古代卧室里，一张挂着红色帐幔的雕花木床，床上并排两个枕头，烛光摇曳，暖色与深影，居中对称。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 In a dim old bedroom, a carved wooden canopy bed hung with red curtains, two pillows side by side, flickering candlelight, warm tones and deep shadows, centered and symmetrical.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S23
@@ -624,16 +624,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 深色背景中，女主角用交叉的红色双臂遮住嘴，只露出一双直视镜头的眼睛，眼神倔强；一束硬光从上方打下，近景居中。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Against a dark background, the heroine hides her mouth behind her crossed red arms, only her stubborn eyes visible, staring into the lens; a hard light from above, centered close-up.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S24
@@ -647,14 +647,14 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 一双红色的手从画面右侧伸入，捧着一朵白花，几片花瓣散落；纯黑背景，柔和的顶光，主体在中部偏右。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 A pair of red hands reaching in from the right, cupping a white flower, a few petals falling; pure black background, soft top light, subject just right of center.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S25
@@ -668,16 +668,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 纯黑背景前，一排穿着红色刺绣嫁衣的新娘并排站立，她们的头是一朵朵巨大的红花；在她们中间站着小小的、穿白衣的女主角；超现实，对称。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Against pure black, a row of brides in red embroidered wedding robes stands side by side, their heads replaced by enormous red flowers; among them stands the small heroine in white; surreal, symmetrical.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S26
@@ -691,14 +691,14 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 黄昏的雪中，远处一棵枯树下站着一个少年的剪影，背对镜头，水墨般淡远的意境，大面积留白。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Dusk in falling snow: the silhouette of a young man stands under a bare tree in the distance with his back to us; faint ink-wash mood, lots of empty space.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S27
@@ -712,16 +712,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 夜晚的暴风雪中，女主角双手抱紧自己，白色飘带被风狂乱地吹起，冷蓝色光线，雪地；人物居中。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 In a blizzard at night, the heroine hugs herself tightly, white ribbons whipped wildly by the wind, cold blue light, snowy ground; figure centered.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S28
@@ -735,16 +735,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 星空下的风雪夜，女主角弯腰顶着风前行，衣摆和飘带被吹向后方；人物居中，身形紧凑（画面会被裁成分屏的一半）。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 A snowy, windy night under the stars: the heroine bends forward, pushing into the wind, her hem and ribbons blown back; figure centered and compact (the image will be cropped to one half of a split screen).
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S29
@@ -758,16 +758,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 雪夜中女主角的背影，仰望夜空，衣服上有红色的痕迹，风吹起发丝和飘带；人物居中略偏下，上方是飘雪的夜空。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 The heroine seen from behind in the snowy night, looking up at the sky, red stains on her dress, wind lifting her hair and ribbons; figure centered and slightly low, snowy night sky above.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S30
@@ -781,16 +781,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 夜色中，一朵巨大的白色花朵挡住了女主角的半张脸，花心是红色，露出一只翠绿的眼睛，柔和的月光；主体在画面左侧到中部，右侧留白。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 At night, a huge white flower with a red center covers half of the heroine's face, one emerald eye visible, soft moonlight; subject from the left to the center, right side open.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S31
@@ -804,14 +804,14 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 金色的朝阳从厚重的云层后迸发，照亮积雪的群山，前景有一棵孤零零的枯树，强烈的丁达尔光束；太阳在画面中上方，下方三分之一较暗。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 A golden sunrise bursts through heavy clouds, lighting snow-covered mountains, a lone bare tree in the foreground, strong god rays; the sun sits in the upper center, the lower third darker.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S32
@@ -825,16 +825,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 白色背景中，女主角安静地躺在一棵开满红梅的老梅树枝杈间，闭着眼，裙摆垂落；人物在画面中部偏左，左右两侧留白。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 On a white background, the heroine lies quietly among the branches of an old plum tree full of red blossoms, eyes closed, her skirt hanging down; figure just left of center, both sides left open.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S33
@@ -848,16 +848,16 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 近景：熟睡的女主角，发间插着一朵很大的红山茶花，周围是梅枝和零星的白花，嘴角带着平静的微笑；人物在画面中部偏左，下方留白。
-女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 Close-up: the heroine asleep with a large red camellia in her hair, surrounded by plum branches and a few white blossoms, a calm smile; subject just left of center, space left open below.
-Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic.
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
 
 ## S34
@@ -871,12 +871,12 @@ Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate li
 
 ```text
 宣纸白背景上，一枝水墨画风格的梅枝从画面右上角斜伸向左下，枝头点缀着小小的朱红色梅花，大面积留白，下方尤其空旷，极简、安静（和开场呼应）。
-电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。
+简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
 ```
 
 Full prompt (English):
 
 ```text
 On white rice paper, a single ink-painted plum branch reaches in from the upper right corner and slants down toward the left, dotted with small vermilion blossoms; lots of empty space, especially along the bottom; minimal and quiet (echoing the opening).
-Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```

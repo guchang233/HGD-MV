@@ -1,11 +1,11 @@
 {
   "style": {
-    "cn": "电影级日系动画插画，中国风，细腻的光影与空气感，干净的线条，柔和的赛璐璐上色带少量水彩质感，轻微胶片颗粒。主色：宣纸白、墨黑、朱红与胭脂红（冬季场景用深蓝与冷白，尾声用金色晨光）。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版构图。",
-    "en": "Cinematic Japanese-anime film illustration with a Chinese aesthetic: delicate light and atmosphere, clean line art, soft cel shading with a touch of watercolor texture, subtle film grain. Palette: rice-paper white, ink black, vermilion and rouge red (deep navy and cold white for winter scenes, golden dawn light for the ending). Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape."
+    "cn": "简洁的手绘插画：略带手绘抖动的黑色线稿，平涂上色，没有渐变、没有复杂光影和质感，像独立动画或手绘绘本的画面。造型简单、线条少、细节少，大块干净的纯色背景（白色或黑色为主），大面积留白。配色克制：白、浅灰、黑线、鲜艳的朱红点缀，偶尔一点宝蓝；冬季段落用淡蓝灰，尾声用暖金。不要写实、不要厚涂、不要日系精致插画感、不要复杂背景。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。",
+    "en": "Simple hand-drawn illustration: slightly wobbly black hand-inked outlines, flat fills, no gradients, no complex lighting or texture, like an indie animation or a hand-drawn picture book. Simple shapes, few lines, little detail, large clean flat backgrounds (mostly plain white or plain black) with lots of empty space. Restrained palette: white, light grey, black lines, accents of vivid vermilion red, an occasional touch of cobalt blue; pale blue-grey for winter scenes, warm gold for the ending. Not realistic, not painterly, not a polished anime illustration, no busy backgrounds. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape."
   },
   "heroine": {
-    "cn": "女主角：约十六岁的少女，灰白色短发（带一点青灰），头部两侧各盘一个圆润蓬松的发髻，像两团棉花；翠绿色眼睛，眼尾一抹红；无袖白色立领短旗袍，盘扣；双臂从手肘到指尖渐变成朱红色，像戴着红手套；身后常飘着两条长长的白色飘带。安静，略带忧伤。",
-    "en": "Heroine: a girl of about sixteen with short silver-grey hair (a faint green-grey tint) and two round, fluffy buns on the sides of her head like balls of cotton; emerald green eyes with a touch of red at the outer corners; a sleeveless white mandarin-collar qipao with knot buttons; her arms fade from the elbows to the fingertips into vermilion, like red gloves; two long white ribbons often trail behind her. Quiet, slightly melancholic."
+    "cn": "女主角（造型要简单）：少女，浅灰色短发，头顶两侧各有一个很大的白色圆形发髻，像两团棉花；绿色眼睛，眼尾一笔红色眼线；无袖白色立领短旗袍；双臂从手肘到指尖是鲜艳的朱红色，像戴着红手套；有时身后飘着白色长飘带。表情淡淡的。",
+    "en": "Heroine (keep the design simple): a girl with short light-grey hair and two big round white buns on top of her head like puffs of cotton; green eyes with a single red flick of eyeliner; a sleeveless white mandarin-collar short qipao; her arms are vivid vermilion red from the elbows to the fingertips, like red gloves; sometimes long white ribbons trail behind her. A calm, blank expression."
   },
   "slots": [
     {
@@ -18,8 +18,8 @@
       ],
       "heroine": true,
       "reference": true,
-      "cn": "女主角的角色设定图：正面全身、侧面全身和面部特写三视图并排，纯白背景，干净的线稿与平涂上色，用来保持后续画面中角色一致。",
-      "en": "Character reference sheet of the heroine: front full body, side full body and a face close-up side by side on a pure white background, clean line art with flat colors, to keep the character consistent in later images."
+      "cn": "女主角的简单角色设定：正面全身、侧面全身、面部特写并排，纯白背景，手绘黑线稿加平涂，用来保持后续画面中角色一致。",
+      "en": "Simple character sheet of the heroine: front full body, side full body and a face close-up side by side on a plain white background, hand-drawn black outlines with flat colors, to keep the character consistent in later images."
     },
     {
       "id": "01",
