@@ -11,7 +11,7 @@ const soft = [];
 function blurred(src, level) {
   const k = level > 0.66 ? 2 : level > 0.33 ? 1 : 0;
   const w = [480, 320, 192][k];
-  soft[k] ??= makeCanvas(w, Math.round((w * 9) / 16));
+  soft[k] ??= makeCanvas(w, Math.round((w * 9) / 16), true);
   const c = soft[k];
   const g = c.getContext('2d');
   g.filter = 'blur(1.5px)';

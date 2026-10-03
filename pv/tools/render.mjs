@@ -6,6 +6,7 @@
 //   node pv/tools/render.mjs --from 30 --to 40 --out draft.mp4
 //   options: --fps 30  --samples 6 (motion-blur sub-frames)  --shutter 180
 //            --workers 4  --bitrate 4M (two-pass) | --crf 21  --force
+//            --scale 2 (3840x2160)  --codec hevc  --size 1920x1080 (resize on encode)
 // The soundtrack is the original song, taken whole from 花骨朵.mp4.  Pictures
 // are read from pv/assets/images (see pv/PROMPTS.md); empty slots render as
 // placeholders.
@@ -31,6 +32,7 @@ const SAMPLES = Number(args.samples ?? 6);
 const SHUTTER = (Number(args.shutter ?? 180) / 360) / FPS; // exposure in seconds
 const WORKERS = Number(args.workers ?? Math.max(1, Math.min(4, os.cpus().length)));
 const QUALITY = Number(args.quality ?? 0.95);
+const OUT_SCALE = Number(args.scale ?? 1); // 2 renders 3840x2160
 
 // Map picture files to slot ids: 05.png, S05.jpg, 05_少女与孩子.webp ...
 // plus depth layers from tools/ai/make_layers.py (layers/05_bg.webp, _fg).
@@ -108,7 +110,7 @@ async function main() {
   }
   const { chromium } = await loadPlaywright();
   const server = await serve();
-  const url = `http://127.0.0.1:${server.address().port}/index.html?render`;
+  const url = `http://127.0.0.1:${server.address().port}/index.html?render&scale=${OUT_SCALE}`;
   const browser = await chromium.launch({ args: ['--disable-gpu', '--force-color-profile=srgb', '--font-render-hinting=none'] });
 
   if (args.stills) {
@@ -134,7 +136,7 @@ async function main() {
   const to = Math.min(Number(args.to ?? duration), duration);
   const first = Math.round(from * FPS);
   const last = Math.round(to * FPS); // exclusive
-  const frameDir = path.join(BUILD, `out_${FPS}_${SAMPLES}`);
+  const frameDir = path.join(BUILD, `out_${FPS}_${SAMPLES}${OUT_SCALE === 1 ? '' : `_x${OUT_SCALE}`}`);
   fs.mkdirSync(frameDir, { recursive: true });
   const total = last - first;
   console.log(`rendering ${total} frames @ ${FPS} fps, ${SAMPLES} motion-blur samples, ${WORKERS} workers`);
@@ -169,9 +171,14 @@ async function main() {
 
   const outFile = path.resolve(ROOT, args.out ?? '花骨朵_PV.mp4');
   const input = ['-framerate', String(FPS), '-start_number', String(first), '-i', path.join(frameDir, '%05d.jpg')];
-  const video = ['-frames:v', String(total), '-c:v', 'libx264', '-preset', args.preset ?? 'slow',
-    '-x264-params', 'aq-mode=3:aq-strength=0.9', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-tune', 'film',
-    '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709'];
+  const hevc = args.codec === 'hevc';
+  const color = ['-pix_fmt', 'yuv420p', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709'];
+  const resize = args.size ? ['-vf', `scale=${String(args.size).replace('x', ':')}:flags=lanczos`] : [];
+  const video = hevc
+    ? ['-frames:v', String(total), ...resize, '-c:v', 'libx265', '-preset', args.preset ?? 'slow', '-tag:v', 'hvc1', ...color]
+    : ['-frames:v', String(total), ...resize, '-c:v', 'libx264', '-preset', args.preset ?? 'slow',
+        '-x264-params', 'aq-mode=3:aq-strength=0.9', '-profile:v', 'high', '-tune', 'film', ...color];
+  const pass = (n) => (hevc ? ['-x265-params', `pass=${n}:stats=x265_2pass.log:aq-mode=3`] : ['-pass', String(n)]);
   const sound = ['-c:a', 'aac', '-b:a', '256k', '-af', `afade=t=out:st=${Math.max(0, to - from - 0.6)}:d=0.6`];
   const run = (argv) => {
     const r = spawnSync('ffmpeg', ['-v', 'error', '-y', ...argv], { stdio: 'inherit', cwd: BUILD });
@@ -180,8 +187,9 @@ async function main() {
   if (args.bitrate) {
     // two-pass ABR: hits a predictable file size (GitHub caps files at 100 MB)
     const rate = String(args.bitrate);
-    run([...input, ...video, '-b:v', rate, '-maxrate', '14M', '-bufsize', '28M', '-pass', '1', '-an', '-f', 'null', '/dev/null']);
-    run([...input, '-ss', String(from), '-t', String(to - from), '-i', audio, ...video, '-b:v', rate, '-maxrate', '14M', '-bufsize', '28M', '-pass', '2', ...sound,
+    const cap = hevc ? ['-maxrate', '20M', '-bufsize', '40M'] : ['-maxrate', '14M', '-bufsize', '28M'];
+    run([...input, ...video, '-b:v', rate, ...cap, ...pass(1), '-an', '-f', 'null', '/dev/null']);
+    run([...input, '-ss', String(from), '-t', String(to - from), '-i', audio, ...video, '-b:v', rate, ...cap, ...pass(2), ...sound,
       '-movflags', '+faststart', '-metadata', 'title=花骨朵 PV', outFile]);
   } else {
     run([...input, '-ss', String(from), '-t', String(to - from), '-i', audio, ...video, '-crf', String(args.crf ?? 21), '-maxrate', '18M', '-bufsize', '36M', ...sound,

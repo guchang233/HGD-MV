@@ -916,6 +916,28 @@
       "cn": "一朵红山茶花独自落在空无一人的石阶上，旁边几片花瓣；主体在画面中部偏右下，左上留空。",
       "en": "A single red camellia lies alone on empty stone steps, a few petals beside it; subject right of centre and low, empty space top left.",
       "cropY": 0.72
+    },
+    {
+      "id": "82",
+      "name": "镜中花",
+      "mood": "paper",
+      "focus": [
+        0.6,
+        0.5
+      ],
+      "cn": "一面小小的圆铜镜立在木梳妆台上，镜子里映出一枝盛开的红梅，镜前放着一把木梳；主体在画面中部偏右，左侧留空。",
+      "en": "A small round bronze mirror stands on a wooden dressing table, reflecting a branch of red plum blossoms in full bloom, a wooden comb lying in front of it; subject right of centre, the left side empty."
+    },
+    {
+      "id": "83",
+      "name": "天上的云",
+      "mood": "paper",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "cn": "苍白明亮的天空里几朵柔软的白云慢慢飘着，几片红色花瓣在风里飞过，画面下方露出一小截开花的梅枝；简单、空旷。",
+      "en": "A pale bright sky with a few soft white clouds drifting slowly, a few red petals flying through on the wind, the tip of a flowering plum branch peeking in at the bottom; simple and open."
     }
   ]
 }

@@ -39,7 +39,7 @@ ENGLISH = {
     "成了没日没夜的工作狂": "I worked myself away, day and night",
     "负了我心里的少年郎": "and failed the boy in my heart",
     "错过的不肯罢休": "What I missed will not let go",
-    "不由衷的痛有谁懂": "who knows a pain I cannot confess?",
+    "言不由衷的痛有谁懂": "who knows the pain I cannot put into words?",
     "眼看着那缕胭脂红": "I watch that wisp of rouge",
     "玩笑一般地开在无人问津": "bloom like a joke where no one comes",
 }

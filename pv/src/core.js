@@ -148,11 +148,81 @@ export function noiseField(w, h, seed, scale = 0.02, octaves = 5) {
   return out;
 }
 
-export function makeCanvas(w, h) {
+// ------------------------------------------------------ output scale --
+// Everything is composed in 1920x1080 units.  With ?scale=2 in the page URL
+// every drawing surface gets twice the pixels (3840x2160) while still
+// reporting its 1080p size, and each 2D context folds the factor into its
+// transform, so text, strokes and pictures are drawn natively at 4K.
+// Surfaces used for per-pixel work (masks, noise, luma maps) pass raw = true
+// and keep their pixel size.
+export const SCALE =
+  (typeof location !== 'undefined' && Number(new URLSearchParams(location.search).get('scale'))) || 1;
+
+/** Give canvas c a w x h logical size backed by SCALE times the pixels. */
+export function scaleCanvas(c, w, h) {
+  c.width = Math.round(w * SCALE);
+  c.height = Math.round(h * SCALE);
+  if (SCALE === 1) return c;
+  c.__s = SCALE;
+  Object.defineProperty(c, 'width', { get: () => w, configurable: true });
+  Object.defineProperty(c, 'height', { get: () => h, configurable: true });
+  return c;
+}
+
+export function makeCanvas(w, h, raw = false) {
   const c = document.createElement('canvas');
+  if (!raw) return scaleCanvas(c, w, h);
   c.width = w;
   c.height = h;
   return c;
+}
+
+if (SCALE !== 1 && typeof CanvasRenderingContext2D !== 'undefined') {
+  const P = CanvasRenderingContext2D.prototype;
+  const k = (g) => g.canvas.__s ?? 1;
+  const setT = P.setTransform;
+  P.setTransform = function (a, b, c, d, e, f) {
+    const s = k(this);
+    if (typeof a === 'object') ({ a, b, c, d, e, f } = a);
+    return setT.call(this, s * a, s * b, s * c, s * d, s * e, s * f);
+  };
+  P.resetTransform = function () {
+    this.setTransform(1, 0, 0, 1, 0, 0);
+  };
+  const draw = P.drawImage;
+  P.drawImage = function (img, ...a) {
+    const s = img?.__s;
+    if (s && a.length === 2) return draw.call(this, img, a[0], a[1], img.width, img.height);
+    if (s && a.length === 8) return draw.call(this, img, a[0] * s, a[1] * s, a[2] * s, a[3] * s, a[4], a[5], a[6], a[7]);
+    return draw.call(this, img, ...a);
+  };
+  // pixel-unit properties that the transform does not reach
+  const px = (name, fix) => {
+    const d = Object.getOwnPropertyDescriptor(P, name);
+    Object.defineProperty(P, name, {
+      configurable: true,
+      get() {
+        return d.get.call(this);
+      },
+      set(v) {
+        d.set.call(this, k(this) === 1 ? v : fix(v, k(this)));
+      },
+    });
+  };
+  px('shadowBlur', (v, s) => v * s);
+  px('shadowOffsetX', (v, s) => v * s);
+  px('shadowOffsetY', (v, s) => v * s);
+  px('filter', (v, s) => (typeof v === 'string' ? v.replace(/(-?[\d.]+)px/g, (m, n) => `${n * s}px`) : v));
+  // a fresh context on a scaled canvas starts at the scaled identity
+  const getCtx = HTMLCanvasElement.prototype.getContext;
+  HTMLCanvasElement.prototype.getContext = function (type, opts) {
+    const g = getCtx.call(this, type, opts);
+    if (this.__s && g && !g.__scaled) {
+      g.__scaled = true;
+      g.setTransform(1, 0, 0, 1, 0, 0);
+    }
+    return g;
+  };
 }
 
 // Bilinear filtering: in software rendering it is ~6x faster than 'high'

@@ -110,9 +110,9 @@ const LYRICS = [
   /* 32 这种赶春的人 */ { ...T.serifW, layout: 'v', x: 1560, y: 150, size: 130, in: 'flip', out: 'blow', emph: { 3: red(1.3) } },
   /* 33 该向左或向右 */ { ...T.sansW, layout: 'pos', size: 190, in: 'slide', out: 'cut', pos: [[960, 140, 0.5], [480, 520], [480, 770, 1.3], [960, 540, 0.5], [1440, 520], [1440, 770, 1.3]], emph: { 1: { dir: 1 }, 2: { ...T.brushRed, dir: 1 }, 4: { dir: -1 }, 5: { ...T.brushRed, dir: -1 } } },
   /* 34 你看我这手里的胭脂虫 */ { ...T.sansW, layout: 'pos', size: 72, in: 'type', out: 'shatter', pos: [[1240, 170], [1320, 170], [1400, 170], [1480, 170], [1560, 170], [1640, 170], [1720, 170], [560, 640, 4.8], [960, 640, 4.8], [1360, 640, 4.8]], emph: each([7, 8, 9], { ...T.brushRed, in: 'stamp' }) },
-  /* 35 像不像那晚春的花骨朵 */ { ...T.serifW, layout: 'pos', size: 130, in: 'stamp', out: 'blow', pos: [[300, 300], [300, 440, 0.8], [300, 580], [1600, 260, 0.7], [1600, 360, 0.7], [1600, 460, 0.7], [1600, 560, 0.7], [560, 780, 2.7], [960, 780, 2.7], [1360, 780, 2.7]], emph: { 7: red(), 8: red(), 9: red() }, sub: { y: 1050 }, sweep: { at: 141.95, dur: 0.5, color: '255,236,220' } },
+  /* 35 像不像那晚春的花骨朵 */ { ...T.serifW, layout: 'pos', size: 130, in: 'soft', out: 'fade', outDur: 0.8, pos: [[300, 300], [300, 440, 0.8], [300, 580], [1600, 260, 0.7], [1600, 360, 0.7], [1600, 460, 0.7], [1600, 560, 0.7], [560, 780, 2.7], [960, 780, 2.7], [1360, 780, 2.7]], emph: { 7: red(), 8: red(), 9: red() }, sub: { y: 1050 }, sweep: { at: 141.95, dur: 0.5, color: '255,236,220' } },
   /* 36 错过的不肯罢休 */ { ...T.serifW, color: C.gold, glow: 'rgba(40,20,0,0.35)', layout: 'v', x: 1640, y: 160, size: 112, breaks: [3], in: 'soft', inDur: 0.5, out: 'drift' },
-  /* 37 不由衷的痛有谁懂 */ { ...T.serifW, color: '#fff3d6', glow: 'rgba(60,30,0,0.35)', layout: 'h', y: 890, size: 76, in: 'soft', inDur: 0.6, out: 'fade', outDur: 0.8, emph: { 4: { color: C.hot, scale: 1.3 } } },
+  /* 37 言不由衷的痛有谁懂 */ { ...T.serifW, color: '#fff3d6', glow: 'rgba(60,30,0,0.35)', layout: 'h', y: 890, size: 76, in: 'soft', inDur: 0.6, out: 'fade', outDur: 0.8, emph: { 5: { color: C.hot, scale: 1.3 } } },
   /* 38 眼看着那缕胭脂红 */ { ...T.serifInk, layout: 'pos', size: 100, in: 'soft', out: 'drift', pos: [[250, 280], [250, 400], [250, 520], [1500, 300, 0.8], [1500, 400, 0.8], [1500, 620, 1.9], [1500, 830, 1.9], [1730, 720, 1.9]], emph: { 5: red(), 6: red(), 7: red() } },
   /* 39 玩笑一般地开在无人问津 */ { ...T.serifInk, layout: 'h', y: 880, size: 78, in: 'soft', inDur: 0.5, out: 'drift', outDur: 1.2, outStagger: 0.06, emph: each([7, 8, 9, 10], { color: '#7d7470' }) },
 ];
@@ -192,8 +192,6 @@ export function buildStory(lyrics, env = {}) {
   const bfly2 = new G.Butterflies(22, 40, { t0: 88.93, x: 960, y: 600, size: 44, speed: 1600, life: 3.5 });
   const bflySwarm = new G.Butterflies(24, 90, { t0: 89.2, x: 960, y: 560, size: 40, speed: 2600, life: 2.2, stagger: 0.3 });
   const bfly3 = new G.Butterflies(23, 46, { t0: 137.06, x: 960, y: 620, size: 46, speed: 1700, life: 3.5 });
-  const burst1 = petalBurst({ seed: 31, t0: 141.06, x: 960, y: 480, count: 480, power: 1.8, size: [24, 56], z: [0.9, 1.4] });
-  const burst2 = petalBurst({ seed: 32, t0: 141.81, x: 960, y: 460, count: 260, power: 1.3, white: 0.3, size: [20, 46] });
   const titleBurst = petalBurst({ seed: 34, t0: 93.06, x: 960, y: 560, count: 260, power: 1.3, white: 0.5, size: [18, 40] });
 
   // --- generative plum for the title and the ending -----------------------
@@ -245,8 +243,8 @@ export function buildStory(lyrics, env = {}) {
   S(51.05, 53.05, '63', move.push(), { enter: { type: 'soft' } });
   S(53.05, 55.05, '64', move.pull(), { enter: { type: 'focus' }, over: fall(snowPre, { alpha: 0.6 }) });
   F(55.05, 59.05, (g, t, cam) => silverRouge(g, t, cam, petalsRouge), { enter: { type: 'brush', dir: -1 }, cam: move.push(), bright: true });
-  S(59.05, 61.05, '15', move.push(), { grade: GRADE.paper, enter: { type: 'soft' } });
-  S(61.05, 62.93, '40', move.push(), { grade: GRADE.paper, enter: { type: 'focus' } });
+  S(59.05, 61.05, '82', move.push(), { grade: GRADE.paper, enter: { type: 'soft' } });
+  S(61.05, 62.93, '83', move.push(), { grade: GRADE.paper, enter: { type: 'focus' } });
 
   // ================================================================ SPRING
   S(62.93, 67.06, '41', move.push(), { grade: GRADE.red, enter: 'drop', over: fall(petalsRed) });
@@ -295,18 +293,10 @@ export function buildStory(lyrics, env = {}) {
   S(134.81, 137.06, '55', move.push(), { grade: GRADE.night, enter: { type: 'brush' }, over: fall(snowFinal) });
   S(137.06, 138.56, '08', move.push(), { grade: GRADE.night, enter: { type: 'soft' }, over: (g, t, cam, P, gcam) => { snowFinal.draw(g, t, { cam: gcam }); layer(g, cam, D.front); bfly3.draw(g, t); } });
   S(138.56, 141.06, '56', move.push(), { grade: GRADE.night, enter: { type: 'soft' }, over: fall(snowFinal) });
-  S(141.06, 143.93, '29', move.push(), {
-    grade: GRADE.night,
-    enter: 'drop',
-    over: (g, t, cam, P, gcam) => {
-      snowFinal.draw(g, t, { cam: gcam });
-      burst1.draw(g, t, { cam: gcam });
-      burst2.draw(g, t, { cam: gcam });
-    },
-  });
+  S(141.06, 143.93, '29', move.push(), { grade: GRADE.night, enter: { type: 'soft' }, over: fall(snowFinal) });
 
   // ================================================================ CODA
-  S(143.93, 146.56, '80', move.push(), { enter: { type: 'light', color: '255,230,190' }, over: (g, t, cam, P, gcam) => { burst1.draw(g, t, { cam: gcam, alpha: 0.6 }); petalsCoda.draw(g, t, { cam: gcam }); } });
+  S(143.93, 146.56, '80', move.push(), { enter: { type: 'light', color: '255,230,190' }, over: fall(petalsCoda) });
   S(146.56, 149.06, '31', move.pull(), { grade: GRADE.gold, enter: { type: 'light', color: '255,236,200', x: 960, y: 300 } });
   S(149.06, 151.06, '57', move.push(), { grade: GRADE.gold, enter: { type: 'soft' } });
   S(151.06, 154.31, '32', move.push(), { enter: { type: 'ink', x: 820, y: 540 }, over: fall(petalsCoda) });

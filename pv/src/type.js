@@ -96,7 +96,7 @@ function inkGlyphMask(p, seed, n = 48) {
         field[y * n + x] = v * 0.75 + r() * 0.25;
       }
     }
-    const c = makeCanvas(n, n);
+    const c = makeCanvas(n, n, true);
     m = { c, g: ctx2d(c), field, img: null, n };
     m.img = m.g.createImageData(n, n);
     maskCache.set(key, m);

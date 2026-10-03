@@ -24,7 +24,7 @@ const LW = 64;
 const LH = 36;
 
 function lumaMap(img) {
-  const c = makeCanvas(LW, LH);
+  const c = makeCanvas(LW, LH, true);
   const g = c.getContext('2d', { willReadFrequently: true });
   g.drawImage(img, 0, 0, LW, LH);
   const d = g.getImageData(0, 0, LW, LH).data;
@@ -40,7 +40,7 @@ function lumaMap(img) {
 // ------------------------------------------------------- placeholder --
 function placeholder(def) {
   const mood = MOODS[def.mood] ?? MOODS.dark;
-  const c = makeCanvas(W, H);
+  const c = makeCanvas(W, H, true);
   const g = ctx2d(c);
   const [fx, fy] = def.focus ?? [0.5, 0.5];
   const px = fx * W;
@@ -173,7 +173,7 @@ function placeholder(def) {
 function fit(img) {
   if (!img || img.naturalWidth <= 2600) return img;
   const k = 2400 / img.naturalWidth;
-  const c = makeCanvas(2400, Math.round(img.naturalHeight * k));
+  const c = makeCanvas(2400, Math.round(img.naturalHeight * k), true);
   const g = c.getContext('2d');
   g.imageSmoothingQuality = 'high';
   g.drawImage(img, 0, 0, c.width, c.height);
@@ -254,7 +254,7 @@ let paper = null;
 function paperSheet() {
   if (paper) return paper;
   const n = 512;
-  paper = makeCanvas(n, n);
+  paper = makeCanvas(n, n, true);
   const g = paper.getContext('2d');
   const d = g.createImageData(n, n);
   const r = mulberry32(99);

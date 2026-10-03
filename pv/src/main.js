@@ -3,7 +3,7 @@
 // the shot — or both shots inside a transition — under the 2.5D camera, then
 // the lyrics; film post (soft glow, flashes, grain, subtitles, letterbox)
 // is applied once to the blended frame.
-import { W, H, clamp, ease, span, makeCanvas, ctx2d } from './core.js';
+import { W, H, clamp, ease, span, makeCanvas, scaleCanvas, ctx2d } from './core.js';
 import { loadTiming } from './timing.js';
 import { loadFonts, inkChar } from './type.js';
 import { initSprites, setStreaks } from './particles.js';
@@ -62,6 +62,7 @@ export async function boot(out, { base = '.' } = {}) {
     const c = makeCanvas(W, H);
     return [c, ctx2d(c)];
   };
+  scaleCanvas(out, W, H);
   const gOut = ctx2d(out);
   const [scene, gScene] = canvas();
   const [ca, gA] = canvas();

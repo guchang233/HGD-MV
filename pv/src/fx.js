@@ -11,11 +11,11 @@ export class FX {
     this.ga = ctx2d(this.a);
     this.b = makeCanvas(W, H);
     this.gb = ctx2d(this.b);
-    this.small = makeCanvas(MW, MH);
+    this.small = makeCanvas(MW, MH, true);
     this.gs = ctx2d(this.small);
-    this.small2 = makeCanvas(MW, MH);
+    this.small2 = makeCanvas(MW, MH, true);
     this.gs2 = ctx2d(this.small2);
-    this.mask = makeCanvas(MW, MH);
+    this.mask = makeCanvas(MW, MH, true);
     this.gm = ctx2d(this.mask);
     this.maskData = this.gm.createImageData(MW, MH);
     this.field = noiseField(MW, MH, 11, 0.018, 5);
@@ -24,7 +24,7 @@ export class FX {
   }
 
   makeGrain(size, seed) {
-    const c = makeCanvas(size, size);
+    const c = makeCanvas(size, size, true);
     const g = ctx2d(c);
     const img = g.createImageData(size, size);
     const r = mulberry32(seed);

@@ -59,7 +59,7 @@ Heroine: a girl with short light-grey hair and two big round white buns on top o
 | [S12](#s12) | 空巷红灯 | 0:38.3–0:41.0 | 严冬 | 夜色深蓝 |  |
 | [S13](#s13) | 空椅 | 0:43.0–0:47.0 | 严冬 | 夜色深蓝 |  |
 | [S14](#s14) | 花树里的少女 |  | — | 近乎全黑 | ✓ |
-| [S15](#s15) | 云想衣裳 | 0:59.0–1:01.0 | 预副歌 | 宣纸白（高调） |  |
+| [S15](#s15) | 云想衣裳 |  | — | 宣纸白（高调） |  |
 | [S16](#s16) | 红房少女 |  | — | 朱红 / 胭脂红 | ✓ |
 | [S17](#s17) | 红花绿地 | 1:07.1–1:09.1<br>1:18.6–1:19.1 | 春天里 | 青绿 |  |
 | [S18](#s18) | 凤冠山茶 |  | — | 朱红 / 胭脂红 |  |
@@ -84,7 +84,7 @@ Heroine: a girl with short light-grey hair and two big round white buns on top o
 | [S37](#s37) | 空巷红灯 | 0:41.0–0:43.0 | 严冬 | 夜色深蓝 |  |
 | [S38](#s38) | 雪夜亮灯的小屋 | 0:47.0–0:51.0 | 预副歌 | 夜色深蓝 |  |
 | [S39](#s39) | 窗里的少女 |  | — | 近乎全黑 | ✓ |
-| [S40](#s40) | 云做的裙子 | 1:01.0–1:02.9 | 预副歌 | 宣纸白（高调） |  |
+| [S40](#s40) | 云做的裙子 |  | — | 宣纸白（高调） |  |
 | [S41](#s41) | 红绸上的花瓣 | 1:02.9–1:07.1 | 春天里 | 朱红 / 胭脂红 |  |
 | [S42](#s42) | 红手与红花 |  | — | 青绿 |  |
 | [S43](#s43) | 藤蔓缠臂 |  | — | 朱红 / 胭脂红 |  |
@@ -123,6 +123,8 @@ Heroine: a girl with short light-grey hair and two big round white buns on top o
 | [S78](#s78) | 枯树下的空长椅 | 2:05.1–2:07.8 | 桥段 | 雪天灰蓝 |  |
 | [S80](#s80) | 暗处的白花 | 2:23.9–2:26.6 | 尾声 | 夜色深蓝 |  |
 | [S81](#s81) | 石阶上的红山茶 | 2:34.3–2:37.1 | 尾声 | 宣纸白（高调） |  |
+| [S82](#s82) | 镜中花 | 0:59.0–1:01.0 | 预副歌 | 宣纸白（高调） |  |
+| [S83](#s83) | 天上的云 | 1:01.0–1:02.9 | 预副歌 | 宣纸白（高调） |  |
 
 ## S00
 
@@ -482,7 +484,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **云想衣裳**
 
-- 0:59.0–1:01.0（预副歌）：「银装素裹胭脂妆 / 花想容貌云想衣裳」
 - 色调：宣纸白（高调）；主体位置：画面中央（约 50%, 45%）
 
 完整提示词（中文）：
@@ -860,7 +861,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **金色日出**
 
-- 2:26.6–2:29.1（尾声）：「错过的不肯罢休 / 不由衷的痛有谁懂」
+- 2:26.6–2:29.1（尾声）：「错过的不肯罢休 / 言不由衷的痛有谁懂」
 - 色调：金色晨光；主体位置：画面中央（约 50%, 35%）
 
 完整提示词（中文）：
@@ -1073,7 +1074,6 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **云做的裙子**
 
-- 1:01.0–1:02.9（预副歌）：「花想容貌云想衣裳」
 - 色调：宣纸白（高调）；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -1466,7 +1466,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **晨光侧脸** · 女主角（附上 S00 参考图）
 
-- 2:29.1–2:31.1（尾声）：「不由衷的痛有谁懂 / 眼看着那缕胭脂红」
+- 2:29.1–2:31.1（尾声）：「言不由衷的痛有谁懂 / 眼看着那缕胭脂红」
 - 色调：金色晨光；主体位置：画面左侧（约 40%, 45%）
 
 完整提示词（中文）：
@@ -1933,7 +1933,7 @@ Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustrat
 
 **暗处的白花**
 
-- 2:23.9–2:26.6（尾声）：「像不像那晚春的花骨朵 / 错过的不肯罢休 / 不由衷的痛有谁懂」
+- 2:23.9–2:26.6（尾声）：「像不像那晚春的花骨朵 / 错过的不肯罢休 / 言不由衷的痛有谁懂」
 - 色调：夜色深蓝；主体位置：画面中央（约 50%, 50%）
 
 完整提示词（中文）：
@@ -1971,6 +1971,52 @@ Full prompt (English):
 
 ```text
 A single red camellia lies alone on empty stone steps, a few petals beside it; subject right of centre and low, empty space top left.
+Layout: a plain white background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S82
+
+**镜中花**
+
+- 0:59.0–1:01.0（预副歌）：「银装素裹胭脂妆 / 花想容貌云想衣裳」
+- 色调：宣纸白（高调）；主体位置：画面右侧（约 60%, 50%）
+
+完整提示词（中文）：
+
+```text
+一面小小的圆铜镜立在木梳妆台上，镜子里映出一枝盛开的红梅，镜前放着一把木梳；主体在画面中部偏右，左侧留空。
+版面：纯白背景；主体放在画面右侧，另一侧保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+A small round bronze mirror stands on a wooden dressing table, reflecting a branch of red plum blossoms in full bloom, a wooden comb lying in front of it; subject right of centre, the left side empty.
+Layout: a plain white background; put the subject in the right of the frame, keep the other side empty, nothing touching the edges.
+Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
+```
+
+## S83
+
+**天上的云**
+
+- 1:01.0–1:02.9（预副歌）：「花想容貌云想衣裳」
+- 色调：宣纸白（高调）；主体位置：画面中央（约 50%, 45%）
+
+完整提示词（中文）：
+
+```text
+苍白明亮的天空里几朵柔软的白云慢慢飘着，几片红色花瓣在风里飞过，画面下方露出一小截开花的梅枝；简单、空旷。
+版面：纯白背景；主体放在画面中央，四周保持空白，主体不要贴边。
+随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。
+```
+
+Full prompt (English):
+
+```text
+A pale bright sky with a few soft white clouds drifting slowly, a few red petals flying through on the wind, the tip of a flowering plum branch peeking in at the bottom; simple and open.
 Layout: a plain white background; put the subject in the center of the frame, keep the surroundings empty, nothing touching the edges.
 Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape.
 ```
