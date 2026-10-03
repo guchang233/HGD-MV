@@ -1,11 +1,11 @@
 {
   "style": {
-    "cn": "极简手绘：像随手画的简笔插画，粗细均匀的黑色手绘线条，线条尽量少，只画轮廓；纯色平涂，最多三四种颜色（白、浅灰、黑、朱红，偶尔一点蓝）；背景是一整块纯色（颜色按版面要求），不画环境细节，最多用几笔简单的形状暗示场景；画面里只有一个主要物体，大面积留白。不要阴影、不要渐变、不要质感、不要头发丝和衣褶细节、不要精致插画感。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。",
-    "en": "Ultra-minimal hand-drawn doodle illustration: a few even black hand-drawn lines, outlines only, as few lines as possible; flat fills with at most three or four colors (white, light grey, black, vermilion red, rarely a touch of blue); the background is one solid flat color (the one given in the layout line) with no environment detail, at most a few simple shapes to suggest the setting; one main subject and lots of empty space. No shading, no gradients, no texture, no hair strands or cloth folds, nothing polished. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape."
+    "cn": "随性的手绘草图风格，像彩色铅笔或数位铅笔画的插画：细而轻的线条，略带毛糙的铅笔笔触，线条有时重复、断开，用柔和的深墨色而不是粗重的黑色描边；人物描边要淡；简单的平涂上色，大量留白，几乎没有阴影和细节；背景是一整块纯色（颜色按版面要求），最多几笔简单线条暗示环境；整体轻盈、安静，像独立动画 MV 的手绘画面。配色：白、浅灰、朱红点缀，偶尔一点蓝。画面中不能出现任何文字、字母、数字、印章、标志或水印。16:9 横版。",
+    "en": "Loose hand-drawn sketch style, like a colored-pencil or digital-pencil illustration: thin, light, slightly rough pencil lines, sometimes doubled or broken, drawn in a soft dark ink tone rather than heavy black outlines; the outlines on the characters are faint and delicate; simple flat fills, lots of white, almost no shading or detail; the background is one solid flat color (the one given in the layout line) with at most a few simple sketched lines to suggest the setting; light, quiet and gentle, like a hand-drawn indie animated music video. Palette: white, light grey, vermilion red accents, rarely a touch of blue. Absolutely no text, letters, numbers, seals, logos or watermarks. 16:9 landscape."
   },
   "heroine": {
-    "cn": "女主角（简笔造型）：短发浅灰色，头顶两个白色大圆球发髻，简单的绿色眼睛和一笔红色眼线，白色无袖短旗袍，双臂是红色的。",
-    "en": "Heroine (simple doodle design): short light-grey hair, two big round white buns on top of her head, simple green eyes with one red eyeliner flick, a sleeveless white short qipao, and red arms."
+    "cn": "女主角：少女，浅灰色短发，头顶两个白色大圆发髻，绿色眼睛，眼尾一笔红色眼线，白色无袖短旗袍，双臂从手肘到指尖是朱红色（像红手套）。用细淡的铅笔线条画，造型简单。",
+    "en": "Heroine: a girl with short light-grey hair and two big round white buns on top of her head, green eyes with a red eyeliner flick, a sleeveless white short qipao, arms vermilion red from the elbows to the fingertips like red gloves. Drawn with thin faint pencil lines, a simple design."
   },
   "slots": [
     {
@@ -428,6 +428,276 @@
       ],
       "cn": "宣纸白背景上，一枝水墨画风格的梅枝从画面右上角斜伸向左下，枝头点缀着小小的朱红色梅花，大面积留白，下方尤其空旷，极简、安静（和开场呼应）。",
       "en": "On white rice paper, a single ink-painted plum branch reaches in from the upper right corner and slants down toward the left, dotted with small vermilion blossoms; lots of empty space, especially along the bottom; minimal and quiet (echoing the opening)."
+    },
+    {
+      "id": "35",
+      "name": "伸手接雪",
+      "mood": "paper",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "cn": "雪后，女主角仰起头，伸出红色的手接住飘落的雪花，白色飘带轻轻扬起；人物在画面中部偏上，下方留空。",
+      "en": "After the snowfall, the heroine tilts her head up and reaches out a red hand to catch a falling snowflake, white ribbons lifting gently; figure in the upper middle, the bottom left empty.",
+      "heroine": true
+    },
+    {
+      "id": "36",
+      "name": "雪中脚印",
+      "mood": "snow",
+      "focus": [
+        0.35,
+        0.55
+      ],
+      "cn": "雪地上一串小小的脚印弯弯曲曲地伸向远方，尽头是一座被雪压低的小屋轮廓；主体在画面左侧，右侧留空。",
+      "en": "A trail of small footprints winds across the snow into the distance, ending at the outline of a little snow-laden house; subject on the left, right side empty."
+    },
+    {
+      "id": "37",
+      "name": "空巷回头",
+      "mood": "night",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "深夜下雪的空巷里，女主角站在巷子中间回头看，身后墙上挂着一盏红灯笼。",
+      "en": "In an empty snowy lane at night, the heroine stands in the middle of the lane looking back over her shoulder, a single red lantern on the wall behind her.",
+      "heroine": true
+    },
+    {
+      "id": "38",
+      "name": "雪夜亮灯的小屋",
+      "mood": "night",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "cn": "雪夜里一座小小的木屋，两扇窗户透出温暖的橘黄色灯光，屋顶积着厚雪；小屋在画面中部偏上，下方留空。",
+      "en": "A tiny wooden house on a snowy night, two windows glowing warm orange, thick snow on the roof; house in the upper middle, the bottom left empty."
+    },
+    {
+      "id": "39",
+      "name": "窗里的少女",
+      "mood": "dark",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "cn": "黑暗中一扇方格木窗，女主角在窗里把红色的双手贴在玻璃上，静静向外看。",
+      "en": "In the dark, a wooden lattice window; inside it the heroine presses her red hands against the glass and quietly looks out.",
+      "heroine": true
+    },
+    {
+      "id": "40",
+      "name": "云上的背影",
+      "mood": "paper",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "女主角站在云上的背影，长长的白色裙摆和云融在一起，零星红色花瓣飘散；人物居中，左右两侧留空。",
+      "en": "The heroine seen from behind standing on clouds, her long white skirt melting into the clouds, a few red petals drifting; figure centered, both sides empty.",
+      "heroine": true
+    },
+    {
+      "id": "41",
+      "name": "落在脸上的花瓣",
+      "mood": "red",
+      "focus": [
+        0.45,
+        0.45
+      ],
+      "cn": "俯视特写：女主角闭着眼躺在红色丝绸上，几片红色花瓣落在她的脸颊和头发上。",
+      "en": "Top-down close-up: the heroine lies with closed eyes on red silk, a few red petals resting on her cheek and hair.",
+      "heroine": true
+    },
+    {
+      "id": "42",
+      "name": "红手与红花",
+      "mood": "green",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "青绿色的草地上，一只红色的手轻轻握着一朵红花，周围散落着红色花瓣。",
+      "en": "On green grass, a red hand gently holds a single red flower, red petals scattered around it."
+    },
+    {
+      "id": "43",
+      "name": "藤蔓缠臂",
+      "mood": "red",
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "cn": "深红色背景中，几根暗红和黑色的藤蔓从画面下方生长，缠绕住一只向上伸出的红色手臂，藤蔓上开着小红花。",
+      "en": "On deep red, a few dark red and black vines grow up from the bottom and wind around a red arm reaching upward, small red flowers on the vines."
+    },
+    {
+      "id": "44",
+      "name": "缠指的红线",
+      "mood": "red",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "近景：一根红线缠绕在几根手指上，红色背景，构图简单。",
+      "en": "Close-up: a single red string wound around a few fingers, red background, simple composition."
+    },
+    {
+      "id": "45",
+      "name": "眼眸特写",
+      "mood": "red",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "女主角一只眼睛的特写：绿色的瞳孔，眼尾一笔红色眼线，几缕灰色发丝。",
+      "en": "Close-up of one of the heroine's eyes: green iris, a red eyeliner flick at the corner, a few strands of grey hair.",
+      "heroine": true
+    },
+    {
+      "id": "46",
+      "name": "盛开的山茶",
+      "mood": "red",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "一朵大红山茶花正在盛开的特写，花瓣一层层展开。",
+      "en": "Close-up of a big red camellia in full bloom, its petals opening layer by layer."
+    },
+    {
+      "id": "47",
+      "name": "向后倒下",
+      "mood": "red",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "女主角张开双臂向后倒下，周围的红色花瓣向四周飞散。",
+      "en": "The heroine falls backwards with her arms spread wide, red petals flying out all around her.",
+      "heroine": true
+    },
+    {
+      "id": "48",
+      "name": "奔跑",
+      "mood": "dark",
+      "focus": [
+        0.62,
+        0.5
+      ],
+      "cn": "黑色背景中，女主角向画面右侧奔跑，白色飘带向后飞扬；人物在画面右侧，左侧留空。",
+      "en": "Against black, the heroine runs toward the right, white ribbons streaming behind her; figure on the right, left side empty.",
+      "heroine": true
+    },
+    {
+      "id": "49",
+      "name": "掌心的蓝蝶",
+      "mood": "paper",
+      "focus": [
+        0.62,
+        0.5
+      ],
+      "cn": "女主角向镜头摊开红色的手掌，掌心里停着一只小小的蓝色蝴蝶；人物在画面右侧，左侧留空。",
+      "en": "The heroine opens her red palm toward the viewer, a tiny blue butterfly resting in it; figure on the right, left side empty.",
+      "heroine": true
+    },
+    {
+      "id": "50",
+      "name": "梅枝下远去",
+      "mood": "paper",
+      "focus": [
+        0.4,
+        0.55
+      ],
+      "cn": "白色背景中，女主角从一根垂下的红梅枝下走过，背影渐渐远去；人物在画面左侧，右侧留空。",
+      "en": "On white, the heroine walks away beneath a hanging branch of red plum blossoms, seen from behind; figure on the left, right side empty.",
+      "heroine": true
+    },
+    {
+      "id": "51",
+      "name": "红盖头",
+      "mood": "red",
+      "focus": [
+        0.4,
+        0.45
+      ],
+      "cn": "女主角头上蒙着半掀起的红盖头，只露出下巴和脸颊上的一滴眼泪；主体在画面左侧，下方留空。",
+      "en": "The heroine wears a half-lifted red bridal veil, only her chin and a single tear on her cheek visible; subject on the left, bottom empty.",
+      "heroine": true
+    },
+    {
+      "id": "52",
+      "name": "捂住耳朵",
+      "mood": "dark",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "cn": "黑暗中，女主角用红色的双手紧紧捂住耳朵，闭着眼睛。",
+      "en": "In the dark, the heroine presses her red hands tightly over her ears, eyes shut.",
+      "heroine": true
+    },
+    {
+      "id": "53",
+      "name": "伏案睡着",
+      "mood": "dark",
+      "focus": [
+        0.42,
+        0.55
+      ],
+      "cn": "深夜，女主角趴在堆满纸张的书桌上睡着了，一盏小台灯亮着。",
+      "en": "Late at night, the heroine has fallen asleep slumped over a desk piled with paper, one small desk lamp on.",
+      "heroine": true
+    },
+    {
+      "id": "54",
+      "name": "风中伸手",
+      "mood": "snow",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "cn": "风雪中，女主角向前伸出红色的手，白色飘带被风吹得笔直。",
+      "en": "In the blizzard, the heroine reaches forward with a red hand, white ribbons blown straight out by the wind.",
+      "heroine": true
+    },
+    {
+      "id": "55",
+      "name": "雪地仰望",
+      "mood": "snow",
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "cn": "女主角跪坐在雪地里，仰头望着落下的雪，双手放在膝上。",
+      "en": "The heroine kneels in the snow, looking up at the falling snow, hands on her knees.",
+      "heroine": true
+    },
+    {
+      "id": "56",
+      "name": "雪夜回望",
+      "mood": "snow",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "cn": "雪夜里，女主角半转过身回头看向镜头，飘带在风里飘。",
+      "en": "On a snowy night, the heroine half turns to look back toward the viewer, ribbons fluttering in the wind.",
+      "heroine": true
+    },
+    {
+      "id": "57",
+      "name": "晨光侧脸",
+      "mood": "gold",
+      "focus": [
+        0.4,
+        0.45
+      ],
+      "cn": "金色晨光里女主角的侧脸，闭着眼，发丝被风吹起；主体在画面左侧，下方留空。",
+      "en": "The heroine's profile in golden morning light, eyes closed, hair lifted by the wind; subject on the left, bottom empty.",
+      "heroine": true
     }
   ]
 }
